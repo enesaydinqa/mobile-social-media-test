@@ -1,0 +1,278 @@
+2019-04-06 14:48:36 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 14:48:36 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 14:48:36 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 14:48:36 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 14:52:41 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 14:52:41 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 14:52:41 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 14:52:41 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 14:52:45 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 14:52:45 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 14:52:45 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 14:52:45 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 14:58:25 INFO  Configuration:97 - android.device.mobile.one : Sony XZ Premium
+2019-04-06 14:58:25 INFO  Configuration:97 - android.device.mobile.second : Samsung Galaxy S6
+2019-04-06 14:58:25 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 14:58:25 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 14:59:37 INFO  Configuration:97 - android.device.mobile.one : Sony XZ Premium
+2019-04-06 14:59:37 INFO  Configuration:97 - android.device.mobile.second : Samsung Galaxy S6
+2019-04-06 14:59:37 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 14:59:37 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:12:18 INFO  Configuration:97 - android.device.mobile.one : Sony XZ Premium
+2019-04-06 15:12:18 INFO  Configuration:97 - android.device.mobile.second : Samsung Galaxy S6
+2019-04-06 15:12:18 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:12:18 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:13:52 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:13:52 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:13:52 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:13:52 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:25:50 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:25:50 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:25:50 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:25:50 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:26:44 INFO  Events:45 - Click Send Message Time : 2019/04/06 15:26:44.311
+2019-04-06 15:26:47 INFO  Events:172 - Send Message Time : 2019/04/06 15:26:47.549
+2019-04-06 15:26:47 INFO  Events:161 - Receive Message Time : 2019/04/06 15:26:47.827
+2019-04-06 15:28:18 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:28:18 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:28:18 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:28:18 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:28:44 INFO  Events:202 - Not Successfull Push File Mobile
+2019-04-06 15:29:28 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:29:28 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:29:28 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:29:28 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:29:55 INFO  Events:202 - Not Successfull Push File Mobile
+2019-04-06 15:31:03 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:31:03 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:31:03 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:31:03 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:31:25 INFO  Events:202 - Not Successfull Push File Mobile
+2019-04-06 15:31:39 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:31:39 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:31:39 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:31:39 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:32:43 INFO  Events:202 - Not Successfull Push File Mobile
+2019-04-06 15:39:12 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:39:12 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:39:12 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:39:12 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:40:12 INFO  Events:202 - Not Successfull Push File Mobile
+2019-04-06 15:41:44 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:41:44 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:41:44 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:41:44 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:42:15 INFO  Events:196 - =============================================================================================
+2019-04-06 15:42:15 INFO  Events:197 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-qbpdVtRytFeEMnc.mp4
+2019-04-06 15:42:15 INFO  Events:198 - =============================================================================================
+2019-04-06 15:46:50 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:46:50 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:46:50 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:46:50 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:47:22 INFO  Events:196 - =============================================================================================
+2019-04-06 15:47:22 INFO  Events:197 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-kcEPABLQuyzVPyt.mp4
+2019-04-06 15:47:22 INFO  Events:198 - =============================================================================================
+2019-04-06 15:47:54 INFO  Events:45 - Click Send Message Time : 2019/04/06 15:47:54.681
+2019-04-06 15:47:58 INFO  Events:172 - Send Message Time : 2019/04/06 15:47:58.43
+2019-04-06 15:48:17 INFO  Events:161 - Receive Message Time : 2019/04/06 15:48:17.260
+2019-04-06 15:49:18 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:49:18 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:49:18 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:49:18 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:49:43 INFO  Events:197 - =============================================================================================
+2019-04-06 15:49:43 INFO  Events:198 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-ngPEuoHoNHFiKTL.mp4
+2019-04-06 15:49:43 INFO  Events:199 - =============================================================================================
+2019-04-06 15:50:23 INFO  Events:46 - Click Send Message Time : 2019/04/06 15:50:23.251
+2019-04-06 15:50:40 INFO  Events:173 - Send Message Time : 2019/04/06 15:50:40.859
+2019-04-06 15:50:41 INFO  Events:162 - Receive Message Time : 2019/04/06 15:50:41.48
+2019-04-06 15:50:59 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:50:59 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:50:59 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:50:59 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:51:23 INFO  Events:197 - =============================================================================================
+2019-04-06 15:51:23 INFO  Events:198 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-iUiRERkJNGTsNav.jpg
+2019-04-06 15:51:23 INFO  Events:199 - =============================================================================================
+2019-04-06 15:56:58 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:56:58 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:56:58 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:56:58 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:57:22 INFO  Events:197 - =============================================================================================
+2019-04-06 15:57:22 INFO  Events:198 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-XNnlMxNrkolHLVu.jpg
+2019-04-06 15:57:22 INFO  Events:199 - =============================================================================================
+2019-04-06 15:58:03 INFO  Events:46 - Click Send Message Time : 2019/04/06 15:58:03.209
+2019-04-06 15:58:06 INFO  Events:173 - Send Message Time : 2019/04/06 15:58:06.386
+2019-04-06 15:58:06 INFO  Events:162 - Receive Message Time : 2019/04/06 15:58:06.637
+2019-04-06 15:58:26 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 15:58:26 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 15:58:26 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 15:58:26 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 15:59:33 INFO  Events:46 - Click Send Message Time : 2019/04/06 15:59:33.383
+2019-04-06 15:59:36 INFO  Events:173 - Send Message Time : 2019/04/06 15:59:36.608
+2019-04-06 15:59:36 INFO  Events:162 - Receive Message Time : 2019/04/06 15:59:36.743
+2019-04-06 16:00:33 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:00:33 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:00:33 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:00:33 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:01:21 INFO  Events:46 - Click Send Message Time : 2019/04/06 16:01:21.759
+2019-04-06 16:01:21 INFO  Events:171 - Send Message Time : 2019/04/06 16:01:21.979
+2019-04-06 16:01:23 INFO  Events:160 - Receive Message Time : 2019/04/06 16:01:23.42
+2019-04-06 16:01:32 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:01:32 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:01:32 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:01:32 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:01:57 INFO  Events:195 - =============================================================================================
+2019-04-06 16:01:57 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-zoaEUxSNBUrhlpa.jpg
+2019-04-06 16:01:57 INFO  Events:197 - =============================================================================================
+2019-04-06 16:02:18 INFO  Events:46 - Click Send Message Time : 2019/04/06 16:02:18.705
+2019-04-06 16:02:21 INFO  Events:171 - Send Message Time : 2019/04/06 16:02:21.148
+2019-04-06 16:02:22 INFO  Events:160 - Receive Message Time : 2019/04/06 16:02:22.0
+2019-04-06 16:02:36 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:02:36 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:02:36 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:02:36 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:03:02 INFO  Events:195 - =============================================================================================
+2019-04-06 16:03:02 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-ITgetMmGcaRiUFj.mp4
+2019-04-06 16:03:02 INFO  Events:197 - =============================================================================================
+2019-04-06 16:03:24 INFO  Events:46 - Click Send Message Time : 2019/04/06 16:03:24.153
+2019-04-06 16:03:39 INFO  Events:171 - Send Message Time : 2019/04/06 16:03:39.142
+2019-04-06 16:03:59 INFO  Events:160 - Receive Message Time : 2019/04/06 16:03:59.452
+2019-04-06 16:04:49 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:04:49 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:04:49 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:04:49 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:05:04 INFO  Events:195 - =============================================================================================
+2019-04-06 16:05:04 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-wVlFRGTPdmALDNq.jpg
+2019-04-06 16:05:04 INFO  Events:197 - =============================================================================================
+2019-04-06 16:05:41 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:05:41 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:05:41 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:05:41 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:05:56 INFO  Events:195 - =============================================================================================
+2019-04-06 16:05:56 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-OgZqVFGxOUpTrvZ.jpg
+2019-04-06 16:05:56 INFO  Events:197 - =============================================================================================
+2019-04-06 16:06:05 INFO  Events:46 - Instagram Post Share Button Click Time : 2019/04/06 16:06:05.587
+2019-04-06 16:06:07 INFO  Events:171 - Instagram Shared Image Post Time : 2019/04/06 16:06:07.985
+2019-04-06 16:06:28 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:06:28 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:06:28 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:06:28 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:06:43 INFO  Events:195 - =============================================================================================
+2019-04-06 16:06:43 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-uqoSTJfxVJgwWLL.jpg
+2019-04-06 16:06:43 INFO  Events:197 - =============================================================================================
+2019-04-06 16:06:51 INFO  Events:46 - Instagram Post Share Button Click Time : 2019/04/06 16:06:51.863
+2019-04-06 16:06:53 INFO  Events:171 - Instagram Shared Image Post Time : 2019/04/06 16:06:53.827
+2019-04-06 16:07:18 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:07:18 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:07:18 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:07:18 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:07:33 INFO  Events:195 - =============================================================================================
+2019-04-06 16:07:33 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-JziBnyyHNviSXbk.mp4
+2019-04-06 16:07:33 INFO  Events:197 - =============================================================================================
+2019-04-06 16:07:47 INFO  Events:46 - Instagram Post Share Button Click Time : 2019/04/06 16:07:47.356
+2019-04-06 16:08:01 INFO  Events:171 - Instagram Shared Video Post Time : 2019/04/06 16:08:01.34
+2019-04-06 16:17:11 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:17:11 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:17:11 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:17:11 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:17:35 INFO  Events:195 - =============================================================================================
+2019-04-06 16:17:35 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-boCQkLLTdJDOnKI.mp4
+2019-04-06 16:17:35 INFO  Events:197 - =============================================================================================
+2019-04-06 16:17:44 INFO  Events:46 - Instagram Post Share Button Click Time : 2019/04/06 16:17:44.28
+2019-04-06 16:17:59 INFO  Events:171 - Instagram Shared Video Post Time : 2019/04/06 16:17:59.396
+2019-04-06 16:18:23 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:18:23 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:18:23 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:18:23 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:18:39 INFO  Events:195 - =============================================================================================
+2019-04-06 16:18:39 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-ERwfPADrEJGbHUJ.mp4
+2019-04-06 16:18:39 INFO  Events:197 - =============================================================================================
+2019-04-06 16:19:44 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:19:44 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:19:44 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:19:44 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:20:00 INFO  Events:195 - =============================================================================================
+2019-04-06 16:20:00 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-FfRHNoxRgZvtrps.mp4
+2019-04-06 16:20:00 INFO  Events:197 - =============================================================================================
+2019-04-06 16:21:28 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:21:28 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:21:28 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:21:28 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:21:44 INFO  Events:195 - =============================================================================================
+2019-04-06 16:21:44 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-xBmOYdCWirhYYvw.mp4
+2019-04-06 16:21:44 INFO  Events:197 - =============================================================================================
+2019-04-06 16:22:28 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:22:28 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:22:28 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:22:28 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:22:47 INFO  Events:195 - =============================================================================================
+2019-04-06 16:22:47 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-iTQlpJqhENxmOzW.mp4
+2019-04-06 16:22:47 INFO  Events:197 - =============================================================================================
+2019-04-06 16:24:12 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:24:12 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:24:12 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:24:12 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:24:29 INFO  Events:195 - =============================================================================================
+2019-04-06 16:24:29 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-DyLyIyfrnXBUzdf.mp4
+2019-04-06 16:24:29 INFO  Events:197 - =============================================================================================
+2019-04-06 16:24:36 INFO  Events:120 - GEO Location : []
+2019-04-06 16:45:48 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:45:48 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:45:48 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:45:48 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:46:04 INFO  Events:195 - =============================================================================================
+2019-04-06 16:46:04 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-ZiPGmsZfHwuXYYl.mp4
+2019-04-06 16:46:04 INFO  Events:197 - =============================================================================================
+2019-04-06 16:46:25 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 16:46:25 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 16:46:25 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 16:46:25 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 16:46:44 INFO  Events:195 - =============================================================================================
+2019-04-06 16:46:44 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-TNhabTjJpyVBNtW.mp4
+2019-04-06 16:46:44 INFO  Events:197 - =============================================================================================
+2019-04-06 17:12:10 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:12:10 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:12:10 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:12:10 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:12:26 INFO  Events:195 - =============================================================================================
+2019-04-06 17:12:26 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-hKHAMtzxajpvWMQ.mp4
+2019-04-06 17:12:26 INFO  Events:197 - =============================================================================================
+2019-04-06 17:15:31 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:15:31 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:15:31 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:15:31 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:15:47 INFO  Events:195 - =============================================================================================
+2019-04-06 17:15:47 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-vvgaYAaqRuhPSSY.mp4
+2019-04-06 17:15:47 INFO  Events:197 - =============================================================================================
+2019-04-06 17:19:12 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:19:12 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:19:12 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:19:12 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:19:27 INFO  Events:195 - =============================================================================================
+2019-04-06 17:19:27 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-CYJUJoJElDwYwQD.mp4
+2019-04-06 17:19:27 INFO  Events:197 - =============================================================================================
+2019-04-06 17:21:15 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:21:15 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:21:15 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:21:15 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:21:31 INFO  Events:195 - =============================================================================================
+2019-04-06 17:21:31 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-abYZNjxWFzzvGYb.mp4
+2019-04-06 17:21:31 INFO  Events:197 - =============================================================================================
+2019-04-06 17:24:36 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:24:36 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:24:36 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:24:36 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:24:52 INFO  Events:195 - =============================================================================================
+2019-04-06 17:24:52 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-icqeCGqryXmqzXI.mp4
+2019-04-06 17:24:52 INFO  Events:197 - =============================================================================================
+2019-04-06 17:53:40 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:53:40 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:53:40 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:53:40 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:54:06 INFO  Events:201 - Not Successfull Push File Mobile
+2019-04-06 17:54:44 INFO  Configuration:97 - android.device.mobile.one : Samsung Galaxy S6
+2019-04-06 17:54:44 INFO  Configuration:97 - android.device.mobile.second : Sony XZ Premium
+2019-04-06 17:54:44 INFO  Configuration:119 - test.app.prop : com.instagram.android
+2019-04-06 17:54:44 INFO  Configuration:120 - test.app.prop : com.instagram.android.activity.MainTabActivity
+2019-04-06 17:55:08 INFO  Events:195 - =============================================================================================
+2019-04-06 17:55:08 INFO  Events:196 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-video-DTrPyvmLwSXoBLK.mp4
+2019-04-06 17:55:08 INFO  Events:197 - =============================================================================================
