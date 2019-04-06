@@ -1,6 +1,6 @@
 package mobile.test.instagram;
 
-import client.parameter.Constants;
+import client.Constants;
 import context.AbstractAndroidMultipleTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
@@ -31,7 +31,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendTextMessage() throws IOException, InterruptedException
+    public void testSendTextMessage()
     {
         waitAndClick(driverOne, homePageOne.messageButton);
         waitAndClick(driverSecond, homePageSecond.messageButton);
@@ -46,7 +46,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendPhotoMessage() throws IOException, InterruptedException
+    public void testSendPhotoMessage()
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
                 RandomStringUtils.randomAlphabetic(15));
@@ -67,7 +67,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendVideoMessage() throws IOException, InterruptedException
+    public void testSendVideoMessage()
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
                 RandomStringUtils.randomAlphabetic(15));

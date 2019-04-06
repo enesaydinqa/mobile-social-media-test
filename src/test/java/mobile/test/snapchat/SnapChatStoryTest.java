@@ -32,7 +32,7 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
     @Test
     public void testCaptureImageStoryAndShare() throws InterruptedException, IOException
     {
-        getGeoLocation(mobileDevice.uid);
+        //getGeoLocation(mobileDevice.uid);
 
         waitAndClick(driver, storyPage.cameraCaptureButton);
         waitAndClick(driver, storyPage.sendButton);
@@ -46,7 +46,7 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
     @Test
     public void testCaptureVideoStoryAndShare() throws InterruptedException, IOException
     {
-        getGeoLocation(mobileDevice.uid);
+        //getGeoLocation(mobileDevice.uid);
 
         longPress(driver, storyPage.cameraCaptureButton, 10);
         waitAndClick(driver, storyPage.sendButton);

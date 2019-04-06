@@ -1,6 +1,6 @@
 package mobile.test.instagram;
 
-import client.parameter.Constants;
+import client.Constants;
 import context.AbstractAndroidSingleTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
@@ -33,7 +33,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(driver, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
 
-        getGeoLocation(mobileDevice.uid);
+        //getGeoLocation(mobileDevice.uid);
 
         waitAndClick(driver, footerPage.cameraButton);
         waitAndClick(driver, postSendPage.nextTitle);
@@ -51,7 +51,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(driver, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
 
-        getGeoLocation(mobileDevice.uid);
+        //getGeoLocation(mobileDevice.uid);
 
         waitAndClick(driver, footerPage.cameraButton);
         waitAndClick(driver, postSendPage.nextTitle);

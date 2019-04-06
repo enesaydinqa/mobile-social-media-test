@@ -1,4 +1,4 @@
-package client.parameter;
+package client;
 
 public interface Constants
 {
