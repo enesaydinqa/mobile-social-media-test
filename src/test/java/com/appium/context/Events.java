@@ -105,32 +105,25 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public String getGeoLocation(String deviceId) throws IOException, InterruptedException
+    public String getGeoLocation() throws IOException, InterruptedException
     {
-        Process proc = Runtime.getRuntime().exec(String.format("adb shell dumpsys location", deviceId));
+        Process proc = Runtime.getRuntime().exec(String.format("adb shell dumpsys location"));
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+        StringBuilder processOutput = new StringBuilder();
 
-        String testtest = "gps\\:\\sLocation\\[gps .+\\s";
-
-        String test = reader.readLine().split(testtest)[0];
-
-        String line = "";
-
-        String geoLocation = null;
-
-        while ((line = reader.readLine()) != null)
+        try (BufferedReader processOutputReader = new BufferedReader(new InputStreamReader(proc.getInputStream())))
         {
-            if (line.contains("gps:"))
-            {
-                geoLocation = reader.readLine().substring(16, 20);
-                logger.info(String.format("GEO Location : [%s]", geoLocation));
-                break;
-            }
-        }
-        proc.waitFor();
+            String readLine;
 
-        return geoLocation;
+            while ((readLine = processOutputReader.readLine()) != null)
+            {
+                processOutput.append(readLine + System.lineSeparator());
+            }
+
+            proc.waitFor();
+        }
+
+        return processOutput.toString();
     }
 
     @Override
