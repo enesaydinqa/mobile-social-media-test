@@ -19,7 +19,16 @@ public class ReportGenerate extends TestWatcher
     @Override
     protected void failed(Throwable e, Description description)
     {
-        ExtentReports extent = createReport();
+        ExtentReports extent = null;
+        try
+        {
+            extent = createReport();
+        }
+        catch (IOException e1)
+        {
+            e1.printStackTrace();
+        }
+
         ExtentTest test = extent.startTest(description.getDisplayName());
         test.log(LogStatus.FAIL, "Stack Trace : " + e.toString());
         flushReports(extent, test);
@@ -28,7 +37,16 @@ public class ReportGenerate extends TestWatcher
     @Override
     protected void succeeded(Description description)
     {
-        ExtentReports extent = createReport();
+        ExtentReports extent = null;
+        try
+        {
+            extent = createReport();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
         flushReports(extent, test);
