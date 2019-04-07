@@ -20,7 +20,7 @@
     "deviceName": "SAMSUNG_GALAXY_S6",
     "uid": "031603a436923b01",
     "deviceServer": "127.0.0.1",
-    "devicePort": "5050",
+    "devicePort": "5556",
     "noReset": true,
     "unicodeKeyboard": true,
     "autoGrantPermissions": true,

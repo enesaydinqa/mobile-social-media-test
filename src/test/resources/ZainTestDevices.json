@@ -1,0 +1,33 @@
+{
+  "ONE_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "7.1.1",
+    "deviceName": "Sony XZ Premium",
+    "uid": "CB512FN695",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "5559",
+    "noReset": true,
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": true,
+    "fastReset": true,
+    "noSign": true,
+    "clearDeviceLogsOnStart": true,
+    "automationName": "UiAutomator1"
+  },
+  "SECOND_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "6.0.1",
+    "deviceName": "SAMSUNG_GALAXY_S6",
+    "uid": "031603a436923b01",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "5560",
+    "noReset": true,
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": true,
+    "fastReset": true,
+    "noSign": true,
+    "clearDeviceLogsOnStart": true,
+    "automationName": "UiAutomator1"
+  }
+}
+

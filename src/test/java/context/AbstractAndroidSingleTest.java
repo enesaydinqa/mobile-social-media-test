@@ -12,8 +12,6 @@ import java.net.URISyntaxException;
 
 public abstract class AbstractAndroidSingleTest extends DriverManager
 {
-    private Logger logger = Logger.getLogger(AbstractAndroidSingleTest.class);
-
     protected static AppiumDriver driver;
 
     private static Configuration configuration;

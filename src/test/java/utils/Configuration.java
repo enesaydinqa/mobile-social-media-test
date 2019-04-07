@@ -14,6 +14,7 @@ public class Configuration
 
     private Properties configProps = new Properties();
 
+    private String operator;
     private String instagramReceiverUsername;
     private AppInfo appInfo;
 
@@ -23,6 +24,7 @@ public class Configuration
 
         this.appInfo = getAppInfoProp();
         this.instagramReceiverUsername = configProps.getProperty("instagramReceiverUsername");
+        this.operator = System.getProperties().getProperty("operator");
     }
 
     private void loadConfigProperties() throws IOException
@@ -74,5 +76,15 @@ public class Configuration
     public void setInstagramReceiverUsername(String instagramReceiverUsername)
     {
         this.instagramReceiverUsername = instagramReceiverUsername;
+    }
+
+    public String getOperator()
+    {
+        return operator;
+    }
+
+    public void setOperator(String operator)
+    {
+        this.operator = operator;
     }
 }

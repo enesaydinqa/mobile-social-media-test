@@ -2,13 +2,16 @@ package context;
 
 import client.objects.DeviceCapabilities;
 import org.json.JSONObject;
+import utils.Configuration;
 import utils.Read;
 
-public class JsonCapability
+public class JSONCapability
 {
-    public DeviceCapabilities getDeviceCapability(String objectName)
+    public DeviceCapabilities getDeviceCapability(Configuration configuration, String objectName)
     {
-        String deviceCapability = Read.readFile(System.getProperty("user.dir").concat("/src/test/resources/TestDevices.json"));
+        String jsonPath = System.getProperty("user.dir").concat("/src/test/resources/%sTestDevices.json");
+
+        String deviceCapability = Read.readFile(String.format(jsonPath, configuration.getOperator()));
 
         JSONObject obj = new JSONObject(deviceCapability);
 

@@ -1,10 +1,14 @@
 package mobile.test.instagram;
 
 import client.Constants;
+import client.flag.MobilyInstagram;
+import client.flag.STCInstagram;
+import client.flag.ZainInstagram;
 import context.AbstractAndroidMultipleTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import pages.instagram.DirectMessagePage;
 import pages.instagram.HomePage;
 
@@ -31,6 +35,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
+    @Category({STCInstagram.class, MobilyInstagram.class, ZainInstagram.class})
     public void testSendTextMessage()
     {
         waitAndClick(driverOne, homePageOne.messageButton);
@@ -46,6 +51,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
+    @Category({STCInstagram.class, MobilyInstagram.class, ZainInstagram.class})
     public void testSendPhotoMessage()
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
@@ -67,6 +73,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
+    @Category({STCInstagram.class, MobilyInstagram.class, ZainInstagram.class})
     public void testSendVideoMessage()
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
