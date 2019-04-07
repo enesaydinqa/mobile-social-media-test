@@ -123,7 +123,7 @@ public class Events implements CommonMobile
             proc.waitFor();
         }
 
-        Pattern pattern = Pattern.compile("gps:\\sLocation\\[gps\\s(.+)\\sgc");
+        Pattern pattern = Pattern.compile("gps:\\sLocation\\[gps\\s(.+)\\sacc");
 
         Matcher matcher = pattern.matcher(processOutput.toString());
 
@@ -133,7 +133,7 @@ public class Events implements CommonMobile
         {
             geoLocation = matcher.group(0).substring(17, 37);
 
-            logger.info(String.format("GEO Location : %s", geoLocation));
+            logger.info(String.format("GEO LOCATION : %s", geoLocation));
             break;
         }
 
