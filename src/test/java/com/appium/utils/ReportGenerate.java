@@ -34,20 +34,11 @@ public class ReportGenerate extends TestWatcher
     }
 
 
-    private ExtentReports createReport()
+    private ExtentReports createReport() throws IOException
     {
         Date date = new Date();
 
-        Configuration configuration = null;
-
-        try
-        {
-            configuration = new Configuration();
-        }
-        catch (IOException ex)
-        {
-            ex.printStackTrace();
-        }
+        Configuration configuration = new Configuration();
 
         String reportName = System.getProperty("user.home") // /users/user.name
                 .concat(configuration.getTestResultPath().concat("\\")) // /Desktop/
@@ -55,7 +46,6 @@ public class ReportGenerate extends TestWatcher
                 .concat("Test-Result-")
                 .concat(dateFormat.format(date))
                 .concat(".html");
-
 
         ExtentReports extent = new ExtentReports(reportName, false);
         extent.config().reportName("Mobicom Socia Media Tests");
