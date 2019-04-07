@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -16,7 +17,7 @@ public class ReportGenerate extends TestWatcher
     private static final DateFormat dateFormat = new SimpleDateFormat(DateFormatType.REPORT_DATE_FORMAT_TYPE.dateFormat);
 
     @Override
-    protected void failed(Throwable e, org.junit.runner.Description description)
+    protected void failed(Throwable e, Description description)
     {
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName());
@@ -25,7 +26,7 @@ public class ReportGenerate extends TestWatcher
     }
 
     @Override
-    protected void succeeded(org.junit.runner.Description description)
+    protected void succeeded(Description description)
     {
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
