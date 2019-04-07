@@ -57,9 +57,6 @@ public class Configuration
             try
             {
                 appInfo = AppInfo.valueOf(appName);
-
-                logger.info(String.format(propertyKey.concat(" : ").concat(appInfo.appPackage)));
-                logger.info(String.format(propertyKey.concat(" : ").concat(appInfo.appActivity)));
             }
             catch (Exception e)
             {
