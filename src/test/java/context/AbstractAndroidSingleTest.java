@@ -23,7 +23,7 @@ public abstract class AbstractAndroidSingleTest extends DriverManager
     {
         configuration = new Configuration();
 
-        driver = createAndroidDriver(configuration, DeviceName.SAMSUNG_GALAXY_S6.deviceName);
+        driver = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.deviceName);
     }
 
     @After

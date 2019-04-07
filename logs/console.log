@@ -548,3 +548,5 @@
 2019-04-07 10:20:16 INFO  Events:46 - Click Send Message Time : 2019/04/07 10:20:16.24
 2019-04-07 10:20:17 INFO  Events:171 - Send Message Time : 2019/04/07 10:20:17.831
 2019-04-07 10:20:17 INFO  Events:160 - Receive Message Time : 2019/04/07 10:20:17.995
+2019-04-07 10:27:16 INFO  Configuration:57 - test.app.prop : com.instagram.android
+2019-04-07 10:27:16 INFO  Configuration:58 - test.app.prop : com.instagram.android.activity.MainTabActivity

@@ -2,8 +2,8 @@ package client.parameter;
 
 public enum DeviceName
 {
-    SONY_XZ_PREMIUM("SONY_XZ_PREMIUM"),
-    SAMSUNG_GALAXY_S6("SAMSUNG_GALAXY_S6");
+    ONE_DEVICE("ONE_DEVICE"),
+    SECOND_DEVICE("SECOND_DEVICE");
 
     public final String deviceName;
 

@@ -1,5 +1,5 @@
 {
-  "SONY_XZ_PREMIUM": {
+  "ONE_DEVICE": {
     "platformName": "Android",
     "platformVersion": "7.1.1",
     "deviceName": "Sony XZ Premium",
@@ -14,7 +14,7 @@
     "clearDeviceLogsOnStart": true,
     "automationName": "UiAutomator1"
   },
-  "SAMSUNG_GALAXY_S6": {
+  "SECOND_DEVICE": {
     "platformName": "Android",
     "platformVersion": "6.0.1",
     "deviceName": "SAMSUNG_GALAXY_S6",
