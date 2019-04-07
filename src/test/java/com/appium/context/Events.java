@@ -6,6 +6,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -106,13 +107,13 @@ public class Events implements CommonMobile
     @Override
     public String getGeoLocation(String deviceId) throws IOException, InterruptedException
     {
-        Process proc = Runtime.getRuntime().exec(String.format("adb -s %s shell dumpsys location", deviceId));
+        Process proc = Runtime.getRuntime().exec(String.format("adb shell dumpsys location", deviceId));
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
 
-        Pattern geoLocationRegex = Pattern.compile("gps\\:\\sLocation\\[gps .+\\s");
+        String testtest = "gps\\:\\sLocation\\[gps .+\\s";
 
-        Matcher mClassified = geoLocationRegex.matcher(reader.readLine());
+        String test = reader.readLine().split(testtest)[0];
 
         String line = "";
 
