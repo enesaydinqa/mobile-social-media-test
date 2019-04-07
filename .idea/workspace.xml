@@ -2,42 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3e48f9-6909-4075-aae1-ffe97cd93fd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/client/objects/DeviceCapabilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/client/parameter/DeviceName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/JsonCapability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDevices.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/console.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/console.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/client/parameter/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/client/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/client/parameter/DevicePort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/client/parameter/DeviceServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/client/parameter/PlatformName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/client/parameter/PlatformVersion.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/MobileDevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramSingleDeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramSingleDeviceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/instagram/DirectMessagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/instagram/DirectMessagePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/DevicePort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/DeviceServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/PlatformName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/PlatformVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/context/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/Constants$InstagramPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/client/parameter/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/context/AbstractAndroidMultipleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/AbstractAndroidMultipleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/context/AbstractAndroidSingleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/AbstractAndroidSingleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/MobileDevice.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/mobile/test/instagram/InstagramMultipleDeviceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mobile/test/instagram/InstagramMultipleDeviceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mobile/test/instagram/InstagramSingleDeviceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mobile/test/snapchat/SnapChatStoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/instagram/DirectMessagePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/instagram/DirectMessagePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Configuration.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,7 +27,48 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/context/Events.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="154" column="57" selection-start-line="154" selection-start-column="57" selection-end-line="154" selection-end-column="57" />
+              <folding>
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/TestDevices.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,7 +86,6 @@
         <option value="$PROJECT_DIR$/src/test/java/client/parameter/PlatformVersion.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/MobileDevice.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/instagram/DirectMessagePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/context/Events.java" />
         <option value="$PROJECT_DIR$/src/test/java/client/parameter/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/Capabilities.java" />
@@ -80,11 +95,12 @@
         <option value="$PROJECT_DIR$/src/test/resources/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/context/JsonCapability.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/DriverManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramSingleDeviceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/client/parameter/DeviceName.java" />
         <option value="$PROJECT_DIR$/src/test/resources/TestDevices.json" />
+        <option value="$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/context/Events.java" />
       </list>
     </option>
   </component>
@@ -95,10 +111,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="850" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -106,105 +123,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="instagram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="snapchat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -213,9 +159,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554589307437" />
@@ -232,7 +181,91 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.InstagramMultipleDeviceTest.testSendPhotoMessage">
+    <configuration name="All in social-media-testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-media-testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-Dtest.app.prop=INSTAGRAM" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstagramMultipleDeviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-media-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobile.test.instagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mobile.test.instagram" />
+      <option name="MAIN_CLASS_NAME" value="mobile.test.instagram.InstagramMultipleDeviceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dtest.app.prop=INSTAGRAM" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-media-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobile.test.instagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mobile.test.instagram" />
+      <option name="MAIN_CLASS_NAME" value="mobile.test.instagram.InstagramMultipleDeviceTest" />
+      <option name="METHOD_NAME" value="testSendPhotoMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dtest.app.prop=INSTAGRAM" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstagramMultipleDeviceTest.testSendTextMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-media-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobile.test.instagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mobile.test.instagram" />
+      <option name="MAIN_CLASS_NAME" value="mobile.test.instagram.InstagramMultipleDeviceTest" />
+      <option name="METHOD_NAME" value="testSendTextMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dtest.app.prop=INSTAGRAM" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstagramMultipleDeviceTest.testSendVideoMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-media-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobile.test.instagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mobile.test.instagram" />
+      <option name="MAIN_CLASS_NAME" value="mobile.test.instagram.InstagramMultipleDeviceTest" />
+      <option name="METHOD_NAME" value="testSendVideoMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dtest.app.prop=INSTAGRAM" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -243,6 +276,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.InstagramMultipleDeviceTest.testSendPhotoMessage" />
+        <item itemvalue="JUnit.InstagramMultipleDeviceTest" />
+        <item itemvalue="JUnit.All in social-media-testing" />
+        <item itemvalue="JUnit.InstagramMultipleDeviceTest.testSendVideoMessage" />
+        <item itemvalue="JUnit.InstagramMultipleDeviceTest.testSendTextMessage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -260,44 +302,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 23m 23s.xml">
+    <history-entry file="InstagramSingleDeviceTest_testSendVideoPost - 2019.04.07 at 01h 36m 52s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendVideoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 01h 40m 48s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 01h 41m 41s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramMultipleDeviceTest_testSendTextMessage - 2019.04.07 at 01h 45m 53s.xml">
+      <configuration name="InstagramMultipleDeviceTest.testSendTextMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 01h 47m 14s.xml">
       <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 23m 35s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
+    <history-entry file="InstagramMultipleDeviceTest_testSendVideoMessage - 2019.04.07 at 01h 49m 07s.xml">
+      <configuration name="InstagramMultipleDeviceTest.testSendVideoMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 24m 03s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
+    <history-entry file="InstagramMultipleDeviceTest_testSendVideoMessage - 2019.04.07 at 01h 55m 29s.xml">
+      <configuration name="InstagramMultipleDeviceTest.testSendVideoMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 24m 59s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
+    <history-entry file="All_in_social-media-testing - 2019.04.07 at 10h 00m 47s.xml">
+      <configuration name="All in social-media-testing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 27m 24s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
+    <history-entry file="InstagramMultipleDeviceTest - 2019.04.07 at 10h 06m 26s.xml">
+      <configuration name="InstagramMultipleDeviceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 27m 42s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 31m 14s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 34m 41s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 37m 07s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramMultipleDeviceTest_testSendPhotoMessage - 2019.04.07 at 00h 38m 52s.xml">
-      <configuration name="InstagramMultipleDeviceTest.testSendPhotoMessage" configurationId="JUnit" />
+    <history-entry file="InstagramMultipleDeviceTest - 2019.04.07 at 10h 13m 45s.xml">
+      <configuration name="InstagramMultipleDeviceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="9518000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="850" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.2539342" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" sideWeight="0.5013193" side_tool="true" weight="0.2539342" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,8 +352,8 @@
       <window_info anchor="bottom" id="Spring" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.2823219" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.32849604" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.28169015" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.32827735" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -327,7 +370,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info active="true" anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.32985073" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32942432" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,11 +385,27 @@
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/social_media_testing$All_in_social_media_testing.ic" NAME="All in social-media-testing Coverage Results" MODIFIED="1554619995004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/social_media_testing$InstagramSingleDeviceTest.ic" NAME="InstagramSingleDeviceTest Coverage Results" MODIFIED="1554505114428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mobile.test.instagram.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/social_media_testing$InstagramMultipleDeviceTest.ic" NAME="InstagramMultipleDeviceTest Coverage Results" MODIFIED="1554621017992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>mobile.test.instagram.*</FILTER>
     </SUITE>
   </component>
@@ -389,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/instagram/DirectMessagePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -403,27 +455,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/PlatformVersion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/PlatformName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DeviceServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/PlatformVersion.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/PlatformName.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DeviceServer.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -462,35 +496,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DevicePort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/MobileDevice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DevicePort.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/MobileDevice.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/snapchat/SnapChatStoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/configuration.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -511,72 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramSingleDeviceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DeviceName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -615,17 +564,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/TestDevices.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/AppInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidMultipleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramSingleDeviceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/AbstractAndroidSingleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/client/parameter/DeviceName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mobile/test/instagram/InstagramMultipleDeviceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="154" column="57" selection-start-line="154" selection-start-column="57" selection-end-line="154" selection-end-column="57" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/TestDevices.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socialmediatesting.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="83" />
         </state>
       </provider>
     </entry>

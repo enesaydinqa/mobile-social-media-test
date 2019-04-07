@@ -152,7 +152,7 @@ public class Events implements CommonMobile
 
     public void waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(element));
 
         if (log)
@@ -163,7 +163,7 @@ public class Events implements CommonMobile
 
     public void waitNotVisible(AppiumDriver driver, By element, Boolean log, String description)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
 
         if (log)
@@ -174,13 +174,13 @@ public class Events implements CommonMobile
 
     public void waitElementToBeClickable(AppiumDriver driver, MobileElement element)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public void waitElementNotVisible(AppiumDriver driver, MobileElement element)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 

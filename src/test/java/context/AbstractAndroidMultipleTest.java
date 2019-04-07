@@ -24,9 +24,9 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
     {
         configuration = new Configuration();
 
-        driverOne = createAndroidDriver(configuration, DeviceName.SONY_XZ_PREMIUM.deviceName);
+        driverOne = createAndroidDriver(configuration, DeviceName.SAMSUNG_GALAXY_S6.deviceName);
 
-        driverSecond = createAndroidDriver(configuration, DeviceName.SAMSUNG_GALAXY_S6.deviceName);
+        driverSecond = createAndroidDriver(configuration, DeviceName.SONY_XZ_PREMIUM.deviceName);
     }
 
     @After
