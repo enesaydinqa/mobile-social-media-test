@@ -19,6 +19,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
@@ -107,6 +109,10 @@ public class Events implements CommonMobile
         Process proc = Runtime.getRuntime().exec(String.format("adb -s %s shell dumpsys location", deviceId));
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+
+        Pattern geoLocationRegex = Pattern.compile("gps\\:\\sLocation\\[gps .+\\s");
+
+        Matcher mClassified = geoLocationRegex.matcher(reader.readLine());
 
         String line = "";
 
