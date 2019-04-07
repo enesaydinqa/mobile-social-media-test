@@ -7,6 +7,8 @@
     <groupId>com.telecom</groupId>
     <artifactId>social-media-testing</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Social Media Test</name>
+    <description>Social Media Test</description>
 
     <properties>
         <surefire.impl>surefire-junit47</surefire.impl>
@@ -14,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testcase.groups></testcase.groups>
     </properties>
+
     <reporting>
         <plugins>
             <plugin>
@@ -26,21 +29,21 @@
 
     <profiles>
         <profile>
-            <id>STC_INSTAGRAM</id>
+            <id>STCInstagram</id>
             <properties>
-                <testcase.groups>com.selenium.client.flag.STCInstagram</testcase.groups>
+                <testcase.groups>com.appium.flag.ZainInstagram</testcase.groups>
             </properties>
         </profile>
         <profile>
-            <id>MOBILY_INSTAGRAM</id>
+            <id>MobilyInstagram</id>
             <properties>
-                <testcase.groups>com.selenium.client.flag.MobilyInstagram</testcase.groups>
+                <testcase.groups>com.appium.flag.STCInstagram</testcase.groups>
             </properties>
         </profile>
         <profile>
-            <id>ZAIN_INSTAGRAM</id>
+            <id>ZainInstagram</id>
             <properties>
-                <testcase.groups>com.selenium.client.flag.ZainInstagram</testcase.groups>
+                <testcase.groups>com.appium.flag.STCInstagram</testcase.groups>
             </properties>
         </profile>
     </profiles>
@@ -99,7 +102,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -145,6 +148,5 @@
             <artifactId>okhttp</artifactId>
             <version>3.0.1</version>
         </dependency>
-
     </dependencies>
 </project>
