@@ -123,6 +123,15 @@ public class Events implements CommonMobile
             proc.waitFor();
         }
 
+        Pattern pattern = Pattern.compile("gps:\\sLocation\\[gps\\s(.+)\\sacc");
+
+        Matcher matcher = pattern.matcher(processOutput.toString());
+
+        while(matcher.find()) {
+            logger.info(String.format("GEO Location : %s", matcher.group(0).substring(17,37)));
+            break;
+        }
+
         return processOutput.toString();
     }
 
