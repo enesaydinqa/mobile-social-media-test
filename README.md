@@ -32,3 +32,5 @@ appium --address 127.0.0.1 --port 5560 --session-override --command-timeout 6000
 # Example
 
 mvn clean install site -Dtest.app.prop="INSTAGRAM" -Doperator="STC" -P "STCInstagram"
+mvn clean install site -Dtest.app.prop="INSTAGRAM" -Doperator="Mobily" -P "MobilyInstagram"
+mvn clean install site -Dtest.app.prop="INSTAGRAM" -Doperator="Zain" -P "ZainInstagram"

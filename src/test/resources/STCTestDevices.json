@@ -16,7 +16,7 @@
   },
   "SECOND_DEVICE": {
     "platformName": "Android",
-    "platformVersion": "7.1.1",
+    "platformVersion": "6.0.1",
     "deviceName": "SAMSUNG_GALAXY_S6",
     "uid": "031603a436923b01",
     "deviceServer": "127.0.0.1",

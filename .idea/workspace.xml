@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ad448a0-a0d3-46ab-a50b-9a39f1e2a93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/MobilyTestDevices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/MobilyTestDevices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/STCTestDevices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/STCTestDevices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ZainTestDevices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ZainTestDevices.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,19 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="125" column="76" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="561">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -50,8 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/resources/ZainTestDevices.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/utils/ReportGenerate.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/DeviceName.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/utils/Configuration.java" />
@@ -60,6 +53,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/utils/StatusRule.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/STCTestDevices.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/MobilyTestDevices.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/ZainTestDevices.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -84,73 +81,51 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="appium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="appium" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="appium" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -160,7 +135,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -170,7 +145,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -181,7 +156,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -193,28 +168,17 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="appium" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="appium" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InstagramSingleDeviceTest.testSendImagePost">
+  <component name="RunManager" selected="JUnit.InstagramSingleDeviceTest">
     <configuration name="InstagramSingleDeviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-media-testing" />
       <extension name="coverage">
@@ -282,8 +246,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InstagramSingleDeviceTest.testSendImagePost" />
         <item itemvalue="JUnit.InstagramSingleDeviceTest" />
+        <item itemvalue="JUnit.InstagramSingleDeviceTest.testSendImagePost" />
       </list>
     </recent_temporary>
   </component>
@@ -301,21 +265,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 21h 39m 17s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 21h 40m 03s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 00m 01s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 27m 54s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 29m 01s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 34m 11s.xml">
       <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
     </history-entry>
@@ -331,14 +280,30 @@
     <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 40m 55s.xml">
       <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 51m 49s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 52m 18s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 53m 49s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest - 2019.04.08 at 14h 38m 19s.xml">
+      <configuration name="InstagramSingleDeviceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest - 2019.04.08 at 17h 27m 47s.xml">
+      <configuration name="InstagramSingleDeviceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="2650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="850" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2825465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -352,7 +317,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32849604" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32849604" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32849604" />
@@ -387,20 +352,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/ZainTestDevices.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/client/date/DateFormatType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -418,16 +369,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/MobilyTestDevices.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/STCTestDevices.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/utils/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -461,52 +402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/utils/Read.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="42" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/CommonMobile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -532,8 +431,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="125" column="76" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
+        <state relative-caret-position="204">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/utils/Read.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="42" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/CommonMobile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="16" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/STCTestDevices.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="20" lean-forward="true" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/MobilyTestDevices.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/ZainTestDevices.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="85" />
         </state>
       </provider>
     </entry>
