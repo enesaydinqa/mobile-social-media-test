@@ -2,16 +2,17 @@ package com.appium.context;
 
 import com.appium.client.objects.DeviceCapabilities;
 import com.appium.utils.Configuration;
-import com.appium.utils.Read;
+import com.appium.utils.ReadFile;
 import org.json.JSONObject;
 
 public class JSONCapability
 {
     public DeviceCapabilities getDeviceCapability(Configuration configuration, String objectName)
     {
-        String jsonPath = System.getProperty("user.dir").concat("/src/test/resources/%sTestDevices.json");
+        String deviceGetJSON = String.format(System.getProperty("user.dir")
+                .concat("/src/test/resources/%sTestDevices.json"), configuration.getOperator());
 
-        String deviceCapability = Read.readFile(String.format(jsonPath, configuration.getOperator()));
+        String deviceCapability = ReadFile.readFile(deviceGetJSON);
 
         JSONObject obj = new JSONObject(deviceCapability);
 

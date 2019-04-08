@@ -60,7 +60,7 @@ public class ReportGenerate extends TestWatcher
         Configuration configuration = new Configuration();
 
         String reportName = System.getProperty("user.home") // /users/user.name
-                .concat(configuration.getTestResultPath().concat("\\")) // /Desktop/
+                .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator"))) // /Desktop/
                 .concat(configuration.getOperator().concat("-")) // STC
                 .concat("Test-Result-")
                 .concat(dateFormat.format(date))

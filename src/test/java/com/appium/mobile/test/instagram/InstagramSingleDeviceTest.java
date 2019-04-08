@@ -56,7 +56,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(driver, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
 
-        //getGeoLocation(mobileDevice.uid);
+        getGeoLocation();
 
         waitAndClick(driver, footerPage.cameraButton);
         waitAndClick(driver, postSendPage.nextTitle);
