@@ -28,68 +28,72 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     {
         super.init();
 
-        homePageOne = new HomePage(driverOne);
-        directMessagePageOne = new DirectMessagePage(driverOne);
+        homePageOne = new HomePage(mobileOne);
+        directMessagePageOne = new DirectMessagePage(mobileOne);
 
-        homePageSecond = new HomePage(driverSecond);
-        directMessagePageSecond = new DirectMessagePage(driverSecond);
+        homePageSecond = new HomePage(mobileSecond);
+        directMessagePageSecond = new DirectMessagePage(mobileSecond);
     }
 
     @Test
     public void testSendTextMessage()
     {
-        waitAndClick(driverOne, homePageOne.messageButton);
-        waitAndClick(driverSecond, homePageSecond.messageButton);
-        waitAndClick(driverOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(driverOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
-        waitAndClick(driverOne, directMessagePageOne.searchResultUser);
-        WaitAndSendKeys(driverOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
-        waitAndClick(driverOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
-        waitNotVisible(driverOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        waitAndClick(mobileOne, homePageOne.messageButton);
+        waitAndClick(mobileSecond, homePageSecond.messageButton);
+        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
+        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
+        WaitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
+        waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
+        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(driverSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
     public void testSendPhotoMessage()
     {
-        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15));
+        String mobileFilePath = String.format(
+                Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
+                RandomStringUtils.randomAlphabetic(15)
+        );
 
-        pushFileMobile(driverOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
 
-        waitAndClick(driverOne, homePageOne.messageButton);
-        waitAndClick(driverSecond, homePageSecond.messageButton);
-        waitAndClick(driverOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(driverOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
-        waitAndClick(driverOne, directMessagePageOne.searchResultUser);
-        waitAndClick(driverOne, directMessagePageOne.galleryButton);
-        waitAndClick(driverOne, directMessagePageOne.photoThumbnail);
-        waitAndClick(driverOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        waitNotVisible(driverOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        waitAndClick(mobileOne, homePageOne.messageButton);
+        waitAndClick(mobileSecond, homePageSecond.messageButton);
+        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
+        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
+        waitAndClick(mobileOne, directMessagePageOne.galleryButton);
+        waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
+        waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(driverSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
     public void testSendVideoMessage()
     {
-        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15));
+        String mobileFilePath = String.format(
+                Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
+                RandomStringUtils.randomAlphabetic(15)
+        );
 
-        pushFileMobile(driverOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
 
-        waitAndClick(driverOne, homePageOne.messageButton);
-        waitAndClick(driverSecond, homePageSecond.messageButton);
-        waitAndClick(driverOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(driverOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
-        waitAndClick(driverOne, directMessagePageOne.searchResultUser);
-        waitAndClick(driverOne, directMessagePageOne.galleryButton);
-        waitAndClick(driverOne, directMessagePageOne.videoThumbnail);
-        waitAndClick(driverOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        waitNotVisible(driverOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        waitAndClick(mobileOne, homePageOne.messageButton);
+        waitAndClick(mobileSecond, homePageSecond.messageButton);
+        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
+        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
+        waitAndClick(mobileOne, directMessagePageOne.galleryButton);
+        waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);
+        waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(driverSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
 }

@@ -26,43 +26,47 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
     {
         super.init();
 
-        footerPage = new FooterPage(driver);
-        postSendPage = new PostSendPage(driver);
+        footerPage = new FooterPage(mobile);
+        postSendPage = new PostSendPage(mobile);
     }
 
     @Test
     public void testSendImagePost() throws InterruptedException, IOException
     {
-        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15));
+        String mobileFilePath = String.format(
+                Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
+                RandomStringUtils.randomAlphabetic(15)
+        );
 
-        pushFileMobile(driver, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
+        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
 
         getGeoLocation();
 
-        waitAndClick(driver, footerPage.cameraButton);
-        waitAndClick(driver, postSendPage.nextTitle);
-        waitAndClick(driver, postSendPage.nextTitle);
-        waitAndClick(driver, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        waitAndClick(mobile, footerPage.cameraButton);
+        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
 
-        waitNotVisible(driver, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
+        waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
     }
 
     @Test
     public void testSendVideoPost() throws InterruptedException, IOException
     {
-        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15));
+        String mobileFilePath = String.format(
+                Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
+                RandomStringUtils.randomAlphabetic(15)
+        );
 
-        pushFileMobile(driver, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
+        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
 
         getGeoLocation();
 
-        waitAndClick(driver, footerPage.cameraButton);
-        waitAndClick(driver, postSendPage.nextTitle);
-        waitAndClick(driver, postSendPage.nextTitle);
-        waitAndClick(driver, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        waitAndClick(mobile, footerPage.cameraButton);
+        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
 
-        waitNotVisible(driver, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
+        waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
     }
 }

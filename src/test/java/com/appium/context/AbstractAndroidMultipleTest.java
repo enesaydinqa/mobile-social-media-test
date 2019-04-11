@@ -8,19 +8,14 @@ import io.appium.java_client.AppiumDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.rules.TestRule;
-import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
-import org.junit.runners.model.Statement;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.URISyntaxException;
 
 public abstract class AbstractAndroidMultipleTest extends DriverManager
 {
-    protected static AppiumDriver driverOne;
-    protected static AppiumDriver driverSecond;
+    protected static AppiumDriver mobileOne;
+    protected static AppiumDriver mobileSecond;
 
     public static Configuration configuration;
 
@@ -35,20 +30,20 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
     {
         configuration = new Configuration();
 
-        driverOne = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
+        mobileOne = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
 
-        driverSecond = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
+        mobileSecond = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
     }
 
     @After
     public void tearDown()
     {
-        if (driverOne != null)
+        if (mobileOne != null)
         {
             try
             {
-                driverOne.closeApp();
-                driverOne.quit();
+                mobileOne.closeApp();
+                mobileOne.quit();
             }
             catch (Exception ex)
             {
@@ -56,12 +51,12 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
 
         }
 
-        if (driverSecond != null)
+        if (mobileSecond != null)
         {
             try
             {
-                driverSecond.closeApp();
-                driverSecond.quit();
+                mobileSecond.closeApp();
+                mobileSecond.quit();
             }
             catch (Exception ex)
             {

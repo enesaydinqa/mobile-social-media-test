@@ -26,7 +26,7 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
     {
         super.init();
 
-        storyPage = new StoryPage(driver);
+        storyPage = new StoryPage(mobile);
     }
 
     @Test
@@ -34,10 +34,10 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        waitAndClick(driver, storyPage.cameraCaptureButton);
-        waitAndClick(driver, storyPage.sendButton);
-        waitAndClick(driver, storyPage.myStoryTitle);
-        waitAndClick(driver, storyPage.send, true, "Snapchat Story Share Button Click");
+        waitAndClick(mobile, storyPage.cameraCaptureButton);
+        waitAndClick(mobile, storyPage.sendButton);
+        waitAndClick(mobile, storyPage.myStoryTitle);
+        waitAndClick(mobile, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(10);
         getSnapSendDuration();
@@ -48,10 +48,10 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        longPress(driver, storyPage.cameraCaptureButton, 10);
-        waitAndClick(driver, storyPage.sendButton);
-        waitAndClick(driver, storyPage.myStoryTitle);
-        waitAndClick(driver, storyPage.send, true, "Snapchat Story Share Button Click");
+        longPress(mobile, storyPage.cameraCaptureButton, 10);
+        waitAndClick(mobile, storyPage.sendButton);
+        waitAndClick(mobile, storyPage.myStoryTitle);
+        waitAndClick(mobile, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(30);
         getSnapSendDuration();
@@ -60,7 +60,7 @@ public class SnapChatStoryTest extends AbstractAndroidSingleTest
 
     private String getSnapSendDuration()
     {
-        List<LogEntry> adbLogs = driver.manage().logs().get("logcat").filter(Level.ALL);
+        List<LogEntry> adbLogs = mobile.manage().logs().get("logcat").filter(Level.ALL);
 
         AtomicReference<String> duration = new AtomicReference<>();
 

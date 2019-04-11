@@ -14,9 +14,9 @@ import java.net.URISyntaxException;
 
 public abstract class AbstractAndroidSingleTest extends DriverManager
 {
-    protected static AppiumDriver driver;
+    protected static AppiumDriver mobile;
 
-    private static Configuration configuration;
+    public static Configuration configuration;
 
     @Rule
     public ReportGenerate screenShootRule = new ReportGenerate();
@@ -29,16 +29,16 @@ public abstract class AbstractAndroidSingleTest extends DriverManager
     {
         configuration = new Configuration();
 
-        driver = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
+        mobile = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
     }
 
     @After
     public void tearDown()
     {
-        if (driver != null)
+        if (mobile != null)
         {
-            driver.closeApp();
-            driver.quit();
+            mobile.closeApp();
+            mobile.quit();
         }
     }
 }
