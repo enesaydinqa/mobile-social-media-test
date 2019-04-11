@@ -15,7 +15,7 @@ public class JSONCapability
                 .concat(System.getProperty("file.separator"))
                 .concat("SocialMediaTestDevices")
                 .concat(System.getProperty("file.separator"))
-                .concat(String.format("%sTestDevices.son", configuration.getOperator())));
+                .concat(String.format("%sTestDevices.json", configuration.getOperator())));
 
         String deviceCapability = ReadFile.readFile(deviceCapabilityJSON);
 

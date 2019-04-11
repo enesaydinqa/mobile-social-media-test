@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ad448a0-a0d3-46ab-a50b-9a39f1e2a93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/DeviceName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/DeviceName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidMultipleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidMultipleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/utils/StatusRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/utils/StatusRule.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="97">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -43,20 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/utils/ReportGenerate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="62" column="101" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -266,7 +249,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554976989515" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554978156861" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -327,17 +310,11 @@
       <updated>1554642468337</updated>
       <workItem from="1554833485638" duration="1811000" />
       <workItem from="1554918618406" duration="92000" />
-      <workItem from="1554975839112" duration="975000" />
+      <workItem from="1554975839112" duration="1892000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 37m 02s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 39m 07s.xml">
-      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.07 at 22h 40m 55s.xml">
       <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
     </history-entry>
@@ -362,9 +339,15 @@
     <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.11 at 12h 57m 30s.xml">
       <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.11 at 13h 00m 31s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstagramSingleDeviceTest_testSendImagePost - 2019.04.11 at 13h 01m 39s.xml">
+      <configuration name="InstagramSingleDeviceTest.testSendImagePost" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6628000" />
+    <option name="totallyTimeSpent" value="7545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="850" extended-state="6" />
@@ -615,20 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/utils/ReportGenerate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -639,10 +608,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidSingleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/JSONCapability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="97">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>
