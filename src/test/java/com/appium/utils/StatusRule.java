@@ -25,6 +25,7 @@ public class StatusRule extends TestWatcher
     @Override
     protected void failed(Throwable e, org.junit.runner.Description description)
     {
-        logger.info(String.format("TEST FAIL ... --> %s", description.getMethodName()));
+        logger.info("=================================================================");
+        logger.info(String.format("=====> TEST FAIL ... --> %s", description.getMethodName()));
     }
 }

@@ -9,10 +9,15 @@ public class JSONCapability
 {
     public DeviceCapabilities getDeviceCapability(Configuration configuration, String objectName)
     {
-        String deviceGetJSON = String.format(System.getProperty("user.dir")
-                .concat("/src/test/resources/%sTestDevices.json"), configuration.getOperator());
+        String deviceCapabilityJSON = String.format(System.getProperty("user.home")
+                .concat(System.getProperty("file.separator"))
+                .concat("MobileTest")
+                .concat(System.getProperty("file.separator"))
+                .concat("SocialMediaTestDevices")
+                .concat(System.getProperty("file.separator"))
+                .concat(String.format("%sTestDevices.son", configuration.getOperator())));
 
-        String deviceCapability = ReadFile.readFile(deviceGetJSON);
+        String deviceCapability = ReadFile.readFile(deviceCapabilityJSON);
 
         JSONObject obj = new JSONObject(deviceCapability);
 
