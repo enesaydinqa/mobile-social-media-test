@@ -2,12 +2,14 @@ package com.appium.mobile.test.instagram;
 
 import com.appium.client.Constants;
 import com.appium.context.AbstractAndroidSingleTest;
+import com.appium.context.Events;
 import com.appium.flag.MobilyInstagram;
 import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.FooterPage;
 import com.appium.pages.instagram.PostSendPage;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
@@ -18,6 +20,8 @@ import java.net.URISyntaxException;
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 {
+    private Logger logger = Logger.getLogger(InstagramSingleDeviceTest.class);
+
     private FooterPage footerPage;
     private PostSendPage postSendPage;
 
@@ -40,7 +44,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
 
-        getGeoLocation();
+        getGeoLocation(configuration.getMobileOneUID());
 
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);
@@ -60,7 +64,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
 
-        getGeoLocation();
+        getGeoLocation(configuration.getMobileOneUID());
 
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);

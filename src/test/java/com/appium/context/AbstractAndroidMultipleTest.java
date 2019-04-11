@@ -30,9 +30,9 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
     {
         configuration = new Configuration();
 
-        mobileOne = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
+        mobileOne = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
 
-        mobileSecond = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
+        mobileSecond = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
     }
 
     @After

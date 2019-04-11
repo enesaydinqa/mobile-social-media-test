@@ -8,6 +8,7 @@ import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.DirectMessagePage;
 import com.appium.pages.instagram.HomePage;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
@@ -18,6 +19,8 @@ import java.net.URISyntaxException;
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
 {
+    private Logger logger = Logger.getLogger(InstagramMultipleDeviceTest.class);
+
     private HomePage homePageOne;
     private HomePage homePageSecond;
     private DirectMessagePage directMessagePageOne;
@@ -36,8 +39,11 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendTextMessage()
+    public void testSendTextMessage() throws IOException, InterruptedException
     {
+        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
+        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
+
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
@@ -51,7 +57,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendPhotoMessage()
+    public void testSendPhotoMessage() throws IOException, InterruptedException
     {
         String mobileFilePath = String.format(
                 Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
@@ -59,6 +65,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         );
 
         pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
+
+        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
+        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
 
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
@@ -74,7 +83,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     }
 
     @Test
-    public void testSendVideoMessage()
+    public void testSendVideoMessage() throws IOException, InterruptedException
     {
         String mobileFilePath = String.format(
                 Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
@@ -82,6 +91,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         );
 
         pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
+
+        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
+        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
 
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);

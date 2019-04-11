@@ -1,8 +1,10 @@
 package com.appium.utils;
 
+import com.appium.client.parameter.DeviceName;
 import com.appium.context.AppInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,10 +16,12 @@ public class Configuration
 
     private Properties configProps = new Properties();
 
+    private AppInfo appInfo;
     private String testResultPath;
     private String operator;
     private String instagramReceiverUsername;
-    private AppInfo appInfo;
+    private String mobileOneUID;
+    private String mobileSecondUID;
 
     public Configuration() throws IOException
     {
@@ -27,6 +31,9 @@ public class Configuration
         this.instagramReceiverUsername = configProps.getProperty("instagramReceiverUsername");
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("testResultPath");
+
+        this.mobileOneUID = getDeviceUID(DeviceName.ONE_DEVICE);
+        this.mobileSecondUID = getDeviceUID(DeviceName.SECOND_DEVICE);
     }
 
     private void loadConfigProperties() throws IOException
@@ -67,6 +74,25 @@ public class Configuration
         return appInfo;
     }
 
+    private String getDeviceUID(DeviceName deviceName)
+    {
+        String devicesJson = String.format(System.getProperty("user.home")
+                .concat(System.getProperty("file.separator"))
+                .concat("MobileTest")
+                .concat(System.getProperty("file.separator"))
+                .concat("SocialMediaTestDevices")
+                .concat(System.getProperty("file.separator"))
+                .concat(String.format("%sTestDevices.json", getOperator())));
+
+        String deviceCapability = ReadFile.readFile(devicesJson);
+
+        JSONObject obj = new JSONObject(deviceCapability);
+
+        String uid = obj.getJSONObject(deviceName.getDeviceName()).getString("uid");
+
+        return uid;
+    }
+
     public String getInstagramReceiverUsername()
     {
         return instagramReceiverUsername;
@@ -95,5 +121,25 @@ public class Configuration
     public void setOperator(String operator)
     {
         this.operator = operator;
+    }
+
+    public String getMobileOneUID()
+    {
+        return mobileOneUID;
+    }
+
+    public void setMobileOneUID(String mobileOneUID)
+    {
+        this.mobileOneUID = mobileOneUID;
+    }
+
+    public String getMobileSecondUID()
+    {
+        return mobileSecondUID;
+    }
+
+    public void setMobileSecondUID(String mobileSecondUID)
+    {
+        this.mobileSecondUID = mobileSecondUID;
     }
 }

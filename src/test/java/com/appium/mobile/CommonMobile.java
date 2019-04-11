@@ -12,7 +12,7 @@ public interface CommonMobile
 
     boolean isDisplayed(AppiumDriver driver, MobileElement element);
 
-    String getGeoLocation() throws IOException, InterruptedException;
+    String getGeoLocation(String uid) throws IOException, InterruptedException;
 
     void sleep(Integer seconds) throws InterruptedException;
 
