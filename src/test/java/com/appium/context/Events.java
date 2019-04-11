@@ -107,7 +107,7 @@ public class Events implements CommonMobile
     @Override
     public String getGeoLocation(String uid) throws IOException, InterruptedException
     {
-        Process proc = Runtime.getRuntime().exec(String.format("adb %s shell dumpsys location", uid));
+        Process proc = Runtime.getRuntime().exec(String.format("adb -s %s shell dumpsys location", uid));
 
         StringBuilder processOutput = new StringBuilder();
 
