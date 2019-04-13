@@ -18,6 +18,7 @@ public class MainClass
         {
             case "INSTAGRAM":
                 result = JUnitCore.runClasses(InstagramSingleDeviceTest.class, InstagramMultipleDeviceTest.class);
+                break;
         }
 
         for (Failure failure : result.getFailures())
