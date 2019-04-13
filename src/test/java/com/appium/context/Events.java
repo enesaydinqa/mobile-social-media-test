@@ -55,7 +55,7 @@ public class Events implements CommonMobile
         }
     }
 
-    public void WaitAndSendKeys(AppiumDriver driver, MobileElement element, String Text)
+    public void waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text)
     {
         waitElementVisible(driver, element);
         element.sendKeys(Text);

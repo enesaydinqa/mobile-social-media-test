@@ -47,9 +47,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
-        WaitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
+        waitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
         waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
         waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
@@ -72,7 +72,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
@@ -98,7 +98,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        WaitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);

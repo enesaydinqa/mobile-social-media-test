@@ -68,7 +68,7 @@ public class ReportGenerate extends TestWatcher
 
         ExtentReports extent = new ExtentReports(reportName, false);
         extent.config().reportName("Mobicom Socia Media Tests");
-        extent.config().reportHeadline("Mo bicom Socia Media Tests");
+        extent.config().reportHeadline("Mobicom Socia Media Tests");
         return extent;
     }
 
