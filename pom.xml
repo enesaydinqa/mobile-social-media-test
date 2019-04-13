@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>Social Media Test</name>
     <description>Social Media Test</description>
+    <packaging>jar</packaging>
 
     <properties>
         <surefire.impl>surefire-junit47</surefire.impl>
@@ -94,7 +95,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.appium.mobile.test.MainClass</mainClass>
+                            <mainClass>com.appium.mobile.test.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
