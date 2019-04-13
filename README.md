@@ -19,6 +19,7 @@
 -Dtest.app.prop=APP_NAME
 -Doperator=OPERATOR_NAME
 -DtestResultPath=REPORT_PATH
+-Dtest.type=TESTNAME
 
 # Appium Server
 appium --address 127.0.0.1 --port 5555 --session-override --command-timeout 6000000
