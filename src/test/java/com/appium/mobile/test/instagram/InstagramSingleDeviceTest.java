@@ -48,7 +48,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
-        mobileDeviceOneUID = getGeoLocation(configuration.getMobileOneUID());
+        mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);
@@ -68,7 +68,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
         pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
-        mobileDeviceOneUID = getGeoLocation(configuration.getMobileOneUID());
+        mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);
