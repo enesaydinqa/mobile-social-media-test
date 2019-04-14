@@ -95,7 +95,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.appium.mobile.test.Main</mainClass>
+                            <mainClass>com.appium.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

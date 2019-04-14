@@ -1,29 +1,3 @@
 Manifest-Version: 1.0
-Class-Path: junit-4.12.jar opencv-3.2.0-1.jar httpcore-4.4.6.jar sqlit
- e-jdbc-3.8.11.1.jar spring-aop-5.0.5.RELEASE.jar spring-core-5.0.5.RE
- LEASE.jar hamcrest-core-1.3.jar slf4j-api-1.7.5.jar asm-6.0.jar byte-
- buddy-1.8.3.jar spring-beans-5.0.5.RELEASE.jar extentreports-2.41.2.j
- ar selenium-firefox-driver-3.12.0.jar animal-sniffer-annotations-1.14
- .jar commons-io-2.6.jar commons-beanutils-1.9.2.jar bson-3.0.4.jar ok
- http-3.0.1.jar okio-1.13.0.jar selenium-ie-driver-3.12.0.jar ant-1.9.
- 6.jar jsr305-1.3.9.jar commons-codec-1.10.jar j2objc-annotations-1.1.
- jar ant-launcher-1.9.6.jar commons-lang3-3.7.jar httpclient-4.5.3.jar
-  json-20160212.jar commons-validator-1.6.jar jsoup-1.8.3.jar commons-
- exec-1.3.jar selenium-java-3.12.0.jar cglib-3.2.6.jar error_prone_ann
- otations-2.1.3.jar selenium-remote-driver-3.12.0.jar selenium-safari-
- driver-3.12.0.jar spring-context-5.0.5.RELEASE.jar selenium-chrome-dr
- iver-3.12.0.jar gson-2.8.2.jar log4j-1.2.17.jar commons-collections-3
- .2.2.jar mongodb-driver-3.0.4.jar checker-compat-qual-2.0.0.jar aspec
- tjweaver-1.9.1.jar selenium-support-3.12.0.jar selenium-api-3.12.0.ja
- r selenium-opera-driver-3.12.0.jar spring-jcl-5.0.5.RELEASE.jar mongo
- db-driver-core-3.0.4.jar slf4j-log4j12-1.7.5.jar guava-23.6-jre.jar j
- ava-client-6.1.0.jar selenium-edge-driver-3.12.0.jar commons-digester
- -1.8.1.jar freemarker-2.3.23.jar spring-expression-5.0.5.RELEASE.jar 
- commons-logging-1.2.jar
-Main-Class: Main
-Built-By: Mobicom
-Build-Jdk: 1.7.0_79
-Created-By: Apache Maven 3.3.3
-Archiver-Version: Plexus Archiver
-
+Main-Class: com.appium.Main
 

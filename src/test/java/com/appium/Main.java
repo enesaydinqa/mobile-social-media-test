@@ -1,3 +1,5 @@
+package com.appium;
+
 import com.appium.mobile.test.instagram.InstagramMultipleDeviceTest;
 import com.appium.mobile.test.instagram.InstagramSingleDeviceTest;
 import org.junit.runner.JUnitCore;
@@ -10,7 +12,7 @@ public class Main
     {
         Result result = null;
 
-        String testType = System.getProperties().getProperty("test.type");
+        String testType = System.getProperties().getProperty("test.app.prop");
 
         switch (testType)
         {
