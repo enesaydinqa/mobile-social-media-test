@@ -64,7 +64,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
         logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
         logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
@@ -90,7 +90,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
         logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
         logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));

@@ -198,13 +198,21 @@ public class Events implements CommonMobile
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
-    public void pushFileMobile(AppiumDriver driver, String mobilePath, String projectFilePath)
+    public void pushFileMobile(AppiumDriver driver, String mobilePath, String fileName)
     {
         try
         {
-            String file = System.getProperty("user.dir").concat(projectFilePath);
+            String fileSeperator = System.getProperty("file.separator");
 
-            ((AndroidDriver) driver).pushFile(mobilePath, new File(file));
+            String uploadFile = System.getProperty("user.home")
+                    .concat(fileSeperator)
+                    .concat("MobileTest")
+                    .concat(fileSeperator)
+                    .concat("Media")
+                    .concat(fileSeperator)
+                    .concat(fileName);
+
+            ((AndroidDriver) driver).pushFile(mobilePath, new File(uploadFile));
 
             logger.info("=============================================================================================");
             logger.info(String.format("==> Successfull Push File Mobile : %s", mobilePath));

@@ -15,9 +15,9 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class SnapChatStoryTest extends AbstractAndroidSingleTest
+public class SnapchatStoryTest extends AbstractAndroidSingleTest
 {
-    private Logger logger = Logger.getLogger(SnapChatStoryTest.class);
+    private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
 
     private StoryPage storyPage;
 

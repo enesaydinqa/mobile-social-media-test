@@ -2,7 +2,6 @@ package com.appium.mobile.test.instagram;
 
 import com.appium.client.Constants;
 import com.appium.context.AbstractAndroidSingleTest;
-import com.appium.context.Events;
 import com.appium.flag.MobilyInstagram;
 import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
@@ -42,7 +41,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_PROJECT_PATH);
+        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
         getGeoLocation(configuration.getMobileOneUID());
 
@@ -62,7 +61,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_PROJECT_PATH);
+        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
         getGeoLocation(configuration.getMobileOneUID());
 
