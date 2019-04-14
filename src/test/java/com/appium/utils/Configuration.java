@@ -24,6 +24,7 @@ public class Configuration
     private String mobileSecondUID;
     private String mobileOneIMEI;
     private String mobileSecondIMEI;
+    private String getDeviceInfo;
 
     public Configuration() throws IOException
     {
@@ -80,24 +81,15 @@ public class Configuration
 
     private String getDeviceUID(DeviceName deviceName)
     {
-        String devicesJson = String.format(System.getProperty("user.home")
-                .concat(System.getProperty("file.separator"))
-                .concat("MobileTest")
-                .concat(System.getProperty("file.separator"))
-                .concat("SocialMediaTestDevices")
-                .concat(System.getProperty("file.separator"))
-                .concat(String.format("%sTestDevices.json", getOperator())));
-
-        String deviceCapability = ReadFile.readFile(devicesJson);
-
-        JSONObject obj = new JSONObject(deviceCapability);
-
-        String uid = obj.getJSONObject(deviceName.getDeviceName()).getString("uid");
-
-        return uid;
+        return getDeviceInfo(deviceName, "uid");
     }
 
     private String getDeviceIMEI(DeviceName deviceName)
+    {
+        return getDeviceInfo(deviceName, "deviceIMEI");
+    }
+
+    private String getDeviceInfo(DeviceName deviceName, String infoName)
     {
         String devicesJson = String.format(System.getProperty("user.home")
                 .concat(System.getProperty("file.separator"))
@@ -111,9 +103,9 @@ public class Configuration
 
         JSONObject obj = new JSONObject(deviceCapability);
 
-        String uid = obj.getJSONObject(deviceName.getDeviceName()).getString("deviceIMEI");
+        String info = obj.getJSONObject(deviceName.getDeviceName()).getString(infoName);
 
-        return uid;
+        return info;
     }
 
     public String getInstagramReceiverUsername()
