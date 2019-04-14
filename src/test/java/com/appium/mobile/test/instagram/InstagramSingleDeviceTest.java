@@ -16,7 +16,6 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 
 import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
 import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
@@ -35,7 +34,7 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
     public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
 
     @Before
-    public void init() throws IOException, URISyntaxException
+    public void init() throws Exception
     {
         super.init();
 

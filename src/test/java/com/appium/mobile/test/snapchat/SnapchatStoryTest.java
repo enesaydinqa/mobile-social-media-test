@@ -9,7 +9,6 @@ import org.junit.Test;
 import org.openqa.selenium.logging.LogEntry;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
@@ -22,7 +21,7 @@ public class SnapchatStoryTest extends AbstractAndroidSingleTest
     private StoryPage storyPage;
 
     @Before
-    public void init() throws IOException, URISyntaxException
+    public void init() throws Exception
     {
         super.init();
 

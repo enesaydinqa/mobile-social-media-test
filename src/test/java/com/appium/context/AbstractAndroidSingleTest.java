@@ -8,9 +8,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-
 import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
 import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
 
@@ -24,7 +21,7 @@ public abstract class AbstractAndroidSingleTest extends DriverManager
     public StatusRule statusRule = new StatusRule();
 
     @Before
-    public void init() throws URISyntaxException, IOException
+    public void init() throws Exception
     {
         configuration = new Configuration();
 
