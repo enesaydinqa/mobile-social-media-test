@@ -134,7 +134,7 @@ public class Configuration
         }
         else
         {
-            throw new Exception(String.format("Instagram Test User Not Set Because Illegal Operator Name [%s]", operator));
+            throw new Exception(String.format("instagram test user not set because illegal operator name [%s]", operator));
         }
     }
 
