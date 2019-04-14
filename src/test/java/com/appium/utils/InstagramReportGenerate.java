@@ -49,7 +49,9 @@ public class InstagramReportGenerate extends TestWatcher
         test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
 
         if (mobileDeviceSecondGeoLocation != null)
+        {
             test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
+        }
 
         flushReports(extent, test);
     }
