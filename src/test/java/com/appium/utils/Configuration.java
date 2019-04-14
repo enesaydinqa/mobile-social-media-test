@@ -120,13 +120,13 @@ public class Configuration
 
             return users;
         }
-        else if (operator.equals("MOBILY"))
+        else if (operator.equals("Mobily"))
         {
             String[] users = {configProps.getProperty("mobily.instagram.test.user1"), configProps.getProperty("mobily.instagram.test.user2")};
 
             return users;
         }
-        else if (operator.equals("ZAIN"))
+        else if (operator.equals("Zain"))
         {
             String[] users = {configProps.getProperty("zain.instagram.test.user1"), configProps.getProperty("zain.instagram.test.user2")};
 
