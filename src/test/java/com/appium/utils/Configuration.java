@@ -19,18 +19,19 @@ public class Configuration
     private AppInfo appInfo;
     private String testResultPath;
     private String operator;
-    private String instagramReceiverUsername;
     private String mobileOneUID;
     private String mobileSecondUID;
     private String mobileOneIMEI;
     private String mobileSecondIMEI;
+    private String instagramTestUser1;
+    private String instagramTestUser2;
+    private String instagramTestUserPassword;
 
-    public Configuration() throws IOException
+    public Configuration() throws Exception
     {
         loadConfigProperties();
 
         this.appInfo = getAppInfoProp();
-        this.instagramReceiverUsername = configProps.getProperty("instagramReceiverUsername");
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("testResultPath");
 
@@ -38,6 +39,10 @@ public class Configuration
         this.mobileSecondUID = getDeviceUID(DeviceName.SECOND_DEVICE);
         this.mobileOneIMEI = getDeviceIMEI(DeviceName.ONE_DEVICE);
         this.mobileSecondIMEI = getDeviceIMEI(DeviceName.SECOND_DEVICE);
+
+        this.instagramTestUser1 = getInstagramTestUser()[0];
+        this.instagramTestUser2 = getInstagramTestUser()[1];
+        this.instagramTestUserPassword = readInstagramTestUserPassword();
     }
 
     private void loadConfigProperties() throws IOException
@@ -107,14 +112,37 @@ public class Configuration
         return info;
     }
 
-    public String getInstagramReceiverUsername()
+    private String[] getInstagramTestUser() throws Exception
     {
-        return instagramReceiverUsername;
+        if (operator.equals("STC"))
+        {
+            String[] users = {configProps.getProperty("stc_instagram.test.user1"), configProps.getProperty("stc_instagram.test.user2")};
+
+            return users;
+        }
+        else if (operator.equals("Mobily"))
+        {
+            String[] users = {configProps.getProperty("mobily_instagram.test.user1"), configProps.getProperty("mobily_instagram.test.user2")};
+
+            return users;
+        }
+        else if (operator.equals("Zain"))
+        {
+            String[] users = {configProps.getProperty("zain_instagram.test.user1"), configProps.getProperty("zain_instagram.test.user2")};
+
+            return users;
+        }
+        else
+        {
+            throw new Exception(String.format("Instagram Test User Not Set Because Illegal Operator Name [%s]", operator));
+        }
     }
 
-    public void setInstagramReceiverUsername(String instagramReceiverUsername)
+    private String readInstagramTestUserPassword()
     {
-        this.instagramReceiverUsername = instagramReceiverUsername;
+        String instagramTestUserPassword = configProps.getProperty("instagram.test.user.password=");
+
+        return instagramTestUserPassword;
     }
 
     public String getTestResultPath()
@@ -175,5 +203,35 @@ public class Configuration
     public void setMobileSecondIMEI(String mobileSecondIMEI)
     {
         this.mobileSecondIMEI = mobileSecondIMEI;
+    }
+
+    public String getInstagramTestUser1()
+    {
+        return instagramTestUser1;
+    }
+
+    public void setInstagramTestUser1(String instagramTestUser1)
+    {
+        this.instagramTestUser1 = instagramTestUser1;
+    }
+
+    public String getInstagramTestUser2()
+    {
+        return instagramTestUser2;
+    }
+
+    public void setInstagramTestUser2(String instagramTestUser2)
+    {
+        this.instagramTestUser2 = instagramTestUser2;
+    }
+
+    public String getInstagramTestUserPassword()
+    {
+        return instagramTestUserPassword;
+    }
+
+    public void setInstagramTestUserPassword(String instagramTestUserPassword)
+    {
+        this.instagramTestUserPassword = instagramTestUserPassword;
     }
 }
