@@ -120,13 +120,13 @@ public class Configuration
 
             return users;
         }
-        else if (operator.equals("Mobily"))
+        else if (operator.equals("MOBILY"))
         {
             String[] users = {configProps.getProperty("mobily_instagram.test.user1"), configProps.getProperty("mobily_instagram.test.user2")};
 
             return users;
         }
-        else if (operator.equals("Zain"))
+        else if (operator.equals("ZAIN"))
         {
             String[] users = {configProps.getProperty("zain_instagram.test.user1"), configProps.getProperty("zain_instagram.test.user2")};
 
@@ -140,7 +140,7 @@ public class Configuration
 
     private String readInstagramTestUserPassword()
     {
-        String instagramTestUserPassword = configProps.getProperty("instagram.test.user.password=");
+        String instagramTestUserPassword = configProps.getProperty("instagram.test.user.password");
 
         return instagramTestUserPassword;
     }
