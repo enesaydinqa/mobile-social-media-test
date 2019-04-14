@@ -9,6 +9,7 @@ public class ReportInformation
     public static String mobileOneDeviceIMEI;
     public static String mobileSecondDeviceIMEI;
 
+
     /***********************************************
      * Under Veriables 'Instagram' Report Information
      ***********************************************/

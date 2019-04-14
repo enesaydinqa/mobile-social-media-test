@@ -60,9 +60,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
+
         clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
         sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-
         receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
@@ -89,9 +89,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
+
         clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
         sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-
         receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
@@ -118,9 +118,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);
+
         clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
         sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-
         receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
