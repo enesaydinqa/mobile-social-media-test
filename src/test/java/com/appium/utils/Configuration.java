@@ -24,7 +24,6 @@ public class Configuration
     private String mobileSecondUID;
     private String mobileOneIMEI;
     private String mobileSecondIMEI;
-    private String getDeviceInfo;
 
     public Configuration() throws IOException
     {

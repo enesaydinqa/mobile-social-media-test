@@ -2,12 +2,16 @@ package com.appium.utils;
 
 public class ReportInformation
 {
+    /***********************************************
+     * Under Veriables Generic Report Informations
+     ***********************************************/
+
     public static String mobileOneDeviceIMEI;
     public static String mobileSecondDeviceIMEI;
 
-    /*
-        INSTAGRAM
-     */
+    /***********************************************
+     * Under Veriables 'Instagram' Report Information
+     ***********************************************/
 
     public static String mobileDeviceOneGeoLocation;
     public static String mobileDeviceSecondGeoLocation;
