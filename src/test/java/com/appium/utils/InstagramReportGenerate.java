@@ -6,8 +6,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import java.io.IOException;
-
 import static com.appium.utils.ReportInformation.clickSendMessageTime;
 import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
 import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
@@ -29,7 +27,7 @@ public class InstagramReportGenerate extends TestWatcher
         {
             extent = createReport();
         }
-        catch (IOException e1)
+        catch (Exception e1)
         {
             e1.printStackTrace();
         }
@@ -51,7 +49,7 @@ public class InstagramReportGenerate extends TestWatcher
         {
             extent = createReport();
         }
-        catch (IOException e)
+        catch (Exception e)
         {
             e.printStackTrace();
         }
@@ -66,7 +64,7 @@ public class InstagramReportGenerate extends TestWatcher
     }
 
 
-    private ExtentReports createReport() throws IOException
+    private ExtentReports createReport() throws Exception
     {
         Configuration configuration = new Configuration();
 
