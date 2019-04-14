@@ -114,21 +114,16 @@ public class Configuration
 
     private String[] getInstagramTestUser() throws Exception
     {
-        if (operator.equals("STC"))
+        switch (operator)
         {
-            return new String[]{configProps.getProperty("stc.instagram.test.user1"), configProps.getProperty("stc.instagram.test.user2")};
-        }
-        else if (operator.equals("Mobily"))
-        {
-            return new String[]{configProps.getProperty("mobily.instagram.test.user1"), configProps.getProperty("mobily.instagram.test.user2")};
-        }
-        else if (operator.equals("Zain"))
-        {
-            return new String[]{configProps.getProperty("zain.instagram.test.user1"), configProps.getProperty("zain.instagram.test.user2")};
-        }
-        else
-        {
-            throw new Exception(String.format("instagram test user not set because illegal operator name [%s]", operator));
+            case "STC":
+                return new String[]{configProps.getProperty("stc.instagram.test.user1"), configProps.getProperty("stc.instagram.test.user2")};
+            case "Mobily":
+                return new String[]{configProps.getProperty("mobily.instagram.test.user1"), configProps.getProperty("mobily.instagram.test.user2")};
+            case "Zain":
+                return new String[]{configProps.getProperty("zain.instagram.test.user1"), configProps.getProperty("zain.instagram.test.user2")};
+            default:
+                throw new Exception(String.format("instagram test user not set because illegal operator name [%s]", operator));
         }
     }
 
