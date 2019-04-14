@@ -75,18 +75,33 @@ public class InstagramReportGenerate extends TestWatcher
     private void reportInformation(ExtentTest test)
     {
         if (mobileDeviceOneGeoLocation != null)
+        {
             test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
+            mobileDeviceOneGeoLocation = null;
+        }
 
         if (mobileDeviceSecondGeoLocation != null)
+        {
             test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
+            mobileDeviceSecondGeoLocation = null;
+        }
 
         if (instagramPostShareButtonClickTime != null)
+        {
             test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", instagramPostShareButtonClickTime));
+            instagramPostShareButtonClickTime = null;
+        }
 
         if (instagramSharedImagePostTime != null)
+        {
             test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", instagramSharedImagePostTime));
+            instagramSharedImagePostTime = null;
+        }
 
         if (instagramSharedVideoPostTime != null)
+        {
             test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", instagramSharedVideoPostTime));
+            instagramSharedVideoPostTime = null;
+        }
     }
 }
