@@ -47,10 +47,10 @@ public class InstagramReportGenerate extends TestWatcher
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
         test.log(LogStatus.PASS, "Test Passed");
-        test.log(LogStatus.INFO, String.format("One Mobile : %s", mobileDeviceOneGeoLocation));
+        test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
 
-        if (StringUtils.isNotBlank(mobileDeviceOneGeoLocation))
-            test.log(LogStatus.INFO, String.format("Second Mobile : %s", mobileDeviceSecondGeoLocation));
+        if (mobileDeviceOneGeoLocation != null)
+            test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
 
         flushReports(extent, test);
     }
