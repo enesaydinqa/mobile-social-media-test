@@ -1,7 +1,7 @@
 package com.appium.utils;
 
+import com.appium.client.parameter.AppInfo;
 import com.appium.client.parameter.DeviceName;
-import com.appium.context.AppInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;

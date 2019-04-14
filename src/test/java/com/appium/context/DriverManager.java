@@ -1,6 +1,7 @@
 package com.appium.context;
 
 import com.appium.client.objects.DeviceCapabilities;
+import com.appium.client.parameter.AppInfo;
 import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;

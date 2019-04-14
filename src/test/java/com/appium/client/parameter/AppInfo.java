@@ -1,7 +1,4 @@
-package com.appium.context;
-
-import com.appium.client.parameter.AppActivity;
-import com.appium.client.parameter.AppPackage;
+package com.appium.client.parameter;
 
 public enum AppInfo
 {
