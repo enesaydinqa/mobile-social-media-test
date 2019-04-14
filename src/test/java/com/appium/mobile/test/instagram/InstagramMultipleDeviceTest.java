@@ -7,9 +7,11 @@ import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.DirectMessagePage;
 import com.appium.pages.instagram.HomePage;
+import com.appium.utils.InstagramReportGenerate;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -25,6 +27,9 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     private HomePage homePageSecond;
     private DirectMessagePage directMessagePageOne;
     private DirectMessagePage directMessagePageSecond;
+
+    @Rule
+    public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
 
     @Before
     public void init() throws IOException, URISyntaxException

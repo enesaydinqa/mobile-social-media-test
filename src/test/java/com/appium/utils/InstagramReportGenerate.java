@@ -8,7 +8,7 @@ import org.junit.runner.Description;
 
 import java.io.IOException;
 
-public class ReportGenerate extends TestWatcher
+public class InstagramReportGenerate extends TestWatcher
 {
     @Override
     protected void failed(Throwable e, Description description)
@@ -44,6 +44,8 @@ public class ReportGenerate extends TestWatcher
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
         test.log(LogStatus.PASS, "Test Passed");
+        test.log(LogStatus.INFO, "");
+
         flushReports(extent, test);
     }
 
@@ -52,14 +54,12 @@ public class ReportGenerate extends TestWatcher
     {
         Configuration configuration = new Configuration();
 
-        String reportName = System.getProperty("user.home") // /users/user.name
-                .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator"))) // /Desktop/
-                .concat(configuration.getOperator().concat("-")) // STC
+        String reportName = System.getProperty("user.home")
+                .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator")))
+                .concat(configuration.getOperator().concat("-"))
                 .concat("Test-Result.html");
 
         ExtentReports extent = new ExtentReports(reportName, false);
-        extent.config().reportName("Mobicom Socia Media Tests");
-        extent.config().reportHeadline("Mobicom Socia Media Tests");
         return extent;
     }
 

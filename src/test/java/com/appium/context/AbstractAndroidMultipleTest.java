@@ -2,7 +2,6 @@ package com.appium.context;
 
 import com.appium.client.parameter.DeviceName;
 import com.appium.utils.Configuration;
-import com.appium.utils.ReportGenerate;
 import com.appium.utils.StatusRule;
 import io.appium.java_client.AppiumDriver;
 import org.junit.After;
@@ -18,9 +17,6 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
     protected static AppiumDriver mobileSecond;
 
     public static Configuration configuration;
-
-    @Rule
-    public ReportGenerate screenShootRule = new ReportGenerate();
 
     @Rule
     public StatusRule statusRule = new StatusRule();

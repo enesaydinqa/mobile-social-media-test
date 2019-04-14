@@ -7,9 +7,11 @@ import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.FooterPage;
 import com.appium.pages.instagram.PostSendPage;
+import com.appium.utils.InstagramReportGenerate;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -23,6 +25,9 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
 
     private FooterPage footerPage;
     private PostSendPage postSendPage;
+
+    @Rule
+    public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
 
     @Before
     public void init() throws IOException, URISyntaxException
