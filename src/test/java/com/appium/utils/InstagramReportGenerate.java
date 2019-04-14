@@ -3,7 +3,6 @@ package com.appium.utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
@@ -49,7 +48,7 @@ public class InstagramReportGenerate extends TestWatcher
         test.log(LogStatus.PASS, "Test Passed");
         test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
 
-        if (mobileDeviceOneGeoLocation != null)
+        if (mobileDeviceSecondGeoLocation != null)
             test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
 
         flushReports(extent, test);
