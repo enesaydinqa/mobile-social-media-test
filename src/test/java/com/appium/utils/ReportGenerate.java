@@ -8,14 +8,9 @@ import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ReportGenerate extends TestWatcher
 {
-    private static final DateFormat dateFormat = new SimpleDateFormat(DateFormatType.REPORT_DATE_FORMAT_TYPE.dateFormat);
-
     @Override
     protected void failed(Throwable e, Description description)
     {
@@ -49,6 +44,7 @@ public class ReportGenerate extends TestWatcher
 
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
+        test.log(LogStatus.PASS, "Test Passed");
         flushReports(extent, test);
     }
 
