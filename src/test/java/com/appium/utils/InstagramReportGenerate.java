@@ -3,10 +3,13 @@ package com.appium.utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
 import java.io.IOException;
+
+import static com.appium.context.DriverManager.*;
 
 public class InstagramReportGenerate extends TestWatcher
 {
@@ -44,7 +47,10 @@ public class InstagramReportGenerate extends TestWatcher
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
         test.log(LogStatus.PASS, "Test Passed");
-        test.log(LogStatus.INFO, "");
+        test.log(LogStatus.INFO, String.format("One Mobile : %s", mobileDeviceOneGeoLocation));
+
+        if (StringUtils.isNotBlank(mobileDeviceOneGeoLocation))
+            test.log(LogStatus.INFO, String.format("Second Mobile : %s", mobileDeviceSecondGeoLocation));
 
         flushReports(extent, test);
     }

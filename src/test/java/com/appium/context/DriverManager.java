@@ -14,6 +14,11 @@ public abstract class DriverManager extends Events
 {
     protected static AppiumDriver driver;
 
+    public static String mobileDeviceOneUID;
+    public static String mobileDeviceOneGeoLocation;
+    public static String mobileDeviceSecondUID;
+    public static String mobileDeviceSecondGeoLocation;
+
     public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException
     {
         JSONCapability jsonCapability = new JSONCapability();

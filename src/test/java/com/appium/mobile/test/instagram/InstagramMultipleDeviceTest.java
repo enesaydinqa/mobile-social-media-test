@@ -46,8 +46,11 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     @Test
     public void testSendTextMessage() throws IOException, InterruptedException
     {
-        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
-        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
+        mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
+        mobileDeviceSecondGeoLocation = getGeoLocation(configuration.getMobileSecondUID());
+
+        logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
+        logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
@@ -71,8 +74,11 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
 
         pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
-        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
-        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
+        mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
+        mobileDeviceSecondGeoLocation = getGeoLocation(configuration.getMobileSecondUID());
+
+        logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
+        logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
@@ -97,8 +103,11 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
 
         pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
-        logger.info(String.format("One Device : %s", getGeoLocation(configuration.getMobileOneUID())));
-        logger.info(String.format("Second Device : %s", getGeoLocation(configuration.getMobileSecondUID())));
+        mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
+        mobileDeviceSecondGeoLocation = getGeoLocation(configuration.getMobileSecondUID());
+
+        logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
+        logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
