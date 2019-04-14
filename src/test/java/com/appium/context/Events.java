@@ -170,15 +170,21 @@ public class Events implements CommonMobile
         waitElementVisible(driver, element, false, null);
     }
 
-    public void waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description)
+    public String waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description)
     {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(element));
 
+        String visibleDate = null;
+
         if (log)
         {
-            logger.info(description + " : " + getCurrentDate(DateFormatType.FULL_DATE.dateFormat));
+            visibleDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+            logger.info(description + " : " + visibleDate);
         }
+
+        return visibleDate;
     }
 
     public String waitNotVisible(AppiumDriver driver, By element, Boolean log, String description)

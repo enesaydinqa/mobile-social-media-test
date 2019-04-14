@@ -11,4 +11,7 @@ public class ReportInformation
     public static String instagramPostShareButtonClickTime;
     public static String instagramSharedImagePostTime;
     public static String instagramSharedVideoPostTime;
+    public static String clickSendMessageTime;
+    public static String sendMessageTime;
+    public static String receiveMessageTime;
 }

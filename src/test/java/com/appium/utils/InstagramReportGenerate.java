@@ -103,5 +103,23 @@ public class InstagramReportGenerate extends TestWatcher
             test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", instagramSharedVideoPostTime));
             instagramSharedVideoPostTime = null;
         }
+
+        if (clickSendMessageTime != null)
+        {
+            test.log(LogStatus.INFO, String.format("Click Send Message Time : %s", clickSendMessageTime));
+            clickSendMessageTime = null;
+        }
+
+        if (sendMessageTime != null)
+        {
+            test.log(LogStatus.INFO, String.format("Send Message Time : %s", sendMessageTime));
+            sendMessageTime = null;
+        }
+
+        if (receiveMessageTime != null)
+        {
+            test.log(LogStatus.INFO, String.format("Receive Message Time : %s", receiveMessageTime));
+            receiveMessageTime = null;
+        }
     }
 }

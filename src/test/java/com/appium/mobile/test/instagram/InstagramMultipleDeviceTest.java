@@ -60,10 +60,10 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
-        waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
-        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
@@ -89,10 +89,10 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
-        waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
@@ -118,10 +118,10 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);
-        waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
+        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
 
-        waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
 }
