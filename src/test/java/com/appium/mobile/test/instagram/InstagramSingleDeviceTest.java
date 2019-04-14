@@ -18,7 +18,10 @@ import org.junit.experimental.categories.Category;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
+import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
+import static com.appium.utils.ReportInformation.instagramSharedVideoPostTime;
+import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
 
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest

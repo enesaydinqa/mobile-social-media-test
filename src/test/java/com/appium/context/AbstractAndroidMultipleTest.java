@@ -8,7 +8,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 
-
 import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
 import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
 

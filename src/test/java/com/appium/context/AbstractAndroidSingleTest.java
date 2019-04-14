@@ -11,7 +11,8 @@ import org.junit.Rule;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
+import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
 
 public abstract class AbstractAndroidSingleTest extends DriverManager
 {

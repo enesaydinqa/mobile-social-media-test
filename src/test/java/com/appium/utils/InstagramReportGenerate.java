@@ -8,7 +8,16 @@ import org.junit.runner.Description;
 
 import java.io.IOException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.clickSendMessageTime;
+import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
+import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
+import static com.appium.utils.ReportInformation.instagramSharedVideoPostTime;
+import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
+import static com.appium.utils.ReportInformation.mobileDeviceSecondGeoLocation;
+import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
+import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
+import static com.appium.utils.ReportInformation.receiveMessageTime;
+import static com.appium.utils.ReportInformation.sendMessageTime;
 
 public class InstagramReportGenerate extends TestWatcher
 {

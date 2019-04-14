@@ -16,9 +16,12 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.clickSendMessageTime;
+import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
+import static com.appium.utils.ReportInformation.mobileDeviceSecondGeoLocation;
+import static com.appium.utils.ReportInformation.receiveMessageTime;
+import static com.appium.utils.ReportInformation.sendMessageTime;
 
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
@@ -34,7 +37,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
 
     @Before
-    public void init() throws IOException, URISyntaxException
+    public void init() throws Exception
     {
         super.init();
 
@@ -57,7 +60,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
 
@@ -85,7 +88,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
@@ -114,7 +117,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
         waitAndClick(mobileOne, homePageOne.messageButton);
         waitAndClick(mobileSecond, homePageSecond.messageButton);
         waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramReceiverUsername());
+        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
         waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
         waitAndClick(mobileOne, directMessagePageOne.galleryButton);
         waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);
