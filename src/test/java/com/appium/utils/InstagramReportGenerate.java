@@ -8,7 +8,7 @@ import org.junit.runner.Description;
 
 import java.io.IOException;
 
-import static com.appium.context.DriverManager.*;
+import static com.appium.utils.ReportInformation.*;
 
 public class InstagramReportGenerate extends TestWatcher
 {

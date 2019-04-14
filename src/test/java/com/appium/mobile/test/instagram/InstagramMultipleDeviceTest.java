@@ -18,6 +18,8 @@ import org.junit.experimental.categories.Category;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+import static com.appium.utils.ReportInformation.*;
+
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
 {
