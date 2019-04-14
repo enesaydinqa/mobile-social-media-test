@@ -11,6 +11,8 @@ import org.junit.Rule;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+import static com.appium.utils.ReportInformation.*;
+
 public abstract class AbstractAndroidSingleTest extends DriverManager
 {
     protected static AppiumDriver mobile;
@@ -26,6 +28,9 @@ public abstract class AbstractAndroidSingleTest extends DriverManager
         configuration = new Configuration();
 
         mobile = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
+
+        mobileOneDeviceIMEI = configuration.getMobileOneIMEI();
+        mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
     }
 
     @After

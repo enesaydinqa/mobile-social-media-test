@@ -26,7 +26,11 @@ public class InstagramReportGenerate extends TestWatcher
         }
 
         ExtentTest test = extent.startTest(description.getDisplayName());
+        test.log(LogStatus.FAIL, "Test Failed");
         test.log(LogStatus.FAIL, "Stack Trace : " + e.toString());
+
+        reportInformation(test);
+
         flushReports(extent, test);
     }
 

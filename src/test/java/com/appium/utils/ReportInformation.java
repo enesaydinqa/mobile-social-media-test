@@ -2,8 +2,11 @@ package com.appium.utils;
 
 public class ReportInformation
 {
+    public static String mobileOneDeviceIMEI;
+    public static String mobileSecondDeviceIMEI;
+
     /*
-    INSTAGRAM
+        INSTAGRAM
      */
 
     public static String mobileDeviceOneGeoLocation;

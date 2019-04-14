@@ -22,6 +22,8 @@ public class Configuration
     private String instagramReceiverUsername;
     private String mobileOneUID;
     private String mobileSecondUID;
+    private String mobileOneIMEI;
+    private String mobileSecondIMEI;
 
     public Configuration() throws IOException
     {
@@ -34,6 +36,8 @@ public class Configuration
 
         this.mobileOneUID = getDeviceUID(DeviceName.ONE_DEVICE);
         this.mobileSecondUID = getDeviceUID(DeviceName.SECOND_DEVICE);
+        this.mobileOneIMEI = getDeviceIMEI(DeviceName.ONE_DEVICE);
+        this.mobileSecondIMEI = getDeviceIMEI(DeviceName.SECOND_DEVICE);
     }
 
     private void loadConfigProperties() throws IOException
@@ -93,6 +97,25 @@ public class Configuration
         return uid;
     }
 
+    private String getDeviceIMEI(DeviceName deviceName)
+    {
+        String devicesJson = String.format(System.getProperty("user.home")
+                .concat(System.getProperty("file.separator"))
+                .concat("MobileTest")
+                .concat(System.getProperty("file.separator"))
+                .concat("SocialMediaTestDevices")
+                .concat(System.getProperty("file.separator"))
+                .concat(String.format("%sTestDevices.json", getOperator())));
+
+        String deviceCapability = ReadFile.readFile(devicesJson);
+
+        JSONObject obj = new JSONObject(deviceCapability);
+
+        String uid = obj.getJSONObject(deviceName.getDeviceName()).getString("deviceIMEI");
+
+        return uid;
+    }
+
     public String getInstagramReceiverUsername()
     {
         return instagramReceiverUsername;
@@ -141,5 +164,25 @@ public class Configuration
     public void setMobileSecondUID(String mobileSecondUID)
     {
         this.mobileSecondUID = mobileSecondUID;
+    }
+
+    public String getMobileOneIMEI()
+    {
+        return mobileOneIMEI;
+    }
+
+    public void setMobileOneIMEI(String mobileOneIMEI)
+    {
+        this.mobileOneIMEI = mobileOneIMEI;
+    }
+
+    public String getMobileSecondIMEI()
+    {
+        return mobileSecondIMEI;
+    }
+
+    public void setMobileSecondIMEI(String mobileSecondIMEI)
+    {
+        this.mobileSecondIMEI = mobileSecondIMEI;
     }
 }
