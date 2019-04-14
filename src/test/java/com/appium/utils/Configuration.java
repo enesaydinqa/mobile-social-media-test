@@ -116,19 +116,19 @@ public class Configuration
     {
         if (operator.equals("STC"))
         {
-            String[] users = {configProps.getProperty("stc_instagram.test.user1"), configProps.getProperty("stc_instagram.test.user2")};
+            String[] users = {configProps.getProperty("stc.instagram.test.user1"), configProps.getProperty("stc.instagram.test.user2")};
 
             return users;
         }
         else if (operator.equals("MOBILY"))
         {
-            String[] users = {configProps.getProperty("mobily_instagram.test.user1"), configProps.getProperty("mobily_instagram.test.user2")};
+            String[] users = {configProps.getProperty("mobily.instagram.test.user1"), configProps.getProperty("mobily.instagram.test.user2")};
 
             return users;
         }
         else if (operator.equals("ZAIN"))
         {
-            String[] users = {configProps.getProperty("zain_instagram.test.user1"), configProps.getProperty("zain_instagram.test.user2")};
+            String[] users = {configProps.getProperty("zain.instagram.test.user1"), configProps.getProperty("zain.instagram.test.user2")};
 
             return users;
         }
