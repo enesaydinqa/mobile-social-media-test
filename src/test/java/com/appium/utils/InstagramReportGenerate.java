@@ -78,6 +78,18 @@ public class InstagramReportGenerate extends TestWatcher
 
     private void reportInformation(ExtentTest test)
     {
+        if (mobileOneDeviceIMEI != null)
+        {
+            test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", mobileOneDeviceIMEI));
+            mobileOneDeviceIMEI = null;
+        }
+
+        if (mobileSecondDeviceIMEI != null)
+        {
+            test.log(LogStatus.INFO, String.format("Second Mobile IMEI : %s", mobileSecondDeviceIMEI));
+            mobileSecondDeviceIMEI = null;
+        }
+
         if (mobileDeviceOneGeoLocation != null)
         {
             test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
