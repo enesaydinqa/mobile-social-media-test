@@ -55,9 +55,9 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);
         waitAndClick(mobile, postSendPage.nextTitle);
-        waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramPostShareButtonClickTime = waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
 
-        waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
+        instagramSharedImagePostTime = waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
     }
 
     @Test
@@ -75,8 +75,8 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
         waitAndClick(mobile, footerPage.cameraButton);
         waitAndClick(mobile, postSendPage.nextTitle);
         waitAndClick(mobile, postSendPage.nextTitle);
-        waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramPostShareButtonClickTime =  waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
 
-        waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
+        instagramSharedVideoPostTime = waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
     }
 }

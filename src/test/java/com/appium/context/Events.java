@@ -36,8 +36,10 @@ public class Events implements CommonMobile
         waitAndClick(driver, element, false, null);
     }
 
-    public void waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description)
+    public String waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description)
     {
+        String clickDate = null;
+
         try
         {
             waitElementToBeClickable(driver, element);
@@ -46,13 +48,17 @@ public class Events implements CommonMobile
 
             if (log)
             {
-                logger.info(description + " : " + getCurrentDate(DateFormatType.FULL_DATE.dateFormat));
+                clickDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+                logger.info(description + " : " + clickDate);
             }
         }
         catch (Exception ex)
         {
             ex.printStackTrace();
         }
+
+        return clickDate;
     }
 
     public void waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text)
@@ -175,15 +181,21 @@ public class Events implements CommonMobile
         }
     }
 
-    public void waitNotVisible(AppiumDriver driver, By element, Boolean log, String description)
+    public String waitNotVisible(AppiumDriver driver, By element, Boolean log, String description)
     {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
 
+        String notVisibleDate = null;
+
         if (log)
         {
-            logger.info(description + " : " + getCurrentDate(DateFormatType.FULL_DATE.dateFormat));
+            notVisibleDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+            logger.info(description + " : " + notVisibleDate);
         }
+
+        return notVisibleDate;
     }
 
     public void waitElementToBeClickable(AppiumDriver driver, MobileElement element)

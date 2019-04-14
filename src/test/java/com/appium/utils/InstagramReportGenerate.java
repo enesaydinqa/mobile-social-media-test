@@ -46,12 +46,8 @@ public class InstagramReportGenerate extends TestWatcher
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
         test.log(LogStatus.PASS, "Test Passed");
-        test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
 
-        if (mobileDeviceSecondGeoLocation != null)
-        {
-            test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
-        }
+        reportInformation(test);
 
         flushReports(extent, test);
     }
@@ -74,5 +70,23 @@ public class InstagramReportGenerate extends TestWatcher
     {
         extent.endTest(test);
         extent.flush();
+    }
+
+    private void reportInformation(ExtentTest test)
+    {
+        if (mobileDeviceOneGeoLocation != null)
+            test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
+
+        if (mobileDeviceSecondGeoLocation != null)
+            test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
+
+        if (instagramPostShareButtonClickTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", instagramPostShareButtonClickTime));
+
+        if (instagramSharedImagePostTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", instagramSharedImagePostTime));
+
+        if (instagramSharedVideoPostTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", instagramSharedVideoPostTime));
     }
 }
