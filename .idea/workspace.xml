@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad448a0-a0d3-46ab-a50b-9a39f1e2a93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/social_media_testing_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/social_media_testing_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -137,6 +133,24 @@
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="social_media_testing_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,7 +216,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555231736194" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555233386266" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -277,7 +291,7 @@
       <workItem from="1554975839112" duration="5985000" />
       <workItem from="1555092878312" duration="3671000" />
       <workItem from="1555231161201" duration="49000" />
-      <workItem from="1555231211715" duration="509000" />
+      <workItem from="1555231211715" duration="1323000" />
     </task>
     <servers />
   </component>
@@ -314,13 +328,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18286000" />
+    <option name="totallyTimeSpent" value="19100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2918455" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2918455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -660,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -674,7 +688,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.15522876" />
+                <option value="0.2" />
                 <option value="0.5" />
               </list>
             </option>
