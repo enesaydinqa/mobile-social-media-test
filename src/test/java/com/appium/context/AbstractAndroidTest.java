@@ -34,12 +34,11 @@ public abstract class AbstractAndroidTest extends DriverManager
         mobileOne = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
 
         mobileOneDeviceIMEI = configuration.getMobileOneIMEI();
+        mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
 
         if (multipleDevice)
         {
             mobileSecond = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
-
-            mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
         }
 
     }
