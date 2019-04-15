@@ -88,7 +88,7 @@ public class InstagramReportGenerate extends TestWatcher
         if (mobileOneDeviceIMEI != null)
             test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", mobileOneDeviceIMEI));
 
-        if (mobileOneDeviceIMEI != null)
+        if (mobileSecondDeviceIMEI != null)
             test.log(LogStatus.INFO, String.format("Second Mobile IMEI : %s", mobileSecondDeviceIMEI));
 
         if (mobileDeviceOneGeoLocation != null)
