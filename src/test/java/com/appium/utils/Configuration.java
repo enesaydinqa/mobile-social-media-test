@@ -23,8 +23,8 @@ public class Configuration
     private String mobileSecondUID;
     private String mobileOneIMEI;
     private String mobileSecondIMEI;
-    private String instagramTestUser1;
-    private String instagramTestUser2;
+    private String firstInstagramTestUser;
+    private String secondInstagramTestUser;
     private String instagramTestUserPassword;
 
     public Configuration() throws Exception
@@ -40,8 +40,8 @@ public class Configuration
         this.mobileOneIMEI = getDeviceIMEI(DeviceName.ONE_DEVICE);
         this.mobileSecondIMEI = getDeviceIMEI(DeviceName.SECOND_DEVICE);
 
-        this.instagramTestUser1 = getInstagramTestUser()[0];
-        this.instagramTestUser2 = getInstagramTestUser()[1];
+        this.firstInstagramTestUser = getInstagramTestUser()[0];
+        this.secondInstagramTestUser = getInstagramTestUser()[1];
         this.instagramTestUserPassword = readInstagramTestUserPassword();
     }
 
@@ -196,24 +196,24 @@ public class Configuration
         this.mobileSecondIMEI = mobileSecondIMEI;
     }
 
-    public String getInstagramTestUser1()
+    public String getFirstInstagramTestUser()
     {
-        return instagramTestUser1;
+        return firstInstagramTestUser;
     }
 
-    public void setInstagramTestUser1(String instagramTestUser1)
+    public void setFirstInstagramTestUser(String firstInstagramTestUser)
     {
-        this.instagramTestUser1 = instagramTestUser1;
+        this.firstInstagramTestUser = firstInstagramTestUser;
     }
 
-    public String getInstagramTestUser2()
+    public String getSecondInstagramTestUser()
     {
-        return instagramTestUser2;
+        return secondInstagramTestUser;
     }
 
-    public void setInstagramTestUser2(String instagramTestUser2)
+    public void setSecondInstagramTestUser(String secondInstagramTestUser)
     {
-        this.instagramTestUser2 = instagramTestUser2;
+        this.secondInstagramTestUser = secondInstagramTestUser;
     }
 
     public String getInstagramTestUserPassword()

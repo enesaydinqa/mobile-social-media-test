@@ -38,8 +38,8 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     {
         super.init();
 
-        footerPage = new FooterPage(mobileOne);
-        postSendPage = new PostSendPage(mobileOne);
+        footerPage = new FooterPage(firstMobile);
+        postSendPage = new PostSendPage(firstMobile);
     }
 
     @Test
@@ -50,16 +50,16 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
+        pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
-        waitAndClick(mobileOne, footerPage.cameraButton);
-        waitAndClick(mobileOne, postSendPage.nextTitle);
-        waitAndClick(mobileOne, postSendPage.nextTitle);
+        waitAndClick(firstMobile, footerPage.cameraButton);
+        waitAndClick(firstMobile, postSendPage.nextTitle);
+        waitAndClick(firstMobile, postSendPage.nextTitle);
 
-        instagramPostShareButtonClickTime = waitAndClick(mobileOne, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
-        instagramSharedImagePostTime = waitNotVisible(mobileOne, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
+        instagramPostShareButtonClickTime = waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramSharedImagePostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
     }
 
     @Test
@@ -70,15 +70,15 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
+        pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
-        waitAndClick(mobileOne, footerPage.cameraButton);
-        waitAndClick(mobileOne, postSendPage.nextTitle);
-        waitAndClick(mobileOne, postSendPage.nextTitle);
+        waitAndClick(firstMobile, footerPage.cameraButton);
+        waitAndClick(firstMobile, postSendPage.nextTitle);
+        waitAndClick(firstMobile, postSendPage.nextTitle);
 
-        instagramPostShareButtonClickTime =  waitAndClick(mobileOne, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
-        instagramSharedVideoPostTime = waitNotVisible(mobileOne, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
+        instagramPostShareButtonClickTime =  waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramSharedVideoPostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
     }
 }

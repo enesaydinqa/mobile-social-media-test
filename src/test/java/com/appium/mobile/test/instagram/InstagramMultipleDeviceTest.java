@@ -41,11 +41,11 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     {
         super.init(true);
 
-        homePageOne = new HomePage(mobileOne);
-        directMessagePageOne = new DirectMessagePage(mobileOne);
+        homePageOne = new HomePage(firstMobile);
+        directMessagePageOne = new DirectMessagePage(firstMobile);
 
-        homePageSecond = new HomePage(mobileSecond);
-        directMessagePageSecond = new DirectMessagePage(mobileSecond);
+        homePageSecond = new HomePage(secondMobile);
+        directMessagePageSecond = new DirectMessagePage(secondMobile);
     }
 
     @Test
@@ -57,16 +57,16 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
-        waitAndClick(mobileOne, homePageOne.messageButton);
-        waitAndClick(mobileSecond, homePageSecond.messageButton);
-        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
-        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
-        waitAndSendKeys(mobileOne, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
+        waitAndClick(firstMobile, homePageOne.messageButton);
+        waitAndClick(secondMobile, homePageSecond.messageButton);
+        waitAndClick(firstMobile, directMessagePageOne.newMessageButton);
+        waitAndSendKeys(firstMobile, directMessagePageOne.searchText, configuration.getSecondInstagramTestUser());
+        waitAndClick(firstMobile, directMessagePageOne.searchResultUser);
+        waitAndSendKeys(firstMobile, directMessagePageOne.messageText, RandomStringUtils.randomAlphabetic(15));
 
-        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
-        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        clickSendMessageTime = waitAndClick(firstMobile, directMessagePageOne.messageSendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(firstMobile, directMessagePageOne.sendImage, true, "Send Message Time");
+        receiveMessageTime = waitElementVisible(secondMobile, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
@@ -77,7 +77,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
+        pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
         mobileDeviceSecondGeoLocation = getGeoLocation(configuration.getMobileSecondUID());
@@ -85,17 +85,17 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
-        waitAndClick(mobileOne, homePageOne.messageButton);
-        waitAndClick(mobileSecond, homePageSecond.messageButton);
-        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
-        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
-        waitAndClick(mobileOne, directMessagePageOne.galleryButton);
-        waitAndClick(mobileOne, directMessagePageOne.photoThumbnail);
+        waitAndClick(firstMobile, homePageOne.messageButton);
+        waitAndClick(secondMobile, homePageSecond.messageButton);
+        waitAndClick(firstMobile, directMessagePageOne.newMessageButton);
+        waitAndSendKeys(firstMobile, directMessagePageOne.searchText, configuration.getSecondInstagramTestUser());
+        waitAndClick(firstMobile, directMessagePageOne.searchResultUser);
+        waitAndClick(firstMobile, directMessagePageOne.galleryButton);
+        waitAndClick(firstMobile, directMessagePageOne.photoThumbnail);
 
-        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        clickSendMessageTime = waitAndClick(firstMobile, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(firstMobile, directMessagePageOne.sendImage, true, "Send Message Time");
+        receiveMessageTime = waitElementVisible(secondMobile, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
     @Test
@@ -106,7 +106,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
+        pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
         mobileDeviceSecondGeoLocation = getGeoLocation(configuration.getMobileSecondUID());
@@ -114,17 +114,17 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
-        waitAndClick(mobileOne, homePageOne.messageButton);
-        waitAndClick(mobileSecond, homePageSecond.messageButton);
-        waitAndClick(mobileOne, directMessagePageOne.newMessageButton);
-        waitAndSendKeys(mobileOne, directMessagePageOne.searchText, configuration.getInstagramTestUser2());
-        waitAndClick(mobileOne, directMessagePageOne.searchResultUser);
-        waitAndClick(mobileOne, directMessagePageOne.galleryButton);
-        waitAndClick(mobileOne, directMessagePageOne.videoThumbnail);
+        waitAndClick(firstMobile, homePageOne.messageButton);
+        waitAndClick(secondMobile, homePageSecond.messageButton);
+        waitAndClick(firstMobile, directMessagePageOne.newMessageButton);
+        waitAndSendKeys(firstMobile, directMessagePageOne.searchText, configuration.getSecondInstagramTestUser());
+        waitAndClick(firstMobile, directMessagePageOne.searchResultUser);
+        waitAndClick(firstMobile, directMessagePageOne.galleryButton);
+        waitAndClick(firstMobile, directMessagePageOne.videoThumbnail);
 
-        clickSendMessageTime = waitAndClick(mobileOne, directMessagePageOne.sendButton, true, "Click Send Message Time");
-        sendMessageTime = waitNotVisible(mobileOne, directMessagePageOne.sendImage, true, "Send Message Time");
-        receiveMessageTime = waitElementVisible(mobileSecond, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
+        clickSendMessageTime = waitAndClick(firstMobile, directMessagePageOne.sendButton, true, "Click Send Message Time");
+        sendMessageTime = waitNotVisible(firstMobile, directMessagePageOne.sendImage, true, "Send Message Time");
+        receiveMessageTime = waitElementVisible(secondMobile, directMessagePageSecond.secondAgoMessageText, true, "Receive Message Time");
     }
 
 }

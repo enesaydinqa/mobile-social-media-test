@@ -25,7 +25,7 @@ public class SnapchatStoryTest extends AbstractAndroidTest
     {
         super.init();
 
-        storyPage = new StoryPage(mobileOne);
+        storyPage = new StoryPage(firstMobile);
     }
 
     @Test
@@ -33,10 +33,10 @@ public class SnapchatStoryTest extends AbstractAndroidTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        waitAndClick(mobileOne, storyPage.cameraCaptureButton);
-        waitAndClick(mobileOne, storyPage.sendButton);
-        waitAndClick(mobileOne, storyPage.myStoryTitle);
-        waitAndClick(mobileOne, storyPage.send, true, "Snapchat Story Share Button Click");
+        waitAndClick(firstMobile, storyPage.cameraCaptureButton);
+        waitAndClick(firstMobile, storyPage.sendButton);
+        waitAndClick(firstMobile, storyPage.myStoryTitle);
+        waitAndClick(firstMobile, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(10);
         getSnapSendDuration();
@@ -47,10 +47,10 @@ public class SnapchatStoryTest extends AbstractAndroidTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        longPress(mobileOne, storyPage.cameraCaptureButton, 10);
-        waitAndClick(mobileOne, storyPage.sendButton);
-        waitAndClick(mobileOne, storyPage.myStoryTitle);
-        waitAndClick(mobileOne, storyPage.send, true, "Snapchat Story Share Button Click");
+        longPress(firstMobile, storyPage.cameraCaptureButton, 10);
+        waitAndClick(firstMobile, storyPage.sendButton);
+        waitAndClick(firstMobile, storyPage.myStoryTitle);
+        waitAndClick(firstMobile, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(30);
         getSnapSendDuration();
@@ -59,7 +59,7 @@ public class SnapchatStoryTest extends AbstractAndroidTest
 
     private String getSnapSendDuration()
     {
-        List<LogEntry> adbLogs = mobileOne.manage().logs().get("logcat").filter(Level.ALL);
+        List<LogEntry> adbLogs = firstMobile.manage().logs().get("logcat").filter(Level.ALL);
 
         AtomicReference<String> duration = new AtomicReference<>();
 
