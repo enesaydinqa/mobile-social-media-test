@@ -5,21 +5,11 @@ import com.appium.utils.Configuration;
 import com.appium.utils.ReadFile;
 import org.json.JSONObject;
 
-public class JSONCapability
+public class Capability
 {
     public DeviceCapabilities getDeviceCapability(Configuration configuration, String objectName)
     {
-        String fileSeparator = System.getProperty("file.separator");
-
-        String deviceCapabilityJSON = String.format(System.getProperty("user.home")
-                .concat(fileSeparator)
-                .concat("MobileTest")
-                .concat(fileSeparator)
-                .concat("SocialMediaTestDevices")
-                .concat(fileSeparator)
-                .concat("{operator_name}TestDevices.json".replace("{operator_name}", configuration.getOperator())));
-
-        String deviceCapability = ReadFile.readFile(deviceCapabilityJSON);
+        String deviceCapability = ReadFile.readFile(configuration.getTestDevicesPath());
 
         JSONObject obj = new JSONObject(deviceCapability);
 

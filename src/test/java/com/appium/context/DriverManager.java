@@ -17,9 +17,9 @@ public abstract class DriverManager extends Events
 
     public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException
     {
-        JSONCapability jsonCapability = new JSONCapability();
+        Capability json = new Capability();
 
-        DeviceCapabilities deviceCapabilities = jsonCapability.getDeviceCapability(configuration, deviceName);
+        DeviceCapabilities deviceCapabilities = json.getDeviceCapability(configuration, deviceName);
 
         AppInfo appInfo = configuration.getAppInfo();
 

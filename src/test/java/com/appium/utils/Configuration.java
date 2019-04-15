@@ -19,6 +19,7 @@ public class Configuration
     private AppInfo appInfo;
     private String testResultPath;
     private String operator;
+    private String testDevicesPath;
     private String mobileOneUID;
     private String mobileSecondUID;
     private String mobileOneIMEI;
@@ -34,6 +35,7 @@ public class Configuration
         this.appInfo = getAppInfoProp();
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("testResultPath");
+        this.testDevicesPath = readTestDevicePath();
 
         this.mobileOneUID = getDeviceUID(DeviceName.ONE_DEVICE);
         this.mobileSecondUID = getDeviceUID(DeviceName.SECOND_DEVICE);
@@ -95,17 +97,7 @@ public class Configuration
 
     private String getDeviceInfo(DeviceName deviceName, String infoName)
     {
-        String fileSeparator = System.getProperty("file.separator");
-
-        String devicesJson = String.format(System.getProperty("user.home")
-                .concat(fileSeparator)
-                .concat("MobileTest")
-                .concat(fileSeparator)
-                .concat("SocialMediaTestDevices")
-                .concat(fileSeparator)
-                .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator)));
-
-        String deviceCapability = ReadFile.readFile(devicesJson);
+        String deviceCapability = ReadFile.readFile(testDevicesPath);
 
         JSONObject obj = new JSONObject(deviceCapability);
 
@@ -131,9 +123,16 @@ public class Configuration
 
     private String readInstagramTestUserPassword()
     {
-        String instagramTestUserPassword = configProps.getProperty("instagram.test.user.password");
+        return configProps.getProperty("instagram.test.user.password");
+    }
 
-        return instagramTestUserPassword;
+    private String readTestDevicePath()
+    {
+        String fileSeparator = System.getProperty("file.separator");
+
+        return System.getProperty("user.home").concat(fileSeparator).concat("MobileTest").concat(fileSeparator)
+                .concat("SocialMediaTestDevices").concat(fileSeparator)
+                .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator));
     }
 
     public String getTestResultPath()
@@ -224,5 +223,15 @@ public class Configuration
     public void setInstagramTestUserPassword(String instagramTestUserPassword)
     {
         this.instagramTestUserPassword = instagramTestUserPassword;
+    }
+
+    public String getTestDevicesPath()
+    {
+        return testDevicesPath;
+    }
+
+    public void setTestDevicesPath(String testDevicesPath)
+    {
+        this.testDevicesPath = testDevicesPath;
     }
 }
