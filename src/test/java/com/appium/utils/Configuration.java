@@ -95,15 +95,15 @@ public class Configuration
 
     private String getDeviceInfo(DeviceName deviceName, String infoName)
     {
-        String fileSeperator = System.getProperty("file.separator");
+        String fileSeparator = System.getProperty("file.separator");
 
         String devicesJson = String.format(System.getProperty("user.home")
-                .concat(fileSeperator)
+                .concat(fileSeparator)
                 .concat("MobileTest")
-                .concat(fileSeperator)
+                .concat(fileSeparator)
                 .concat("SocialMediaTestDevices")
-                .concat(fileSeperator)
-                .concat(String.format("%sTestDevices.json", operator)));
+                .concat(fileSeparator)
+                .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator)));
 
         String deviceCapability = ReadFile.readFile(devicesJson);
 

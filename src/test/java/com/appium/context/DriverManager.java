@@ -47,11 +47,9 @@ public abstract class DriverManager extends Events
 
         URL url;
 
-        url = new URL("http://"
-                .concat(deviceCapabilities.getDeviceServer())
-                .concat(":")
-                .concat(deviceCapabilities.getDevicePort())
-                .concat("/wd/hub"));
+        String createDriverUrl = "http://%s:%s/wd/hub";
+
+        url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
         driver = new AndroidDriver(url, capabilities);
 
