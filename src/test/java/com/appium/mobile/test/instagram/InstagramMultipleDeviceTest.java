@@ -1,7 +1,7 @@
 package com.appium.mobile.test.instagram;
 
 import com.appium.client.Constants;
-import com.appium.context.AbstractAndroidMultipleTest;
+import com.appium.context.app.InstagramAndroidTest;
 import com.appium.flag.MobilyInstagram;
 import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
@@ -17,10 +17,14 @@ import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.clickSendMessageTime;
+import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
+import static com.appium.utils.ReportInformation.mobileDeviceSecondGeoLocation;
+import static com.appium.utils.ReportInformation.receiveMessageTime;
+import static com.appium.utils.ReportInformation.sendMessageTime;
 
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
-public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
+public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 {
     private Logger logger = Logger.getLogger(InstagramMultipleDeviceTest.class);
 
@@ -35,7 +39,7 @@ public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
     @Before
     public void init() throws Exception
     {
-        super.init();
+        super.init(true);
 
         homePageOne = new HomePage(mobileOne);
         directMessagePageOne = new DirectMessagePage(mobileOne);

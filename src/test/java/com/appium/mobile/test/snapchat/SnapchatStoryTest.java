@@ -1,7 +1,7 @@
 package com.appium.mobile.test.snapchat;
 
 import com.appium.client.date.DateFormatType;
-import com.appium.context.AbstractAndroidSingleTest;
+import com.appium.context.AbstractAndroidTest;
 import com.appium.pages.snapchat.StoryPage;
 import org.apache.log4j.Logger;
 import org.junit.Before;
@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class SnapchatStoryTest extends AbstractAndroidSingleTest
+public class SnapchatStoryTest extends AbstractAndroidTest
 {
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
 
@@ -25,7 +25,7 @@ public class SnapchatStoryTest extends AbstractAndroidSingleTest
     {
         super.init();
 
-        storyPage = new StoryPage(mobile);
+        storyPage = new StoryPage(mobileOne);
     }
 
     @Test
@@ -33,10 +33,10 @@ public class SnapchatStoryTest extends AbstractAndroidSingleTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        waitAndClick(mobile, storyPage.cameraCaptureButton);
-        waitAndClick(mobile, storyPage.sendButton);
-        waitAndClick(mobile, storyPage.myStoryTitle);
-        waitAndClick(mobile, storyPage.send, true, "Snapchat Story Share Button Click");
+        waitAndClick(mobileOne, storyPage.cameraCaptureButton);
+        waitAndClick(mobileOne, storyPage.sendButton);
+        waitAndClick(mobileOne, storyPage.myStoryTitle);
+        waitAndClick(mobileOne, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(10);
         getSnapSendDuration();
@@ -47,10 +47,10 @@ public class SnapchatStoryTest extends AbstractAndroidSingleTest
     {
         //getGeoLocation(mobileDevice.uid);
 
-        longPress(mobile, storyPage.cameraCaptureButton, 10);
-        waitAndClick(mobile, storyPage.sendButton);
-        waitAndClick(mobile, storyPage.myStoryTitle);
-        waitAndClick(mobile, storyPage.send, true, "Snapchat Story Share Button Click");
+        longPress(mobileOne, storyPage.cameraCaptureButton, 10);
+        waitAndClick(mobileOne, storyPage.sendButton);
+        waitAndClick(mobileOne, storyPage.myStoryTitle);
+        waitAndClick(mobileOne, storyPage.send, true, "Snapchat Story Share Button Click");
 
         sleep(30);
         getSnapSendDuration();
@@ -59,7 +59,7 @@ public class SnapchatStoryTest extends AbstractAndroidSingleTest
 
     private String getSnapSendDuration()
     {
-        List<LogEntry> adbLogs = mobile.manage().logs().get("logcat").filter(Level.ALL);
+        List<LogEntry> adbLogs = mobileOne.manage().logs().get("logcat").filter(Level.ALL);
 
         AtomicReference<String> duration = new AtomicReference<>();
 

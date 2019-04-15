@@ -1,7 +1,7 @@
 package com.appium.mobile.test.instagram;
 
 import com.appium.client.Constants;
-import com.appium.context.AbstractAndroidSingleTest;
+import com.appium.context.app.InstagramAndroidTest;
 import com.appium.flag.MobilyInstagram;
 import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
@@ -17,10 +17,13 @@ import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
 
-import static com.appium.utils.ReportInformation.*;
+import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
+import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
+import static com.appium.utils.ReportInformation.instagramSharedVideoPostTime;
+import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
 
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
-public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
+public class InstagramSingleDeviceTest extends InstagramAndroidTest
 {
     private Logger logger = Logger.getLogger(InstagramSingleDeviceTest.class);
 
@@ -35,8 +38,8 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
     {
         super.init();
 
-        footerPage = new FooterPage(mobile);
-        postSendPage = new PostSendPage(mobile);
+        footerPage = new FooterPage(mobileOne);
+        postSendPage = new PostSendPage(mobileOne);
     }
 
     @Test
@@ -47,16 +50,16 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
-        waitAndClick(mobile, footerPage.cameraButton);
-        waitAndClick(mobile, postSendPage.nextTitle);
-        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobileOne, footerPage.cameraButton);
+        waitAndClick(mobileOne, postSendPage.nextTitle);
+        waitAndClick(mobileOne, postSendPage.nextTitle);
 
-        instagramPostShareButtonClickTime = waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
-        instagramSharedImagePostTime = waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
+        instagramPostShareButtonClickTime = waitAndClick(mobileOne, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramSharedImagePostTime = waitNotVisible(mobileOne, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
     }
 
     @Test
@@ -67,15 +70,15 @@ public class InstagramSingleDeviceTest extends AbstractAndroidSingleTest
                 RandomStringUtils.randomAlphabetic(15)
         );
 
-        pushFileMobile(mobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
+        pushFileMobile(mobileOne, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
-        waitAndClick(mobile, footerPage.cameraButton);
-        waitAndClick(mobile, postSendPage.nextTitle);
-        waitAndClick(mobile, postSendPage.nextTitle);
+        waitAndClick(mobileOne, footerPage.cameraButton);
+        waitAndClick(mobileOne, postSendPage.nextTitle);
+        waitAndClick(mobileOne, postSendPage.nextTitle);
 
-        instagramPostShareButtonClickTime =  waitAndClick(mobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
-        instagramSharedVideoPostTime = waitNotVisible(mobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
+        instagramPostShareButtonClickTime =  waitAndClick(mobileOne, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramSharedVideoPostTime = waitNotVisible(mobileOne, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
     }
 }

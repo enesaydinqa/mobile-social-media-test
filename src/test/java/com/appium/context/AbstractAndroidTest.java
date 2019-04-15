@@ -11,7 +11,7 @@ import org.junit.Rule;
 import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
 import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
 
-public abstract class AbstractAndroidMultipleTest extends DriverManager
+public abstract class AbstractAndroidTest extends DriverManager
 {
     protected static AppiumDriver mobileOne;
     protected static AppiumDriver mobileSecond;
@@ -24,14 +24,24 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
     @Before
     public void init() throws Exception
     {
+        init(false);
+    }
+
+    public void init(boolean multipleDevice) throws Exception
+    {
         configuration = new Configuration();
 
         mobileOne = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
 
-        mobileSecond = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
-
         mobileOneDeviceIMEI = configuration.getMobileOneIMEI();
-        mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
+
+        if (multipleDevice)
+        {
+            mobileSecond = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
+
+            mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
+        }
+
     }
 
     @After
@@ -60,7 +70,6 @@ public abstract class AbstractAndroidMultipleTest extends DriverManager
             catch (Exception ex)
             {
             }
-
         }
     }
 
