@@ -17,11 +17,7 @@ import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
 
-import static com.appium.utils.ReportInformation.clickSendMessageTime;
-import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
-import static com.appium.utils.ReportInformation.mobileDeviceSecondGeoLocation;
-import static com.appium.utils.ReportInformation.receiveMessageTime;
-import static com.appium.utils.ReportInformation.sendMessageTime;
+import static com.appium.utils.ReportInformation.*;
 
 @Category({ZainInstagram.class, MobilyInstagram.class, STCInstagram.class})
 public class InstagramMultipleDeviceTest extends AbstractAndroidMultipleTest
