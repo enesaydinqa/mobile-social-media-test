@@ -57,7 +57,7 @@ public abstract class DriverManager extends Events
 
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
-        if (!checkIfServerIsRunning(Integer.valueOf(deviceCapabilities.getDevicePort())))
+        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
         driver = new AndroidDriver(url, capabilities);
@@ -80,13 +80,13 @@ public abstract class DriverManager extends Events
         Thread.sleep(3000);
     }
 
-    private boolean checkIfServerIsRunning(int port)
+    private boolean checkIfServerIsRunning(String port)
     {
         boolean isServerRunning = false;
         ServerSocket serverSocket;
         try
         {
-            serverSocket = new ServerSocket(port);
+            serverSocket = new ServerSocket(Integer.valueOf(port));
             serverSocket.close();
         }
         catch (IOException e)
