@@ -76,10 +76,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     @Contact(Author.ENES)
     public void testSendPhotoMessage() throws IOException, InterruptedException
     {
-        String mobileFilePath = String.format(
-                Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15)
-        );
+        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
@@ -106,10 +103,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     @Contact(Author.ENES)
     public void testSendVideoMessage() throws IOException, InterruptedException
     {
-        String mobileFilePath = String.format(
-                Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH,
-                RandomStringUtils.randomAlphabetic(15)
-        );
+        String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
