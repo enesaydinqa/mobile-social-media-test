@@ -164,7 +164,7 @@ public class Configuration
 
     private String readVariant()
     {
-        return configProps.getProperty("variants");
+        return configProps.getProperty("variant");
     }
 
     private String readTestDevicePath(String variant)
