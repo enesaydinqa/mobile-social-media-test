@@ -7,7 +7,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -39,7 +38,7 @@ public class Configuration
         this.appInfo = getAppInfoProp();
         this.noReset = getNoResetProp();
         this.operator = System.getProperties().getProperty("operator");
-        this.testResultPath = System.getProperties().getProperty("testResultPath");
+        this.testResultPath = System.getProperties().getProperty("test.result.path");
         this.variant = readVariant();
         this.testDevicesPath = readTestDevicePath(variant);
 
