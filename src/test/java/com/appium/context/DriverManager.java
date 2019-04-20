@@ -7,16 +7,20 @@ import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.URL;
 
 public abstract class DriverManager extends Events
 {
     protected static AppiumDriver driver;
 
-    public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException
+    public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException, InterruptedException
     {
         Capability json = new Capability();
 
@@ -53,8 +57,47 @@ public abstract class DriverManager extends Events
 
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
+        if (!checkIfServerIsRunning(Integer.valueOf(deviceCapabilities.getDevicePort())))
+            startServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
+
         driver = new AndroidDriver(url, capabilities);
 
         return driver;
+    }
+
+    private void startServer(String deviceServer, String devicePort) throws InterruptedException
+    {
+        AppiumServiceBuilder builder = new AppiumServiceBuilder();
+
+        builder.withIPAddress(deviceServer);
+        builder.usingPort(Integer.valueOf(devicePort));
+        builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
+        builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
+
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+        service.start();
+
+        Thread.sleep(3000);
+    }
+
+    private boolean checkIfServerIsRunning(int port)
+    {
+        boolean isServerRunning = false;
+        ServerSocket serverSocket;
+        try
+        {
+            serverSocket = new ServerSocket(port);
+            serverSocket.close();
+        }
+        catch (IOException e)
+        {
+            //If control comes here, then it means that the port is in use
+            isServerRunning = true;
+        }
+        finally
+        {
+            serverSocket = null;
+        }
+        return isServerRunning;
     }
 }
