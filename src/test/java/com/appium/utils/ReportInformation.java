@@ -22,4 +22,18 @@ public class ReportInformation
     public static String clickSendMessageTime;
     public static String sendMessageTime;
     public static String receiveMessageTime;
+
+    public static void veriableFormat()
+    {
+        mobileOneDeviceIMEI = null;
+        mobileSecondDeviceIMEI = null;
+        mobileDeviceOneGeoLocation = null;
+        mobileDeviceSecondGeoLocation = null;
+        instagramPostShareButtonClickTime = null;
+        instagramSharedImagePostTime = null;
+        instagramSharedVideoPostTime = null;
+        clickSendMessageTime = null;
+        sendMessageTime = null;
+        receiveMessageTime = null;
+    }
 }

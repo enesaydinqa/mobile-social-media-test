@@ -6,16 +6,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import static com.appium.utils.ReportInformation.clickSendMessageTime;
-import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;
-import static com.appium.utils.ReportInformation.instagramSharedImagePostTime;
-import static com.appium.utils.ReportInformation.instagramSharedVideoPostTime;
-import static com.appium.utils.ReportInformation.mobileDeviceOneGeoLocation;
-import static com.appium.utils.ReportInformation.mobileDeviceSecondGeoLocation;
-import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
-import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
-import static com.appium.utils.ReportInformation.receiveMessageTime;
-import static com.appium.utils.ReportInformation.sendMessageTime;
 
 public class InstagramReportGenerate extends TestWatcher
 {
@@ -85,46 +75,36 @@ public class InstagramReportGenerate extends TestWatcher
 
     private void reportInformation(ExtentTest test)
     {
-        if (mobileOneDeviceIMEI != null)
-            test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", mobileOneDeviceIMEI));
+        if (ReportInformation.mobileOneDeviceIMEI != null)
+            test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", ReportInformation.mobileOneDeviceIMEI));
 
-        if (mobileSecondDeviceIMEI != null)
-            test.log(LogStatus.INFO, String.format("Second Mobile IMEI : %s", mobileSecondDeviceIMEI));
+        if (ReportInformation.mobileSecondDeviceIMEI != null)
+            test.log(LogStatus.INFO, String.format("Second Mobile IMEI : %s", ReportInformation.mobileSecondDeviceIMEI));
 
-        if (mobileDeviceOneGeoLocation != null)
-            test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", mobileDeviceOneGeoLocation));
+        if (ReportInformation.mobileDeviceOneGeoLocation != null)
+            test.log(LogStatus.INFO, String.format("One Mobile Geo Location : %s", ReportInformation.mobileDeviceOneGeoLocation));
 
-        if (mobileDeviceSecondGeoLocation != null)
-            test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", mobileDeviceSecondGeoLocation));
+        if (ReportInformation.mobileDeviceSecondGeoLocation != null)
+            test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", ReportInformation.mobileDeviceSecondGeoLocation));
 
-        if (instagramPostShareButtonClickTime != null)
-            test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", instagramPostShareButtonClickTime));
+        if (ReportInformation.instagramPostShareButtonClickTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", ReportInformation.instagramPostShareButtonClickTime));
 
-        if (instagramSharedImagePostTime != null)
-            test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", instagramSharedImagePostTime));
+        if (ReportInformation.instagramSharedImagePostTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", ReportInformation.instagramSharedImagePostTime));
 
-        if (instagramSharedVideoPostTime != null)
-            test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", instagramSharedVideoPostTime));
+        if (ReportInformation.instagramSharedVideoPostTime != null)
+            test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", ReportInformation.instagramSharedVideoPostTime));
 
-        if (clickSendMessageTime != null)
-            test.log(LogStatus.INFO, String.format("Click Send Message Time : %s", clickSendMessageTime));
+        if (ReportInformation.clickSendMessageTime != null)
+            test.log(LogStatus.INFO, String.format("Click Send Message Time : %s", ReportInformation.clickSendMessageTime));
 
-        if (sendMessageTime != null)
-            test.log(LogStatus.INFO, String.format("Send Message Time : %s", sendMessageTime));
+        if (ReportInformation.sendMessageTime != null)
+            test.log(LogStatus.INFO, String.format("Send Message Time : %s", ReportInformation.sendMessageTime));
 
-        if (receiveMessageTime != null)
-            test.log(LogStatus.INFO, String.format("Receive Message Time : %s", receiveMessageTime));
+        if (ReportInformation.receiveMessageTime != null)
+            test.log(LogStatus.INFO, String.format("Receive Message Time : %s", ReportInformation.receiveMessageTime));
 
-
-        mobileOneDeviceIMEI = null;
-        mobileSecondDeviceIMEI = null;
-        mobileDeviceOneGeoLocation = null;
-        mobileDeviceSecondGeoLocation = null;
-        instagramPostShareButtonClickTime = null;
-        instagramSharedImagePostTime = null;
-        instagramSharedVideoPostTime = null;
-        clickSendMessageTime = null;
-        sendMessageTime = null;
-        receiveMessageTime = null;
+        ReportInformation.veriableFormat();
     }
 }
