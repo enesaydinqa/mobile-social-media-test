@@ -177,7 +177,7 @@ public class Configuration
         {
             case "dev":
                 testDevicePath = System.getProperty("user.dir").concat(fileSeparator).concat("src").concat(fileSeparator)
-                        .concat("test").concat(fileSeparator).concat("resources").concat("MobileTestDevices.json");
+                        .concat("test").concat(fileSeparator).concat("resources").concat(fileSeparator).concat("MobileTestDevices.json");
                 break;
 
             case "prod":
