@@ -27,7 +27,7 @@ public abstract class AbstractAndroidTest extends DriverManager
         init(false);
     }
 
-    public void init(boolean multipleDevice) throws Exception
+    protected void init(boolean multipleDevice) throws Exception
     {
         configuration = new Configuration();
 
