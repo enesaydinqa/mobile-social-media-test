@@ -1,0 +1,34 @@
+{
+  "ONE_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "7.1.1",
+    "deviceName": "Test Devices",
+    "deviceOperator": "mobily",
+    "uid": "CB512FN695",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "5557",
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": true,
+    "fastReset": true,
+    "noSign": true,
+    "clearDeviceLogsOnStart": true,
+    "automationName": "UiAutomator1",
+    "deviceIMEI": "357008086879089"
+  },
+  "SECOND_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "",
+    "deviceName": "Test Devices",
+    "deviceOperator": "",
+    "uid": "",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "5558",
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": true,
+    "fastReset": true,
+    "noSign": true,
+    "clearDeviceLogsOnStart": true,
+    "automationName": "UiAutomator1",
+    "deviceIMEI": ""
+  }
+}

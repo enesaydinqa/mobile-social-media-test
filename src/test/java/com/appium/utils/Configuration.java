@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -19,6 +20,7 @@ public class Configuration
 
     private AppInfo appInfo;
     private NoReset noReset;
+    private String variant;
     private String testResultPath;
     private String operator;
     private String testDevicesPath;
@@ -38,7 +40,8 @@ public class Configuration
         this.noReset = getNoResetProp();
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("testResultPath");
-        this.testDevicesPath = readTestDevicePath();
+        this.variant = readVariant();
+        this.testDevicesPath = readTestDevicePath(variant);
 
         this.mobileOneUID = getDeviceUID(DeviceName.ONE_DEVICE);
         this.mobileSecondUID = getDeviceUID(DeviceName.SECOND_DEVICE);
@@ -159,13 +162,32 @@ public class Configuration
         return configProps.getProperty("instagram.test.user.password");
     }
 
-    private String readTestDevicePath()
+    private String readVariant()
     {
-        String fileSeparator = System.getProperty("file.separator");
+        return configProps.getProperty("variants");
+    }
 
-        return System.getProperty("user.home").concat(fileSeparator).concat("MobileTest").concat(fileSeparator)
-                .concat("SocialMediaTestDevices").concat(fileSeparator)
-                .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator));
+    private String readTestDevicePath(String variant)
+    {
+        String testDevicePath = null;
+
+        switch (variant)
+        {
+            case "dev":
+                ClassLoader classLoader = getClass().getClassLoader();
+                File resourceFile = new File(classLoader.getResource("MobileTestDevices.json").getFile());
+                testDevicePath = resourceFile.getPath();
+                break;
+
+            case "prod":
+                String fileSeparator = System.getProperty("file.separator");
+                testDevicePath = System.getProperty("user.home").concat(fileSeparator).concat("MobileTest").concat(fileSeparator)
+                        .concat("SocialMediaTestDevices").concat(fileSeparator)
+                        .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator));
+                break;
+        }
+
+        return testDevicePath;
     }
 
     public String getTestResultPath()
