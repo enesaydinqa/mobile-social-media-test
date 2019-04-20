@@ -169,18 +169,18 @@ public class Configuration
 
     private String readTestDevicePath(String variant)
     {
+        String fileSeparator = System.getProperty("file.separator");
+
         String testDevicePath = null;
 
         switch (variant)
         {
             case "dev":
-                ClassLoader classLoader = getClass().getClassLoader();
-                File resourceFile = new File(classLoader.getResource("MobileTestDevices.json").getFile());
-                testDevicePath = resourceFile.getPath();
+                testDevicePath = System.getProperty("user.dir").concat(fileSeparator).concat("src").concat(fileSeparator)
+                        .concat("test").concat(fileSeparator).concat("resources").concat("MobileTestDevices.json");
                 break;
 
             case "prod":
-                String fileSeparator = System.getProperty("file.separator");
                 testDevicePath = System.getProperty("user.home").concat(fileSeparator).concat("MobileTest").concat(fileSeparator)
                         .concat("SocialMediaTestDevices").concat(fileSeparator)
                         .concat("{operator_name}TestDevices.json".replace("{operator_name}", operator));
