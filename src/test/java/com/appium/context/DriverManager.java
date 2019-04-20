@@ -81,11 +81,6 @@ public abstract class DriverManager extends Events
         Thread.sleep(3000);
     }
 
-    protected void stopAppiumServer()
-    {
-        service.stop();
-    }
-
     private boolean checkIfServerIsRunning(String port)
     {
         boolean isServerRunning = false;
