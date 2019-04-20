@@ -18,7 +18,8 @@ import java.net.URL;
 
 public abstract class DriverManager extends Events
 {
-    protected static AppiumDriver driver;
+    private AppiumDriver driver;
+    private AppiumDriverLocalService service;
 
     public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException, InterruptedException
     {
@@ -58,14 +59,14 @@ public abstract class DriverManager extends Events
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
         if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
-            startServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
+            startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
         driver = new AndroidDriver(url, capabilities);
 
         return driver;
     }
 
-    private void startServer(String deviceServer, String devicePort) throws InterruptedException
+    private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
     {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
 
@@ -74,10 +75,15 @@ public abstract class DriverManager extends Events
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
 
-        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+        service = AppiumDriverLocalService.buildService(builder);
         service.start();
 
         Thread.sleep(3000);
+    }
+
+    protected void stopAppiumServer()
+    {
+        service.stop();
     }
 
     private boolean checkIfServerIsRunning(String port)

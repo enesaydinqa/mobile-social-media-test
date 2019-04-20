@@ -71,6 +71,8 @@ public abstract class AbstractAndroidTest extends DriverManager
             {
             }
         }
+
+        stopAppiumServer();
     }
 
 
