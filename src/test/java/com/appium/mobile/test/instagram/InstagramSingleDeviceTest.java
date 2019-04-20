@@ -1,5 +1,7 @@
 package com.appium.mobile.test.instagram;
 
+import com.annotation.Author;
+import com.annotation.Contact;
 import com.appium.client.Constants;
 import com.appium.context.app.InstagramAndroidTest;
 import com.appium.flag.MobilyInstagram;
@@ -43,6 +45,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     }
 
     @Test
+    @Contact(Author.ENES)
     public void testSendImagePost() throws InterruptedException, IOException
     {
         String mobileFilePath = String.format(
@@ -63,6 +66,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     }
 
     @Test
+    @Contact(Author.ENES)
     public void testSendVideoPost() throws InterruptedException, IOException
     {
         String mobileFilePath = String.format(
@@ -78,7 +82,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 
-        instagramPostShareButtonClickTime =  waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        instagramPostShareButtonClickTime = waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
         instagramSharedVideoPostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
     }
 }

@@ -2,6 +2,7 @@ package com.appium.context;
 
 import com.appium.client.objects.DeviceCapabilities;
 import com.appium.client.parameter.AppInfo;
+import com.appium.client.parameter.NoReset;
 import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -22,6 +23,7 @@ public abstract class DriverManager extends Events
         DeviceCapabilities deviceCapabilities = json.getDeviceCapability(configuration, deviceName);
 
         AppInfo appInfo = configuration.getAppInfo();
+        NoReset noReset = configuration.getNoReset();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -36,7 +38,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("autoGrantPermissions", deviceCapabilities.getAutoGrantPermissions());
             capabilities.setCapability("fastReset", deviceCapabilities.getFastReset());
             capabilities.setCapability("noSign", deviceCapabilities.getNoSign());
-            capabilities.setCapability(MobileCapabilityType.NO_RESET, deviceCapabilities.getNoReset());
+            capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
         }

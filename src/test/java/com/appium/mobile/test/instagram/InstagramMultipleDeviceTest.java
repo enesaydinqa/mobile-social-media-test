@@ -1,5 +1,7 @@
 package com.appium.mobile.test.instagram;
 
+import com.annotation.Author;
+import com.annotation.Contact;
 import com.appium.client.Constants;
 import com.appium.context.app.InstagramAndroidTest;
 import com.appium.flag.MobilyInstagram;
@@ -49,6 +51,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     }
 
     @Test
+    @Contact(Author.ENES)
     public void testSendTextMessage() throws IOException, InterruptedException
     {
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
@@ -70,6 +73,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     }
 
     @Test
+    @Contact(Author.ENES)
     public void testSendPhotoMessage() throws IOException, InterruptedException
     {
         String mobileFilePath = String.format(
@@ -99,6 +103,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     }
 
     @Test
+    @Contact(Author.ENES)
     public void testSendVideoMessage() throws IOException, InterruptedException
     {
         String mobileFilePath = String.format(

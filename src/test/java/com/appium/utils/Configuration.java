@@ -2,6 +2,7 @@ package com.appium.utils;
 
 import com.appium.client.parameter.AppInfo;
 import com.appium.client.parameter.DeviceName;
+import com.appium.client.parameter.NoReset;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
@@ -17,6 +18,7 @@ public class Configuration
     private Properties configProps = new Properties();
 
     private AppInfo appInfo;
+    private NoReset noReset;
     private String testResultPath;
     private String operator;
     private String testDevicesPath;
@@ -33,6 +35,7 @@ public class Configuration
         loadConfigProperties();
 
         this.appInfo = getAppInfoProp();
+        this.noReset = getNoResetProp();
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("testResultPath");
         this.testDevicesPath = readTestDevicePath();
@@ -60,9 +63,19 @@ public class Configuration
         return appInfo;
     }
 
+    public NoReset getNoReset()
+    {
+        return noReset;
+    }
+
     private AppInfo getAppInfoProp()
     {
         return readAppInfoParameter("test.app.prop");
+    }
+
+    private NoReset getNoResetProp()
+    {
+        return readNoResetParameter("test.app.prop");
     }
 
     private AppInfo readAppInfoParameter(String propertyKey)
@@ -83,6 +96,26 @@ public class Configuration
         }
 
         return appInfo;
+    }
+
+    private NoReset readNoResetParameter(String propertyKey)
+    {
+        NoReset noReset = null;
+        String appName = System.getProperties().getProperty(propertyKey);
+
+        if (StringUtils.isNotBlank(appName))
+        {
+            try
+            {
+                noReset = NoReset.valueOf(appName);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+        return noReset;
     }
 
     private String getDeviceUID(DeviceName deviceName)
