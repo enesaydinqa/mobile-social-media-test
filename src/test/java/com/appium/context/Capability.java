@@ -20,7 +20,6 @@ public class Capability
         String deviceName = obj.getJSONObject(objectName).getString("deviceName");
         String uid = obj.getJSONObject(objectName).getString("uid");
         String deviceServer = obj.getJSONObject(objectName).getString("deviceServer");
-        String devicePort = obj.getJSONObject(objectName).getString("devicePort");
         Boolean noReset = obj.getJSONObject(objectName).getBoolean("noReset");
         Boolean unicodeKeyboard = obj.getJSONObject(objectName).getBoolean("unicodeKeyboard");
         Boolean autoGrantPermissions = obj.getJSONObject(objectName).getBoolean("autoGrantPermissions");
@@ -34,7 +33,6 @@ public class Capability
         capabilities.setDeviceName(deviceName);
         capabilities.setUid(uid);
         capabilities.setDeviceServer(deviceServer);
-        capabilities.setDevicePort(devicePort);
         capabilities.setNoReset(noReset);
         capabilities.setUnicodeKeyboard(unicodeKeyboard);
         capabilities.setAutoGrantPermissions(autoGrantPermissions);

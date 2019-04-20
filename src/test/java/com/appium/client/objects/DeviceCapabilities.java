@@ -8,7 +8,6 @@ public class DeviceCapabilities
     private String uid;
     private String deviceServer;
     private String devicePort;
-    private Boolean noReset;
     private Boolean unicodeKeyboard;
     private Boolean autoGrantPermissions;
     private Boolean fastReset;
@@ -74,16 +73,6 @@ public class DeviceCapabilities
     public void setDevicePort(String devicePort)
     {
         this.devicePort = devicePort;
-    }
-
-    public Boolean getNoReset()
-    {
-        return noReset;
-    }
-
-    public void setNoReset(Boolean noReset)
-    {
-        this.noReset = noReset;
     }
 
     public Boolean getUnicodeKeyboard()
