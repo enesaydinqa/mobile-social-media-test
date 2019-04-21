@@ -3,7 +3,7 @@ package com.appium.client.parameter;
 public enum NoReset
 {
 
-    INSTAGRAM(true);
+    INSTAGRAM(false);
 
     public Boolean noReset;
 

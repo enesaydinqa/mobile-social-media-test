@@ -1,19 +1,19 @@
 {
   "ONE_DEVICE": {
     "platformName": "Android",
-    "platformVersion": "7.1.1",
+    "platformVersion": "8.1.0",
     "deviceName": "Test Devices",
-    "deviceOperator": "mobily",
-    "uid": "CB512FN695",
+    "deviceOperator": "-",
+    "uid": "-",
     "deviceServer": "127.0.0.1",
-    "devicePort": "5557",
+    "devicePort": "4723",
     "unicodeKeyboard": true,
     "autoGrantPermissions": true,
     "fastReset": true,
     "noSign": true,
     "clearDeviceLogsOnStart": true,
     "automationName": "UiAutomator1",
-    "deviceIMEI": "357008086879089"
+    "deviceIMEI": "-"
   },
   "SECOND_DEVICE": {
     "platformName": "Android",

@@ -288,4 +288,14 @@ public class Configuration
     {
         this.testDevicesPath = testDevicesPath;
     }
+
+    public String getVariant()
+    {
+        return variant;
+    }
+
+    public void setVariant(String variant)
+    {
+        this.variant = variant;
+    }
 }

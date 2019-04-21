@@ -1,6 +1,6 @@
 package com.appium.pages.instagram;
 
-import com.appium.pages.snapchat.PageObject;
+import com.appium.pages.PageObject;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -12,6 +12,9 @@ public class PostSendPage extends PageObject
     {
         super(driver);
     }
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='GALLERY']")
+    public MobileElement galleryTitle;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Next']")
     public MobileElement nextTitle;

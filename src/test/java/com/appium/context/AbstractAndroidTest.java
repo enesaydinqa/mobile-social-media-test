@@ -21,6 +21,7 @@ public abstract class AbstractAndroidTest extends DriverManager
     @Rule
     public StatusRule statusRule = new StatusRule();
 
+
     @Before
     public void init() throws Exception
     {

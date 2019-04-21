@@ -58,7 +58,7 @@ public abstract class DriverManager extends Events
 
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
-        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
+        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()) & configuration.getVariant().equals("prod"))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
         driver = new AndroidDriver(url, capabilities);

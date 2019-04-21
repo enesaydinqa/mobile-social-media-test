@@ -1,6 +1,6 @@
 package com.appium.pages.instagram;
 
-import com.appium.pages.snapchat.PageObject;
+import com.appium.pages.PageObject;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;

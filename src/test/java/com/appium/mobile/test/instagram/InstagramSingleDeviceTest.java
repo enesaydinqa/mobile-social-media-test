@@ -54,7 +54,9 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
+        waitAndClick(firstMobile, postSendPage.galleryTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 
@@ -72,7 +74,9 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
 
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
+        waitAndClick(firstMobile, postSendPage.galleryTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 

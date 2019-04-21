@@ -1,5 +1,6 @@
 package com.appium.pages.snapchat;
 
+import com.appium.pages.PageObject;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;

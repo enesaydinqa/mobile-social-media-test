@@ -60,6 +60,9 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
 
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
+        login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
+
         waitAndClick(firstMobile, homePageOne.messageButton);
         waitAndClick(secondMobile, homePageSecond.messageButton);
         waitAndClick(firstMobile, directMessagePageOne.newMessageButton);
@@ -85,6 +88,9 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
+
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
+        login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
 
         waitAndClick(firstMobile, homePageOne.messageButton);
         waitAndClick(secondMobile, homePageSecond.messageButton);
@@ -112,6 +118,9 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
         logger.info(String.format("One Device : %s", mobileDeviceOneGeoLocation));
         logger.info(String.format("Second Device : %s", mobileDeviceSecondGeoLocation));
+
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
+        login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
 
         waitAndClick(firstMobile, homePageOne.messageButton);
         waitAndClick(secondMobile, homePageSecond.messageButton);
