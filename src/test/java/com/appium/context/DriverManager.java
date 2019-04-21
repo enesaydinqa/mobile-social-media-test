@@ -78,7 +78,7 @@ public abstract class DriverManager extends Events
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
 
-        Thread.sleep(3000);
+        Thread.sleep(10000);
     }
 
     private boolean checkIfServerIsRunning(String port)
