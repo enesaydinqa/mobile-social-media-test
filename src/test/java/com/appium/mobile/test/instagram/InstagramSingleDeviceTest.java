@@ -16,9 +16,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
-import org.openqa.selenium.Point;
 
-import java.awt.*;
 import java.io.IOException;
 
 import static com.appium.utils.ReportInformation.instagramPostShareButtonClickTime;

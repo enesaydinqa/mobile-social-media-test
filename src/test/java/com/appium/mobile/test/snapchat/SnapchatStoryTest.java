@@ -1,7 +1,6 @@
 package com.appium.mobile.test.snapchat;
 
 import com.appium.client.date.DateFormatType;
-import com.appium.context.AbstractAndroidTest;
 import com.appium.context.app.SnapchatAndroidTest;
 import com.appium.pages.snapchat.StoryPage;
 import org.apache.log4j.Logger;
