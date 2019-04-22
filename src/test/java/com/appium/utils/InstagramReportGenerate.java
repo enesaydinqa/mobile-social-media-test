@@ -105,6 +105,12 @@ public class InstagramReportGenerate extends TestWatcher
         if (ReportInformation.receiveMessageTime != null)
             test.log(LogStatus.INFO, String.format("Receive Message Time : %s", ReportInformation.receiveMessageTime));
 
+        if (ReportInformation.hashtagSearchStartTime != null)
+            test.log(LogStatus.INFO, String.format("Hashtag Search Start Time : %s", ReportInformation.hashtagSearchStartTime));
+
+        if (ReportInformation.hashtagSearchShowingTime != null)
+            test.log(LogStatus.INFO, String.format("Hashtag Search Showing Time : %s", ReportInformation.hashtagSearchShowingTime));
+
         ReportInformation.veriableFormat();
     }
 }

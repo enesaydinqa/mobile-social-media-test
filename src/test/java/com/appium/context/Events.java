@@ -74,8 +74,24 @@ public class Events implements CommonMobile
 
     public void waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text)
     {
+        waitAndSendKeys(driver, element, Text,false, null);
+    }
+
+    protected String waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text, Boolean logDate, String description)
+    {
         waitElementVisible(driver, element);
         element.sendKeys(Text);
+
+        String date = null;
+
+        if (logDate)
+        {
+            date = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+            logger.info(description + " : " + date);
+        }
+
+        return date;
     }
 
     @Override

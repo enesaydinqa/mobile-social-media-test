@@ -9,7 +9,9 @@ import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.FooterPage;
 import com.appium.pages.instagram.PostSendPage;
+import com.appium.pages.instagram.SearchPage;
 import com.appium.utils.InstagramReportGenerate;
+import com.appium.utils.ReportInformation;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
@@ -31,6 +33,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
     private FooterPage footerPage;
     private PostSendPage postSendPage;
+    private SearchPage searchPage;
 
     @Rule
     public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
@@ -42,6 +45,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         footerPage = new FooterPage(firstMobile);
         postSendPage = new PostSendPage(firstMobile);
+        searchPage = new SearchPage(firstMobile);
     }
 
     @Test
@@ -82,5 +86,16 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         instagramPostShareButtonClickTime = waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
         instagramSharedVideoPostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "Instagram Shared Video Post Time");
+    }
+
+    @Test
+    @Contact(Author.SELIM)
+    public void testSearchByHashtag() throws InterruptedException {
+        login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
+
+        waitAndClick(firstMobile, footerPage.searchButton);
+        ReportInformation.hashtagSearchStartTime = waitAndSendKeys(firstMobile, searchPage.searchInput,"#trend", true, "Hashtag Search Start Time");
+
+        ReportInformation.hashtagSearchShowingTime = waitNotVisible(firstMobile, searchPage.searchLoad,true,"Hashtag Search Showing Time");
     }
 }

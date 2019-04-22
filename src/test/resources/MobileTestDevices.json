@@ -1,12 +1,12 @@
 {
   "ONE_DEVICE": {
     "platformName": "Android",
-    "platformVersion": "8.1.0",
+    "platformVersion": "7.1.1",
     "deviceName": "Test Devices",
     "deviceOperator": "-",
     "uid": "-",
     "deviceServer": "127.0.0.1",
-    "devicePort": "6666",
+    "devicePort": "4723",
     "unicodeKeyboard": true,
     "autoGrantPermissions": true,
     "fastReset": true,

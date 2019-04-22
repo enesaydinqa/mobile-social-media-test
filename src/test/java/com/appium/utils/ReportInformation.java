@@ -22,6 +22,8 @@ public class ReportInformation
     public static String clickSendMessageTime;
     public static String sendMessageTime;
     public static String receiveMessageTime;
+    public static String hashtagSearchStartTime;
+    public static String hashtagSearchShowingTime;
 
     public static void veriableFormat()
     {
