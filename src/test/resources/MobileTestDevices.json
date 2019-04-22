@@ -6,7 +6,7 @@
     "deviceOperator": "-",
     "uid": "-",
     "deviceServer": "127.0.0.1",
-    "devicePort": "4723",
+    "devicePort": "6666",
     "unicodeKeyboard": true,
     "autoGrantPermissions": true,
     "fastReset": true,

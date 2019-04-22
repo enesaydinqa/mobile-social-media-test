@@ -3,7 +3,13 @@ package com.appium.client.parameter;
 public enum NoReset
 {
 
-    INSTAGRAM(false);
+    INSTAGRAM(false),
+    SNAPCHAT(true),
+    YOUTUBE(true),
+    TWITTER(false),
+    FACEBOOK(false),
+    SKYPE(true),
+    WHATSAPP(false);
 
     public Boolean noReset;
 

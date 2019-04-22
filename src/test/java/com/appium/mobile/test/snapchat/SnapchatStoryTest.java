@@ -2,6 +2,7 @@ package com.appium.mobile.test.snapchat;
 
 import com.appium.client.date.DateFormatType;
 import com.appium.context.AbstractAndroidTest;
+import com.appium.context.app.SnapchatAndroidTest;
 import com.appium.pages.snapchat.StoryPage;
 import org.apache.log4j.Logger;
 import org.junit.Before;
@@ -14,7 +15,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class SnapchatStoryTest extends AbstractAndroidTest
+public class SnapchatStoryTest extends SnapchatAndroidTest
 {
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
 
