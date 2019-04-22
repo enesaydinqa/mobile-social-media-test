@@ -13,6 +13,6 @@ public class FooterPage extends PageObject {
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc='Camera']")
     public MobileElement cameraButton;
 
-    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Search and explore\"]")
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc='Search and explore']")
     public MobileElement searchButton;
 }
