@@ -6,6 +6,7 @@ import com.appium.client.parameter.NoReset;
 import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -46,6 +47,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
+            //capabilities.setCapability("autoAcceptAlerts",true);
         }
         catch (Exception ex)
         {

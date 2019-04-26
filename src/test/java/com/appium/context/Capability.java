@@ -4,6 +4,7 @@ import com.appium.client.objects.DeviceCapabilities;
 import com.appium.utils.Configuration;
 import com.appium.utils.ReadFile;
 import org.json.JSONObject;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Capability
 {
@@ -40,6 +41,7 @@ public class Capability
         capabilities.setNoSign(noSign);
         capabilities.setClearDeviceLogsOnStart(clearDeviceLogsOnStart);
         capabilities.setAutomationName(automationName);
+
 
         return capabilities;
     }

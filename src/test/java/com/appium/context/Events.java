@@ -6,10 +6,12 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.offset.PointOption;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -30,77 +32,79 @@ import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 import static io.appium.java_client.touch.offset.PointOption.point;
 
-public class Events implements CommonMobile
-{
+public class Events implements CommonMobile {
     private Logger logger = Logger.getLogger(Events.class);
 
     private int maxSwipeCount = 5;
 
-    public enum SwipeDirection
-    {
+    public enum SwipeDirection {
         UP, DOWN, LEFT, RIGHT
     }
 
+    public void clickCoordinate(AppiumDriver driver, int pointX, int pointY) {
+        TouchAction touchAction = new TouchAction(driver);
+        touchAction.press(PointOption.point(pointX, pointY)).release().perform();
+        logger.info("login link is clicked");
+    }
+    //by atike
+    public void locationOfElement(AppiumDriver driver,MobileElement element,int xdistance){
+        Point location = element.getLocation();
+        clickCoordinate(driver, location.getX()+xdistance, location.getY());
+        //burada y sabittir x yönünde ilerlenir
+    }
+
     @Override
-    public void waitAndClick(AppiumDriver driver, MobileElement element)
-    {
+    public void waitAndClick(AppiumDriver driver, MobileElement element) {
         waitAndClick(driver, element, false, null);
     }
 
-    public String waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description)
-    {
+    public String waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description) {
         String clickDate = null;
 
-        try
-        {
+        try {
             waitElementToBeClickable(driver, element);
             element.click();
             sleep(1);
 
-            if (log)
-            {
+            if (log) {
                 clickDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
 
                 logger.info(description + " : " + clickDate);
             }
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
 
         return clickDate;
     }
 
-    public void waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text)
-    {
+    public void waitAndSendKeys(AppiumDriver driver, MobileElement element, String Text) {
         waitElementVisible(driver, element);
         element.sendKeys(Text);
     }
 
+    //by atike
+    public void waitAndClearInput(MobileElement element) {
+        element.clear();
+    }
+
     @Override
-    public boolean isDisplayed(AppiumDriver driver, MobileElement element)
-    {
+    public boolean isDisplayed(AppiumDriver driver, MobileElement element) {
         return isDisplayed(driver, element, false, null);
     }
 
-    public Boolean isDisplayed(AppiumDriver driver, MobileElement element, Boolean logDate, String description)
-    {
+    public Boolean isDisplayed(AppiumDriver driver, MobileElement element, Boolean logDate, String description) {
         boolean isDisplayed = false;
 
-        try
-        {
+        try {
             waitElementNotVisible(driver, element);
             element.isDisplayed();
             isDisplayed = true;
 
-            if (logDate)
-            {
+            if (logDate) {
                 logger.info(description + " : " + getCurrentDate(DateFormatType.FULL_DATE.dateFormat));
             }
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             logger.info("Element Not Displayed --> " + element);
             return isDisplayed;
         }
@@ -108,32 +112,27 @@ public class Events implements CommonMobile
         return isDisplayed;
     }
 
-    public String getCurrentDate(String dateFormatType)
-    {
+    public String getCurrentDate(String dateFormatType) {
         DateFormat dateFormat = new SimpleDateFormat(dateFormatType);
         Date date = new Date();
         return dateFormat.format(date);
     }
 
     @Override
-    public void sleep(Integer seconds) throws InterruptedException
-    {
+    public void sleep(Integer seconds) throws InterruptedException {
         Thread.sleep(seconds * 1000);
     }
 
     @Override
-    public String getGeoLocation(String uid) throws IOException, InterruptedException
-    {
+    public String getGeoLocation(String uid) throws IOException, InterruptedException {
         Process proc = Runtime.getRuntime().exec(String.format("adb -s %s shell dumpsys location", uid));
 
         StringBuilder processOutput = new StringBuilder();
 
-        try (BufferedReader processOutputReader = new BufferedReader(new InputStreamReader(proc.getInputStream())))
-        {
+        try (BufferedReader processOutputReader = new BufferedReader(new InputStreamReader(proc.getInputStream()))) {
             String readLine;
 
-            while ((readLine = processOutputReader.readLine()) != null)
-            {
+            while ((readLine = processOutputReader.readLine()) != null) {
                 processOutput.append(readLine + System.lineSeparator());
             }
 
@@ -146,8 +145,7 @@ public class Events implements CommonMobile
 
         String geoLocation = null;
 
-        while (matcher.find())
-        {
+        while (matcher.find()) {
             geoLocation = matcher.group(0).substring(17, 37);
 
             logger.info(String.format("GEO LOCATION : %s", geoLocation));
@@ -158,8 +156,7 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void longPress(AppiumDriver driver, MobileElement element, Integer second) throws InterruptedException
-    {
+    public void longPress(AppiumDriver driver, MobileElement element, Integer second) throws InterruptedException {
         TouchAction action = new TouchAction(driver);
         action.longPress(longPressOptions()
                 .withElement(element(element))
@@ -170,26 +167,22 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void waitNotVisible(AppiumDriver driver, By element)
-    {
+    public void waitNotVisible(AppiumDriver driver, By element) {
         waitNotVisible(driver, element, false, null);
     }
 
     @Override
-    public void waitElementVisible(AppiumDriver driver, MobileElement element)
-    {
+    public void waitElementVisible(AppiumDriver driver, MobileElement element) {
         waitElementVisible(driver, element, false, null);
     }
 
-    public String waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description)
-    {
+    public String waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(element));
 
         String visibleDate = null;
 
-        if (log)
-        {
+        if (log) {
             visibleDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
 
             logger.info(description + " : " + visibleDate);
@@ -198,15 +191,13 @@ public class Events implements CommonMobile
         return visibleDate;
     }
 
-    public String waitNotVisible(AppiumDriver driver, By element, Boolean log, String description)
-    {
+    public String waitNotVisible(AppiumDriver driver, By element, Boolean log, String description) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
 
         String notVisibleDate = null;
 
-        if (log)
-        {
+        if (log) {
             notVisibleDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
 
             logger.info(description + " : " + notVisibleDate);
@@ -215,22 +206,18 @@ public class Events implements CommonMobile
         return notVisibleDate;
     }
 
-    public void waitElementToBeClickable(AppiumDriver driver, MobileElement element)
-    {
+    public void waitElementToBeClickable(AppiumDriver driver, MobileElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public void waitElementNotVisible(AppiumDriver driver, MobileElement element)
-    {
+    public void waitElementNotVisible(AppiumDriver driver, MobileElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
-    public void pushFileMobile(AppiumDriver driver, String mobilePath, String fileName)
-    {
-        try
-        {
+    public void pushFileMobile(AppiumDriver driver, String mobilePath, String fileName) {
+        try {
             String fileSeperator = System.getProperty("file.separator");
 
             String uploadFile = System.getProperty("user.home")
@@ -246,23 +233,17 @@ public class Events implements CommonMobile
             logger.info("=============================================================================================");
             logger.info(String.format("==> Successfull Push File Mobile : %s", mobilePath));
             logger.info("=============================================================================================");
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             logger.info("Not Successfull Push File Mobile");
         }
     }
 
     @Override
-    public boolean isTextDisplayedOnPage(AppiumDriver driver, String assertText)
-    {
+    public boolean isTextDisplayedOnPage(AppiumDriver driver, String assertText) {
         boolean isTextOnPage = false;
-        try
-        {
+        try {
             isTextOnPage = driver.findElement(By.xpath("//*[@text='" + assertText + "']")).isDisplayed();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             logger.info(assertText + " is not displayed on page");
             return isTextOnPage;
         }
@@ -271,23 +252,18 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public boolean isMobileElementDisplayedOnPage(MobileElement mobileElement)
-    {
+    public boolean isMobileElementDisplayedOnPage(MobileElement mobileElement) {
         boolean isTextOnPage = false;
-        try
-        {
+        try {
             isTextOnPage = mobileElement.isDisplayed();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             //nopp
         }
         return isTextOnPage;
     }
 
     @Override
-    public void scrollHalfPageDown(AppiumDriver driver)
-    {
+    public void scrollHalfPageDown(AppiumDriver driver) {
         Dimension size = driver.manage().window().getSize();
         int startx = size.width / 5;
         int starty = (int) (size.width * 0.8);
@@ -296,8 +272,7 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void scrollPageUp(AppiumDriver driver)
-    {
+    public void scrollPageUp(AppiumDriver driver) {
         Dimension size = driver.manage().window().getSize();
         int startWidth = size.width / 2;
         int endWidth = size.width / 2;
@@ -309,12 +284,10 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void scrollList(List<MobileElement> mobileElementList, AppiumDriver driver)
-    {
+    public void scrollList(List<MobileElement> mobileElementList, AppiumDriver driver) {
         int size = mobileElementList.size();
 
-        if (size == 0)
-        {
+        if (size == 0) {
             return;
         }
 
@@ -324,34 +297,25 @@ public class Events implements CommonMobile
         touchLongPressAction(x, starty, x, endy, 2000, driver);
     }
 
-    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked, boolean isHalfDown)
-    {
-        if (maxSwipeCount == 0)
-        {
+    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked, boolean isHalfDown) {
+        if (maxSwipeCount == 0) {
             logger.info("Element could not found!!!");
             return;
         }
 
-        try
-        {
-            if (isHalfDown)
-            {
+        try {
+            if (isHalfDown) {
                 scrollHalfPageDown(driver);
                 Assert.assertTrue(mobileElement.isDisplayed());
-            }
-            else
-            {
+            } else {
                 swipeScreen(driver, SwipeDirection.DOWN, 1);
                 Assert.assertTrue(mobileElement.isDisplayed());
             }
 
-            if (isClicked)
-            {
+            if (isClicked) {
                 waitAndClick(driver, mobileElement);
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             logger.info("Element could not found! Screen will be swiped one more time.");
             maxSwipeCount--;
             swipeToElement(driver, mobileElement, isClicked);
@@ -359,17 +323,14 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void swipeScreen(AppiumDriver driver, SwipeDirection swipeDirection, int repeat)
-    {
+    public void swipeScreen(AppiumDriver driver, SwipeDirection swipeDirection, int repeat) {
         int screenHeight = driver.manage().window().getSize().getHeight();
         int screenWidth = driver.manage().window().getSize().getWidth();
         int startX, startY, endX, endY;
 
-        for (int i = 0; i < repeat; i++)
-        {
+        for (int i = 0; i < repeat; i++) {
             TouchAction touchAction = new TouchAction(driver);
-            switch (swipeDirection)
-            {
+            switch (swipeDirection) {
                 case UP:
                     startX = screenWidth / 2;
                     endX = startX;
@@ -402,46 +363,37 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void scrollToElement(AppiumDriver driver, MobileElement mobileElement)
-    {
-        try
-        {
+    public void scrollToElement(AppiumDriver driver, MobileElement mobileElement) {
+        try {
             int counter = 0;
-            while (!isDisplayed(driver, mobileElement) && counter < 5)
-            {
+            while (!isDisplayed(driver, mobileElement) && counter < 5) {
                 swipeScreen(driver, SwipeDirection.DOWN, 1);
                 counter++;
             }
 
-            if (!isDisplayed(driver, mobileElement))
-            {
+            if (!isDisplayed(driver, mobileElement)) {
                 swipeScreen(driver, SwipeDirection.UP, 5);
             }
 
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             logger.info("Scrool To Android Element Failed");
         }
     }
 
 
     @Override
-    public void touchLongPressAction(int startX, int startY, int endX, int endY, int duration, AppiumDriver driver)
-    {
+    public void touchLongPressAction(int startX, int startY, int endX, int endY, int duration, AppiumDriver driver) {
         new TouchAction(driver).longPress(point(startX, startY)).moveTo(point(endX, endY))
                 .waitAction(waitOptions(Duration.ofMillis(duration))).release().perform();
     }
 
     @Override
-    public void touchPressAction(int startX, int startY, int endX, int endY, int duration, AppiumDriver driver)
-    {
+    public void touchPressAction(int startX, int startY, int endX, int endY, int duration, AppiumDriver driver) {
         new TouchAction(driver).press(point(startX, startY)).moveTo(point(endX, endY))
                 .waitAction(waitOptions(Duration.ofMillis(duration))).release().perform();
     }
 
-    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked)
-    {
+    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked) {
         swipeToElement(driver, mobileElement, isClicked, false);
     }
 

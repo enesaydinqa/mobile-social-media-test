@@ -6,7 +6,7 @@ public enum NoReset
     INSTAGRAM(false),
     SNAPCHAT(true),
     YOUTUBE(true),
-    TWITTER(false),
+    TWITTER(true),
     FACEBOOK(false),
     SKYPE(true),
     WHATSAPP(false);
