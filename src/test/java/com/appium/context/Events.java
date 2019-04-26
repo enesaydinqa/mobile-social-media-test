@@ -46,11 +46,18 @@ public class Events implements CommonMobile {
         touchAction.press(PointOption.point(pointX, pointY)).release().perform();
         logger.info("login link is clicked");
     }
+
     //by atike
-    public void locationOfElement(AppiumDriver driver,MobileElement element,int xdistance){
+    public void locationOfElement(AppiumDriver driver, MobileElement element, int xdistance) {
         Point location = element.getLocation();
-        clickCoordinate(driver, location.getX()+xdistance, location.getY());
+        clickCoordinate(driver, location.getX() + xdistance, location.getY());
         //burada y sabittir x yönünde ilerlenir
+    }
+
+    public String getAttribute(MobileElement element, String atributeName) {
+        String text;
+        text = element.getAttribute(atributeName);
+        return text;
     }
 
     @Override

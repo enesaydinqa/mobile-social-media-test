@@ -1,6 +1,7 @@
 package com.appium.context.app;
 
 import com.appium.context.AbstractAndroidTest;
+import com.appium.context.MyStringRandomGen;
 import com.appium.pages.twitter.HomePage;
 import com.appium.pages.twitter.LoginPage;
 import io.appium.java_client.AppiumDriver;
@@ -31,8 +32,9 @@ public class TwitterAndroidTest extends AbstractAndroidTest {
 
     public void writeAndSendTweet(AppiumDriver driver){
         homePage=new HomePage(driver);
+        MyStringRandomGen msr = new MyStringRandomGen();
         waitAndClick(driver, homePage.tweet, true, "tweet button is clicked");
-        waitAndSendKeys(driver, homePage.sendMessage, "this is a test");
+        waitAndSendKeys(driver, homePage.sendMessage, "this is a test: "+msr.generateRandomString());
         waitAndClick(driver, homePage.sendMessage, true, "send message button is clicked");
     }
 

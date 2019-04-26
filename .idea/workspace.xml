@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3456993f-dba3-4a90-bb95-f8db10d0cfc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/TwitterMultipleDeviceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/MyStringRandomGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/NoReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/NoReset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/Capability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/Capability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/context/app/TwitterAndroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/context/app/TwitterAndroidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/Twitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/Twitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/MobileTestDevices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/MobileTestDevices.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configuration.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,35 +33,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="24" />
-          <entry key="java" value="70" />
+          <entry key="java" value="71" />
           <entry key="json" value="11" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="properties" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="24" />
-          <entry key="JAVA" value="70" />
+          <entry key="JAVA" value="71" />
           <entry key="JSON" value="11" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="3802" />
+          <entry key="java" value="3929" />
           <entry key="json" value="114" />
           <entry key="md" value="10" />
           <entry key="properties" value="4" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3802" />
+          <entry key="JAVA" value="3929" />
           <entry key="JSON" value="114" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="Properties" value="4" />
         </counts>
       </usages-collector>
@@ -81,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/Twitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="370">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,11 +82,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/MyStringRandomGen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/app/TwitterAndroidTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="348">
+              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,34 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="399" lean-forward="true" selection-start-line="399" selection-end-line="399" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isDisplayed#1;class#Events#0" />
-                <element signature="method#getCurrentDate#0;class#Events#0" />
-                <element signature="method#getGeoLocation#0;class#Events#0" />
-                <element signature="method#longPress#0;class#Events#0" />
-                <element signature="method#waitElementVisible#1;class#Events#0" />
-                <element signature="method#waitNotVisible#1;class#Events#0" />
-                <element signature="method#pushFileMobile#0;class#Events#0" />
-                <element signature="method#isTextDisplayedOnPage#0;class#Events#0" />
-                <element signature="method#isMobileElementDisplayedOnPage#0;class#Events#0" />
-                <element signature="method#scrollHalfPageDown#0;class#Events#0" />
-                <element signature="method#scrollPageUp#0;class#Events#0" />
-                <element signature="method#scrollList#0;class#Events#0" />
-                <element signature="method#swipeToElement#0;class#Events#0" />
-                <element signature="method#scrollToElement#0;class#Events#0" />
-                <element signature="method#touchLongPressAction#0;class#Events#0" />
-                <element signature="method#swipeToElement#1;class#Events#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -188,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/appium/client/parameter/AppActivity.java" />
         <option value="$PROJECT_DIR$/src/test/resources/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/ProfilePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/context/Capability.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/client/objects/DeviceCapabilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/context/DriverManager.java" />
@@ -196,7 +168,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/MobileTestDevices.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/pages/twitter/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/appium/context/Events.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/Twitter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/appium/context/MyStringRandomGen.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/appium/context/app/TwitterAndroidTest.java" />
       </list>
     </option>
@@ -371,11 +345,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556262977586" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556266600585" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -434,24 +408,17 @@
       <option name="presentableId" value="Default" />
       <updated>1555920389776</updated>
     </task>
+    <task id="LOCAL-00001" summary="Twitter two tests are written">
+      <created>1556263275884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556263275885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 09h 38m 36s.xml">
-      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 09h 55m 01s.xml">
-      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 09h 57m 22s.xml">
-      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 09h 59m 30s.xml">
-      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 10h 00m 48s.xml">
-      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Twitter_controlMessageText - 2019.04.26 at 10h 02m 43s.xml">
       <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
     </history-entry>
@@ -465,6 +432,21 @@
       <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Twitter_controlMessageText - 2019.04.26 at 10h 16m 00s.xml">
+      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 10h 32m 34s.xml">
+      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 10h 36m 39s.xml">
+      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 11h 00m 24s.xml">
+      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 11h 13m 07s.xml">
+      <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Twitter_controlMessageText - 2019.04.26 at 11h 15m 21s.xml">
       <configuration name="Twitter.controlMessageText" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -535,12 +517,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Twitter two tests are written" />
+    <option name="LAST_COMMIT_MESSAGE" value="Twitter two tests are written" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java</url>
-          <line>60</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -799,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramMultipleDeviceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-308">
@@ -858,32 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="399" lean-forward="true" selection-start-line="399" selection-end-line="399" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isDisplayed#1;class#Events#0" />
-            <element signature="method#getCurrentDate#0;class#Events#0" />
-            <element signature="method#getGeoLocation#0;class#Events#0" />
-            <element signature="method#longPress#0;class#Events#0" />
-            <element signature="method#waitElementVisible#1;class#Events#0" />
-            <element signature="method#waitNotVisible#1;class#Events#0" />
-            <element signature="method#pushFileMobile#0;class#Events#0" />
-            <element signature="method#isTextDisplayedOnPage#0;class#Events#0" />
-            <element signature="method#isMobileElementDisplayedOnPage#0;class#Events#0" />
-            <element signature="method#scrollHalfPageDown#0;class#Events#0" />
-            <element signature="method#scrollPageUp#0;class#Events#0" />
-            <element signature="method#scrollList#0;class#Events#0" />
-            <element signature="method#swipeToElement#0;class#Events#0" />
-            <element signature="method#scrollToElement#0;class#Events#0" />
-            <element signature="method#touchLongPressAction#0;class#Events#0" />
-            <element signature="method#swipeToElement#1;class#Events#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/AbstractAndroidTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -919,10 +872,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isDisplayed#1;class#Events#0" />
+            <element signature="method#getCurrentDate#0;class#Events#0" />
+            <element signature="method#getGeoLocation#0;class#Events#0" />
+            <element signature="method#longPress#0;class#Events#0" />
+            <element signature="method#waitElementVisible#1;class#Events#0" />
+            <element signature="method#waitNotVisible#1;class#Events#0" />
+            <element signature="method#pushFileMobile#0;class#Events#0" />
+            <element signature="method#isTextDisplayedOnPage#0;class#Events#0" />
+            <element signature="method#isMobileElementDisplayedOnPage#0;class#Events#0" />
+            <element signature="method#scrollHalfPageDown#0;class#Events#0" />
+            <element signature="method#scrollPageUp#0;class#Events#0" />
+            <element signature="method#scrollList#0;class#Events#0" />
+            <element signature="method#swipeToElement#0;class#Events#0" />
+            <element signature="method#scrollToElement#0;class#Events#0" />
+            <element signature="method#touchLongPressAction#0;class#Events#0" />
+            <element signature="method#swipeToElement#1;class#Events#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/MyStringRandomGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/mobile/test/twitter/Twitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="370">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -931,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/context/app/TwitterAndroidTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="348">
+          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

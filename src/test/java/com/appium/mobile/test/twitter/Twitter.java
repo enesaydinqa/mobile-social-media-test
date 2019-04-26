@@ -51,13 +51,13 @@ public class Twitter extends TwitterAndroidTest {
         swipeScreen(firstMobile,UP,10);
         sleep(5);
 
-        System.out.println(homePage.lastTweet.getAttribute("contentDescription"));
+        System.out.println(getAttribute(homePage.lastTweet,"contentDescription")) ;
         waitAndClick(firstMobile,homePage.threeLine,true,"three line is clicked");
         waitAndClick(firstMobile,homePage.profile,true,"profile menu is clicked");
 
         waitElementVisible(firstMobile,profilePage.lastTweet);
         waitAndClick(firstMobile,profilePage.back,true,"back to home page button is clicked");
-        System.out.println(profilePage.lastTweet.getAttribute("contentDescription"));
+        System.out.println(getAttribute(homePage.lastTweet,"contentDescription")) ;
         exitFromTwitter(firstMobile);
     }
 }
