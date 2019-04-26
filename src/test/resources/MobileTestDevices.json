@@ -1,0 +1,34 @@
+{
+  "ONE_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "8.0.0",
+    "deviceName": "Galaxy A7",
+    "deviceOperator": "Mobily",
+    "uid": "5200c60cfa6d7473",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "4723",
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": false,
+    "fastReset": false,
+    "noSign": true,
+    "clearDeviceLogsOnStart": false,
+    "automationName": "UiAutomator1",
+    "deviceIMEI": "-"
+  },
+  "SECOND_DEVICE": {
+    "platformName": "Android",
+    "platformVersion": "",
+    "deviceName": "Test Devices",
+    "deviceOperator": "",
+    "uid": "",
+    "deviceServer": "127.0.0.1",
+    "devicePort": "5558",
+    "unicodeKeyboard": true,
+    "autoGrantPermissions": true,
+    "fastReset": true,
+    "noSign": true,
+    "clearDeviceLogsOnStart": true,
+    "automationName": "UiAutomator1",
+    "deviceIMEI": ""
+  }
+}

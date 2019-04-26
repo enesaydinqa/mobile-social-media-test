@@ -1,0 +1,68 @@
+2019-04-24 08:54:03 INFO  StatusRule:14 - =================================================================
+2019-04-24 08:54:03 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-24 08:54:03 INFO  StatusRule:28 - =================================================================
+2019-04-24 08:54:03 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
+2019-04-24 08:54:50 INFO  StatusRule:14 - =================================================================
+2019-04-24 08:54:50 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-24 08:54:50 INFO  StatusRule:28 - =================================================================
+2019-04-24 08:54:50 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
+2019-04-24 09:08:34 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:08:34 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:08:34 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:08:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:49:43 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:49:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:49:43 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:49:43 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:53:49 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:53:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:53:49 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:53:49 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:56:48 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:56:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:56:48 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:56:48 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:58:40 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:58:40 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:58:40 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:58:40 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:59:37 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:59:37 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:59:38 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:59:38 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 09:59:45 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:59:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 09:59:46 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:59:46 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 10:00:45 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:00:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-24 10:00:45 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:00:45 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-24 10:03:42 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:03:42 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-24 10:04:05 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:04:05 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
+2019-04-24 10:05:47 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:05:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureSendMessage
+2019-04-24 10:05:47 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:05:47 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureSendMessage
+2019-04-24 10:06:52 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:06:52 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-24 10:06:52 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:06:52 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-24 10:07:59 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:07:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-24 10:08:31 INFO  Events:252 - Not Successfull Push File Mobile
+2019-04-24 10:10:44 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:10:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureSendMessage
+2019-04-24 10:11:01 INFO  SnapchatStoryTest:61 - test
+2019-04-24 10:11:03 INFO  StatusRule:21 - =================================================================
+2019-04-24 10:11:03 INFO  StatusRule:22 - =====> TEST PASSED ... --> testCaptureSendMessage
+2019-04-24 10:11:14 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:11:14 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-24 10:11:32 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:11:32 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
+2019-04-24 10:15:28 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:15:28 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-24 10:18:20 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:18:20 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
