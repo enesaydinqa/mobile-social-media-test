@@ -70,9 +70,18 @@ public abstract class DriverManager extends Events
         if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
+        uiautomatorRemove(deviceCapabilities.getUid());
+
         driver = new AndroidDriver(url, capabilities);
 
         return driver;
+    }
+
+    private void uiautomatorRemove(String uid) throws IOException
+    {
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server.test", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
     }
 
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
