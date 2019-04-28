@@ -79,8 +79,8 @@ public abstract class DriverManager extends Events
 
     private void uiautomatorRemove(String uid) throws IOException
     {
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server", uid));
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server.test", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server.test", uid));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
     }
 
