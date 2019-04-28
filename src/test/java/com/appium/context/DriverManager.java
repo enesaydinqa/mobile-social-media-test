@@ -46,6 +46,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
+            capabilities.setCapability("udid", deviceCapabilities.getUid());
         }
         catch (Exception ex)
         {
