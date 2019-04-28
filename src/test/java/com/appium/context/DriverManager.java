@@ -47,7 +47,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
 
-            if (!deviceCapabilities.getUid().equals(""))
+            if (!deviceCapabilities.getUid().equals("NULL"))
             {
                 capabilities.setCapability("udid", deviceCapabilities.getUid());
             }
@@ -77,11 +77,13 @@ public abstract class DriverManager extends Events
         return driver;
     }
 
-    private void uiautomatorRemove(String uid) throws IOException
+    private void uiautomatorRemove(String uid) throws IOException, InterruptedException
     {
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server", uid));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server.test", uid));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
+
+        Thread.sleep(2000);
     }
 
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
