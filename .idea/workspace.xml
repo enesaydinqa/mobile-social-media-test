@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad448a0-a0d3-46ab-a50b-9a39f1e2a93b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/social_media_testing_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/social_media_testing_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appium/mobile/test/instagram/InstagramSingleDeviceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/configuration.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="416">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,80 +133,66 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="social_media_testing_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -218,7 +200,16 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -227,7 +218,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -237,7 +228,18 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -247,7 +249,28 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="flag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -257,7 +280,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -268,7 +291,7 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -280,7 +303,51 @@
             </path>
             <path>
               <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="snapchat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="instagram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="appium" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="snapchat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobile-social-media-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -288,17 +355,11 @@
               <item name="appium" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="social-media-testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobile-social-media-test-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,6 +443,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.InstagramSingleDeviceTest.testSendImagePost" />
+      <item itemvalue="JUnit.InstagramSingleDeviceTest.testSendVideoPost" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.InstagramSingleDeviceTest.testSendImagePost" />
@@ -453,12 +518,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56277000" />
+    <option name="totallyTimeSpent" value="56303000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="846" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993395" visible="true" weight="0.23400854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993395" visible="true" weight="0.28397712" />
       <window_info id="Structure" order="1" sideWeight="0.5006605" side_tool="true" weight="0.26895565" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -923,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/appium/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="416">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
