@@ -46,7 +46,15 @@ public abstract class DriverManager extends Events
             capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
-            capabilities.setCapability("udid", deviceCapabilities.getUid());
+
+            if (!deviceCapabilities.getUid().equals(""))
+            {
+                capabilities.setCapability("udid", deviceCapabilities.getUid());
+            }
+            else
+            {
+                throw new Exception("Mobile UID Not Found");
+            }
         }
         catch (Exception ex)
         {
