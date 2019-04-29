@@ -6,10 +6,17 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.android.nativekey.KeyEventFlag;
+import io.appium.java_client.touch.offset.PointOption;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -40,6 +47,23 @@ public class Events implements CommonMobile
     {
         UP, DOWN, LEFT, RIGHT
     }
+    public void clickCoordinate(AppiumDriver driver, int pointX, int pointY) {
+        TouchAction touchAction = new TouchAction(driver);
+        touchAction.press(PointOption.point(pointX, pointY)).release().perform();
+        logger.info("login link is clicked");
+    }
+
+
+   public void keyboardEnter(AppiumDriver driver,Boolean log){
+       ((AndroidDriver) driver).isKeyboardShown();
+       ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+       driver.hideKeyboard();
+    }
+
+    public void waitAndClearInput(MobileElement element) {
+        element.clear();
+    }
+
 
     @Override
     public void waitAndClick(AppiumDriver driver, MobileElement element)

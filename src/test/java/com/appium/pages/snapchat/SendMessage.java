@@ -10,10 +10,16 @@ public class SendMessage  extends PageObject {
     {
         super(driver);
     }
-    @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.ImageView")
-    public MobileElement sendMessageButton;
 
-        //@AndroidFindBy()
+    @AndroidFindBy(id="com.snapchat.android:id/neon_header_title")
+    public MobileElement searchField;
+    @AndroidFindBy(id="com.snapchat.android:id/item")
+    public MobileElement sendMessageUser;
+    @AndroidFindBy(id="com.snapchat.android:id/chat_input_text_field")
+    public MobileElement sendAChat;
+    @AndroidFindBy(id= "com.snapchat.android:id/neon_header_back_button")
+    public MobileElement backButton;
+
 
 
 }

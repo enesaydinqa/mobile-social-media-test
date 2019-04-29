@@ -7,7 +7,7 @@
     "uid": "5200c60cfa6d7473",
     "deviceServer": "127.0.0.1",
     "devicePort": "4723",
-    "unicodeKeyboard": true,
+    "unicodeKeyboard": false,
     "autoGrantPermissions": false,
     "fastReset": false,
     "noSign": true,
