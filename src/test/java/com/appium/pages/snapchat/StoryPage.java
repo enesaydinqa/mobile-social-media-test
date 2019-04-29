@@ -15,6 +15,9 @@ public class StoryPage extends PageObject
     @AndroidFindBy(id = "com.snapchat.android:id/camera_capture_button")
     public MobileElement cameraCaptureButton;
 
+    @AndroidFindBy(id = "com.snapchat.android:id/lenses_camera_button_view")
+    public MobileElement lensButton;
+
     @AndroidFindBy(id = "com.snapchat.android:id/send_btn")
     public MobileElement sendButton;
 
@@ -29,6 +32,9 @@ public class StoryPage extends PageObject
 
     @AndroidFindBy(id = "com.snapchat.android:id/avatar_story")
     public MobileElement avatarImage;
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id='com.snapchat.android:id/item_image'])[4]")
+    public MobileElement firstFilterButton;
 
 
 }

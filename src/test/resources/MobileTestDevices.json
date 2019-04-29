@@ -1,19 +1,19 @@
 {
   "ONE_DEVICE": {
     "platformName": "Android",
-    "platformVersion": "5.1",
-    "deviceName": "Galaxy S5",
+    "platformVersion": "7.0",
+    "deviceName": "Galaxy S7",
     "deviceOperator": "Mobily",
-    "uid": "536053d2",
+    "uid": "ad01170206a7eeb2a4",
     "deviceServer": "127.0.0.1",
-    "devicePort": "4723",
+    "devicePort": "5000",
     "unicodeKeyboard": false,
     "autoGrantPermissions": false,
-    "fastReset": true,
+    "fastReset": false,
     "noSign": true,
     "clearDeviceLogsOnStart": false,
     "automationName": "UiAutomator1",
-    "deviceIMEI": "-"
+    "deviceIMEI": "358436073757704"
   },
   "SECOND_DEVICE": {
     "platformName": "Android",

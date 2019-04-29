@@ -1,24 +1,20 @@
 package com.appium.utils;
 
+import com.appium.context.app.TwitterAndroidTest;
+import com.appium.mobile.test.twitter.Twitter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-
-public class InstagramReportGenerate extends TestWatcher
-{
+public class TwitterReportGenerate extends TestWatcher {
     @Override
-    protected void failed(Throwable e, Description description)
-    {
+    protected void failed(Throwable e, Description description) {
         ExtentReports extent = null;
-        try
-        {
+        try {
             extent = createReport();
-        }
-        catch (Exception e1)
-        {
+        } catch (Exception e1) {
             e1.printStackTrace();
         }
 
@@ -32,15 +28,11 @@ public class InstagramReportGenerate extends TestWatcher
     }
 
     @Override
-    protected void succeeded(Description description)
-    {
+    protected void succeeded(Description description) {
         ExtentReports extent = null;
-        try
-        {
+        try {
             extent = createReport();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -54,27 +46,27 @@ public class InstagramReportGenerate extends TestWatcher
     }
 
 
-    private ExtentReports createReport() throws Exception
-    {
+    private ExtentReports createReport() throws Exception {
         Configuration configuration = new Configuration();
 
-        String reportName = System.getProperty("user.dir")//home
-                .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator")))
-                .concat(configuration.getOperator().concat("-"))
-                .concat("Test-Result.html");
+        String reportName = "test.html";
+        //System.getProperty("user.home")
+        //        .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator")))
+        //         .concat(configuration.getOperator().concat("-"))
+        //          .concat("Test-Result.html");
 
         ExtentReports extent = new ExtentReports(reportName, false);
         return extent;
     }
 
-    private void flushReports(ExtentReports extent, ExtentTest test)
-    {
+    private void flushReports(ExtentReports extent, ExtentTest test) {
         extent.endTest(test);
         extent.flush();
     }
 
-    private void reportInformation(ExtentTest test)
-    {
+    private void reportInformation(ExtentTest test) {
+        test.log(LogStatus.INFO, Twitter.t);
+
         if (ReportInformation.mobileOneDeviceIMEI != null)
             test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", ReportInformation.mobileOneDeviceIMEI));
 
@@ -87,11 +79,11 @@ public class InstagramReportGenerate extends TestWatcher
         if (ReportInformation.mobileDeviceSecondGeoLocation != null)
             test.log(LogStatus.INFO, String.format("Second Mobile Geo Location : %s", ReportInformation.mobileDeviceSecondGeoLocation));
 
-        if (ReportInformation.instagramPostShareButtonClickTime != null)
-            test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", ReportInformation.instagramPostShareButtonClickTime));
+        // if (ReportInformation.instagramPostShareButtonClickTime != null)
+        // test.log(LogStatus.INFO, String.format("Instagram Post Share Button Click Time : %s", ReportInformation.instagramPostShareButtonClickTime));
 
-        if (ReportInformation.instagramSharedImagePostTime != null)
-            test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", ReportInformation.instagramSharedImagePostTime));
+        // if (ReportInformation.instagramSharedImagePostTime != null)
+        //  test.log(LogStatus.INFO, String.format("Instagram Shared Image Post Time : %s", ReportInformation.instagramSharedImagePostTime));
 
         if (ReportInformation.instagramSharedVideoPostTime != null)
             test.log(LogStatus.INFO, String.format("Instagram Shared Video Post Time : %s", ReportInformation.instagramSharedVideoPostTime));

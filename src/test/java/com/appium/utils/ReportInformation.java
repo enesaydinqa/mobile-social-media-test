@@ -23,6 +23,8 @@ public class ReportInformation
     public static String sendMessageTime;
     public static String receiveMessageTime;
 
+
+
     public static void veriableFormat()
     {
         mobileOneDeviceIMEI = null;

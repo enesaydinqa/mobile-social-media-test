@@ -7,10 +7,12 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,6 +26,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,6 +42,15 @@ public class Events implements CommonMobile {
 
     public enum SwipeDirection {
         UP, DOWN, LEFT, RIGHT
+    }
+
+    public String screenshot(AppiumDriver driver) throws IOException{
+        File srcFile=driver.getScreenshotAs(OutputType.FILE);
+        String filename= UUID.randomUUID().toString();
+        String path=System.getProperty("user.dir"+"/snapchat_filter_test_image/")+ filename +".png";
+        File targetFile=new File(path);
+        FileUtils.copyFile(srcFile,targetFile);
+        return path;
     }
 
     public void clickCoordinate(AppiumDriver driver, int pointX, int pointY) {
@@ -58,6 +70,11 @@ public class Events implements CommonMobile {
         String text;
         text = element.getAttribute(atributeName);
         return text;
+    }
+    public String[] split(String text,String charThatDivide){
+        String[] value;
+        value=text.split(charThatDivide);
+        return value;
     }
 
     @Override
@@ -400,7 +417,7 @@ public class Events implements CommonMobile {
                 .waitAction(waitOptions(Duration.ofMillis(duration))).release().perform();
     }
 
-    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked) {
+    public void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked) {
         swipeToElement(driver, mobileElement, isClicked, false);
     }
 
