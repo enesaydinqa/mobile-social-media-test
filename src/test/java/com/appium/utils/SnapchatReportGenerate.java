@@ -71,7 +71,6 @@ public class SnapchatReportGenerate extends TestWatcher
 //                .concat("Test-Result-snapchat.html");
 
         ExtentReports extent = new ExtentReports(reportName, false);
-
         return extent;
     }
 
@@ -82,6 +81,7 @@ public class SnapchatReportGenerate extends TestWatcher
     }
 
     private void reportInformation(ExtentTest test) {
+
         if (ReportInformation.mobileOneDeviceIMEI != null)
             test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", ReportInformation.mobileOneDeviceIMEI));
 

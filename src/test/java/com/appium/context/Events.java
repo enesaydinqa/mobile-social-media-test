@@ -47,7 +47,7 @@ public class Events implements CommonMobile {
     public String screenshot(AppiumDriver driver) throws IOException{
         File srcFile=driver.getScreenshotAs(OutputType.FILE);
         String filename= UUID.randomUUID().toString();
-        String path=System.getProperty("user.dir"+"/snapchat_filter_test_image/")+ filename +".png";
+        String path=System.getProperty("user.dir")+ "/snapchat_filter_test_image/"+filename +".png";
         File targetFile=new File(path);
         FileUtils.copyFile(srcFile,targetFile);
         return path;

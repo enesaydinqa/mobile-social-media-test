@@ -1,5 +1,7 @@
 package com.appium.mobile.test.snapchat;
 
+import com.annotation.Author;
+import com.annotation.Contact;
 import com.appium.client.date.DateFormatType;
 import com.appium.context.app.SnapchatAndroidTest;
 import com.appium.pages.snapchat.StoryPage;
@@ -9,6 +11,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.logging.LogEntry;
+import org.springframework.context.annotation.Description;
 
 import java.io.IOException;
 import java.util.List;
@@ -25,6 +28,7 @@ public class SnapchatStoryTest extends SnapchatAndroidTest {
     public static String secondFilter;
     public static String cameraButtonClickTime;
     public static String swipeButtonClickTime;
+
 
 
     private StoryPage storyPage;
@@ -81,6 +85,8 @@ public class SnapchatStoryTest extends SnapchatAndroidTest {
     }
 
     @Test
+    @Description("Test Two Filter For Snapchat")
+    @Contact(Author.ATIKE)
     public void useFilters() throws InterruptedException, IOException {
         mobileDeviceOneGeoLocation = getGeoLocation(configuration.getMobileOneUID());
         cameraButtonClickTime = waitAndClick(firstMobile, storyPage.lensButton, true, "camera capture button is clicked");
