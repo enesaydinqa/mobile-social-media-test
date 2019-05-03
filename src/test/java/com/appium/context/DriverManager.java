@@ -46,6 +46,15 @@ public abstract class DriverManager extends Events
             capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
+
+            if (!deviceCapabilities.getUid().equals("NULL"))
+            {
+                capabilities.setCapability("udid", deviceCapabilities.getUid());
+            }
+            else
+            {
+                throw new Exception("Mobile UID Not Found");
+            }
         }
         catch (Exception ex)
         {
@@ -61,9 +70,20 @@ public abstract class DriverManager extends Events
         if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
+        uiautomatorRemove(deviceCapabilities.getUid());
+
         driver = new AndroidDriver(url, capabilities);
 
         return driver;
+    }
+
+    private void uiautomatorRemove(String uid) throws IOException, InterruptedException
+    {
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server.test", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
+
+        Thread.sleep(2000);
     }
 
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException

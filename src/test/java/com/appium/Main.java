@@ -8,12 +8,22 @@ public class Main
 {
     public static void main(String[] args) throws Exception
     {
+
         String testType = System.getProperties().getProperty("test.app.prop");
+        Boolean multipleDeviceTest = Boolean.getBoolean(System.getProperties().getProperty("multiple.device.test"));
 
         switch (testType)
         {
             case "INSTAGRAM":
-                JUnitCore.runClasses(InstagramSingleDeviceTest.class, InstagramMultipleDeviceTest.class);
+
+                if (multipleDeviceTest)
+                {
+                    JUnitCore.runClasses(InstagramSingleDeviceTest.class, InstagramMultipleDeviceTest.class);
+                }
+                else if (!multipleDeviceTest)
+                {
+                    JUnitCore.runClasses(InstagramSingleDeviceTest.class);
+                }
                 break;
 
             default:

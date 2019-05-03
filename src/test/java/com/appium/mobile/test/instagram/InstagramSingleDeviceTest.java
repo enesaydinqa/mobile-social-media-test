@@ -63,7 +63,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
-        waitAndClick(firstMobile, postSendPage.galleryTitle);
+        //waitAndClick(firstMobile, postSendPage.galleryTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 
@@ -83,7 +83,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
-        waitAndClick(firstMobile, postSendPage.galleryTitle);
+        // waitAndClick(firstMobile, postSendPage.galleryTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 
