@@ -4,6 +4,7 @@ import com.appium.pages.PageObject;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 
 public class LoginPage extends PageObject
 {
@@ -24,4 +25,8 @@ public class LoginPage extends PageObject
     @AndroidFindBy(id = "com.instagram.android:id/button_text")
     public MobileElement loginButton;
 
+    public By noneButtonBy = By.id("com.google.android.gms:id/cancel");
+
+    @AndroidFindBy(id = "com.google.android.gms:id/cancel")
+    public MobileElement noneButtonMobileElement;
 }

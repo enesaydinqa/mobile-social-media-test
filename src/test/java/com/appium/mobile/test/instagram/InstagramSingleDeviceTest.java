@@ -8,6 +8,7 @@ import com.appium.flag.MobilyInstagram;
 import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.FooterPage;
+import com.appium.pages.instagram.LoginPage;
 import com.appium.pages.instagram.PostSendPage;
 import com.appium.pages.instagram.SearchPage;
 import com.appium.utils.InstagramReportGenerate;
@@ -34,6 +35,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     private FooterPage footerPage;
     private PostSendPage postSendPage;
     private SearchPage searchPage;
+    private LoginPage loginPage;
 
     @Rule
     public InstagramReportGenerate screenShootRule = new InstagramReportGenerate();
@@ -46,6 +48,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
         footerPage = new FooterPage(firstMobile);
         postSendPage = new PostSendPage(firstMobile);
         searchPage = new SearchPage(firstMobile);
+        loginPage = new LoginPage(firstMobile);
     }
 
     @Test
@@ -91,6 +94,8 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     @Test
     @Contact(Author.SELIM)
     public void testSearchByHashtag() throws InterruptedException {
+        //waitNotVisible(firstMobile, loginPage.noneButtonBy);
+        waitAndClick(firstMobile, loginPage.noneButtonMobileElement);
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
 
         waitAndClick(firstMobile, footerPage.searchButton);
