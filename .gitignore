@@ -1,0 +1,9 @@
+
+# This ignore files
+
+.idea
+.classpath
+.project
+.settings/
+target/
+out/
