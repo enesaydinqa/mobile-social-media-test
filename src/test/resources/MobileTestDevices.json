@@ -1,18 +1,18 @@
 {
   "ONE_DEVICE": {
     "platformName": "Android",
-    "platformVersion": "7.0",
+    "platformVersion": "7.1",
     "deviceName": "Galaxy S7",
     "deviceOperator": "Mobily",
     "uid": "ad01170206a7eeb2a4",
-    "deviceServer": "127.0.0.1",
-    "devicePort": "5000",
+    "deviceServer": "0.0.0.0",
+    "devicePort": "4723",
     "unicodeKeyboard": false,
     "autoGrantPermissions": false,
     "fastReset": false,
     "noSign": true,
     "clearDeviceLogsOnStart": false,
-    "automationName": "UiAutomator1",
+    "automationName": "UiAutomator2",
     "deviceIMEI": "358436073757704"
   },
   "SECOND_DEVICE": {

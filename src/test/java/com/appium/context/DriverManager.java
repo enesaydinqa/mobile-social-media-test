@@ -47,9 +47,8 @@ public abstract class DriverManager extends Events
             capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
-<<<<<<< HEAD
-            //capabilities.setCapability("autoAcceptAlerts",true);
-=======
+            capabilities.setCapability("autoAcceptAlerts", true);
+            capabilities.setCapability("disableWindowAnimation", true);
 
             if (!deviceCapabilities.getUid().equals("NULL"))
             {
@@ -59,7 +58,6 @@ public abstract class DriverManager extends Events
             {
                 throw new Exception("Mobile UID Not Found");
             }
->>>>>>> master
         }
         catch (Exception ex)
         {
@@ -72,8 +70,11 @@ public abstract class DriverManager extends Events
 
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
-        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
+        /*
+        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()) )
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
+
+            */
 
         uiautomatorRemove(deviceCapabilities.getUid());
 
@@ -82,15 +83,26 @@ public abstract class DriverManager extends Events
         return driver;
     }
 
+    /**
+     * @param uid : device unique id.
+     */
     private void uiautomatorRemove(String uid) throws IOException, InterruptedException
     {
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server", uid));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server.test", uid));
+
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server", uid));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server.test", uid));
+
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
 
-        Thread.sleep(2000);
+        sleep(2);
     }
 
+    /**
+     * @param deviceServer : appium server ip
+     * @param devicePort   : appium server port
+     */
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
     {
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
@@ -103,7 +115,7 @@ public abstract class DriverManager extends Events
         service = AppiumDriverLocalService.buildService(builder);
         service.start();
 
-        Thread.sleep(10000);
+        sleep(5);
     }
 
     private boolean checkIfServerIsRunning(String port)

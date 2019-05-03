@@ -18,7 +18,8 @@
 # VM Options
 -Dtest.app.prop=APP_NAME
 -Doperator=OPERATOR_NAME
--DtestResultPath=REPORT_PATH
+-Dtest.result.path=REPORT_PATH
+-Dmultiple.device.test=true/false (opsional) 
 
 
 # Appium Server

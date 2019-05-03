@@ -42,7 +42,6 @@ public abstract class AbstractAndroidTest extends DriverManager
 
             mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
         }
-
     }
 
     @After

@@ -5,47 +5,40 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class HomePage extends PageObject {
-    public HomePage(AppiumDriver driver){
+public class HomePage extends PageObject
+{
+    public HomePage(AppiumDriver driver)
+    {
         super(driver);
     }
 
-    @AndroidFindBy(id="com.twitter.android:id/composer_write")
-    public MobileElement tweet;
-    @AndroidFindBy(id="com.twitter.android:id/self_thread_content")
-    public MobileElement messageText;
+    @AndroidFindBy(id = "com.twitter.android:id/composer_write")
+    public MobileElement tweetButton;
 
-    @AndroidFindBy(id="com.twitter.android:id/button_tweet")
-    public MobileElement sendMessage;
+    @AndroidFindBy(id = "com.twitter.android:id/tweet_text")
+    public MobileElement tweetText;
 
-    @AndroidFindBy(xpath="//android.view.View[@resource-id='com.twitter.android:id/toolbar']//android.widget.ImageButton")
-    public MobileElement threeLine;
+    @AndroidFindBy(id = "com.twitter.android:id/button_tweet")
+    public MobileElement buttonTweetButton;
 
+    @AndroidFindBy(accessibility = "Show navigation drawer")
+    public MobileElement threeLineButton;
 
-    //threeline panel
-    @AndroidFindBy(xpath="(//android.widget.TextView[@resource-id='com.twitter.android:id/title'])[5]")
-    public MobileElement settings;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Settings and privacy']")
+    public MobileElement settingsTitle;
 
-    @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget." +
-            "FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android." +
-            "widget.ListView/android.widget.LinearLayout[1]/android.widget.RelativeLayout")
-    public MobileElement account;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Account']")
+    public MobileElement accountTitle;
 
-    @AndroidFindBy(xpath="(//android.widget.ListView[@resource-id='android:id/list']//android.widget.TextView[@resource-id='android:id/title'])[8]")
-    public MobileElement exitt;//switch to yapılacak
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Log out']")
+    public MobileElement logoutTitle;
 
-    @AndroidFindBy(xpath="//android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*")
-    public MobileElement twitterDatas;//scroll işlemi için kullanılacak
+    @AndroidFindBy(id = "android:id/button1")
+    public MobileElement okButton;
 
-    @AndroidFindBy(id="android:id/button1")
-    public MobileElement yesExit;
-
-    @AndroidFindBy(xpath="(//android.widget.TextView[@resource-id='com.twitter.android:id/title'])[1]")
+    @AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.twitter.android:id/title'])[1]")
     public MobileElement profile;
 
-    @AndroidFindBy(xpath="(//androidx.recyclerview.widget.RecyclerView//android.view.View[@resource-id='com.twitter.android:id/row'])[1]")
-    public MobileElement lastTweet;//burada kaldım
-
-    @AndroidFindBy(id="com.twitter.android:id/root_coordinator_layout")
-    public MobileElement dnm;
+    @AndroidFindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView//android.view.View[@resource-id='com.twitter.android:id/row'])[1]")
+    public MobileElement lastTweet;
 }

@@ -4,7 +4,6 @@ import com.annotation.Author;
 import com.annotation.Contact;
 import com.appium.context.app.TwitterAndroidTest;
 import com.appium.mobile.test.instagram.InstagramSingleDeviceTest;
-import com.appium.pages.instagram.DirectMessagePage;
 import com.appium.pages.twitter.HomePage;
 import com.appium.pages.twitter.ProfilePage;
 import org.apache.log4j.Logger;
@@ -12,8 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-
-import static com.appium.context.Events.SwipeDirection.UP;
 
 public class TwitterMultipleDeviceTest extends TwitterAndroidTest {
     private Logger logger = Logger.getLogger(InstagramSingleDeviceTest.class);
@@ -33,7 +30,7 @@ public class TwitterMultipleDeviceTest extends TwitterAndroidTest {
         sleep(10);
         //loginTwitter(firstMobile, "aktel112@gmail.com", "enerjimE1");
      //   loginTwitter(secondMobile, "testenerjim@gmail.com", "enerjimE1");
-        loginTwitter(firstMobile, "testenerjim@gmail.com", "enerjimE1");
+        login(firstMobile, "testenerjim@gmail.com", "enerjimE1");
 //        sleep(10);
 //        swipeScreen(firstMobile,UP,2);
 //        writeAndSendTweet(firstMobile);

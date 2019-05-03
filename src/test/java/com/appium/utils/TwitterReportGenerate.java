@@ -1,20 +1,23 @@
 package com.appium.utils;
 
-import com.appium.context.app.TwitterAndroidTest;
-import com.appium.mobile.test.twitter.Twitter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-public class TwitterReportGenerate extends TestWatcher {
+public class TwitterReportGenerate extends TestWatcher
+{
     @Override
-    protected void failed(Throwable e, Description description) {
+    protected void failed(Throwable e, Description description)
+    {
         ExtentReports extent = null;
-        try {
+        try
+        {
             extent = createReport();
-        } catch (Exception e1) {
+        }
+        catch (Exception e1)
+        {
             e1.printStackTrace();
         }
 
@@ -28,11 +31,15 @@ public class TwitterReportGenerate extends TestWatcher {
     }
 
     @Override
-    protected void succeeded(Description description) {
+    protected void succeeded(Description description)
+    {
         ExtentReports extent = null;
-        try {
+        try
+        {
             extent = createReport();
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
 
@@ -46,7 +53,8 @@ public class TwitterReportGenerate extends TestWatcher {
     }
 
 
-    private ExtentReports createReport() throws Exception {
+    private ExtentReports createReport() throws Exception
+    {
         Configuration configuration = new Configuration();
 
         String reportName = "test.html";
@@ -59,13 +67,14 @@ public class TwitterReportGenerate extends TestWatcher {
         return extent;
     }
 
-    private void flushReports(ExtentReports extent, ExtentTest test) {
+    private void flushReports(ExtentReports extent, ExtentTest test)
+    {
         extent.endTest(test);
         extent.flush();
     }
 
-    private void reportInformation(ExtentTest test) {
-        test.log(LogStatus.INFO, Twitter.t);
+    private void reportInformation(ExtentTest test)
+    {
 
         if (ReportInformation.mobileOneDeviceIMEI != null)
             test.log(LogStatus.INFO, String.format("One Mobile IMEI : %s", ReportInformation.mobileOneDeviceIMEI));

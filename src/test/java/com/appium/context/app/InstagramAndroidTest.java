@@ -6,9 +6,11 @@ import io.appium.java_client.AppiumDriver;
 
 public class InstagramAndroidTest extends AbstractAndroidTest
 {
+    private LoginPage loginPage;
+
     protected void login(AppiumDriver driver, String username, String password) throws InterruptedException
     {
-        LoginPage loginPage = new LoginPage(driver);
+        if (loginPage == null) loginPage = new LoginPage(driver);
 
         waitAndClick(driver, loginPage.logIn);
         waitAndSendKeys(driver, loginPage.usernameInput, username);

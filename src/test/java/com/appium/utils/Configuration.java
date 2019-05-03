@@ -30,6 +30,8 @@ public class Configuration
     private String firstInstagramTestUser;
     private String secondInstagramTestUser;
     private String instagramTestUserPassword;
+    private String firstTwitterTestUser;
+    private String twitterTestUserPassword;
 
     public Configuration() throws Exception
     {
@@ -50,6 +52,9 @@ public class Configuration
         this.firstInstagramTestUser = getInstagramTestUser()[0];
         this.secondInstagramTestUser = getInstagramTestUser()[1];
         this.instagramTestUserPassword = readInstagramTestUserPassword();
+
+        this.firstTwitterTestUser = getTwitterTestUser()[0];
+        this.twitterTestUserPassword = readTwitterTestUserPassword();
     }
 
     private void loadConfigProperties() throws IOException
@@ -156,9 +161,29 @@ public class Configuration
         }
     }
 
+    private String[] getTwitterTestUser() throws Exception
+    {
+        switch (operator)
+        {
+            case "STC":
+                return new String[]{configProps.getProperty("stc.twitter.test.user1")};
+            case "Mobily":
+                return new String[]{configProps.getProperty("mobily.twitter.test.user1")};
+            case "Zain":
+                return new String[]{configProps.getProperty("zain.twitter.test.user1")};
+            default:
+                throw new Exception(String.format("twitter test user not set because illegal operator name [%s]", operator));
+        }
+    }
+
     private String readInstagramTestUserPassword()
     {
         return configProps.getProperty("instagram.test.user.password");
+    }
+
+    private String readTwitterTestUserPassword()
+    {
+        return configProps.getProperty("twitter.test.user.password");
     }
 
     private String readVariant()
@@ -272,6 +297,26 @@ public class Configuration
     public String getInstagramTestUserPassword()
     {
         return instagramTestUserPassword;
+    }
+
+    public String getFirstTwitterTestUser()
+    {
+        return firstTwitterTestUser;
+    }
+
+    public void setFirstTwitterTestUser(String firstTwitterTestUser)
+    {
+        this.firstTwitterTestUser = firstTwitterTestUser;
+    }
+
+    public String getTwitterTestUserPassword()
+    {
+        return twitterTestUserPassword;
+    }
+
+    public void setTwitterTestUserPassword(String twitterTestUserPassword)
+    {
+        this.twitterTestUserPassword = twitterTestUserPassword;
     }
 
     public void setInstagramTestUserPassword(String instagramTestUserPassword)
