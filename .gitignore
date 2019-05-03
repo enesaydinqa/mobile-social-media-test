@@ -2,6 +2,7 @@
 # This ignore files
 
 .idea
+.iml
 .classpath
 .project
 .settings/
