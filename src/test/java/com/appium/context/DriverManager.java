@@ -1,14 +1,12 @@
 package com.appium.context;
 
 import com.appium.client.objects.DeviceCapabilities;
-import com.appium.client.objects.DeviceInfo;
 import com.appium.client.parameter.AppInfo;
 import com.appium.client.parameter.AutoGrantPermissions;
 import com.appium.client.parameter.NoReset;
 import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
@@ -75,8 +73,7 @@ public abstract class DriverManager extends Events
         if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
-
-        uiautomatorRemove(deviceCapabilities.getUid(), deviceCapabilities.getAutomationName());
+        deviceAppiumRemove(deviceCapabilities.getUid());
 
         return new AndroidDriver(url, capabilities);
     }
@@ -84,13 +81,11 @@ public abstract class DriverManager extends Events
     /**
      * @param uid : device unique id.
      */
-    private void uiautomatorRemove(String uid, String uiAutomator) throws IOException, InterruptedException
+    private void deviceAppiumRemove(String uid) throws IOException, InterruptedException
     {
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.%s.server", uid, uiAutomator.toLowerCase()));
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.%s.server.test", uid, uiAutomator.toLowerCase()));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
 
-        sleep(5);
+        sleep(3);
     }
 
     /**
