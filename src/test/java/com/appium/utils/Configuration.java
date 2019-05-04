@@ -1,6 +1,7 @@
 package com.appium.utils;
 
 import com.appium.client.parameter.AppInfo;
+import com.appium.client.parameter.AutoGrantPermissions;
 import com.appium.client.parameter.DeviceName;
 import com.appium.client.parameter.NoReset;
 import org.apache.commons.lang3.StringUtils;
@@ -19,6 +20,7 @@ public class Configuration
 
     private AppInfo appInfo;
     private NoReset noReset;
+    private AutoGrantPermissions autoGrantPermissions;
     private String variant;
     private String testResultPath;
     private String operator;
@@ -39,6 +41,7 @@ public class Configuration
 
         this.appInfo = getAppInfoProp();
         this.noReset = getNoResetProp();
+        this.autoGrantPermissions = getAutoGrantPermissionsProp();
         this.operator = System.getProperties().getProperty("operator");
         this.testResultPath = System.getProperties().getProperty("test.result.path");
         this.variant = readVariant();
@@ -75,17 +78,27 @@ public class Configuration
         return noReset;
     }
 
+    public AutoGrantPermissions getAutoGrantPermissions()
+    {
+        return autoGrantPermissions;
+    }
+
     private AppInfo getAppInfoProp()
     {
-        return readAppInfoParameter("test.app.prop");
+        return readAppInfoParam("test.app.prop");
     }
 
     private NoReset getNoResetProp()
     {
-        return readNoResetParameter("test.app.prop");
+        return readNoResetParam("test.app.prop");
     }
 
-    private AppInfo readAppInfoParameter(String propertyKey)
+    private AutoGrantPermissions getAutoGrantPermissionsProp()
+    {
+        return readAutoGrantPermissionsParam("test.app.prop");
+    }
+
+    private AppInfo readAppInfoParam(String propertyKey)
     {
         AppInfo appInfo = null;
         String appName = System.getProperties().getProperty(propertyKey);
@@ -105,7 +118,7 @@ public class Configuration
         return appInfo;
     }
 
-    private NoReset readNoResetParameter(String propertyKey)
+    private NoReset readNoResetParam(String propertyKey)
     {
         NoReset noReset = null;
         String appName = System.getProperties().getProperty(propertyKey);
@@ -123,6 +136,26 @@ public class Configuration
         }
 
         return noReset;
+    }
+
+    private AutoGrantPermissions readAutoGrantPermissionsParam(String propertyKey)
+    {
+        AutoGrantPermissions autoGrantPermissions = null;
+        String appName = System.getProperties().getProperty(propertyKey);
+
+        if (StringUtils.isNotBlank(appName))
+        {
+            try
+            {
+                autoGrantPermissions = AutoGrantPermissions.valueOf(appName);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+        return autoGrantPermissions;
     }
 
     private String getDeviceUID(DeviceName deviceName)

@@ -35,10 +35,4 @@ public class HomePage extends PageObject
 
     @AndroidFindBy(id = "android:id/button1")
     public MobileElement okButton;
-
-    @AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.twitter.android:id/title'])[1]")
-    public MobileElement profile;
-
-    @AndroidFindBy(xpath = "(//androidx.recyclerview.widget.RecyclerView//android.view.View[@resource-id='com.twitter.android:id/row'])[1]")
-    public MobileElement lastTweet;
 }

@@ -8,7 +8,7 @@ public class InstagramAndroidTest extends AbstractAndroidTest
 {
     private LoginPage loginPage;
 
-    protected void login(AppiumDriver driver, String username, String password) throws InterruptedException
+    protected void login(AppiumDriver driver, String username, String password) throws Exception
     {
         if (loginPage == null) loginPage = new LoginPage(driver);
 

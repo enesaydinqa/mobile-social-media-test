@@ -27,14 +27,4 @@ public class StoryPage extends PageObject
     @AndroidFindBy(id = "com.snapchat.android:id/send_to_bottom_panel_send_button")
     public MobileElement send;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/status_bar_secondary_text")
-    public MobileElement sharedNotification;
-
-    @AndroidFindBy(id = "com.snapchat.android:id/avatar_story")
-    public MobileElement avatarImage;
-
-    @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id='com.snapchat.android:id/item_image'])[4]")
-    public MobileElement firstFilterButton;
-
-
 }

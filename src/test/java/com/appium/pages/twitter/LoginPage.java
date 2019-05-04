@@ -7,7 +7,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class LoginPage extends PageObject
 {
-
     public LoginPage(AppiumDriver driver)
     {
         super(driver);

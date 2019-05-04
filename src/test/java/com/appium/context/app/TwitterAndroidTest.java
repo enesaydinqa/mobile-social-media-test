@@ -1,6 +1,7 @@
 package com.appium.context.app;
 
 import com.appium.client.date.DateFormatType;
+import com.appium.client.objects.TwitterReport;
 import com.appium.context.AbstractAndroidTest;
 import com.appium.mobile.test.twitter.TwitterSingleDeviceTest;
 import com.appium.pages.twitter.HomePage;
@@ -19,15 +20,17 @@ public class TwitterAndroidTest extends AbstractAndroidTest
 {
     public Logger logger = Logger.getLogger(TwitterSingleDeviceTest.class);
 
+    protected TwitterReport twitterReport;
     private LoginPage loginPage;
     private HomePage homePage;
 
-    protected void login(AppiumDriver driver, String username, String password)
+    protected void loginIn(AppiumDriver driver, String username, String password) throws Exception
     {
         if (loginPage == null) loginPage = new LoginPage(driver);
 
-        int y = (loginPage.loginLink.getLocation().getY() + loginPage.loginLink.getLocation().getY() + loginPage.loginLink.getSize().height) / 2;
+        sleep(10);
 
+        int y = (loginPage.loginLink.getLocation().getY() + loginPage.loginLink.getLocation().getY() + loginPage.loginLink.getSize().height) / 2;
         int x = loginPage.loginLink.getLocation().getX() + loginPage.loginLink.getSize().width - (loginPage.loginLink.getLocation().getX() +
                 loginPage.loginLink.getLocation().getX() + loginPage.loginLink.getSize().width) / 10;
 
@@ -39,7 +42,7 @@ public class TwitterAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, loginPage.loginButton, true, "Login Button Click");
     }
 
-    protected void logOutFromTwitter(AppiumDriver driver)
+    protected void logOutFromTwitter(AppiumDriver driver) throws Exception
     {
         if (homePage == null) homePage = new HomePage(driver);
 
@@ -51,7 +54,7 @@ public class TwitterAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, homePage.okButton);
     }
 
-    protected void writeAndSendTweet(AppiumDriver driver) throws InterruptedException
+    protected void writeAndSentTweet(AppiumDriver driver) throws Exception
     {
         if (homePage == null) homePage = new HomePage(driver);
 
@@ -60,7 +63,7 @@ public class TwitterAndroidTest extends AbstractAndroidTest
 
         if (!isDisplayed(driver, homePage.tweetText)) waitAndClick(driver, homePage.tweetButton);
 
-        waitAndSendKeys(driver, homePage.tweetText, RandomStringUtils.randomAlphanumeric(100));
+        waitAndSendKeys(driver, homePage.tweetText, RandomStringUtils.randomAlphanumeric(200));
         waitAndClick(driver, homePage.buttonTweetButton, true, "Tweet Send Button Is Clicked Time");
 
         getSendTweetDuration();

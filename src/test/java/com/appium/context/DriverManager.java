@@ -1,12 +1,13 @@
 package com.appium.context;
 
 import com.appium.client.objects.DeviceCapabilities;
+import com.appium.client.objects.DeviceInfo;
 import com.appium.client.parameter.AppInfo;
+import com.appium.client.parameter.AutoGrantPermissions;
 import com.appium.client.parameter.NoReset;
 import com.appium.utils.Configuration;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -19,8 +20,6 @@ import java.net.URL;
 
 public abstract class DriverManager extends Events
 {
-    private AppiumDriver driver;
-    private AppiumDriverLocalService service;
 
     public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException, InterruptedException
     {
@@ -30,25 +29,27 @@ public abstract class DriverManager extends Events
 
         AppInfo appInfo = configuration.getAppInfo();
         NoReset noReset = configuration.getNoReset();
+        AutoGrantPermissions autoGrantPermissions = configuration.getAutoGrantPermissions();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         try
         {
             capabilities.setCapability("platformName", deviceCapabilities.getPlatformName());
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, deviceCapabilities.getPlatformVersion());
-            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceCapabilities.getDeviceName());
+            capabilities.setCapability("platformVersion", deviceCapabilities.getPlatformVersion());
+            capabilities.setCapability("deviceName", deviceCapabilities.getDeviceName());
             capabilities.setCapability("appPackage", appInfo.appPackage);
             capabilities.setCapability("appActivity", appInfo.appActivity);
             capabilities.setCapability("unicodeKeyboard", deviceCapabilities.getUnicodeKeyboard());
-            capabilities.setCapability("autoGrantPermissions", deviceCapabilities.getAutoGrantPermissions());
+            capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
             capabilities.setCapability("fastReset", deviceCapabilities.getFastReset());
             capabilities.setCapability("noSign", deviceCapabilities.getNoSign());
-            capabilities.setCapability(MobileCapabilityType.NO_RESET, noReset.noReset);
+            capabilities.setCapability("noReset", noReset.noReset);
             capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
             capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
             capabilities.setCapability("autoAcceptAlerts", true);
             capabilities.setCapability("disableWindowAnimation", true);
+            capabilities.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
 
             if (!deviceCapabilities.getUid().equals("NULL"))
             {
@@ -70,33 +71,27 @@ public abstract class DriverManager extends Events
 
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
+
         /*
-        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()) )
+        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
+*/
 
-            */
+        uiautomatorRemove(deviceCapabilities.getUid(), deviceCapabilities.getAutomationName());
 
-        uiautomatorRemove(deviceCapabilities.getUid());
-
-        driver = new AndroidDriver(url, capabilities);
-
-        return driver;
+        return new AndroidDriver(url, capabilities);
     }
 
     /**
      * @param uid : device unique id.
      */
-    private void uiautomatorRemove(String uid) throws IOException, InterruptedException
+    private void uiautomatorRemove(String uid, String uiAutomator) throws IOException, InterruptedException
     {
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server", uid));
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator1.server.test", uid));
-
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server", uid));
-        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.uiautomator2.server.test", uid));
-
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.%s.server", uid, uiAutomator.toLowerCase()));
+        Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.%s.server.test", uid, uiAutomator.toLowerCase()));
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
 
-        sleep(2);
+        sleep(5);
     }
 
     /**
@@ -112,7 +107,7 @@ public abstract class DriverManager extends Events
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
 
-        service = AppiumDriverLocalService.buildService(builder);
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
         service.start();
 
         sleep(5);
@@ -129,7 +124,6 @@ public abstract class DriverManager extends Events
         }
         catch (IOException e)
         {
-            //If control comes here, then it means that the port is in use
             isServerRunning = true;
         }
         finally
