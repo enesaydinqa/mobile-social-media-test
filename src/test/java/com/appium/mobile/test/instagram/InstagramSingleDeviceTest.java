@@ -30,7 +30,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
     private InstagramReport instagramReport;
 
     @Rule
-    public ReportGenerate screenShootRule = new ReportGenerate()
+    public ReportGenerate reportGenerate = new ReportGenerate()
     {
         @Override
         public void reportInformation(ExtentTest test)

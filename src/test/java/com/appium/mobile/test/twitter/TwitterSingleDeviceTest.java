@@ -19,7 +19,7 @@ public class TwitterSingleDeviceTest extends TwitterAndroidTest
     public Logger logger = Logger.getLogger(TwitterSingleDeviceTest.class);
 
     @Rule
-    public ReportGenerate screenShootRule = new ReportGenerate()
+    public ReportGenerate reportGenerate = new ReportGenerate()
     {
         @Override
         public void reportInformation(ExtentTest test)
