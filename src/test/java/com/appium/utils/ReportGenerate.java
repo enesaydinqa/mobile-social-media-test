@@ -60,8 +60,9 @@ public abstract class ReportGenerate extends TestWatcher
         Configuration configuration = new Configuration();
 
         String folderName = "MobileTestReports";
+        String fileSeparator = System.getProperty("file.separator");
 
-        File file = new File(System.getProperty("user.home").concat(System.getProperty("file.separator")).concat(folderName));
+        File file = new File(System.getProperty("user.home").concat(fileSeparator).concat(folderName));
 
         if (!file.exists())
         {
@@ -76,7 +77,7 @@ public abstract class ReportGenerate extends TestWatcher
         }
 
         String reportName = System.getProperty("user.home")
-                .concat(configuration.getTestResultPath().concat(System.getProperty("file.separator")))
+                .concat(configuration.getTestResultPath().concat(fileSeparator))
                 .concat(folderName)
                 .concat(System.getProperty("file.separator"))
                 .concat(configuration.getOperator().concat("-"))

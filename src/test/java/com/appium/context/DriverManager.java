@@ -70,10 +70,12 @@ public abstract class DriverManager extends Events
         url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
 
 
+        /*
         if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
             startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
 
-        deviceAppiumRemove(deviceCapabilities.getUid());
+*/
+        appiumRemove(deviceCapabilities.getUid());
 
         return new AndroidDriver(url, capabilities);
     }
@@ -81,7 +83,7 @@ public abstract class DriverManager extends Events
     /**
      * @param uid : device unique id.
      */
-    private void deviceAppiumRemove(String uid) throws IOException, InterruptedException
+    private void appiumRemove(String uid) throws IOException, InterruptedException
     {
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
 

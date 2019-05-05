@@ -42,8 +42,8 @@ public class Configuration
         this.appInfo = getAppInfoProp();
         this.noReset = getNoResetProp();
         this.autoGrantPermissions = getAutoGrantPermissionsProp();
-        this.operator = System.getProperties().getProperty("operator");
-        this.testResultPath = System.getProperties().getProperty("test.result.path");
+        this.operator = readOperator();
+        this.testResultPath = readTestResultPath();
         this.variant = readVariant();
         this.testDevicesPath = readTestDevicePath(variant);
 
@@ -68,21 +68,6 @@ public class Configuration
         configProps.load(in);
     }
 
-    public AppInfo getAppInfo()
-    {
-        return appInfo;
-    }
-
-    public NoReset getNoReset()
-    {
-        return noReset;
-    }
-
-    public AutoGrantPermissions getAutoGrantPermissions()
-    {
-        return autoGrantPermissions;
-    }
-
     private AppInfo getAppInfoProp()
     {
         return readAppInfoParam("test.app.prop");
@@ -96,6 +81,16 @@ public class Configuration
     private AutoGrantPermissions getAutoGrantPermissionsProp()
     {
         return readAutoGrantPermissionsParam("test.app.prop");
+    }
+
+    private String readOperator()
+    {
+        return System.getProperties().getProperty("operator");
+    }
+
+    private String readTestResultPath()
+    {
+        return System.getProperties().getProperty("test.result.path");
     }
 
     private AppInfo readAppInfoParam(String propertyKey)
@@ -375,5 +370,20 @@ public class Configuration
     public void setVariant(String variant)
     {
         this.variant = variant;
+    }
+
+    public AppInfo getAppInfo()
+    {
+        return appInfo;
+    }
+
+    public NoReset getNoReset()
+    {
+        return noReset;
+    }
+
+    public AutoGrantPermissions getAutoGrantPermissions()
+    {
+        return autoGrantPermissions;
     }
 }
