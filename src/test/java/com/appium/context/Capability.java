@@ -41,6 +41,7 @@ public class Capability
         capabilities.setClearDeviceLogsOnStart(clearDeviceLogsOnStart);
         capabilities.setAutomationName(automationName);
 
+
         return capabilities;
     }
 }

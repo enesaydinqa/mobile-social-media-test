@@ -15,6 +15,9 @@ public class StoryPage extends PageObject
     @AndroidFindBy(id = "com.snapchat.android:id/camera_capture_button")
     public MobileElement cameraCaptureButton;
 
+    @AndroidFindBy(id = "com.snapchat.android:id/lenses_camera_button_view")
+    public MobileElement lensButton;
+
     @AndroidFindBy(id = "com.snapchat.android:id/send_btn")
     public MobileElement sendButton;
 
@@ -23,12 +26,5 @@ public class StoryPage extends PageObject
 
     @AndroidFindBy(id = "com.snapchat.android:id/send_to_bottom_panel_send_button")
     public MobileElement send;
-
-    @AndroidFindBy(id = "com.snapchat.android:id/status_bar_secondary_text")
-    public MobileElement sharedNotification;
-
-    @AndroidFindBy(id = "com.snapchat.android:id/avatar_story")
-    public MobileElement avatarImage;
-
 
 }

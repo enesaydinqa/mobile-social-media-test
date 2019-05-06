@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.logging.LogEntry;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
@@ -29,9 +28,9 @@ public class SnapchatStoryTest extends SnapchatAndroidTest
     }
 
     @Test
-    public void testCaptureImageStoryAndShare() throws InterruptedException, IOException
+    public void testCaptureImageStoryAndShare() throws Exception
     {
-        //getGeoLocation(mobileDevice.uid);
+        // getGeoLocation(mobileDevice.uid);
 
         waitAndClick(firstMobile, storyPage.cameraCaptureButton);
         waitAndClick(firstMobile, storyPage.sendButton);
@@ -43,7 +42,7 @@ public class SnapchatStoryTest extends SnapchatAndroidTest
     }
 
     @Test
-    public void testCaptureVideoStoryAndShare() throws InterruptedException, IOException
+    public void testCaptureVideoStoryAndShare() throws Exception
     {
         //getGeoLocation(mobileDevice.uid);
 
@@ -72,5 +71,4 @@ public class SnapchatStoryTest extends SnapchatAndroidTest
 
         return String.valueOf(duration);
     }
-
 }

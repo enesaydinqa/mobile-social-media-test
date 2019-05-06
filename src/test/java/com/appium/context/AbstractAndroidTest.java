@@ -1,5 +1,6 @@
 package com.appium.context;
 
+import com.appium.client.objects.DeviceInfo;
 import com.appium.client.parameter.DeviceName;
 import com.appium.utils.Configuration;
 import com.appium.utils.StatusRule;
@@ -8,19 +9,16 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 
-import static com.appium.utils.ReportInformation.mobileOneDeviceIMEI;
-import static com.appium.utils.ReportInformation.mobileSecondDeviceIMEI;
-
 public abstract class AbstractAndroidTest extends DriverManager
 {
-    protected static AppiumDriver firstMobile;
-    protected static AppiumDriver secondMobile;
+    protected AppiumDriver firstMobile;
+    protected AppiumDriver secondMobile;
+    protected DeviceInfo deviceInfo;
 
-    public static Configuration configuration;
+    protected Configuration configuration;
 
     @Rule
     public StatusRule statusRule = new StatusRule();
-
 
     @Before
     public void init() throws Exception
@@ -31,18 +29,18 @@ public abstract class AbstractAndroidTest extends DriverManager
     protected void init(boolean multipleDevice) throws Exception
     {
         configuration = new Configuration();
+        deviceInfo = new DeviceInfo();
 
         firstMobile = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
 
-        mobileOneDeviceIMEI = configuration.getMobileOneIMEI();
+        deviceInfo.setMobileOneDeviceIMEI(configuration.getMobileOneIMEI());
 
         if (multipleDevice)
         {
             secondMobile = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
 
-            mobileSecondDeviceIMEI = configuration.getMobileSecondIMEI();
+            deviceInfo.setMobileSecondDeviceIMEI(configuration.getMobileSecondIMEI());
         }
-
     }
 
     @After

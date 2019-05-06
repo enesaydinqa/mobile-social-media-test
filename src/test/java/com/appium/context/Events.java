@@ -6,10 +6,13 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.offset.PointOption;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,6 +25,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -42,31 +46,38 @@ public class Events implements CommonMobile
     }
 
     @Override
-    public void waitAndClick(AppiumDriver driver, MobileElement element)
+    public void coordinateWithClick(AppiumDriver driver, int pointX, int pointY)
+    {
+        TouchAction touchAction = new TouchAction(driver);
+
+        touchAction.press(PointOption.point(pointX, pointY)).release().perform();
+    }
+
+    @Override
+    public String getAttribute(MobileElement element, String attributeName)
+    {
+        return element.getAttribute(attributeName);
+    }
+
+    @Override
+    public void waitAndClick(AppiumDriver driver, MobileElement element) throws Exception
     {
         waitAndClick(driver, element, false, null);
     }
 
-    public String waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description)
+    public String waitAndClick(AppiumDriver driver, MobileElement element, Boolean log, String description) throws Exception
     {
         String clickDate = null;
 
-        try
-        {
-            waitElementToBeClickable(driver, element);
-            element.click();
-            sleep(1);
+        waitElementToBeClickable(driver, element);
+        element.click();
+        sleep(1);
 
-            if (log)
-            {
-                clickDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
-
-                logger.info(description + " : " + clickDate);
-            }
-        }
-        catch (Exception ex)
+        if (log)
         {
-            ex.printStackTrace();
+            clickDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+            logger.info(description + " : " + clickDate);
         }
 
         return clickDate;
@@ -76,6 +87,13 @@ public class Events implements CommonMobile
     {
         waitElementVisible(driver, element);
         element.sendKeys(Text);
+
+    }
+
+    public void waitAndClear(AppiumDriver driver, MobileElement element)
+    {
+        waitElementVisible(driver, element);
+        element.clear();
     }
 
     @Override
@@ -231,14 +249,14 @@ public class Events implements CommonMobile
     {
         try
         {
-            String fileSeperator = System.getProperty("file.separator");
+            String fileSeparator = System.getProperty("file.separator");
 
             String uploadFile = System.getProperty("user.home")
-                    .concat(fileSeperator)
+                    .concat(fileSeparator)
                     .concat("MobileTest")
-                    .concat(fileSeperator)
+                    .concat(fileSeparator)
                     .concat("Media")
-                    .concat(fileSeperator)
+                    .concat(fileSeparator)
                     .concat(fileName);
 
             ((AndroidDriver) driver).pushFile(mobilePath, new File(uploadFile));
@@ -440,7 +458,7 @@ public class Events implements CommonMobile
                 .waitAction(waitOptions(Duration.ofMillis(duration))).release().perform();
     }
 
-    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked)
+    public void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked)
     {
         swipeToElement(driver, mobileElement, isClicked, false);
     }

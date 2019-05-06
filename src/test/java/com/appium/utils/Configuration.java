@@ -1,6 +1,7 @@
 package com.appium.utils;
 
 import com.appium.client.parameter.AppInfo;
+import com.appium.client.parameter.AutoGrantPermissions;
 import com.appium.client.parameter.DeviceName;
 import com.appium.client.parameter.NoReset;
 import org.apache.commons.lang3.StringUtils;
@@ -19,6 +20,7 @@ public class Configuration
 
     private AppInfo appInfo;
     private NoReset noReset;
+    private AutoGrantPermissions autoGrantPermissions;
     private String variant;
     private String testResultPath;
     private String operator;
@@ -30,6 +32,8 @@ public class Configuration
     private String firstInstagramTestUser;
     private String secondInstagramTestUser;
     private String instagramTestUserPassword;
+    private String firstTwitterTestUser;
+    private String twitterTestUserPassword;
 
     public Configuration() throws Exception
     {
@@ -37,8 +41,9 @@ public class Configuration
 
         this.appInfo = getAppInfoProp();
         this.noReset = getNoResetProp();
-        this.operator = System.getProperties().getProperty("operator");
-        this.testResultPath = System.getProperties().getProperty("test.result.path");
+        this.autoGrantPermissions = getAutoGrantPermissionsProp();
+        this.operator = readOperator();
+        this.testResultPath = readTestResultPath();
         this.variant = readVariant();
         this.testDevicesPath = readTestDevicePath(variant);
 
@@ -50,6 +55,9 @@ public class Configuration
         this.firstInstagramTestUser = getInstagramTestUser()[0];
         this.secondInstagramTestUser = getInstagramTestUser()[1];
         this.instagramTestUserPassword = readInstagramTestUserPassword();
+
+        this.firstTwitterTestUser = getTwitterTestUser()[0];
+        this.twitterTestUserPassword = readTwitterTestUserPassword();
     }
 
     private void loadConfigProperties() throws IOException
@@ -60,27 +68,32 @@ public class Configuration
         configProps.load(in);
     }
 
-    public AppInfo getAppInfo()
-    {
-        return appInfo;
-    }
-
-    public NoReset getNoReset()
-    {
-        return noReset;
-    }
-
     private AppInfo getAppInfoProp()
     {
-        return readAppInfoParameter("test.app.prop");
+        return readAppInfoParam("test.app.prop");
     }
 
     private NoReset getNoResetProp()
     {
-        return readNoResetParameter("test.app.prop");
+        return readNoResetParam("test.app.prop");
     }
 
-    private AppInfo readAppInfoParameter(String propertyKey)
+    private AutoGrantPermissions getAutoGrantPermissionsProp()
+    {
+        return readAutoGrantPermissionsParam("test.app.prop");
+    }
+
+    private String readOperator()
+    {
+        return System.getProperties().getProperty("operator");
+    }
+
+    private String readTestResultPath()
+    {
+        return System.getProperties().getProperty("test.result.path");
+    }
+
+    private AppInfo readAppInfoParam(String propertyKey)
     {
         AppInfo appInfo = null;
         String appName = System.getProperties().getProperty(propertyKey);
@@ -100,7 +113,7 @@ public class Configuration
         return appInfo;
     }
 
-    private NoReset readNoResetParameter(String propertyKey)
+    private NoReset readNoResetParam(String propertyKey)
     {
         NoReset noReset = null;
         String appName = System.getProperties().getProperty(propertyKey);
@@ -118,6 +131,26 @@ public class Configuration
         }
 
         return noReset;
+    }
+
+    private AutoGrantPermissions readAutoGrantPermissionsParam(String propertyKey)
+    {
+        AutoGrantPermissions autoGrantPermissions = null;
+        String appName = System.getProperties().getProperty(propertyKey);
+
+        if (StringUtils.isNotBlank(appName))
+        {
+            try
+            {
+                autoGrantPermissions = AutoGrantPermissions.valueOf(appName);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+        return autoGrantPermissions;
     }
 
     private String getDeviceUID(DeviceName deviceName)
@@ -156,9 +189,29 @@ public class Configuration
         }
     }
 
+    private String[] getTwitterTestUser() throws Exception
+    {
+        switch (operator)
+        {
+            case "STC":
+                return new String[]{configProps.getProperty("stc.twitter.test.user1")};
+            case "Mobily":
+                return new String[]{configProps.getProperty("mobily.twitter.test.user1")};
+            case "Zain":
+                return new String[]{configProps.getProperty("zain.twitter.test.user1")};
+            default:
+                throw new Exception(String.format("twitter test user not set because illegal operator name [%s]", operator));
+        }
+    }
+
     private String readInstagramTestUserPassword()
     {
         return configProps.getProperty("instagram.test.user.password");
+    }
+
+    private String readTwitterTestUserPassword()
+    {
+        return configProps.getProperty("twitter.test.user.password");
     }
 
     private String readVariant()
@@ -274,6 +327,26 @@ public class Configuration
         return instagramTestUserPassword;
     }
 
+    public String getFirstTwitterTestUser()
+    {
+        return firstTwitterTestUser;
+    }
+
+    public void setFirstTwitterTestUser(String firstTwitterTestUser)
+    {
+        this.firstTwitterTestUser = firstTwitterTestUser;
+    }
+
+    public String getTwitterTestUserPassword()
+    {
+        return twitterTestUserPassword;
+    }
+
+    public void setTwitterTestUserPassword(String twitterTestUserPassword)
+    {
+        this.twitterTestUserPassword = twitterTestUserPassword;
+    }
+
     public void setInstagramTestUserPassword(String instagramTestUserPassword)
     {
         this.instagramTestUserPassword = instagramTestUserPassword;
@@ -297,5 +370,20 @@ public class Configuration
     public void setVariant(String variant)
     {
         this.variant = variant;
+    }
+
+    public AppInfo getAppInfo()
+    {
+        return appInfo;
+    }
+
+    public NoReset getNoReset()
+    {
+        return noReset;
+    }
+
+    public AutoGrantPermissions getAutoGrantPermissions()
+    {
+        return autoGrantPermissions;
     }
 }

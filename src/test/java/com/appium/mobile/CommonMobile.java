@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface CommonMobile
 {
-    void waitAndClick(AppiumDriver driver, MobileElement mobileElement);
+    void waitAndClick(AppiumDriver driver, MobileElement mobileElement) throws Exception;
 
     boolean isDisplayed(AppiumDriver driver, MobileElement element);
 
@@ -42,5 +42,8 @@ public interface CommonMobile
 
     void touchPressAction(int startX, int startY, int endX, int endY, int duration, AppiumDriver driver);
 
+    void coordinateWithClick(AppiumDriver driver, int pointX, int pointY);
+
+    String getAttribute(MobileElement element, String attributeName);
 }
 
