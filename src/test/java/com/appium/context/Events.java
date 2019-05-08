@@ -6,10 +6,14 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
@@ -43,6 +47,56 @@ public class Events implements CommonMobile
     public enum SwipeDirection
     {
         UP, DOWN, LEFT, RIGHT
+    }
+    public void assertEqualsText(String text1,String text2){
+        Assert.assertEquals(text1, text2);
+    }
+
+    public void pressEnter(AppiumDriver driver){
+        ((AndroidDriver)driver).pressKeyCode(AndroidKeyCode.ENTER);
+    }
+    public void acceptAlerts(AppiumDriver driver){
+        WebDriverWait wait = new WebDriverWait(driver,30);
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+
+    //Sakın silme enes
+    public void keyboardEnter(AppiumDriver driver,Boolean log){
+        ((AndroidDriver) driver).isKeyboardShown();
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+        driver.hideKeyboard();
+    }
+    //sakın silme enes
+    public void clickElementInList(List<MobileElement> elements,int index){
+        if (!elements.isEmpty()) {
+            elements.get(index).click();
+        }
+    }
+    //sakın silme enes
+    public int getSizeOfList(List<MobileElement> elements){
+        if (!elements.isEmpty()) {
+           return elements.size();
+        }
+        return 0;
+    }
+
+    //sakın silme enes
+    public MobileElement getElementInList(List<MobileElement> elements,int index){
+        if (!elements.isEmpty()) {
+            return elements.get(index);
+        }
+        return null;
+    }
+    //sakın silme enes
+    public void sendKeysElementInList(List<MobileElement> elements,int index,String text){
+        List<MobileElement> profile =elements ;
+       // System.out.println(profile.size());
+        if (!profile.isEmpty()) {
+            profile.get(index).sendKeys(text);
+            //System.out.println(profile); // print text in 9th element
+        }
     }
 
     @Override
