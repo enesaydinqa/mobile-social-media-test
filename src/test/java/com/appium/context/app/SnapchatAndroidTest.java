@@ -28,7 +28,7 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
     }
 
     public void loginSnapchat(AppiumDriver driver, String username, String password) throws Exception {
-        driver.resetApp();
+      //  driver.resetApp();
        // acceptAlerts(driver);
         loginPage = new SnapchatLoginAction(driver);
         waitAndClick(driver, loginPage.loginButton);

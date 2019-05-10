@@ -396,7 +396,7 @@ public class Events implements CommonMobile
         touchLongPressAction(x, starty, x, endy, 2000, driver);
     }
 
-    private void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked, boolean isHalfDown)
+    public void swipeToElement(AppiumDriver driver, MobileElement mobileElement, boolean isClicked, boolean isHalfDown)
     {
         if (maxSwipeCount == 0)
         {

@@ -3,11 +3,12 @@ package com.appium.client.parameter;
 public enum AutoGrantPermissions
 {
     INSTAGRAM(true),
-    SNAPCHAT(false),
+    SNAPCHAT(true),
     YOUTUBE(false),
     TWITTER(true),
     FACEBOOK(false),
     SKYPE(false),
+    LINE(true),
     WHATSAPP(true);
 
     public Boolean autoGrantPermissions;

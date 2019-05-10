@@ -3,13 +3,12 @@ package com.appium.mobile.test.snapchat;
 import com.annotation.Author;
 import com.annotation.Contact;
 import com.appium.context.app.SnapchatAndroidTest;
-import com.appium.pages.snapchat.ProfilePage;
-import com.appium.pages.snapchat.SendMessage;
-import com.appium.pages.snapchat.StoryPage;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
-import org.junit.Test;;
+import org.junit.Test;
+
+;
 
 public class SnapchatMultipleDevice extends SnapchatAndroidTest {
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
@@ -28,7 +27,7 @@ public class SnapchatMultipleDevice extends SnapchatAndroidTest {
     @Test
     @Contact(Author.ATIKE)
     public void sendAndControlMessageWithMultipleDevice() throws Exception {
-       // loginSnapchat(firstMobile, "testenerjim@gmail.com", "enerjimE1");
+        loginSnapchat(firstMobile, "testenerjim@gmail.com", "enerjimE1");
         loginSnapchat(secondMobile, "mbcmtestuser", "mbcm1234");
         goMessagePage(firstMobile,"mbcmtestuser");
         goMessagePage(secondMobile,"enerjim2019");
@@ -60,16 +59,3 @@ public class SnapchatMultipleDevice extends SnapchatAndroidTest {
 
 
 }
-//        Point point = storyPage.avatarImage.getLocation();
-//        int x = point.x;
-//        int y = point.y;
-//        System.out.println("korrdinatlar x: " + x + " y: " + y);
-//        TouchAction touchAction = new TouchAction(firstMobile);
-//        touchAction.press(PointOption.point(x, y)).release().perform();
-
-
-//enes
-
-// isDisplayed(firstMobile, textElement);
-//MobileElement textElement = (MobileElement) firstMobile.findElement(By.xpath("//android.widget.TextView[@text='" + text + "']"));
-//isDisplayed(firstMobile, textElement);
