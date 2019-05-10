@@ -34,7 +34,15 @@ public class LineMultipleDevice extends LineAndroidTest {
         goMessagePage(firstMobile, "Testnur Enerjim");//Alike Workman
         sendTextMessage(firstMobile, "bu bir testtir");
         controlReceivedMessage(secondMobile);
-        //kontrol kısımları da yapılacak
+    }
+    @Test
+    @Contact(Author.ATIKE)
+    public void sendImageMessage() throws Exception {
+        goMessagePage(firstMobile, "Testnur Enerjim");//Alike Workman
+        waitAndClick(firstMobile,messagePage.camera);
+        waitAndClick(firstMobile,messagePage.presscamera);
+        waitAndClick(firstMobile,messagePage.sendcameraimage);
+        isMobileElementDisplayedOnPage(messagePage.receivedcameraimage);
     }
 
     @Test

@@ -29,6 +29,13 @@ public class MessagePage extends PageObject {
 
     @AndroidFindBy(id = "jp.naver.line.android:id/chatroom_camera_button")//2
     public MobileElement camera;
+    @AndroidFindBy(id = "jp.naver.line.android:id/record_animation")//2
+    public MobileElement presscamera;
+
+    @AndroidFindBy(id = "jp.naver.line.android:id/camera_editor_image_send")//2
+    public MobileElement sendcameraimage;
+    @AndroidFindBy(id = "jp.naver.line.android:id/camera_editor_image_send")//2
+    public MobileElement receivedcameraimage;
 
     //8,9,10,,,,19
     @AndroidFindBy(className = "android.widget.ImageView")//2

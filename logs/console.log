@@ -2606,3 +2606,7 @@
 2019-05-10 16:38:04 INFO  LineMultipleDevice:118 - 16:37
 2019-05-10 16:38:09 INFO  StatusRule:21 - =================================================================
 2019-05-10 16:38:09 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-10 16:56:51 INFO  StatusRule:14 - =================================================================
+2019-05-10 16:56:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-10 16:58:16 INFO  StatusRule:21 - =================================================================
+2019-05-10 16:58:16 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
