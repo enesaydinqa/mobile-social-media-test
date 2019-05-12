@@ -1,0 +1,1652 @@
+2019-04-22 11:24:39 INFO  StatusRule:14 - =================================================================
+2019-04-22 11:24:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-22 11:24:42 INFO  StatusRule:28 - =================================================================
+2019-04-22 11:24:42 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-22 11:25:08 INFO  StatusRule:14 - =================================================================
+2019-04-22 11:25:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-22 11:25:11 INFO  StatusRule:28 - =================================================================
+2019-04-22 11:25:11 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-22 11:25:30 INFO  StatusRule:14 - =================================================================
+2019-04-22 11:25:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-22 11:25:33 INFO  StatusRule:28 - =================================================================
+2019-04-22 11:25:33 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-22 13:18:14 INFO  StatusRule:14 - =================================================================
+2019-04-22 13:18:14 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 13:18:17 INFO  StatusRule:28 - =================================================================
+2019-04-22 13:18:17 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 13:19:27 INFO  StatusRule:14 - =================================================================
+2019-04-22 13:19:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 13:19:30 INFO  StatusRule:28 - =================================================================
+2019-04-22 13:19:30 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 13:20:22 INFO  StatusRule:14 - =================================================================
+2019-04-22 13:20:22 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 13:20:25 INFO  StatusRule:28 - =================================================================
+2019-04-22 13:20:25 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 13:23:02 INFO  StatusRule:14 - =================================================================
+2019-04-22 13:23:02 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 13:23:21 INFO  StatusRule:28 - =================================================================
+2019-04-22 13:23:21 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:10:53 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:10:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:11:09 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:11:09 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:15:45 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:15:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:16:00 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:16:00 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:16:10 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:16:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:18:46 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:18:46 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:36:13 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:36:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:36:27 INFO  InstagramSingleDeviceTest:24 - test is running
+2019-04-22 14:36:30 INFO  StatusRule:21 - =================================================================
+2019-04-22 14:36:30 INFO  StatusRule:22 - =====> TEST PASSED ... --> login
+2019-04-22 14:36:56 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:36:56 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:36:59 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:36:59 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:37:08 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:37:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:37:11 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:37:11 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:45:18 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:45:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:45:20 INFO  StatusRule:28 - =================================================================
+2019-04-22 14:45:20 INFO  StatusRule:29 - =====> TEST FAIL ... --> login
+2019-04-22 14:47:19 INFO  StatusRule:14 - =================================================================
+2019-04-22 14:47:19 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 14:47:34 INFO  InstagramSingleDeviceTest:24 - test is running
+2019-04-22 14:47:37 INFO  StatusRule:21 - =================================================================
+2019-04-22 14:47:37 INFO  StatusRule:22 - =====> TEST PASSED ... --> login
+2019-04-22 15:21:43 INFO  StatusRule:14 - =================================================================
+2019-04-22 15:21:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 15:23:25 INFO  StatusRule:14 - =================================================================
+2019-04-22 15:23:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> login
+2019-04-22 15:23:56 INFO  InstagramSingleDeviceTest:24 - test is running
+2019-04-22 15:23:59 INFO  StatusRule:21 - =================================================================
+2019-04-22 15:23:59 INFO  StatusRule:22 - =====> TEST PASSED ... --> login
+2019-04-22 17:13:04 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:13:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:13:17 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:14:50 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:14:50 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:15:05 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:15:23 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:15:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:15:38 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:16:55 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:16:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:17:10 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:18:16 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:18:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:18:31 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:18:43 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:18:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:18:57 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:19:53 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:19:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:20:09 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:21:19 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:21:19 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:21:35 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:22:40 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:22:40 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:23:18 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:23:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:24:10 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:24:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:24:22 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:25:27 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:25:27 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:26:12 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:26:12 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:26:25 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:32:09 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:32:09 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:32:24 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:32:34 INFO  Events:64 - three line is clicked : 2019/04/22 17:32:34.701
+2019-04-22 17:32:36 INFO  Events:64 - settings is clicked : 2019/04/22 17:32:36.801
+2019-04-22 17:32:39 INFO  Events:64 - account is clicked : 2019/04/22 17:32:39.817
+2019-04-22 17:32:42 INFO  Events:64 - exit is clicked : 2019/04/22 17:32:42.281
+2019-04-22 17:40:09 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:40:09 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:40:22 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:40:32 INFO  Events:64 - three line is clicked : 2019/04/22 17:40:32.167
+2019-04-22 17:40:34 INFO  Events:64 - settings is clicked : 2019/04/22 17:40:34.102
+2019-04-22 17:40:36 INFO  Events:64 - account is clicked : 2019/04/22 17:40:36.108
+2019-04-22 17:41:06 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView})
+2019-04-22 17:42:11 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:42:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:43:17 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:52:20 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:52:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:52:33 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:52:33 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:54:20 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:54:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:54:31 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:54:31 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:55:38 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:55:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:55:49 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:55:49 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:57:01 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:57:01 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:57:11 INFO  StatusRule:28 - =================================================================
+2019-04-22 17:57:11 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-22 17:58:27 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:58:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:58:38 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-22 17:59:20 INFO  StatusRule:14 - =================================================================
+2019-04-22 17:59:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-22 17:59:32 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 08:22:56 INFO  StatusRule:14 - =================================================================
+2019-04-24 08:22:56 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 08:23:41 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 08:23:57 INFO  Events:64 - three line is clicked : 2019/04/24 08:23:57.435
+2019-04-24 08:23:59 INFO  Events:64 - settings is clicked : 2019/04/24 08:23:59.394
+2019-04-24 08:24:02 INFO  Events:64 - account is clicked : 2019/04/24 08:24:02.118
+2019-04-24 08:24:32 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView})
+2019-04-24 08:25:03 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView})
+2019-04-24 08:25:34 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView})
+2019-04-24 08:26:05 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.RelativeLayout/android.widget.TextView})
+2019-04-24 09:25:44 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:25:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:25:57 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 09:26:04 INFO  Events:64 - three line is clicked : 2019/04/24 09:26:04.311
+2019-04-24 09:26:07 INFO  Events:64 - settings is clicked : 2019/04/24 09:26:07.32
+2019-04-24 09:26:08 INFO  Events:64 - account is clicked : 2019/04/24 09:26:08.926
+2019-04-24 09:26:39 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:35:44 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:35:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:35:58 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 09:36:04 INFO  Events:64 - three line is clicked : 2019/04/24 09:36:04.467
+2019-04-24 09:36:06 INFO  Events:64 - settings is clicked : 2019/04/24 09:36:06.317
+2019-04-24 09:36:08 INFO  Events:64 - account is clicked : 2019/04/24 09:36:08.876
+2019-04-24 09:36:38 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:37:09 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:37:41 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:37:58 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:37:58 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:38:16 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 09:38:39 INFO  Events:64 - three line is clicked : 2019/04/24 09:38:39.449
+2019-04-24 09:38:41 INFO  Events:64 - settings is clicked : 2019/04/24 09:38:41.395
+2019-04-24 09:38:43 INFO  Events:64 - account is clicked : 2019/04/24 09:38:43.962
+2019-04-24 09:40:07 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:40:07 INFO  Events:424 - Scrool To Android Element Failed
+2019-04-24 09:45:25 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:45:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:45:39 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 09:46:05 INFO  Events:64 - three line is clicked : 2019/04/24 09:46:05.171
+2019-04-24 09:46:07 INFO  Events:64 - settings is clicked : 2019/04/24 09:46:07.887
+2019-04-24 09:46:09 INFO  Events:64 - account is clicked : 2019/04/24 09:46:09.766
+2019-04-24 09:46:40 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:47:11 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:47:33 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:47:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:47:36 INFO  Events:104 - Element Not Displayed --> Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.twitter.android:id/country_learn_more']/parent::*})
+2019-04-24 09:47:36 INFO  Events:424 - Scrool To Android Element Failed
+2019-04-24 09:47:36 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:47:36 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 09:51:35 INFO  StatusRule:14 - =================================================================
+2019-04-24 09:51:35 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 09:51:48 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 09:52:13 INFO  Events:64 - three line is clicked : 2019/04/24 09:52:13.314
+2019-04-24 09:52:15 INFO  Events:64 - settings is clicked : 2019/04/24 09:52:15.106
+2019-04-24 09:52:17 INFO  Events:64 - account is clicked : 2019/04/24 09:52:17.14
+2019-04-24 09:52:19 INFO  Events:64 - exit is clicked : 2019/04/24 09:52:19.984
+2019-04-24 09:53:27 INFO  StatusRule:28 - =================================================================
+2019-04-24 09:53:27 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 10:20:59 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:20:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:21:11 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:21:18 INFO  Events:64 - three line is clicked : 2019/04/24 10:21:18.193
+2019-04-24 10:21:19 INFO  Events:64 - settings is clicked : 2019/04/24 10:21:19.978
+2019-04-24 10:21:21 INFO  Events:64 - account is clicked : 2019/04/24 10:21:21.879
+2019-04-24 10:21:24 INFO  Events:64 - exit is clicked : 2019/04/24 10:21:24.882
+2019-04-24 10:25:38 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:25:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:25:54 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:26:00 INFO  Events:64 - three line is clicked : 2019/04/24 10:26:00.229
+2019-04-24 10:26:02 INFO  Events:64 - settings is clicked : 2019/04/24 10:26:02.332
+2019-04-24 10:26:04 INFO  Events:64 - account is clicked : 2019/04/24 10:26:04.666
+2019-04-24 10:26:07 INFO  Events:64 - exit is clicked : 2019/04/24 10:26:07.657
+2019-04-24 10:27:12 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:27:12 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 10:31:19 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:31:19 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:31:33 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:31:59 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:31:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:32:12 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:32:17 INFO  Events:64 - click login twitter link : 2019/04/24 10:32:17.920
+2019-04-24 10:32:52 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:32:52 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 10:34:31 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:34:31 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:34:44 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:34:54 INFO  Events:64 - three line is clicked : 2019/04/24 10:34:54.53
+2019-04-24 10:34:56 INFO  Events:64 - settings is clicked : 2019/04/24 10:34:56.252
+2019-04-24 10:35:13 INFO  Events:64 - account is clicked : 2019/04/24 10:35:13.243
+2019-04-24 10:35:16 INFO  Events:64 - exit is clicked : 2019/04/24 10:35:16.994
+2019-04-24 10:35:19 INFO  Events:64 - exit is done : 2019/04/24 10:35:19.887
+2019-04-24 10:35:34 INFO  Events:64 - click login twitter link : 2019/04/24 10:35:34.271
+2019-04-24 10:36:08 INFO  StatusRule:28 - =================================================================
+2019-04-24 10:36:08 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 10:36:24 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:36:24 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:36:37 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:40:41 INFO  StatusRule:14 - =================================================================
+2019-04-24 10:40:41 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 10:41:13 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 10:42:11 INFO  Events:64 - click login twitter link : 2019/04/24 10:42:11.167
+2019-04-24 11:45:21 INFO  StatusRule:14 - =================================================================
+2019-04-24 11:45:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 11:45:35 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 11:45:49 INFO  Events:64 - three line is clicked : 2019/04/24 11:45:49.419
+2019-04-24 11:45:51 INFO  Events:64 - settings is clicked : 2019/04/24 11:45:51.966
+2019-04-24 11:46:01 INFO  Events:64 - account is clicked : 2019/04/24 11:46:01.252
+2019-04-24 11:46:05 INFO  Events:64 - exit is clicked : 2019/04/24 11:46:05.36
+2019-04-24 11:46:09 INFO  Events:64 - exit is done : 2019/04/24 11:46:09.321
+2019-04-24 11:46:13 INFO  Events:64 - click login twitter link : 2019/04/24 11:46:13.938
+2019-04-24 12:01:15 INFO  StatusRule:14 - =================================================================
+2019-04-24 12:01:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 12:01:28 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 12:17:10 INFO  StatusRule:14 - =================================================================
+2019-04-24 12:17:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 12:17:21 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 12:17:38 INFO  StatusRule:14 - =================================================================
+2019-04-24 12:17:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 12:17:51 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:15:20 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:15:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:15:31 INFO  InstagramSingleDeviceTest:30 - login process is started
+2019-04-24 14:31:33 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:31:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:31:45 INFO  InstagramSingleDeviceTest:30 - login process is started
+2019-04-24 14:33:14 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:33:14 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:33:27 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:34:01 INFO  StatusRule:28 - =================================================================
+2019-04-24 14:34:01 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 14:36:38 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:36:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:36:51 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:36:51 INFO  Events:46 - login link is clicked
+2019-04-24 14:37:58 INFO  Events:65 - login button is clicked : 2019/04/24 14:37:58.548
+2019-04-24 14:38:12 INFO  Events:65 - tweet button is clicked : 2019/04/24 14:38:12.385
+2019-04-24 14:38:30 INFO  Events:65 - send message button is clicked : 2019/04/24 14:38:30.632
+2019-04-24 14:38:32 INFO  Events:65 - three line is clicked : 2019/04/24 14:38:32.992
+2019-04-24 14:38:35 INFO  Events:65 - settings is clicked : 2019/04/24 14:38:35.699
+2019-04-24 14:38:48 INFO  Events:65 - account is clicked : 2019/04/24 14:38:48.563
+2019-04-24 14:38:51 INFO  Events:65 - exit is clicked : 2019/04/24 14:38:51.639
+2019-04-24 14:38:56 INFO  Events:65 - exit is done : 2019/04/24 14:38:56.150
+2019-04-24 14:39:01 INFO  Events:65 - click login twitter link : 2019/04/24 14:39:01.209
+2019-04-24 14:41:15 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:41:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:41:30 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:41:30 INFO  Events:46 - login link is clicked
+2019-04-24 14:42:03 INFO  StatusRule:28 - =================================================================
+2019-04-24 14:42:03 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 14:46:32 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:46:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:46:46 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:46:48 INFO  StatusRule:28 - =================================================================
+2019-04-24 14:46:48 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 14:47:42 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:47:42 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:47:55 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:49:55 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:49:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:50:09 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:50:09 INFO  Events:46 - login link is clicked
+2019-04-24 14:51:04 INFO  Events:65 - login button is clicked : 2019/04/24 14:51:04.196
+2019-04-24 14:51:16 INFO  Events:65 - tweet button is clicked : 2019/04/24 14:51:16.148
+2019-04-24 14:51:33 INFO  Events:65 - send message button is clicked : 2019/04/24 14:51:33.445
+2019-04-24 14:51:35 INFO  Events:65 - three line is clicked : 2019/04/24 14:51:35.713
+2019-04-24 14:51:37 INFO  Events:65 - settings is clicked : 2019/04/24 14:51:37.916
+2019-04-24 14:51:50 INFO  Events:65 - account is clicked : 2019/04/24 14:51:50.303
+2019-04-24 14:51:53 INFO  Events:65 - exit is clicked : 2019/04/24 14:51:53.495
+2019-04-24 14:55:06 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:55:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:55:20 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:55:20 INFO  Events:46 - login link is clicked
+2019-04-24 14:56:15 INFO  Events:65 - login button is clicked : 2019/04/24 14:56:15.538
+2019-04-24 14:56:25 INFO  Events:65 - tweet button is clicked : 2019/04/24 14:56:25.647
+2019-04-24 14:56:46 INFO  Events:65 - send message button is clicked : 2019/04/24 14:56:46.371
+2019-04-24 14:56:48 INFO  Events:65 - three line is clicked : 2019/04/24 14:56:48.708
+2019-04-24 14:56:52 INFO  Events:65 - settings is clicked : 2019/04/24 14:56:52.63
+2019-04-24 14:56:54 INFO  Events:65 - account is clicked : 2019/04/24 14:56:54.137
+2019-04-24 14:56:57 INFO  Events:65 - exit is clicked : 2019/04/24 14:56:57.299
+2019-04-24 14:57:01 INFO  Events:65 - exit is done : 2019/04/24 14:57:01.641
+2019-04-24 14:57:06 INFO  Events:65 - click login twitter link : 2019/04/24 14:57:06.36
+2019-04-24 14:58:27 INFO  StatusRule:14 - =================================================================
+2019-04-24 14:58:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 14:58:40 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 14:58:40 INFO  Events:46 - login link is clicked
+2019-04-24 14:58:46 INFO  Events:65 - click login twitter link : 2019/04/24 14:58:46.153
+2019-04-24 14:59:16 INFO  Events:65 - login button is clicked : 2019/04/24 14:59:16.862
+2019-04-24 14:59:26 INFO  Events:65 - tweet button is clicked : 2019/04/24 14:59:26.656
+2019-04-24 14:59:45 INFO  Events:65 - send message button is clicked : 2019/04/24 14:59:45.422
+2019-04-24 14:59:48 INFO  Events:65 - three line is clicked : 2019/04/24 14:59:48.285
+2019-04-24 14:59:50 INFO  Events:65 - settings is clicked : 2019/04/24 14:59:50.859
+2019-04-24 15:00:06 INFO  Events:65 - account is clicked : 2019/04/24 15:00:06.842
+2019-04-24 15:00:10 INFO  Events:65 - exit is clicked : 2019/04/24 15:00:10.436
+2019-04-24 15:00:13 INFO  Events:65 - exit is done : 2019/04/24 15:00:13.512
+2019-04-24 15:00:18 INFO  Events:65 - click login twitter link : 2019/04/24 15:00:18.787
+2019-04-24 15:08:25 INFO  StatusRule:14 - =================================================================
+2019-04-24 15:08:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 15:08:38 INFO  InstagramSingleDeviceTest:28 - login process is started
+2019-04-24 15:08:40 INFO  Events:46 - login link is clicked
+2019-04-24 15:50:18 INFO  StatusRule:14 - =================================================================
+2019-04-24 15:50:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 15:50:32 INFO  InstagramSingleDeviceTest:31 - login process is started
+2019-04-24 15:50:33 INFO  Events:46 - login link is clicked
+2019-04-24 15:52:40 INFO  StatusRule:14 - =================================================================
+2019-04-24 15:52:40 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 15:52:55 INFO  InstagramSingleDeviceTest:31 - login process is started
+2019-04-24 15:52:56 INFO  Events:46 - login link is clicked
+2019-04-24 16:01:18 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:01:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:01:32 INFO  InstagramSingleDeviceTest:31 - login process is started
+2019-04-24 16:01:33 INFO  Events:47 - login link is clicked
+2019-04-24 16:02:29 INFO  Events:72 - login button is clicked : 2019/04/24 16:02:29.840
+2019-04-24 16:02:46 INFO  Events:72 - tweet button is clicked : 2019/04/24 16:02:46.984
+2019-04-24 16:03:05 INFO  Events:72 - send message button is clicked : 2019/04/24 16:03:05.656
+2019-04-24 16:03:08 INFO  Events:72 - three line is clicked : 2019/04/24 16:03:08.894
+2019-04-24 16:03:11 INFO  Events:72 - settings is clicked : 2019/04/24 16:03:11.316
+2019-04-24 16:03:13 INFO  Events:72 - account is clicked : 2019/04/24 16:03:13.691
+2019-04-24 16:03:16 INFO  Events:72 - exit is clicked : 2019/04/24 16:03:16.714
+2019-04-24 16:03:20 INFO  Events:72 - exit is done : 2019/04/24 16:03:20.418
+2019-04-24 16:03:24 INFO  Events:72 - click login twitter link : 2019/04/24 16:03:24.983
+2019-04-24 16:07:37 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:07:37 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:07:52 INFO  InstagramSingleDeviceTest:35 - login process is started
+2019-04-24 16:07:53 INFO  Events:47 - login link is clicked
+2019-04-24 16:08:51 INFO  Events:72 - login button is clicked : 2019/04/24 16:08:51.844
+2019-04-24 16:08:55 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:08:55 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:09:44 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:09:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:10:03 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:10:03 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:10:16 INFO  InstagramSingleDeviceTest:35 - login process is started
+2019-04-24 16:10:19 INFO  Events:47 - login link is clicked
+2019-04-24 16:11:18 INFO  Events:72 - login button is clicked : 2019/04/24 16:11:18.779
+2019-04-24 16:11:22 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:11:22 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:12:29 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:12:29 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:12:43 INFO  InstagramSingleDeviceTest:35 - login process is started
+2019-04-24 16:13:18 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:13:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:13:32 INFO  InstagramSingleDeviceTest:35 - login process is started
+2019-04-24 16:13:36 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:13:36 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:14:03 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:14:03 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:14:15 INFO  InstagramSingleDeviceTest:35 - login process is started
+2019-04-24 16:14:18 INFO  Events:47 - login link is clicked
+2019-04-24 16:14:41 INFO  Events:72 - login button is clicked : 2019/04/24 16:14:41.2
+2019-04-24 16:14:44 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:14:44 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:26:53 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:26:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:27:06 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:27:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:27:20 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:27:22 INFO  Events:47 - login link is clicked
+2019-04-24 16:27:46 INFO  Events:72 - login button is clicked : 2019/04/24 16:27:46.114
+2019-04-24 16:27:59 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:27:59 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:31:10 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:31:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:31:22 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:31:27 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:31:27 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:31:45 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:31:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:31:57 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:32:02 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:32:02 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:32:22 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:32:22 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:32:33 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:32:37 INFO  Events:47 - login link is clicked
+2019-04-24 16:33:01 INFO  Events:72 - login button is clicked : 2019/04/24 16:33:01.118
+2019-04-24 16:33:13 INFO  Events:72 - tweet button is clicked : 2019/04/24 16:33:13.197
+2019-04-24 16:33:34 INFO  Events:72 - send message button is clicked : 2019/04/24 16:33:34.63
+2019-04-24 16:33:36 INFO  Events:72 - three line is clicked : 2019/04/24 16:33:36.406
+2019-04-24 16:33:39 INFO  Events:72 - settings is clicked : 2019/04/24 16:33:39.614
+2019-04-24 16:33:41 INFO  Events:72 - account is clicked : 2019/04/24 16:33:41.797
+2019-04-24 16:33:45 INFO  Events:72 - exit is clicked : 2019/04/24 16:33:45.128
+2019-04-24 16:33:48 INFO  Events:72 - exit is done : 2019/04/24 16:33:48.783
+2019-04-24 16:33:49 INFO  Events:47 - login link is clicked
+2019-04-24 16:33:55 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:33:55 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:48:57 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:48:57 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:49:09 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:49:10 INFO  Events:47 - login link is clicked
+2019-04-24 16:49:15 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:49:15 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:49:47 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:49:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:49:58 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:50:01 INFO  Events:47 - login link is clicked
+2019-04-24 16:50:24 INFO  Events:72 - login button is clicked : 2019/04/24 16:50:24.929
+2019-04-24 16:50:28 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:50:28 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:51:10 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:51:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:51:21 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:51:24 INFO  Events:47 - login link is clicked
+2019-04-24 16:51:48 INFO  Events:72 - login button is clicked : 2019/04/24 16:51:48.944
+2019-04-24 16:51:52 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:51:52 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:53:02 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:53:02 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:53:14 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:53:19 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:53:19 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:53:36 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:53:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:53:48 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:53:50 INFO  Events:47 - login link is clicked
+2019-04-24 16:54:13 INFO  Events:72 - login button is clicked : 2019/04/24 16:54:13.280
+2019-04-24 16:54:19 INFO  StatusRule:28 - =================================================================
+2019-04-24 16:54:19 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-24 16:55:10 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:55:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:55:22 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:55:51 INFO  StatusRule:14 - =================================================================
+2019-04-24 16:55:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-24 16:56:03 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-24 16:56:06 INFO  Events:47 - login link is clicked
+2019-04-24 16:56:32 INFO  Events:72 - login button is clicked : 2019/04/24 16:56:32.264
+2019-04-24 16:56:42 INFO  Events:72 - tweet button is clicked : 2019/04/24 16:56:42.674
+2019-04-24 16:57:01 INFO  Events:72 - send message button is clicked : 2019/04/24 16:57:01.553
+2019-04-24 16:57:04 INFO  Events:72 - three line is clicked : 2019/04/24 16:57:04.345
+2019-04-24 16:57:06 INFO  Events:72 - settings is clicked : 2019/04/24 16:57:06.719
+2019-04-24 16:57:09 INFO  Events:72 - account is clicked : 2019/04/24 16:57:09.106
+2019-04-24 16:57:12 INFO  Events:72 - exit is clicked : 2019/04/24 16:57:12.245
+2019-04-24 16:57:15 INFO  Events:72 - exit is done : 2019/04/24 16:57:15.637
+2019-04-24 16:57:19 INFO  StatusRule:21 - =================================================================
+2019-04-24 16:57:19 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-24 17:26:13 INFO  StatusRule:14 - =================================================================
+2019-04-24 17:26:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-24 17:26:41 INFO  StatusRule:14 - =================================================================
+2019-04-24 17:26:41 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-24 17:26:54 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-24 17:26:55 INFO  Events:47 - login link is clicked
+2019-04-24 17:27:22 INFO  Events:72 - login button is clicked : 2019/04/24 17:27:22.501
+2019-04-24 17:27:33 INFO  Events:72 - three line is clicked : 2019/04/24 17:27:33.917
+2019-04-24 17:27:36 INFO  Events:72 - profile menu is clicked : 2019/04/24 17:27:36.486
+2019-04-24 17:27:39 INFO  Events:72 - three line is clicked : 2019/04/24 17:27:39.220
+2019-04-24 17:27:55 INFO  Events:72 - settings is clicked : 2019/04/24 17:27:55.562
+2019-04-24 17:27:58 INFO  Events:72 - account is clicked : 2019/04/24 17:27:58.168
+2019-04-24 17:28:01 INFO  Events:72 - exit is clicked : 2019/04/24 17:28:01.275
+2019-04-24 17:28:05 INFO  Events:72 - exit is done : 2019/04/24 17:28:05.316
+2019-04-24 17:28:09 INFO  StatusRule:21 - =================================================================
+2019-04-24 17:28:09 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-24 17:40:09 INFO  StatusRule:14 - =================================================================
+2019-04-24 17:40:09 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-24 17:40:27 INFO  StatusRule:14 - =================================================================
+2019-04-24 17:40:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-24 17:40:41 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-24 17:40:43 INFO  Events:47 - login link is clicked
+2019-04-24 17:41:07 INFO  Events:72 - login button is clicked : 2019/04/24 17:41:07.545
+2019-04-24 17:41:18 INFO  StatusRule:28 - =================================================================
+2019-04-24 17:41:18 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-24 17:42:46 INFO  StatusRule:14 - =================================================================
+2019-04-24 17:42:46 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-24 17:42:59 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-24 17:43:02 INFO  Events:47 - login link is clicked
+2019-04-24 17:43:28 INFO  Events:72 - login button is clicked : 2019/04/24 17:43:28.600
+2019-04-24 17:44:12 INFO  StatusRule:28 - =================================================================
+2019-04-24 17:44:12 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 08:43:57 INFO  StatusRule:14 - =================================================================
+2019-04-25 08:43:57 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 08:44:38 INFO  StatusRule:14 - =================================================================
+2019-04-25 08:44:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 08:44:51 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 08:44:53 INFO  Events:47 - login link is clicked
+2019-04-25 08:45:22 INFO  Events:72 - login button is clicked : 2019/04/25 08:45:22.445
+2019-04-25 08:45:35 INFO  Events:72 - three line is clicked : 2019/04/25 08:45:35.252
+2019-04-25 08:45:37 INFO  Events:72 - profile menu is clicked : 2019/04/25 08:45:37.769
+2019-04-25 08:45:40 INFO  Events:72 - three line is clicked : 2019/04/25 08:45:40.445
+2019-04-25 08:55:08 INFO  StatusRule:14 - =================================================================
+2019-04-25 08:55:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 08:55:22 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 08:55:27 INFO  StatusRule:28 - =================================================================
+2019-04-25 08:55:27 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 08:55:53 INFO  StatusRule:14 - =================================================================
+2019-04-25 08:55:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 08:56:05 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 08:56:08 INFO  Events:47 - login link is clicked
+2019-04-25 08:56:34 INFO  Events:72 - login button is clicked : 2019/04/25 08:56:34.992
+2019-04-25 08:56:49 INFO  StatusRule:28 - =================================================================
+2019-04-25 08:56:49 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:08:32 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:08:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:08:49 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:08:49 INFO  Events:47 - login link is clicked
+2019-04-25 09:09:16 INFO  Events:72 - login button is clicked : 2019/04/25 09:09:16.476
+2019-04-25 09:09:31 INFO  StatusRule:28 - =================================================================
+2019-04-25 09:09:31 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:17:10 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:17:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:17:25 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:17:27 INFO  Events:47 - login link is clicked
+2019-04-25 09:17:31 INFO  StatusRule:28 - =================================================================
+2019-04-25 09:17:31 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:18:04 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:18:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:18:16 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:18:18 INFO  Events:47 - login link is clicked
+2019-04-25 09:18:44 INFO  Events:72 - login button is clicked : 2019/04/25 09:18:44.481
+2019-04-25 09:18:58 INFO  StatusRule:28 - =================================================================
+2019-04-25 09:18:58 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:35:33 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:35:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:35:50 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:35:52 INFO  Events:47 - login link is clicked
+2019-04-25 09:36:18 INFO  Events:72 - login button is clicked : 2019/04/25 09:36:18.735
+2019-04-25 09:36:32 INFO  StatusRule:28 - =================================================================
+2019-04-25 09:36:32 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:37:31 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:37:31 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:37:46 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:37:49 INFO  Events:47 - login link is clicked
+2019-04-25 09:38:11 INFO  Events:72 - login button is clicked : 2019/04/25 09:38:11.871
+2019-04-25 09:38:26 INFO  StatusRule:28 - =================================================================
+2019-04-25 09:38:26 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 09:40:11 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:40:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:40:26 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:40:28 INFO  Events:47 - login link is clicked
+2019-04-25 09:40:53 INFO  Events:72 - login button is clicked : 2019/04/25 09:40:53.448
+2019-04-25 09:41:06 INFO  Events:72 - three line is clicked : 2019/04/25 09:41:06.28
+2019-04-25 09:41:08 INFO  Events:72 - profile menu is clicked : 2019/04/25 09:41:08.195
+2019-04-25 09:41:11 INFO  Events:72 - three line is clicked : 2019/04/25 09:41:11.268
+2019-04-25 09:41:26 INFO  Events:72 - settings is clicked : 2019/04/25 09:41:26.44
+2019-04-25 09:41:34 INFO  Events:72 - account is clicked : 2019/04/25 09:41:34.355
+2019-04-25 09:41:37 INFO  Events:72 - exit is clicked : 2019/04/25 09:41:37.266
+2019-04-25 09:44:16 INFO  StatusRule:14 - =================================================================
+2019-04-25 09:44:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 09:44:33 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 09:44:34 INFO  Events:47 - login link is clicked
+2019-04-25 09:45:01 INFO  Events:72 - login button is clicked : 2019/04/25 09:45:01.113
+2019-04-25 09:45:25 INFO  Events:72 - three line is clicked : 2019/04/25 09:45:25.258
+2019-04-25 09:45:28 INFO  Events:72 - profile menu is clicked : 2019/04/25 09:45:28.226
+2019-04-25 09:45:30 INFO  Events:72 - three line is clicked : 2019/04/25 09:45:30.59
+2019-04-25 09:45:55 INFO  Events:72 - settings is clicked : 2019/04/25 09:45:55.390
+2019-04-25 09:45:57 INFO  Events:72 - account is clicked : 2019/04/25 09:45:57.389
+2019-04-25 09:46:00 INFO  Events:72 - exit is clicked : 2019/04/25 09:46:00.537
+2019-04-25 09:46:04 INFO  Events:72 - exit is done : 2019/04/25 09:46:04.804
+2019-04-25 09:46:08 INFO  StatusRule:21 - =================================================================
+2019-04-25 09:46:08 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-25 10:05:29 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:05:29 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:05:43 INFO  InstagramSingleDeviceTest:42 - login process is started
+2019-04-25 10:05:46 INFO  Events:47 - login link is clicked
+2019-04-25 10:06:09 INFO  Events:72 - login button is clicked : 2019/04/25 10:06:09.42
+2019-04-25 10:06:16 INFO  Events:72 - tweet button is clicked : 2019/04/25 10:06:16.471
+2019-04-25 10:06:38 INFO  Events:72 - send message button is clicked : 2019/04/25 10:06:38.567
+2019-04-25 10:06:41 INFO  Events:72 - three line is clicked : 2019/04/25 10:06:41.936
+2019-04-25 10:06:44 INFO  Events:72 - settings is clicked : 2019/04/25 10:06:44.145
+2019-04-25 10:27:27 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:27:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:27:43 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-25 10:27:45 INFO  Events:47 - login link is clicked
+2019-04-25 10:28:12 INFO  Events:72 - login button is clicked : 2019/04/25 10:28:12.252
+2019-04-25 10:28:25 INFO  Events:72 - tweet button is clicked : 2019/04/25 10:28:25.506
+2019-04-25 10:28:45 INFO  Events:72 - send message button is clicked : 2019/04/25 10:28:45.430
+2019-04-25 10:28:48 INFO  Events:72 - three line is clicked : 2019/04/25 10:28:48.583
+2019-04-25 10:28:50 INFO  Events:72 - profile menu is clicked : 2019/04/25 10:28:50.816
+2019-04-25 10:29:10 INFO  Events:72 - back to home page button is clicked : 2019/04/25 10:29:10.215
+2019-04-25 10:29:13 INFO  Events:72 - three line is clicked : 2019/04/25 10:29:13.350
+2019-04-25 10:29:15 INFO  Events:72 - settings is clicked : 2019/04/25 10:29:15.503
+2019-04-25 10:40:36 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:40:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:40:53 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-25 10:40:55 INFO  Events:47 - login link is clicked
+2019-04-25 10:41:20 INFO  Events:72 - login button is clicked : 2019/04/25 10:41:20.34
+2019-04-25 10:41:29 INFO  Events:72 - tweet button is clicked : 2019/04/25 10:41:29.502
+2019-04-25 10:41:51 INFO  Events:72 - send message button is clicked : 2019/04/25 10:41:51.355
+2019-04-25 10:41:54 INFO  Events:72 - three line is clicked : 2019/04/25 10:41:54.274
+2019-04-25 10:41:56 INFO  Events:72 - profile menu is clicked : 2019/04/25 10:41:56.411
+2019-04-25 10:42:02 INFO  Events:72 - back to home page button is clicked : 2019/04/25 10:42:02.880
+2019-04-25 10:42:05 INFO  Events:72 - three line is clicked : 2019/04/25 10:42:05.533
+2019-04-25 10:42:07 INFO  Events:72 - settings is clicked : 2019/04/25 10:42:07.634
+2019-04-25 10:42:30 INFO  Events:72 - account is clicked : 2019/04/25 10:42:30.455
+2019-04-25 10:42:33 INFO  Events:72 - exit is clicked : 2019/04/25 10:42:33.486
+2019-04-25 10:52:42 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:52:42 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:53:00 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 10:53:01 INFO  Events:47 - login link is clicked
+2019-04-25 10:53:26 INFO  Events:72 - login button is clicked : 2019/04/25 10:53:26.650
+2019-04-25 10:53:32 INFO  StatusRule:28 - =================================================================
+2019-04-25 10:53:32 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 10:54:16 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:54:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:54:31 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 10:54:32 INFO  Events:47 - login link is clicked
+2019-04-25 10:54:57 INFO  Events:72 - login button is clicked : 2019/04/25 10:54:57.602
+2019-04-25 10:55:12 INFO  Events:72 - tweet button is clicked : 2019/04/25 10:55:12.516
+2019-04-25 10:55:31 INFO  Events:72 - send message button is clicked : 2019/04/25 10:55:31.608
+2019-04-25 10:55:34 INFO  Events:72 - three line is clicked : 2019/04/25 10:55:34.284
+2019-04-25 10:55:36 INFO  Events:72 - profile menu is clicked : 2019/04/25 10:55:36.648
+2019-04-25 10:55:43 INFO  Events:72 - back to home page button is clicked : 2019/04/25 10:55:43.25
+2019-04-25 10:55:45 INFO  Events:72 - three line is clicked : 2019/04/25 10:55:45.488
+2019-04-25 10:55:47 INFO  Events:72 - settings is clicked : 2019/04/25 10:55:47.620
+2019-04-25 10:55:50 INFO  Events:72 - account is clicked : 2019/04/25 10:55:50.227
+2019-04-25 10:55:53 INFO  Events:72 - exit is clicked : 2019/04/25 10:55:53.301
+2019-04-25 10:55:56 INFO  Events:72 - exit is done : 2019/04/25 10:55:56.963
+2019-04-25 10:56:00 INFO  StatusRule:21 - =================================================================
+2019-04-25 10:56:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-25 10:56:34 INFO  StatusRule:14 - =================================================================
+2019-04-25 10:56:34 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 10:56:48 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 10:56:50 INFO  Events:47 - login link is clicked
+2019-04-25 10:57:16 INFO  Events:72 - login button is clicked : 2019/04/25 10:57:16.877
+2019-04-25 10:58:30 INFO  StatusRule:28 - =================================================================
+2019-04-25 10:58:30 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 14:28:16 INFO  StatusRule:14 - =================================================================
+2019-04-25 14:28:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 14:28:29 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 14:28:35 INFO  StatusRule:28 - =================================================================
+2019-04-25 14:28:35 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 14:29:11 INFO  StatusRule:14 - =================================================================
+2019-04-25 14:29:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 14:29:23 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 14:29:28 INFO  StatusRule:28 - =================================================================
+2019-04-25 14:29:28 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 14:30:15 INFO  StatusRule:14 - =================================================================
+2019-04-25 14:30:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 14:30:29 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 14:30:34 INFO  StatusRule:28 - =================================================================
+2019-04-25 14:30:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 14:38:04 INFO  StatusRule:14 - =================================================================
+2019-04-25 14:38:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 14:38:17 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 14:38:22 INFO  StatusRule:28 - =================================================================
+2019-04-25 14:38:22 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-25 14:38:49 INFO  StatusRule:14 - =================================================================
+2019-04-25 14:38:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 14:39:03 INFO  InstagramSingleDeviceTest:47 - login process is started
+2019-04-25 14:39:06 INFO  Events:47 - login link is clicked
+2019-04-25 14:39:31 INFO  Events:72 - login button is clicked : 2019/04/25 14:39:31.392
+2019-04-25 14:39:45 INFO  Events:72 - tweet button is clicked : 2019/04/25 14:39:45.726
+2019-04-25 14:40:05 INFO  Events:72 - send message button is clicked : 2019/04/25 14:40:05.168
+2019-04-25 14:40:07 INFO  Events:72 - three line is clicked : 2019/04/25 14:40:07.985
+2019-04-25 14:40:10 INFO  Events:72 - profile menu is clicked : 2019/04/25 14:40:10.237
+2019-04-25 14:40:17 INFO  Events:72 - back to home page button is clicked : 2019/04/25 14:40:17.202
+2019-04-25 14:40:19 INFO  Events:72 - three line is clicked : 2019/04/25 14:40:19.494
+2019-04-25 14:40:22 INFO  Events:72 - settings is clicked : 2019/04/25 14:40:22.612
+2019-04-25 14:40:24 INFO  Events:72 - account is clicked : 2019/04/25 14:40:24.604
+2019-04-25 14:40:27 INFO  Events:72 - exit is clicked : 2019/04/25 14:40:27.689
+2019-04-25 14:40:30 INFO  Events:72 - exit is done : 2019/04/25 14:40:30.83
+2019-04-25 14:40:34 INFO  StatusRule:21 - =================================================================
+2019-04-25 14:40:34 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-25 17:40:47 INFO  StatusRule:14 - =================================================================
+2019-04-25 17:40:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-25 17:41:05 INFO  StatusRule:28 - =================================================================
+2019-04-25 17:41:05 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-25 17:55:43 INFO  StatusRule:14 - =================================================================
+2019-04-25 17:55:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-25 17:58:24 INFO  StatusRule:14 - =================================================================
+2019-04-25 17:58:24 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-25 17:58:38 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-25 17:58:40 INFO  Events:47 - login link is clicked
+2019-04-25 17:59:03 INFO  Events:72 - login button is clicked : 2019/04/25 17:59:03.385
+2019-04-25 17:59:19 INFO  Events:72 - tweet button is clicked : 2019/04/25 17:59:19.157
+2019-04-25 17:59:38 INFO  Events:72 - send message button is clicked : 2019/04/25 17:59:38.945
+2019-04-25 17:59:41 INFO  Events:72 - three line is clicked : 2019/04/25 17:59:41.304
+2019-04-25 17:59:44 INFO  StatusRule:28 - =================================================================
+2019-04-25 17:59:44 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 08:18:33 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:18:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:19:39 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:19:40 INFO  Events:47 - login link is clicked
+2019-04-26 08:19:48 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:19:48 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:19:57 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:19:57 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:20:22 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:20:22 INFO  Events:47 - login link is clicked
+2019-04-26 08:20:49 INFO  Events:72 - login button is clicked : 2019/04/26 08:20:49.356
+2019-04-26 08:20:56 INFO  StatusRule:21 - =================================================================
+2019-04-26 08:20:56 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlTweet
+2019-04-26 08:22:23 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:22:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:22:49 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:22:49 INFO  Events:47 - login link is clicked
+2019-04-26 08:23:16 INFO  Events:72 - login button is clicked : 2019/04/26 08:23:16.86
+2019-04-26 08:23:23 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:23:23 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:26:39 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:26:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:28:15 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:28:15 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:28:41 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:28:41 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:28:48 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:28:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:30:24 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:30:24 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:34:21 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:34:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:35:05 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:35:11 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:35:11 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:36:32 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:36:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:36:54 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:37:02 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:37:02 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:37:40 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:37:40 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:38:00 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:38:09 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:38:09 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:38:24 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:38:24 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:38:49 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:38:49 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:39:27 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:39:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:39:49 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:39:49 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:40:49 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:40:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:41:12 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:41:16 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:41:16 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:42:52 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:42:52 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:43:17 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:43:18 INFO  Events:47 - login link is clicked
+2019-04-26 08:43:24 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:43:24 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:43:56 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:43:56 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:44:16 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:44:21 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:44:21 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:46:30 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:46:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:47:07 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:47:34 INFO  Events:72 - login button is clicked : 2019/04/26 08:47:34.816
+2019-04-26 08:47:38 INFO  StatusRule:21 - =================================================================
+2019-04-26 08:47:38 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlTweet
+2019-04-26 08:48:25 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:48:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:48:43 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:48:48 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:48:48 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:49:39 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:49:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 08:49:58 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 08:50:05 INFO  StatusRule:28 - =================================================================
+2019-04-26 08:50:05 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 08:59:37 INFO  StatusRule:14 - =================================================================
+2019-04-26 08:59:37 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:00:01 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:00:08 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:00:08 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:01:56 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:01:56 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:02:17 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:02:32 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:02:32 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:07:11 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:07:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:07:32 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:07:42 INFO  Events:47 - login link is clicked
+2019-04-26 09:08:08 INFO  Events:72 - login button is clicked : 2019/04/26 09:08:08.529
+2019-04-26 09:08:11 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:08:11 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlTweet
+2019-04-26 09:08:38 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:08:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:08:47 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:08:52 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:08:52 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:09:33 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:09:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:09:43 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:09:48 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:09:48 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:10:37 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:10:37 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:10:47 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:10:51 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:10:51 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:12:44 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:12:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:13:05 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:13:18 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:13:18 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:15:45 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:15:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:16:05 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:16:18 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:16:18 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:16:35 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:16:35 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:16:55 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:17:08 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:17:08 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:17:38 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:17:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:18:51 INFO  InstagramSingleDeviceTest:32 - login process is started
+2019-04-26 09:19:14 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:19:14 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlTweet
+2019-04-26 09:20:25 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:20:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlTweet
+2019-04-26 09:21:47 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:21:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:21:58 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:22:02 INFO  Events:47 - login link is clicked
+2019-04-26 09:22:27 INFO  Events:72 - login button is clicked : 2019/04/26 09:22:27.483
+2019-04-26 09:22:40 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:22:40.632
+2019-04-26 09:22:59 INFO  Events:72 - send message button is clicked : 2019/04/26 09:22:59.923
+2019-04-26 09:23:03 INFO  Events:72 - three line is clicked : 2019/04/26 09:23:03.421
+2019-04-26 09:23:05 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:23:05.541
+2019-04-26 09:23:12 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:23:12.41
+2019-04-26 09:23:14 INFO  Events:72 - three line is clicked : 2019/04/26 09:23:14.371
+2019-04-26 09:23:16 INFO  Events:72 - settings is clicked : 2019/04/26 09:23:16.491
+2019-04-26 09:23:50 INFO  Events:72 - exit is clicked : 2019/04/26 09:23:50.854
+2019-04-26 09:24:25 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:24:25 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 09:26:18 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:26:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:26:28 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:26:34 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:26:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:26:47 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:26:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:26:58 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:27:04 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:27:04 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:27:15 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:27:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:27:25 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:27:27 INFO  Events:47 - login link is clicked
+2019-04-26 09:27:32 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:27:32 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:28:31 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:28:31 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:28:40 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:28:41 INFO  Events:47 - login link is clicked
+2019-04-26 09:28:46 INFO  StatusRule:28 - =================================================================
+2019-04-26 09:28:46 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 09:29:47 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:29:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:29:56 INFO  InstagramSingleDeviceTest:45 - login process is started
+2019-04-26 09:30:00 INFO  Events:47 - login link is clicked
+2019-04-26 09:30:25 INFO  Events:72 - login button is clicked : 2019/04/26 09:30:25.984
+2019-04-26 09:30:40 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:30:40.679
+2019-04-26 09:30:59 INFO  Events:72 - send message button is clicked : 2019/04/26 09:30:59.633
+2019-04-26 09:31:02 INFO  Events:72 - three line is clicked : 2019/04/26 09:31:02.389
+2019-04-26 09:31:04 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:31:04.960
+2019-04-26 09:31:12 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:31:12.259
+2019-04-26 09:31:14 INFO  Events:72 - three line is clicked : 2019/04/26 09:31:14.598
+2019-04-26 09:31:16 INFO  Events:72 - settings is clicked : 2019/04/26 09:31:16.542
+2019-04-26 09:31:18 INFO  Events:72 - account is clicked : 2019/04/26 09:31:18.602
+2019-04-26 09:31:21 INFO  Events:72 - exit is clicked : 2019/04/26 09:31:21.580
+2019-04-26 09:31:26 INFO  Events:72 - exit is done : 2019/04/26 09:31:26.91
+2019-04-26 09:31:29 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:31:29 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 09:36:49 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:36:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:37:00 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 09:37:03 INFO  Events:47 - login link is clicked
+2019-04-26 09:37:28 INFO  Events:72 - login button is clicked : 2019/04/26 09:37:28.909
+2019-04-26 09:37:44 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:37:44.750
+2019-04-26 09:38:03 INFO  Events:72 - send message button is clicked : 2019/04/26 09:38:03.408
+2019-04-26 09:38:06 INFO  Events:72 - three line is clicked : 2019/04/26 09:38:06.123
+2019-04-26 09:38:08 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:38:08.479
+2019-04-26 09:38:18 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:38:18.789
+2019-04-26 09:38:20 INFO  Events:72 - three line is clicked : 2019/04/26 09:38:20.866
+2019-04-26 09:38:22 INFO  Events:72 - settings is clicked : 2019/04/26 09:38:22.975
+2019-04-26 09:38:25 INFO  Events:72 - account is clicked : 2019/04/26 09:38:25.640
+2019-04-26 09:38:28 INFO  Events:72 - exit is clicked : 2019/04/26 09:38:28.972
+2019-04-26 09:38:32 INFO  Events:72 - exit is done : 2019/04/26 09:38:32.275
+2019-04-26 09:38:36 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:38:36 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 09:53:17 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:53:17 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:53:28 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 09:53:31 INFO  Events:47 - login link is clicked
+2019-04-26 09:53:52 INFO  Events:72 - login button is clicked : 2019/04/26 09:53:52.650
+2019-04-26 09:54:05 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:54:05.977
+2019-04-26 09:54:26 INFO  Events:72 - send message button is clicked : 2019/04/26 09:54:26.309
+2019-04-26 09:54:29 INFO  Events:72 - three line is clicked : 2019/04/26 09:54:29.37
+2019-04-26 09:54:31 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:54:31.826
+2019-04-26 09:54:44 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:54:44.503
+2019-04-26 09:54:46 INFO  Events:72 - three line is clicked : 2019/04/26 09:54:46.786
+2019-04-26 09:54:49 INFO  Events:72 - settings is clicked : 2019/04/26 09:54:49.218
+2019-04-26 09:54:51 INFO  Events:72 - account is clicked : 2019/04/26 09:54:51.493
+2019-04-26 09:54:54 INFO  Events:72 - exit is clicked : 2019/04/26 09:54:54.630
+2019-04-26 09:54:57 INFO  Events:72 - exit is done : 2019/04/26 09:54:57.518
+2019-04-26 09:55:01 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:55:01 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 09:55:25 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:55:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:55:36 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 09:55:37 INFO  Events:47 - login link is clicked
+2019-04-26 09:56:04 INFO  Events:72 - login button is clicked : 2019/04/26 09:56:04.28
+2019-04-26 09:56:19 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:56:19.263
+2019-04-26 09:56:38 INFO  Events:72 - send message button is clicked : 2019/04/26 09:56:38.467
+2019-04-26 09:56:41 INFO  Events:72 - three line is clicked : 2019/04/26 09:56:41.361
+2019-04-26 09:56:43 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:56:43.663
+2019-04-26 09:57:05 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:57:05.453
+2019-04-26 09:57:07 INFO  Events:72 - three line is clicked : 2019/04/26 09:57:07.873
+2019-04-26 09:57:10 INFO  Events:72 - settings is clicked : 2019/04/26 09:57:10.978
+2019-04-26 09:57:13 INFO  Events:72 - account is clicked : 2019/04/26 09:57:13.30
+2019-04-26 09:57:16 INFO  Events:72 - exit is clicked : 2019/04/26 09:57:16.245
+2019-04-26 09:57:18 INFO  Events:72 - exit is done : 2019/04/26 09:57:18.943
+2019-04-26 09:57:22 INFO  StatusRule:21 - =================================================================
+2019-04-26 09:57:22 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 09:57:38 INFO  StatusRule:14 - =================================================================
+2019-04-26 09:57:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 09:57:50 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 09:57:51 INFO  Events:47 - login link is clicked
+2019-04-26 09:58:14 INFO  Events:72 - login button is clicked : 2019/04/26 09:58:14.232
+2019-04-26 09:58:30 INFO  Events:72 - tweet button is clicked : 2019/04/26 09:58:30.837
+2019-04-26 09:58:48 INFO  Events:72 - send message button is clicked : 2019/04/26 09:58:48.756
+2019-04-26 09:58:51 INFO  Events:72 - three line is clicked : 2019/04/26 09:58:51.988
+2019-04-26 09:58:54 INFO  Events:72 - profile menu is clicked : 2019/04/26 09:58:54.409
+2019-04-26 09:59:15 INFO  Events:72 - back to home page button is clicked : 2019/04/26 09:59:15.190
+2019-04-26 09:59:17 INFO  Events:72 - three line is clicked : 2019/04/26 09:59:17.780
+2019-04-26 09:59:20 INFO  Events:72 - settings is clicked : 2019/04/26 09:59:20.811
+2019-04-26 09:59:22 INFO  Events:72 - account is clicked : 2019/04/26 09:59:22.915
+2019-04-26 09:59:26 INFO  Events:72 - exit is clicked : 2019/04/26 09:59:26.246
+2019-04-26 10:00:47 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:00:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:01:11 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:01:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:01:27 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:01:30 INFO  Events:47 - login link is clicked
+2019-04-26 10:01:57 INFO  Events:72 - login button is clicked : 2019/04/26 10:01:57.283
+2019-04-26 10:02:13 INFO  Events:72 - tweet button is clicked : 2019/04/26 10:02:13.288
+2019-04-26 10:08:43 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:08:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:08:58 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:09:00 INFO  Events:47 - login link is clicked
+2019-04-26 10:09:25 INFO  Events:72 - login button is clicked : 2019/04/26 10:09:25.299
+2019-04-26 10:09:42 INFO  Events:72 - tweet button is clicked : 2019/04/26 10:09:42.5
+2019-04-26 10:10:00 INFO  Events:72 - send message button is clicked : 2019/04/26 10:10:00.741
+2019-04-26 10:10:12 INFO  Events:72 - three line is clicked : 2019/04/26 10:10:12.261
+2019-04-26 10:10:14 INFO  Events:72 - profile menu is clicked : 2019/04/26 10:10:14.779
+2019-04-26 10:10:21 INFO  Events:72 - back to home page button is clicked : 2019/04/26 10:10:21.616
+2019-04-26 10:10:24 INFO  Events:72 - three line is clicked : 2019/04/26 10:10:24.195
+2019-04-26 10:10:27 INFO  Events:72 - settings is clicked : 2019/04/26 10:10:27.149
+2019-04-26 10:11:23 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:11:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:11:38 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:11:39 INFO  Events:47 - login link is clicked
+2019-04-26 10:12:07 INFO  Events:72 - login button is clicked : 2019/04/26 10:12:07.870
+2019-04-26 10:12:23 INFO  Events:72 - tweet button is clicked : 2019/04/26 10:12:23.560
+2019-04-26 10:13:38 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:13:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:14:11 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:14:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:14:25 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:14:27 INFO  Events:47 - login link is clicked
+2019-04-26 10:14:50 INFO  Events:72 - login button is clicked : 2019/04/26 10:14:50.123
+2019-04-26 10:15:02 INFO  Events:72 - tweet button is clicked : 2019/04/26 10:15:02.310
+2019-04-26 10:15:21 INFO  Events:72 - send message button is clicked : 2019/04/26 10:15:21.718
+2019-04-26 10:15:33 INFO  Events:72 - three line is clicked : 2019/04/26 10:15:33.34
+2019-04-26 10:15:35 INFO  Events:72 - profile menu is clicked : 2019/04/26 10:15:35.580
+2019-04-26 10:15:42 INFO  Events:72 - back to home page button is clicked : 2019/04/26 10:15:42.827
+2019-04-26 10:15:45 INFO  Events:72 - three line is clicked : 2019/04/26 10:15:45.328
+2019-04-26 10:15:48 INFO  Events:72 - settings is clicked : 2019/04/26 10:15:48.327
+2019-04-26 10:15:50 INFO  Events:72 - account is clicked : 2019/04/26 10:15:50.365
+2019-04-26 10:15:53 INFO  Events:72 - exit is clicked : 2019/04/26 10:15:53.372
+2019-04-26 10:15:57 INFO  Events:72 - exit is done : 2019/04/26 10:15:57.173
+2019-04-26 10:16:00 INFO  StatusRule:21 - =================================================================
+2019-04-26 10:16:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 10:30:50 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:30:50 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:31:02 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:31:04 INFO  Events:47 - login link is clicked
+2019-04-26 10:31:27 INFO  Events:79 - login button is clicked : 2019/04/26 10:31:27.918
+2019-04-26 10:31:39 INFO  Events:79 - tweet button is clicked : 2019/04/26 10:31:39.573
+2019-04-26 10:31:59 INFO  Events:79 - send message button is clicked : 2019/04/26 10:31:59.320
+2019-04-26 10:32:10 INFO  Events:79 - three line is clicked : 2019/04/26 10:32:10.64
+2019-04-26 10:32:12 INFO  Events:79 - profile menu is clicked : 2019/04/26 10:32:12.337
+2019-04-26 10:32:18 INFO  Events:79 - back to home page button is clicked : 2019/04/26 10:32:18.219
+2019-04-26 10:32:20 INFO  Events:79 - three line is clicked : 2019/04/26 10:32:20.464
+2019-04-26 10:32:22 INFO  Events:79 - settings is clicked : 2019/04/26 10:32:22.760
+2019-04-26 10:32:24 INFO  Events:79 - account is clicked : 2019/04/26 10:32:24.616
+2019-04-26 10:32:27 INFO  Events:79 - exit is clicked : 2019/04/26 10:32:27.543
+2019-04-26 10:32:30 INFO  Events:79 - exit is done : 2019/04/26 10:32:30.573
+2019-04-26 10:32:33 INFO  StatusRule:21 - =================================================================
+2019-04-26 10:32:33 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 10:34:53 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:34:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:35:06 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:35:08 INFO  Events:47 - login link is clicked
+2019-04-26 10:35:30 INFO  Events:79 - login button is clicked : 2019/04/26 10:35:30.870
+2019-04-26 10:35:42 INFO  Events:79 - tweet button is clicked : 2019/04/26 10:35:42.463
+2019-04-26 10:36:02 INFO  Events:79 - send message button is clicked : 2019/04/26 10:36:02.390
+2019-04-26 10:36:12 INFO  Events:79 - three line is clicked : 2019/04/26 10:36:12.544
+2019-04-26 10:36:15 INFO  Events:79 - profile menu is clicked : 2019/04/26 10:36:15.160
+2019-04-26 10:36:21 INFO  Events:79 - back to home page button is clicked : 2019/04/26 10:36:21.441
+2019-04-26 10:36:23 INFO  Events:79 - three line is clicked : 2019/04/26 10:36:23.925
+2019-04-26 10:36:27 INFO  Events:79 - settings is clicked : 2019/04/26 10:36:27.289
+2019-04-26 10:36:29 INFO  Events:79 - account is clicked : 2019/04/26 10:36:29.336
+2019-04-26 10:36:32 INFO  Events:79 - exit is clicked : 2019/04/26 10:36:32.343
+2019-04-26 10:36:34 INFO  Events:79 - exit is done : 2019/04/26 10:36:34.857
+2019-04-26 10:36:38 INFO  StatusRule:21 - =================================================================
+2019-04-26 10:36:38 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 10:58:38 INFO  StatusRule:14 - =================================================================
+2019-04-26 10:58:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 10:58:51 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 10:58:53 INFO  Events:47 - login link is clicked
+2019-04-26 10:59:15 INFO  Events:79 - login button is clicked : 2019/04/26 10:59:15.565
+2019-04-26 10:59:27 INFO  Events:79 - tweet button is clicked : 2019/04/26 10:59:27.200
+2019-04-26 10:59:45 INFO  Events:79 - send message button is clicked : 2019/04/26 10:59:45.304
+2019-04-26 10:59:57 INFO  Events:79 - three line is clicked : 2019/04/26 10:59:57.705
+2019-04-26 11:00:00 INFO  Events:79 - profile menu is clicked : 2019/04/26 11:00:00.106
+2019-04-26 11:00:06 INFO  Events:79 - back to home page button is clicked : 2019/04/26 11:00:06.630
+2019-04-26 11:00:08 INFO  Events:79 - three line is clicked : 2019/04/26 11:00:08.827
+2019-04-26 11:00:12 INFO  Events:79 - settings is clicked : 2019/04/26 11:00:12.112
+2019-04-26 11:00:14 INFO  Events:79 - account is clicked : 2019/04/26 11:00:14.259
+2019-04-26 11:00:17 INFO  Events:79 - exit is clicked : 2019/04/26 11:00:17.344
+2019-04-26 11:00:20 INFO  Events:79 - exit is done : 2019/04/26 11:00:20.48
+2019-04-26 11:00:24 INFO  StatusRule:21 - =================================================================
+2019-04-26 11:00:24 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 11:12:43 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:12:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:12:57 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:12:58 INFO  Events:47 - login link is clicked
+2019-04-26 11:13:32 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:13:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:13:44 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:13:46 INFO  Events:47 - login link is clicked
+2019-04-26 11:14:10 INFO  Events:79 - login button is clicked : 2019/04/26 11:14:10.430
+2019-04-26 11:14:22 INFO  Events:79 - tweet button is clicked : 2019/04/26 11:14:22.284
+2019-04-26 11:14:42 INFO  Events:79 - send message button is clicked : 2019/04/26 11:14:42.168
+2019-04-26 11:14:54 INFO  Events:79 - three line is clicked : 2019/04/26 11:14:54.278
+2019-04-26 11:14:56 INFO  Events:79 - profile menu is clicked : 2019/04/26 11:14:56.787
+2019-04-26 11:15:03 INFO  Events:79 - back to home page button is clicked : 2019/04/26 11:15:03.416
+2019-04-26 11:15:06 INFO  Events:79 - three line is clicked : 2019/04/26 11:15:06.9
+2019-04-26 11:15:08 INFO  Events:79 - settings is clicked : 2019/04/26 11:15:08.441
+2019-04-26 11:15:10 INFO  Events:79 - account is clicked : 2019/04/26 11:15:10.718
+2019-04-26 11:15:13 INFO  Events:79 - exit is clicked : 2019/04/26 11:15:13.959
+2019-04-26 11:15:17 INFO  Events:79 - exit is done : 2019/04/26 11:15:17.467
+2019-04-26 11:15:21 INFO  StatusRule:21 - =================================================================
+2019-04-26 11:15:21 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 11:15:26 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:15:26 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:15:41 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:15:43 INFO  Events:47 - login link is clicked
+2019-04-26 11:16:06 INFO  Events:79 - login button is clicked : 2019/04/26 11:16:06.605
+2019-04-26 11:16:18 INFO  Events:79 - tweet button is clicked : 2019/04/26 11:16:18.203
+2019-04-26 11:16:39 INFO  Events:79 - send message button is clicked : 2019/04/26 11:16:39.389
+2019-04-26 11:16:50 INFO  Events:79 - three line is clicked : 2019/04/26 11:16:50.452
+2019-04-26 11:16:53 INFO  Events:79 - profile menu is clicked : 2019/04/26 11:16:53.161
+2019-04-26 11:16:59 INFO  Events:79 - back to home page button is clicked : 2019/04/26 11:16:59.670
+2019-04-26 11:17:02 INFO  Events:79 - three line is clicked : 2019/04/26 11:17:02.169
+2019-04-26 11:17:04 INFO  Events:79 - settings is clicked : 2019/04/26 11:17:04.458
+2019-04-26 11:17:07 INFO  Events:79 - account is clicked : 2019/04/26 11:17:07.370
+2019-04-26 11:17:11 INFO  Events:79 - exit is clicked : 2019/04/26 11:17:11.621
+2019-04-26 11:17:14 INFO  Events:79 - exit is done : 2019/04/26 11:17:14.715
+2019-04-26 11:17:18 INFO  StatusRule:21 - =================================================================
+2019-04-26 11:17:18 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 11:48:01 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:48:02 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:48:15 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:48:18 INFO  Events:47 - login link is clicked
+2019-04-26 11:48:42 INFO  Events:84 - login button is clicked : 2019/04/26 11:48:42.945
+2019-04-26 11:48:54 INFO  Events:84 - tweet button is clicked : 2019/04/26 11:48:54.760
+2019-04-26 11:49:14 INFO  Events:84 - send message button is clicked : 2019/04/26 11:49:14.757
+2019-04-26 11:49:26 INFO  Events:84 - three line is clicked : 2019/04/26 11:49:26.77
+2019-04-26 11:49:28 INFO  Events:84 - profile menu is clicked : 2019/04/26 11:49:28.769
+2019-04-26 11:49:34 INFO  Events:84 - back to home page button is clicked : 2019/04/26 11:49:34.953
+2019-04-26 11:49:37 INFO  Events:84 - three line is clicked : 2019/04/26 11:49:37.316
+2019-04-26 11:49:39 INFO  Events:84 - settings is clicked : 2019/04/26 11:49:39.794
+2019-04-26 11:49:41 INFO  Events:84 - account is clicked : 2019/04/26 11:49:41.760
+2019-04-26 11:49:44 INFO  Events:84 - exit is clicked : 2019/04/26 11:49:44.780
+2019-04-26 11:49:47 INFO  Events:84 - exit is done : 2019/04/26 11:49:47.553
+2019-04-26 11:49:50 INFO  StatusRule:21 - =================================================================
+2019-04-26 11:49:50 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 11:50:58 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:50:58 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:51:10 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:51:11 INFO  Events:47 - login link is clicked
+2019-04-26 11:51:35 INFO  Events:84 - login button is clicked : 2019/04/26 11:51:35.780
+2019-04-26 11:51:47 INFO  Events:84 - tweet button is clicked : 2019/04/26 11:51:47.294
+2019-04-26 11:52:07 INFO  Events:84 - send message button is clicked : 2019/04/26 11:52:07.386
+2019-04-26 11:52:19 INFO  Events:84 - three line is clicked : 2019/04/26 11:52:19.266
+2019-04-26 11:52:21 INFO  Events:84 - profile menu is clicked : 2019/04/26 11:52:21.657
+2019-04-26 11:52:28 INFO  Events:84 - back to home page button is clicked : 2019/04/26 11:52:28.919
+2019-04-26 11:52:31 INFO  Events:84 - three line is clicked : 2019/04/26 11:52:31.235
+2019-04-26 11:52:33 INFO  Events:84 - settings is clicked : 2019/04/26 11:52:33.623
+2019-04-26 11:52:35 INFO  Events:84 - account is clicked : 2019/04/26 11:52:35.808
+2019-04-26 11:52:39 INFO  Events:84 - exit is clicked : 2019/04/26 11:52:39.201
+2019-04-26 11:52:41 INFO  Events:84 - exit is done : 2019/04/26 11:52:41.533
+2019-04-26 11:52:45 INFO  StatusRule:21 - =================================================================
+2019-04-26 11:52:45 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 11:54:17 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:54:17 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:54:29 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:54:30 INFO  Events:47 - login link is clicked
+2019-04-26 11:54:54 INFO  Events:84 - login button is clicked : 2019/04/26 11:54:54.928
+2019-04-26 11:55:06 INFO  Events:84 - tweet button is clicked : 2019/04/26 11:55:06.533
+2019-04-26 11:55:25 INFO  Events:84 - send message button is clicked : 2019/04/26 11:55:25.698
+2019-04-26 11:55:36 INFO  StatusRule:28 - =================================================================
+2019-04-26 11:55:36 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 11:57:30 INFO  StatusRule:14 - =================================================================
+2019-04-26 11:57:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 11:57:43 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 11:57:45 INFO  Events:47 - login link is clicked
+2019-04-26 11:58:10 INFO  Events:84 - login button is clicked : 2019/04/26 11:58:10.269
+2019-04-26 11:58:21 INFO  Events:84 - tweet button is clicked : 2019/04/26 11:58:21.926
+2019-04-26 11:58:42 INFO  Events:84 - send message button is clicked : 2019/04/26 11:58:42.789
+2019-04-26 11:58:55 INFO  StatusRule:28 - =================================================================
+2019-04-26 11:58:55 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 12:00:32 INFO  StatusRule:14 - =================================================================
+2019-04-26 12:00:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 12:00:45 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 12:00:50 INFO  StatusRule:28 - =================================================================
+2019-04-26 12:00:50 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 12:01:07 INFO  StatusRule:14 - =================================================================
+2019-04-26 12:01:07 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 12:01:20 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 12:01:21 INFO  Events:47 - login link is clicked
+2019-04-26 12:01:48 INFO  Events:84 - login button is clicked : 2019/04/26 12:01:48.643
+2019-04-26 12:02:00 INFO  Events:84 - tweet button is clicked : 2019/04/26 12:02:00.288
+2019-04-26 12:02:22 INFO  Events:84 - send message button is clicked : 2019/04/26 12:02:22.77
+2019-04-26 12:02:33 INFO  StatusRule:28 - =================================================================
+2019-04-26 12:02:33 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 12:03:55 INFO  StatusRule:14 - =================================================================
+2019-04-26 12:03:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 12:04:07 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 12:04:11 INFO  StatusRule:28 - =================================================================
+2019-04-26 12:04:11 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 12:04:36 INFO  StatusRule:14 - =================================================================
+2019-04-26 12:04:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 12:04:50 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 12:04:52 INFO  Events:47 - login link is clicked
+2019-04-26 12:05:18 INFO  Events:84 - login button is clicked : 2019/04/26 12:05:18.501
+2019-04-26 12:05:30 INFO  Events:84 - tweet button is clicked : 2019/04/26 12:05:30.159
+2019-04-26 12:05:50 INFO  Events:84 - send message button is clicked : 2019/04/26 12:05:50.547
+2019-04-26 12:06:02 INFO  Events:84 - three line is clicked : 2019/04/26 12:06:02.735
+2019-04-26 12:06:05 INFO  Events:84 - profile menu is clicked : 2019/04/26 12:06:05.216
+2019-04-26 12:06:11 INFO  Events:84 - back to home page button is clicked : 2019/04/26 12:06:11.908
+2019-04-26 12:06:14 INFO  Events:84 - three line is clicked : 2019/04/26 12:06:14.751
+2019-04-26 12:06:17 INFO  Events:84 - settings is clicked : 2019/04/26 12:06:17.220
+2019-04-26 12:06:19 INFO  Events:84 - account is clicked : 2019/04/26 12:06:19.765
+2019-04-26 12:06:22 INFO  Events:84 - exit is clicked : 2019/04/26 12:06:22.876
+2019-04-26 12:06:26 INFO  Events:84 - exit is done : 2019/04/26 12:06:26.647
+2019-04-26 12:06:30 INFO  StatusRule:21 - =================================================================
+2019-04-26 12:06:30 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 13:28:25 INFO  StatusRule:14 - =================================================================
+2019-04-26 13:28:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 13:28:37 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 13:28:38 INFO  Events:47 - login link is clicked
+2019-04-26 13:28:43 INFO  StatusRule:28 - =================================================================
+2019-04-26 13:28:43 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 13:29:04 INFO  StatusRule:14 - =================================================================
+2019-04-26 13:29:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 13:29:13 INFO  InstagramSingleDeviceTest:46 - login process is started
+2019-04-26 13:29:17 INFO  Events:47 - login link is clicked
+2019-04-26 13:29:38 INFO  Events:84 - login button is clicked : 2019/04/26 13:29:38.62
+2019-04-26 13:29:50 INFO  Events:84 - tweet button is clicked : 2019/04/26 13:29:50.569
+2019-04-26 13:30:11 INFO  Events:84 - send message button is clicked : 2019/04/26 13:30:11.140
+2019-04-26 13:30:20 INFO  InstagramSingleDeviceTest:55 - Control Home Panel:  Enerjim Test @EnerjimT. . . this is a test: kO5ndaMx12. . . . . . . şu anda olanlar.
+2019-04-26 13:30:22 INFO  Events:84 - three line is clicked : 2019/04/26 13:30:22.417
+2019-04-26 13:30:24 INFO  Events:84 - profile menu is clicked : 2019/04/26 13:30:24.690
+2019-04-26 13:30:30 INFO  Events:84 - back to home page button is clicked : 2019/04/26 13:30:30.459
+2019-04-26 13:30:30 INFO  InstagramSingleDeviceTest:61 - Control Profile Panel:  Enerjim Test @EnerjimT. . . this is a test: kO5ndaMx12. . . . . . . şu anda olanlar.
+2019-04-26 13:30:32 INFO  Events:84 - three line is clicked : 2019/04/26 13:30:32.476
+2019-04-26 13:30:35 INFO  Events:84 - settings is clicked : 2019/04/26 13:30:35.931
+2019-04-26 13:30:37 INFO  Events:84 - account is clicked : 2019/04/26 13:30:37.906
+2019-04-26 13:30:41 INFO  Events:84 - exit is clicked : 2019/04/26 13:30:41.281
+2019-04-26 13:30:43 INFO  Events:84 - exit is done : 2019/04/26 13:30:43.583
+2019-04-26 13:30:47 INFO  StatusRule:21 - =================================================================
+2019-04-26 13:30:47 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 13:36:08 INFO  StatusRule:14 - =================================================================
+2019-04-26 13:36:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 13:36:21 INFO  Twitter:46 - login process is started
+2019-04-26 13:36:22 INFO  Events:47 - login link is clicked
+2019-04-26 13:36:46 INFO  Events:84 - login button is clicked : 2019/04/26 13:36:46.139
+2019-04-26 13:37:00 INFO  Events:84 - tweet button is clicked : 2019/04/26 13:37:00.115
+2019-04-26 13:37:19 INFO  Events:84 - send message button is clicked : 2019/04/26 13:37:19.998
+2019-04-26 13:37:28 INFO  Twitter:55 - Control Home Panel:  Enerjim Test @EnerjimT. . . this is a test: P13C5NauUU. . . . . . . şu anda olanlar.
+2019-04-26 13:37:30 INFO  Events:84 - three line is clicked : 2019/04/26 13:37:30.648
+2019-04-26 13:37:33 INFO  Events:84 - profile menu is clicked : 2019/04/26 13:37:33.83
+2019-04-26 13:37:39 INFO  Events:84 - back to home page button is clicked : 2019/04/26 13:37:39.195
+2019-04-26 13:37:39 INFO  Twitter:61 - Control Profile Panel:  Enerjim Test @EnerjimT. . . this is a test: P13C5NauUU. . . . . . . şu anda olanlar.
+2019-04-26 13:37:41 INFO  Events:84 - three line is clicked : 2019/04/26 13:37:41.501
+2019-04-26 13:37:43 INFO  Events:84 - settings is clicked : 2019/04/26 13:37:43.973
+2019-04-26 13:37:46 INFO  Events:84 - account is clicked : 2019/04/26 13:37:46.624
+2019-04-26 13:37:49 INFO  Events:84 - exit is clicked : 2019/04/26 13:37:49.841
+2019-04-26 13:37:52 INFO  Events:84 - exit is done : 2019/04/26 13:37:52.782
+2019-04-26 13:37:56 INFO  StatusRule:21 - =================================================================
+2019-04-26 13:37:56 INFO  StatusRule:22 - =====> TEST PASSED ... --> controlMessageText
+2019-04-26 14:04:23 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:04:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 14:04:37 INFO  Twitter:52 - login process is started
+2019-04-26 14:04:38 INFO  Events:47 - login link is clicked
+2019-04-26 14:04:59 INFO  Events:84 - login button is clicked : 2019/04/26 14:04:59.324
+2019-04-26 14:05:06 INFO  Events:84 - tweet button is clicked : 2019/04/26 14:05:06.848
+2019-04-26 14:05:30 INFO  Events:84 - send message button is clicked : 2019/04/26 14:05:30.825
+2019-04-26 14:05:39 INFO  Twitter:60 - Control Home Panel:  Enerjim Test @EnerjimT. . . this is a test: lajtscsN71. . . . . . . şu anda olanlar.
+2019-04-26 14:05:41 INFO  Events:84 - three line is clicked : 2019/04/26 14:05:41.319
+2019-04-26 14:05:43 INFO  Events:84 - profile menu is clicked : 2019/04/26 14:05:43.545
+2019-04-26 14:05:49 INFO  Events:84 - back to home page button is clicked : 2019/04/26 14:05:49.413
+2019-04-26 14:05:49 INFO  Twitter:66 - Control Profile Panel:  Enerjim Test @EnerjimT. . . this is a test: lajtscsN71. . . . . . . şu anda olanlar.
+2019-04-26 14:05:52 INFO  Events:84 - three line is clicked : 2019/04/26 14:05:52.512
+2019-04-26 14:05:54 INFO  Events:84 - settings is clicked : 2019/04/26 14:05:54.841
+2019-04-26 14:05:57 INFO  Events:84 - account is clicked : 2019/04/26 14:05:57.87
+2019-04-26 14:06:00 INFO  Events:84 - exit is clicked : 2019/04/26 14:06:00.231
+2019-04-26 14:06:04 INFO  Events:84 - exit is done : 2019/04/26 14:06:04.54
+2019-04-26 14:06:07 INFO  StatusRule:28 - =================================================================
+2019-04-26 14:06:07 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 14:09:55 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:09:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 14:10:09 INFO  Twitter:52 - login process is started
+2019-04-26 14:10:10 INFO  Events:47 - login link is clicked
+2019-04-26 14:10:33 INFO  Events:84 - login button is clicked : 2019/04/26 14:10:33.550
+2019-04-26 14:10:43 INFO  Events:84 - tweet button is clicked : 2019/04/26 14:10:43.660
+2019-04-26 14:11:03 INFO  Events:84 - send message button is clicked : 2019/04/26 14:11:03.698
+2019-04-26 14:11:12 INFO  Twitter:60 - Control Home Panel:  Enerjim Test @EnerjimT. . . this is a test: J7IWkVBnlz. . . . . . . şu anda olanlar.
+2019-04-26 14:11:14 INFO  Events:84 - three line is clicked : 2019/04/26 14:11:14.71
+2019-04-26 14:11:16 INFO  Events:84 - profile menu is clicked : 2019/04/26 14:11:16.295
+2019-04-26 14:11:22 INFO  Events:84 - back to home page button is clicked : 2019/04/26 14:11:22.932
+2019-04-26 14:11:23 INFO  Twitter:66 - Control Profile Panel:  Enerjim Test @EnerjimT. . . this is a test: J7IWkVBnlz. . . . . . . şu anda olanlar.
+2019-04-26 14:11:25 INFO  Events:84 - three line is clicked : 2019/04/26 14:11:25.128
+2019-04-26 14:11:27 INFO  Events:84 - settings is clicked : 2019/04/26 14:11:27.320
+2019-04-26 14:11:29 INFO  Events:84 - account is clicked : 2019/04/26 14:11:29.93
+2019-04-26 14:11:32 INFO  Events:84 - exit is clicked : 2019/04/26 14:11:32.226
+2019-04-26 14:11:34 INFO  Events:84 - exit is done : 2019/04/26 14:11:34.643
+2019-04-26 14:11:38 INFO  StatusRule:28 - =================================================================
+2019-04-26 14:11:38 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 14:28:21 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:28:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> controlMessageText
+2019-04-26 14:28:34 INFO  Twitter:52 - login process is started
+2019-04-26 14:28:35 INFO  Events:47 - login link is clicked
+2019-04-26 14:28:58 INFO  Events:84 - login button is clicked : 2019/04/26 14:28:58.620
+2019-04-26 14:29:06 INFO  Events:84 - tweet button is clicked : 2019/04/26 14:29:06.401
+2019-04-26 14:29:26 INFO  Events:84 - send message button is clicked : 2019/04/26 14:29:26.403
+2019-04-26 14:29:35 INFO  Twitter:60 - Control Home Panel:  Enerjim Test @EnerjimT. . . this is a test: ADpucKmd8X. . . . . . . şu anda olanlar.
+2019-04-26 14:29:37 INFO  Events:84 - three line is clicked : 2019/04/26 14:29:37.772
+2019-04-26 14:29:41 INFO  Events:84 - profile menu is clicked : 2019/04/26 14:29:41.278
+2019-04-26 14:29:47 INFO  Events:84 - back to home page button is clicked : 2019/04/26 14:29:47.175
+2019-04-26 14:29:47 INFO  Twitter:66 - Control Profile Panel:  Enerjim Test @EnerjimT. . . this is a test: ADpucKmd8X. . . . . . . şu anda olanlar.
+2019-04-26 14:29:49 INFO  Events:84 - three line is clicked : 2019/04/26 14:29:49.373
+2019-04-26 14:29:51 INFO  Events:84 - settings is clicked : 2019/04/26 14:29:51.830
+2019-04-26 14:29:53 INFO  Events:84 - account is clicked : 2019/04/26 14:29:53.721
+2019-04-26 14:29:56 INFO  Events:84 - exit is clicked : 2019/04/26 14:29:56.588
+2019-04-26 14:30:00 INFO  Events:84 - exit is done : 2019/04/26 14:30:00.835
+2019-04-26 14:30:04 INFO  StatusRule:28 - =================================================================
+2019-04-26 14:30:04 INFO  StatusRule:29 - =====> TEST FAIL ... --> controlMessageText
+2019-04-26 14:31:59 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:31:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-26 14:32:13 INFO  Events:245 - =============================================================================================
+2019-04-26 14:32:13 INFO  Events:246 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-PbgEPCpTmhfmxaS.jpg
+2019-04-26 14:32:13 INFO  Events:247 - =============================================================================================
+2019-04-26 14:32:55 INFO  Events:215 - Instagram Shared Image Post Time : 2019/04/26 14:32:55.520
+2019-04-26 14:32:58 INFO  StatusRule:28 - =================================================================
+2019-04-26 14:32:58 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-26 14:40:50 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:40:50 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-26 14:41:04 INFO  Events:245 - =============================================================================================
+2019-04-26 14:41:04 INFO  Events:246 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-MxgvurqtSwSdNFq.jpg
+2019-04-26 14:41:04 INFO  Events:247 - =============================================================================================
+2019-04-26 14:42:10 INFO  StatusRule:28 - =================================================================
+2019-04-26 14:42:10 INFO  StatusRule:29 - =====> TEST FAIL ... --> testSendImagePost
+2019-04-26 14:54:35 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:54:35 INFO  StatusRule:15 - =====> TEST STARTED ... --> testSendImagePost
+2019-04-26 14:54:49 INFO  Events:245 - =============================================================================================
+2019-04-26 14:54:49 INFO  Events:246 - ==> Successfull Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-OQZjXaNrLTDGaWR.jpg
+2019-04-26 14:54:49 INFO  Events:247 - =============================================================================================
+2019-04-26 14:55:32 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:55:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 14:55:46 INFO  Twitter:41 - login process is started
+2019-04-26 14:55:48 INFO  Events:47 - login link is clicked
+2019-04-26 14:56:10 INFO  Events:84 - login button is clicked : 2019/04/26 14:56:10.701
+2019-04-26 14:56:23 INFO  Events:84 - tweet button is clicked : 2019/04/26 14:56:23.67
+2019-04-26 14:56:42 INFO  Events:84 - send message button is clicked : 2019/04/26 14:56:42.83
+2019-04-26 14:56:44 INFO  Events:84 - three line is clicked : 2019/04/26 14:56:44.940
+2019-04-26 14:56:47 INFO  Events:84 - settings is clicked : 2019/04/26 14:56:47.105
+2019-04-26 14:56:49 INFO  Events:84 - account is clicked : 2019/04/26 14:56:49.420
+2019-04-26 14:56:52 INFO  Events:84 - exit is clicked : 2019/04/26 14:56:52.551
+2019-04-26 14:56:54 INFO  Events:84 - exit is done : 2019/04/26 14:56:54.986
+2019-04-26 14:57:00 INFO  StatusRule:21 - =================================================================
+2019-04-26 14:57:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 14:59:33 INFO  StatusRule:14 - =================================================================
+2019-04-26 14:59:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 14:59:46 INFO  Twitter:41 - login process is started
+2019-04-26 14:59:47 INFO  Events:47 - login link is clicked
+2019-04-26 15:00:09 INFO  Events:84 - login button is clicked : 2019/04/26 15:00:09.843
+2019-04-26 15:00:15 INFO  Events:84 - tweet button is clicked : 2019/04/26 15:00:15.225
+2019-04-26 15:00:39 INFO  Events:84 - send message button is clicked : 2019/04/26 15:00:39.88
+2019-04-26 15:00:41 INFO  Events:84 - three line is clicked : 2019/04/26 15:00:41.497
+2019-04-26 15:00:43 INFO  Events:84 - settings is clicked : 2019/04/26 15:00:43.827
+2019-04-26 15:00:46 INFO  Events:84 - account is clicked : 2019/04/26 15:00:46.283
+2019-04-26 15:00:50 INFO  Events:84 - exit is clicked : 2019/04/26 15:00:50.573
+2019-04-26 15:00:52 INFO  Events:84 - exit is done : 2019/04/26 15:00:52.647
+2019-04-26 15:00:56 INFO  StatusRule:21 - =================================================================
+2019-04-26 15:00:56 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 16:38:33 INFO  StatusRule:14 - =================================================================
+2019-04-26 16:38:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 16:38:47 INFO  Twitter:41 - login process is started
+2019-04-26 16:38:53 INFO  StatusRule:28 - =================================================================
+2019-04-26 16:38:53 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-26 16:39:00 INFO  StatusRule:14 - =================================================================
+2019-04-26 16:39:00 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 16:39:10 INFO  Twitter:41 - login process is started
+2019-04-26 16:39:13 INFO  Events:47 - login link is clicked
+2019-04-26 16:39:38 INFO  Events:84 - login button is clicked : 2019/04/26 16:39:38.491
+2019-04-26 16:39:56 INFO  Events:84 - tweet button is clicked : 2019/04/26 16:39:56.232
+2019-04-26 16:40:14 INFO  Events:84 - send message button is clicked : 2019/04/26 16:40:14.580
+2019-04-26 16:40:17 INFO  Events:84 - three line is clicked : 2019/04/26 16:40:17.244
+2019-04-26 16:40:19 INFO  Events:84 - settings is clicked : 2019/04/26 16:40:19.722
+2019-04-26 16:40:21 INFO  Events:84 - account is clicked : 2019/04/26 16:40:21.661
+2019-04-26 16:40:24 INFO  Events:84 - exit is clicked : 2019/04/26 16:40:24.518
+2019-04-26 16:40:26 INFO  Events:84 - exit is done : 2019/04/26 16:40:26.822
+2019-04-26 16:40:31 INFO  StatusRule:21 - =================================================================
+2019-04-26 16:40:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 16:45:16 INFO  StatusRule:14 - =================================================================
+2019-04-26 16:45:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 16:45:29 INFO  Twitter:42 - login process is started
+2019-04-26 16:45:30 INFO  Events:47 - login link is clicked
+2019-04-26 16:45:53 INFO  Events:84 - login button is clicked : 2019/04/26 16:45:53.265
+2019-04-26 16:46:04 INFO  Events:84 - tweet button is clicked : 2019/04/26 16:46:04.257
+2019-04-26 16:46:24 INFO  Events:84 - send message button is clicked : 2019/04/26 16:46:24.659
+2019-04-26 16:46:28 INFO  Events:84 - three line is clicked : 2019/04/26 16:46:28.554
+2019-04-26 16:46:30 INFO  Events:84 - settings is clicked : 2019/04/26 16:46:30.816
+2019-04-26 16:46:33 INFO  Events:84 - account is clicked : 2019/04/26 16:46:33.490
+2019-04-26 16:46:36 INFO  Events:84 - exit is clicked : 2019/04/26 16:46:36.725
+2019-04-26 16:46:39 INFO  Events:84 - exit is done : 2019/04/26 16:46:39.593
+2019-04-26 16:46:44 INFO  StatusRule:21 - =================================================================
+2019-04-26 16:46:44 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 16:47:30 INFO  StatusRule:14 - =================================================================
+2019-04-26 16:47:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 16:47:43 INFO  Twitter:43 - login process is started
+2019-04-26 16:47:45 INFO  Events:47 - login link is clicked
+2019-04-26 16:48:11 INFO  Events:84 - login button is clicked : 2019/04/26 16:48:11.729
+2019-04-26 16:48:23 INFO  Events:84 - tweet button is clicked : 2019/04/26 16:48:23.168
+2019-04-26 16:48:44 INFO  Events:84 - send message button is clicked : 2019/04/26 16:48:44.64
+2019-04-26 16:48:46 INFO  Events:84 - three line is clicked : 2019/04/26 16:48:46.622
+2019-04-26 16:48:49 INFO  Events:84 - settings is clicked : 2019/04/26 16:48:49.290
+2019-04-26 16:48:51 INFO  Events:84 - account is clicked : 2019/04/26 16:48:51.250
+2019-04-26 16:48:54 INFO  Events:84 - exit is clicked : 2019/04/26 16:48:54.363
+2019-04-26 16:48:57 INFO  Events:84 - exit is done : 2019/04/26 16:48:57.174
+2019-04-26 16:49:01 INFO  StatusRule:21 - =================================================================
+2019-04-26 16:49:01 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 16:50:50 INFO  StatusRule:14 - =================================================================
+2019-04-26 16:50:50 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 16:51:04 INFO  Twitter:43 - login process is started
+2019-04-26 16:51:05 INFO  Events:47 - login link is clicked
+2019-04-26 16:51:29 INFO  Events:84 - login button is clicked : 2019/04/26 16:51:29.942
+2019-04-26 16:51:38 INFO  Events:84 - tweet button is clicked : 2019/04/26 16:51:38.390
+2019-04-26 16:51:59 INFO  Events:84 - send message button is clicked : 2019/04/26 16:51:59.483
+2019-04-26 16:52:01 INFO  Events:84 - three line is clicked : 2019/04/26 16:52:01.879
+2019-04-26 16:52:04 INFO  Events:84 - settings is clicked : 2019/04/26 16:52:04.588
+2019-04-26 16:52:06 INFO  Events:84 - account is clicked : 2019/04/26 16:52:06.605
+2019-04-26 16:52:10 INFO  Events:84 - exit is clicked : 2019/04/26 16:52:10.141
+2019-04-26 16:52:13 INFO  Events:84 - exit is done : 2019/04/26 16:52:13.476
+2019-04-26 16:52:18 INFO  StatusRule:21 - =================================================================
+2019-04-26 16:52:18 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 17:12:53 INFO  StatusRule:14 - =================================================================
+2019-04-26 17:12:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 17:13:05 INFO  Twitter:45 - Send Tweet test is started
+2019-04-26 17:13:09 INFO  StatusRule:28 - =================================================================
+2019-04-26 17:13:09 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-26 17:19:27 INFO  StatusRule:14 - =================================================================
+2019-04-26 17:19:27 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 17:19:37 INFO  Twitter:45 - Send Tweet test is started
+2019-04-26 17:19:38 INFO  Events:47 - login link is clicked
+2019-04-26 17:20:01 INFO  Events:84 - login button is clicked : 2019/04/26 17:20:01.838
+2019-04-26 17:20:12 INFO  Events:84 - tweet button is clicked : 2019/04/26 17:20:12.645
+2019-04-26 17:20:31 INFO  Events:84 - send message button is clicked : 2019/04/26 17:20:31.329
+2019-04-26 17:20:35 INFO  Events:84 - three line is clicked : 2019/04/26 17:20:35.398
+2019-04-26 17:20:37 INFO  Events:84 - settings is clicked : 2019/04/26 17:20:37.443
+2019-04-26 17:20:40 INFO  Events:84 - account is clicked : 2019/04/26 17:20:40.17
+2019-04-26 17:20:43 INFO  Events:84 - exit is clicked : 2019/04/26 17:20:43.304
+2019-04-26 17:20:46 INFO  Events:84 - exit is done : 2019/04/26 17:20:46.166
+2019-04-26 17:20:51 INFO  StatusRule:21 - =================================================================
+2019-04-26 17:20:51 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-26 17:35:51 INFO  StatusRule:14 - =================================================================
+2019-04-26 17:35:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-26 17:36:03 INFO  Twitter:48 - Send Tweet test is started
+2019-04-26 17:36:04 INFO  Events:47 - login link is clicked
+2019-04-26 17:36:29 INFO  Events:84 - login button is clicked : 2019/04/26 17:36:29.143
+2019-04-26 17:36:39 INFO  Events:84 - tweet button is clicked : 2019/04/26 17:36:39.862
+2019-04-26 17:37:01 INFO  Events:84 - send message button is clicked : 2019/04/26 17:37:01.222
+2019-04-26 17:37:03 INFO  Events:84 - three line is clicked : 2019/04/26 17:37:03.461
+2019-04-26 17:37:06 INFO  Events:84 - settings is clicked : 2019/04/26 17:37:06.522
+2019-04-26 17:37:08 INFO  Events:84 - account is clicked : 2019/04/26 17:37:08.383
+2019-04-26 17:37:11 INFO  Events:84 - exit is clicked : 2019/04/26 17:37:11.305
+2019-04-26 17:37:13 INFO  Events:84 - exit is done : 2019/04/26 17:37:13.974
+2019-04-26 17:37:18 INFO  StatusRule:21 - =================================================================
+2019-04-26 17:37:18 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessageText
+2019-04-29 09:48:06 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:48:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 09:48:10 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:48:10 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-29 09:50:28 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:50:28 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessageText
+2019-04-29 09:50:34 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:50:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessageText
+2019-04-29 09:51:54 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:51:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 09:51:58 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:51:58 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-29 09:52:13 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:52:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureVideoStoryAndShare
+2019-04-29 09:52:16 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:52:16 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureVideoStoryAndShare
+2019-04-29 09:52:26 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:52:26 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 09:52:29 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:52:29 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-29 09:56:04 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:56:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 09:56:07 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:56:07 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-29 09:58:14 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:58:14 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 09:59:07 INFO  StatusRule:28 - =================================================================
+2019-04-29 09:59:07 INFO  StatusRule:29 - =====> TEST FAIL ... --> testCaptureImageStoryAndShare
+2019-04-29 09:59:51 INFO  StatusRule:14 - =================================================================
+2019-04-29 09:59:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-04-29 10:00:17 INFO  Events:84 - Snapchat Story Share Button Click : 2019/04/29 10:00:17.609
+2019-04-29 10:00:31 INFO  StatusRule:21 - =================================================================
+2019-04-29 10:00:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> testCaptureImageStoryAndShare
+2019-04-29 10:11:22 INFO  StatusRule:14 - =================================================================
+2019-04-29 10:11:22 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 10:11:35 INFO  Events:84 - camera capture button is clicked : 2019/04/29 10:11:35.410
+2019-04-29 10:29:16 INFO  StatusRule:14 - =================================================================
+2019-04-29 10:29:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 10:29:29 INFO  Events:94 - camera capture button is clicked : 2019/04/29 10:29:29.316
+2019-04-29 10:30:01 INFO  Events:130 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 10:30:21 INFO  StatusRule:21 - =================================================================
+2019-04-29 10:30:21 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 10:47:36 INFO  StatusRule:14 - =================================================================
+2019-04-29 10:47:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 10:47:49 INFO  Events:96 - camera capture button is clicked : 2019/04/29 10:47:49.449
+2019-04-29 10:48:21 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 10:48:41 INFO  StatusRule:21 - =================================================================
+2019-04-29 10:48:41 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 11:31:51 INFO  StatusRule:14 - =================================================================
+2019-04-29 11:31:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 11:32:06 INFO  Events:96 - camera capture button is clicked : 2019/04/29 11:32:06.235
+2019-04-29 11:32:38 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 11:33:01 INFO  StatusRule:21 - =================================================================
+2019-04-29 11:33:01 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 11:34:53 INFO  StatusRule:14 - =================================================================
+2019-04-29 11:34:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 11:35:06 INFO  Events:96 - camera capture button is clicked : 2019/04/29 11:35:06.53
+2019-04-29 11:35:38 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 11:36:00 INFO  StatusRule:21 - =================================================================
+2019-04-29 11:36:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 11:52:06 INFO  StatusRule:14 - =================================================================
+2019-04-29 11:52:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 11:52:20 INFO  Events:96 - camera capture button is clicked : 2019/04/29 11:52:20.112
+2019-04-29 11:52:52 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 11:53:14 INFO  StatusRule:28 - =================================================================
+2019-04-29 11:53:14 INFO  StatusRule:29 - =====> TEST FAIL ... --> useFilters
+2019-04-29 11:54:44 INFO  StatusRule:14 - =================================================================
+2019-04-29 11:54:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 11:54:57 INFO  Events:96 - camera capture button is clicked : 2019/04/29 11:54:57.525
+2019-04-29 11:55:29 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 11:55:52 INFO  StatusRule:21 - =================================================================
+2019-04-29 11:55:52 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 12:00:08 INFO  StatusRule:14 - =================================================================
+2019-04-29 12:00:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 12:00:21 INFO  Events:96 - camera capture button is clicked : 2019/04/29 12:00:21.950
+2019-04-29 12:00:54 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 12:01:17 INFO  StatusRule:21 - =================================================================
+2019-04-29 12:01:17 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 12:03:05 INFO  StatusRule:14 - =================================================================
+2019-04-29 12:03:05 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 12:03:18 INFO  Events:96 - camera capture button is clicked : 2019/04/29 12:03:18.332
+2019-04-29 12:03:50 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 12:04:13 INFO  StatusRule:21 - =================================================================
+2019-04-29 12:04:13 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 12:04:32 INFO  StatusRule:14 - =================================================================
+2019-04-29 12:04:32 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 12:04:46 INFO  Events:96 - camera capture button is clicked : 2019/04/29 12:04:46.44
+2019-04-29 12:05:18 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 12:05:40 INFO  StatusRule:21 - =================================================================
+2019-04-29 12:05:40 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:13:06 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:13:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:13:29 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:13:29.68
+2019-04-29 13:14:01 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:14:29 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:14:29 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:21:21 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:21:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:21:43 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:21:43.396
+2019-04-29 13:22:15 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:22:48 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:22:48 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:27:01 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:27:01 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:27:25 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:27:25.882
+2019-04-29 13:27:58 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:28:26 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:28:26 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:34:54 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:34:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:35:17 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:35:17.238
+2019-04-29 13:35:50 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:36:29 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:36:29 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:40:08 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:40:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:40:29 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:40:29.917
+2019-04-29 13:41:02 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:41:31 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:41:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 13:50:24 INFO  StatusRule:14 - =================================================================
+2019-04-29 13:50:24 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 13:50:51 INFO  Events:96 - camera capture button is clicked : 2019/04/29 13:50:51.352
+2019-04-29 13:51:24 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 13:51:54 INFO  StatusRule:21 - =================================================================
+2019-04-29 13:51:54 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 14:15:10 INFO  StatusRule:14 - =================================================================
+2019-04-29 14:15:10 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 14:15:32 INFO  Events:96 - camera capture button is clicked : 2019/04/29 14:15:32.164
+2019-04-29 14:16:04 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 14:16:35 INFO  StatusRule:21 - =================================================================
+2019-04-29 14:16:35 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 14:20:20 INFO  StatusRule:14 - =================================================================
+2019-04-29 14:20:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 14:20:56 INFO  Events:96 - camera capture button is clicked : 2019/04/29 14:20:56.128
+2019-04-29 14:21:28 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 14:21:59 INFO  StatusRule:21 - =================================================================
+2019-04-29 14:21:59 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 14:44:08 INFO  StatusRule:14 - =================================================================
+2019-04-29 14:44:09 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 14:44:34 INFO  Events:96 - camera capture button is clicked : 2019/04/29 14:44:34.216
+2019-04-29 14:45:06 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 14:45:26 INFO  StatusRule:21 - =================================================================
+2019-04-29 14:45:26 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 14:47:45 INFO  StatusRule:14 - =================================================================
+2019-04-29 14:47:45 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 14:48:16 INFO  Events:96 - camera capture button is clicked : 2019/04/29 14:48:16.503
+2019-04-29 14:48:48 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 14:49:06 INFO  StatusRule:21 - =================================================================
+2019-04-29 14:49:06 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 14:52:21 INFO  StatusRule:14 - =================================================================
+2019-04-29 14:52:22 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 14:52:51 INFO  Events:96 - camera capture button is clicked : 2019/04/29 14:52:51.983
+2019-04-29 14:53:24 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 14:53:41 INFO  StatusRule:21 - =================================================================
+2019-04-29 14:53:41 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:02:18 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:02:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:02:41 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:02:41.482
+2019-04-29 15:03:13 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 15:03:30 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:03:30 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:04:00 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:04:00 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:04:27 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:04:27.255
+2019-04-29 15:04:59 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 15:05:16 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:05:16 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:07:05 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:07:05 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:07:37 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:07:37.472
+2019-04-29 15:08:08 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 15:08:51 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:08:51 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:10:58 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:10:58 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:11:20 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:11:20.940
+2019-04-29 15:11:53 INFO  Events:132 - Element Not Displayed --> Located by By.chained({By.id: com.snapchat.android:id/lenses_camera_carousel_close_button_view})
+2019-04-29 15:12:33 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:12:33 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:19:53 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:19:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:20:17 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:20:17.365
+2019-04-29 15:20:51 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:20:51 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:30:16 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:30:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:30:38 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:30:38.763
+2019-04-29 15:31:10 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:31:10 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:42:43 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:42:43 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:43:30 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:43:30.777
+2019-04-29 15:44:03 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:44:03 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:49:39 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:49:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:50:01 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:50:01.368
+2019-04-29 15:50:32 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:50:32 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 15:53:47 INFO  StatusRule:14 - =================================================================
+2019-04-29 15:53:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 15:54:08 INFO  Events:96 - camera capture button is clicked : 2019/04/29 15:54:08.262
+2019-04-29 15:54:39 INFO  StatusRule:21 - =================================================================
+2019-04-29 15:54:39 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 16:19:54 INFO  StatusRule:14 - =================================================================
+2019-04-29 16:19:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 16:20:16 INFO  Events:96 - camera capture button is clicked : 2019/04/29 16:20:16.979
+2019-04-29 16:20:45 INFO  StatusRule:21 - =================================================================
+2019-04-29 16:20:45 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 17:18:35 INFO  StatusRule:14 - =================================================================
+2019-04-29 17:18:35 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 17:19:14 INFO  Events:96 - camera capture button is clicked : 2019/04/29 17:19:14.127
+2019-04-29 17:19:48 INFO  StatusRule:21 - =================================================================
+2019-04-29 17:19:48 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
+2019-04-29 17:22:48 INFO  StatusRule:14 - =================================================================
+2019-04-29 17:22:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> useFilters
+2019-04-29 17:23:18 INFO  Events:96 - camera capture button is clicked : 2019/04/29 17:23:18.265
+2019-04-29 17:23:56 INFO  StatusRule:21 - =================================================================
+2019-04-29 17:23:56 INFO  StatusRule:22 - =====> TEST PASSED ... --> useFilters
