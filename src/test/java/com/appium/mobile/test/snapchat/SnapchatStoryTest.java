@@ -30,7 +30,7 @@ public class SnapchatStoryTest extends SnapchatAndroidTest
     @Test
     public void testCaptureImageStoryAndShare() throws Exception
     {
-        // getGeoLocation(mobileDevice.uid);
+        deviceInfo.setMobileDeviceOneGeoLocation(getMobileUID(0));
 
         waitAndClick(firstMobile, storyPage.cameraCaptureButton);
         waitAndClick(firstMobile, storyPage.sendButton);
@@ -44,7 +44,7 @@ public class SnapchatStoryTest extends SnapchatAndroidTest
     @Test
     public void testCaptureVideoStoryAndShare() throws Exception
     {
-        //getGeoLocation(mobileDevice.uid);
+        deviceInfo.setMobileDeviceOneGeoLocation(getMobileUID(0));
 
         longPress(firstMobile, storyPage.cameraCaptureButton, 10);
         waitAndClick(firstMobile, storyPage.sendButton);

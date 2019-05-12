@@ -1,7 +1,12 @@
 package com.appium.client.objects;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DeviceCapabilities
 {
+    private String IMEINumber;
+    private String simCard;
     private String platformName;
     private String platformVersion;
     private String deviceName;
@@ -14,6 +19,26 @@ public class DeviceCapabilities
     private Boolean noSign;
     private Boolean clearDeviceLogsOnStart;
     private String automationName;
+
+    public String getIMEINumber()
+    {
+        return IMEINumber;
+    }
+
+    public void setIMEINumber(String IMEINumber)
+    {
+        this.IMEINumber = IMEINumber;
+    }
+
+    public String getSimCard()
+    {
+        return simCard;
+    }
+
+    public void setSimCard(String simCard)
+    {
+        this.simCard = simCard;
+    }
 
     public String getPlatformName()
     {
@@ -133,5 +158,26 @@ public class DeviceCapabilities
     public void setAutomationName(String automationName)
     {
         this.automationName = automationName;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "DeviceCapabilities{" +
+                "IMEINumber='" + IMEINumber + '\'' +
+                ", simCard='" + simCard + '\'' +
+                ", platformName='" + platformName + '\'' +
+                ", platformVersion='" + platformVersion + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                ", uid='" + uid + '\'' +
+                ", deviceServer='" + deviceServer + '\'' +
+                ", devicePort='" + devicePort + '\'' +
+                ", unicodeKeyboard=" + unicodeKeyboard +
+                ", autoGrantPermissions=" + autoGrantPermissions +
+                ", fastReset=" + fastReset +
+                ", noSign=" + noSign +
+                ", clearDeviceLogsOnStart=" + clearDeviceLogsOnStart +
+                ", automationName='" + automationName + '\'' +
+                '}';
     }
 }

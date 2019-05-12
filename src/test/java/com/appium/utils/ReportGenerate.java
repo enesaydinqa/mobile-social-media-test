@@ -80,7 +80,7 @@ public abstract class ReportGenerate extends TestWatcher
                 .concat(configuration.getTestResultPath().concat(fileSeparator))
                 .concat(folderName)
                 .concat(System.getProperty("file.separator"))
-                .concat(configuration.getOperator().concat("-"))
+                .concat(configuration.getOperator().toString().concat("-"))
                 .concat("Test-Result.html");
 
         ExtentReports extent = new ExtentReports(reportName, false);

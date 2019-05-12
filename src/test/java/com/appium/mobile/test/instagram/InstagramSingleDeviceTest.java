@@ -58,7 +58,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(configuration.getMobileOneUID()));
+        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
@@ -80,7 +80,7 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(configuration.getMobileOneUID()));
+        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
