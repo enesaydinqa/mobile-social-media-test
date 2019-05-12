@@ -1,11 +1,11 @@
 
 # This ignore files
 
-logs/
 .idea
 .iml
 .classpath
 .project
 .settings/
+logs/
 target/
 out/
