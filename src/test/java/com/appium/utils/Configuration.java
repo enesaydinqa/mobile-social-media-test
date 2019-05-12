@@ -215,11 +215,6 @@ public class Configuration
         return configProps.getProperty("twitter.test.user.password");
     }
 
-    private String readVariant()
-    {
-        return configProps.getProperty("variant");
-    }
-
     public String getTestResultPath()
     {
         return testResultPath;
