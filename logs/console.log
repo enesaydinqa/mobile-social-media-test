@@ -2610,3 +2610,35 @@
 2019-05-10 16:56:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
 2019-05-10 16:58:16 INFO  StatusRule:21 - =================================================================
 2019-05-10 16:58:16 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-13 08:31:41 INFO  StatusRule:14 - =================================================================
+2019-05-13 08:31:41 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-13 08:33:02 INFO  LineMultipleDevice:51 - test started
+2019-05-13 08:33:47 INFO  LineMultipleDevice:48 - 3
+2019-05-13 08:33:47 INFO  LineMultipleDevice:52 - 08:33
+2019-05-13 08:33:48 INFO  LineMultipleDevice:56 - (at last!)(love)
+2019-05-13 08:33:49 INFO  Events:134 - go message page : 2019/05/13 08:33:49.814
+2019-05-13 08:33:53 INFO  LineMultipleDevice:63 - 08:33
+2019-05-13 08:34:03 INFO  StatusRule:21 - =================================================================
+2019-05-13 08:34:03 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker
+2019-05-13 08:34:15 INFO  StatusRule:14 - =================================================================
+2019-05-13 08:34:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-13 08:35:34 INFO  LineMultipleDevice:103 - 1
+2019-05-13 08:35:34 INFO  LineMultipleDevice:107 - 08:35
+2019-05-13 08:35:35 INFO  LineMultipleDevice:111 - bu bir testtir
+2019-05-13 08:35:38 INFO  Events:134 - go message page : 2019/05/13 08:35:38.163
+2019-05-13 08:35:41 INFO  LineMultipleDevice:118 - 08:35
+2019-05-13 08:35:46 INFO  StatusRule:21 - =================================================================
+2019-05-13 08:35:46 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-13 08:39:04 INFO  StatusRule:14 - =================================================================
+2019-05-13 08:39:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-13 08:40:26 INFO  StatusRule:21 - =================================================================
+2019-05-13 08:40:26 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-13 08:45:59 INFO  StatusRule:14 - =================================================================
+2019-05-13 08:45:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-13 08:47:20 INFO  LineMultipleDevice:103 - 2
+2019-05-13 08:47:21 INFO  LineMultipleDevice:107 - 08:47
+2019-05-13 08:47:21 INFO  LineMultipleDevice:111 - Alike Workman sent a photo.
+2019-05-13 08:47:22 INFO  Events:134 - go message page : 2019/05/13 08:47:22.628
+2019-05-13 08:47:26 INFO  LineMultipleDevice:118 - 08:47
+2019-05-13 08:47:31 INFO  StatusRule:21 - =================================================================
+2019-05-13 08:47:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage

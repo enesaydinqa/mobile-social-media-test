@@ -28,6 +28,12 @@ public class LineAndroidTest extends AbstractAndroidTest {
         waitAndClick(driver, messagePage.sendButton);
         sleep(2);
     }
+    public void takeAndSendImage(AppiumDriver driver) throws Exception{
+        waitAndClick(driver, messagePage.camera);
+        waitAndClick(driver, messagePage.presscamera);
+        waitAndClick(driver, messagePage.sendcameraimage);
+    }
+
 
     public void controlReceivedStickers(AppiumDriver driver) throws Exception {
         footer = new FooterPage(driver);
