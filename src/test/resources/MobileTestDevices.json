@@ -1,5 +1,5 @@
 {
-  "ONE_DEVICE": {
+  "SECOND_DEVICE": {
     "platformName": "Android",
     "platformVersion": "5.1.1",
     "deviceName": "Galaxy S5",
@@ -15,7 +15,7 @@
     "automationName": "UiAutomator1",
     "deviceIMEI": "NULL"
   },
-  "SECOND_DEVICE": {
+  "ONE_DEVICE": {
     "platformName": "Android",
     "platformVersion": "7.0",
     "deviceName": "Galaxy S6 edge",

@@ -2642,3 +2642,42 @@
 2019-05-13 08:47:26 INFO  LineMultipleDevice:118 - 08:47
 2019-05-13 08:47:31 INFO  StatusRule:21 - =================================================================
 2019-05-13 08:47:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-14 16:36:49 INFO  StatusRule:14 - =================================================================
+2019-05-14 16:36:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-14 16:38:01 INFO  WhatsappMultipleDeviceTest:24 - test başladı
+2019-05-14 16:38:04 INFO  Events:134 - search button click edildi : 2019/05/14 16:38:04.388
+2019-05-14 16:38:09 INFO  Events:134 - ilk usera git : 2019/05/14 16:38:09.348
+2019-05-14 16:38:13 INFO  Events:134 - mesajı gönder : 2019/05/14 16:38:13.674
+2019-05-14 16:38:45 INFO  Events:176 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-14 16:38:48 INFO  StatusRule:21 - =================================================================
+2019-05-14 16:38:48 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-14 16:40:20 INFO  StatusRule:14 - =================================================================
+2019-05-14 16:40:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-14 16:40:42 INFO  WhatsappMultipleDeviceTest:24 - test başladı
+2019-05-14 16:40:44 INFO  Events:134 - search button click edildi : 2019/05/14 16:40:44.775
+2019-05-14 16:40:49 INFO  Events:134 - ilk usera git : 2019/05/14 16:40:49.820
+2019-05-14 16:40:54 INFO  Events:134 - mesajı gönder : 2019/05/14 16:40:54.118
+2019-05-14 16:41:26 INFO  Events:176 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-14 16:41:27 INFO  WhatsappMultipleDeviceTest:34 - Gjk : 16:40
+2019-05-14 16:41:28 INFO  StatusRule:21 - =================================================================
+2019-05-14 16:41:28 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-15 08:48:54 INFO  StatusRule:14 - =================================================================
+2019-05-15 08:48:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-15 08:49:49 INFO  WhatsappMultipleDeviceTest:25 - test başladı
+2019-05-15 08:49:51 INFO  Events:134 - search button click edildi : 2019/05/15 08:49:51.585
+2019-05-15 08:49:56 INFO  Events:134 - ilk usera git : 2019/05/15 08:49:56.283
+2019-05-15 08:50:00 INFO  Events:134 - mesajı gönder : 2019/05/15 08:50:00.591
+2019-05-15 08:50:31 INFO  Events:176 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-15 08:50:32 INFO  WhatsappMultipleDeviceTest:39 - bu bir testtir kusura bakmayın : 08:49
+2019-05-15 08:50:33 INFO  StatusRule:21 - =================================================================
+2019-05-15 08:50:33 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
+2019-05-15 08:55:49 INFO  StatusRule:14 - =================================================================
+2019-05-15 08:55:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-15 08:56:12 INFO  WhatsappMultipleDeviceTest:24 - test başladı
+2019-05-15 08:56:15 INFO  Events:134 - search button click edildi : 2019/05/15 08:56:15.455
+2019-05-15 08:56:20 INFO  Events:134 - ilk usera git : 2019/05/15 08:56:20.918
+2019-05-15 08:56:24 INFO  Events:134 - mesajı gönder : 2019/05/15 08:56:24.944
+2019-05-15 08:56:56 INFO  Events:176 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-15 08:56:58 INFO  WhatsappMultipleDeviceTest:25 - 08:52 : bu bir testtir kusura bakmayın
+2019-05-15 08:57:00 INFO  StatusRule:21 - =================================================================
+2019-05-15 08:57:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
