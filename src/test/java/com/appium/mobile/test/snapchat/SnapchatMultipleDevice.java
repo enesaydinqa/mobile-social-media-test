@@ -3,6 +3,7 @@ package com.appium.mobile.test.snapchat;
 import com.annotation.Author;
 import com.annotation.Contact;
 import com.appium.context.app.SnapchatAndroidTest;
+import io.appium.java_client.AppiumDriver;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
@@ -12,50 +13,28 @@ import org.junit.Test;
 
 public class SnapchatMultipleDevice extends SnapchatAndroidTest {
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
-    //private StoryPage storyPage;
-    //private ProfilePage profilePage;
-    //private SendMessage sendMessage;
+    private String user_sender="testenerjim@gmail.com";
+    private String user_receiver="mbcmtestuser";
+    private String password_sender="enerjimE1";
+    private String password_receiver="mbcm1234";
+    private String name_sender="enerjim2019";
+    private String name_receiver="mbcmtestuser";
 
     @Before
     public void init() throws Exception {
-        super.init(true);//true
-       // storyPage = new StoryPage(firstMobile);
-        //profilePage = new ProfilePage(firstMobile);
-        //sendMessage = new SendMessage(firstMobile);
+        super.init(true);
     }
 
     @Test
     @Contact(Author.ATIKE)
     public void sendAndControlMessageWithMultipleDevice() throws Exception {
-        loginSnapchat(firstMobile, "testenerjim@gmail.com", "enerjimE1");
-        loginSnapchat(secondMobile, "mbcmtestuser", "mbcm1234");
-        goMessagePage(firstMobile,"mbcmtestuser");
-        goMessagePage(secondMobile,"enerjim2019");
-        //acceptAlerts(secondMobile);
-        String text = "Hi this is a test meseage: " +RandomStringUtils.randomAlphanumeric(50);
+        String text = "This is a test message: " +RandomStringUtils.randomAlphanumeric(50);
+        loginSnapchat(firstMobile, user_sender, password_sender);
+        loginSnapchat(secondMobile,user_receiver , password_receiver);
+        goMessagePage(firstMobile,name_receiver);
+        goMessagePage(secondMobile,name_sender);
         sendMessage(firstMobile,text);
         controlReceivedMessage(secondMobile,text);
 
     }
-
-
-
-    @Test
-    @Contact(Author.ATIKE)
-    public void shareMessage() throws Exception {
-        loginSnapchat(firstMobile, "testenerjim@gmail.com", "enerjimE1");
-        makeFriends(firstMobile, "mbcmtestuser");
-        sendImageToTheFriend();
-        sleep(10);
-    }
-
-    public void sendImageToTheFriend() throws Exception {
-        waitAndClick(firstMobile, storyPage.cameraCaptureButton);
-        clickElementInList(storyPage.sendStory, 2);
-        // waitAndClick(firstMobile, storyPage.sendButton);
-        waitAndSendKeys(firstMobile, storyPage.searchFriends, "mbcmtestuser");
-        waitAndClick(firstMobile, storyPage.firstFriendsRow);
-    }
-
-
 }

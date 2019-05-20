@@ -17,18 +17,13 @@ public class SendMessage extends PageObject {
 
     @AndroidFindBy(id="com.snapchat.android:id/neon_header_title")
     public MobileElement searchField;
+
     @AndroidFindBy(id="com.snapchat.android:id/item")
     public MobileElement sendMessageUser;
-    @AndroidFindBy(id="com.snapchat.android:id/chat_input_text_field")
-    public MobileElement sendAChat;
-    @AndroidFindBy(id= "com.snapchat.android:id/neon_header_back_button")
-    public MobileElement backButton;
 
     @AndroidFindBy(id= "com.snapchat.android:id/chat_input_text_field")
     public MobileElement messageText;
 
-    @AndroidFindBy(xpath= "//android.widget.TextView[@text='Dfg']")
-    public MobileElement text;
     @AndroidFindAll({
             @AndroidBy(className = "android.widget.TextView")})//6
     public List<MobileElement> multipleText;
