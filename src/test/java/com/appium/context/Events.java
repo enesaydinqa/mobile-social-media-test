@@ -62,19 +62,19 @@ public class Events implements CommonMobile
         alert.accept();
     }
 
-    //Sakın silme enes
+
     public void keyboardEnter(AppiumDriver driver,Boolean log){
         ((AndroidDriver) driver).isKeyboardShown();
         ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
         driver.hideKeyboard();
     }
-    //sakın silme enes
+
     public void clickElementInList(List<MobileElement> elements,int index){
         if (!elements.isEmpty()) {
             elements.get(index).click();
         }
     }
-    //sakın silme enes
+
     public int getSizeOfList(List<MobileElement> elements){
         if (!elements.isEmpty()) {
            return elements.size();
@@ -82,20 +82,17 @@ public class Events implements CommonMobile
         return 0;
     }
 
-    //sakın silme enes
     public MobileElement getElementInList(List<MobileElement> elements,int index){
         if (!elements.isEmpty()) {
             return elements.get(index);
         }
         return null;
     }
-    //sakın silme enes
+
     public void sendKeysElementInList(List<MobileElement> elements,int index,String text){
         List<MobileElement> profile =elements ;
-       // System.out.println(profile.size());
         if (!profile.isEmpty()) {
             profile.get(index).sendKeys(text);
-            //System.out.println(profile); // print text in 9th element
         }
     }
 

@@ -2681,3 +2681,216 @@
 2019-05-15 08:56:58 INFO  WhatsappMultipleDeviceTest:25 - 08:52 : bu bir testtir kusura bakmayın
 2019-05-15 08:57:00 INFO  StatusRule:21 - =================================================================
 2019-05-15 08:57:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
+2019-05-20 09:49:31 INFO  StatusRule:14 - =================================================================
+2019-05-20 09:49:31 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 09:51:25 INFO  StatusRule:14 - =================================================================
+2019-05-20 09:51:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 09:58:36 INFO  StatusRule:14 - =================================================================
+2019-05-20 09:58:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:03:26 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:03:26 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:04:58 INFO  StatusRule:28 - =================================================================
+2019-05-20 10:04:58 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 10:06:37 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:06:37 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:07:55 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:07:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:11:20 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:11:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:14:08 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:14:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:20:17 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:20:17 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:22:14 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:22:14 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:23:44 INFO  LineMultipleDevice:67 - 1
+2019-05-20 10:23:44 INFO  LineMultipleDevice:71 - 10:23
+2019-05-20 10:23:45 INFO  LineMultipleDevice:75 - (at last!)(love)
+2019-05-20 10:23:46 INFO  Events:134 - go message page : 2019/05/20 10:23:46.759
+2019-05-20 10:23:50 INFO  LineMultipleDevice:82 - 10:23
+2019-05-20 10:24:00 INFO  StatusRule:21 - =================================================================
+2019-05-20 10:24:00 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker
+2019-05-20 10:56:13 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:56:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 10:56:18 INFO  StatusRule:28 - =================================================================
+2019-05-20 10:56:18 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 10:56:48 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:56:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 10:56:53 INFO  StatusRule:28 - =================================================================
+2019-05-20 10:56:53 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessage
+2019-05-20 10:57:08 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:57:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 10:57:14 INFO  StatusRule:28 - =================================================================
+2019-05-20 10:57:14 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessage
+2019-05-20 10:57:33 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:57:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 10:58:58 INFO  LineMultipleDevice:73 - 1
+2019-05-20 10:58:58 INFO  LineMultipleDevice:77 - 10:58
+2019-05-20 10:58:59 INFO  LineMultipleDevice:81 - bu bir testtir
+2019-05-20 10:59:00 INFO  Events:131 - go message page : 2019/05/20 10:59:00.961
+2019-05-20 10:59:04 INFO  LineMultipleDevice:88 - 10:58
+2019-05-20 10:59:10 INFO  StatusRule:21 - =================================================================
+2019-05-20 10:59:10 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-20 10:59:47 INFO  StatusRule:14 - =================================================================
+2019-05-20 10:59:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 11:01:34 INFO  StatusRule:28 - =================================================================
+2019-05-20 11:01:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessage
+2019-05-20 11:04:58 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:04:58 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 11:06:24 INFO  LineMultipleDevice:74 - 1
+2019-05-20 11:06:24 INFO  LineMultipleDevice:78 - 11:06
+2019-05-20 11:06:24 INFO  LineMultipleDevice:82 - Testnur Enerjim sent a photo.
+2019-05-20 11:06:26 INFO  Events:131 - go message page : 2019/05/20 11:06:26.121
+2019-05-20 11:06:29 INFO  LineMultipleDevice:89 - 11:06
+2019-05-20 11:06:35 INFO  StatusRule:21 - =================================================================
+2019-05-20 11:06:35 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-20 11:06:59 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:06:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 11:08:29 INFO  LineMultipleDevice:74 - 1
+2019-05-20 11:08:30 INFO  LineMultipleDevice:78 - 11:08
+2019-05-20 11:08:30 INFO  LineMultipleDevice:82 - (Testnur Enerjim sent a sticker.)
+2019-05-20 11:08:31 INFO  Events:131 - go message page : 2019/05/20 11:08:31.535
+2019-05-20 11:08:35 INFO  LineMultipleDevice:89 - 11:08
+2019-05-20 11:08:45 INFO  StatusRule:21 - =================================================================
+2019-05-20 11:08:45 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker
+2019-05-20 11:09:39 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:09:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 11:11:12 INFO  LineMultipleDevice:74 - 1
+2019-05-20 11:11:12 INFO  LineMultipleDevice:78 - 11:11
+2019-05-20 11:11:12 INFO  LineMultipleDevice:82 - (Testnur Enerjim sent a sticker.)
+2019-05-20 11:11:13 INFO  Events:131 - go message page : 2019/05/20 11:11:13.857
+2019-05-20 11:11:17 INFO  LineMultipleDevice:89 - 11:11
+2019-05-20 11:11:28 INFO  StatusRule:21 - =================================================================
+2019-05-20 11:11:28 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker
+2019-05-20 11:16:48 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:16:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 11:47:28 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:47:28 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 11:47:34 INFO  StatusRule:28 - =================================================================
+2019-05-20 11:47:34 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 11:57:03 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:57:03 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 11:57:08 INFO  StatusRule:28 - =================================================================
+2019-05-20 11:57:08 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessage
+2019-05-20 11:57:25 INFO  StatusRule:14 - =================================================================
+2019-05-20 11:57:25 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 11:57:30 INFO  StatusRule:28 - =================================================================
+2019-05-20 11:57:30 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendMessage
+2019-05-20 12:12:38 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:12:38 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 12:14:49 INFO  LineMultipleDevice:74 - 1
+2019-05-20 12:14:49 INFO  LineMultipleDevice:78 - 12:14
+2019-05-20 12:14:49 INFO  LineMultipleDevice:83 - This is a test message: RrDgX1HJeqgvBsKIjRcR
+2019-05-20 12:14:50 INFO  Events:131 - go message page : 2019/05/20 12:14:50.846
+2019-05-20 12:14:54 INFO  LineMultipleDevice:91 - 12:14
+2019-05-20 12:14:59 INFO  StatusRule:21 - =================================================================
+2019-05-20 12:14:59 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-20 12:15:49 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:15:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:17:12 INFO  LineMultipleDevice:74 - 1
+2019-05-20 12:17:12 INFO  LineMultipleDevice:78 - 12:17
+2019-05-20 12:17:18 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:17:18 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendImageMessage
+2019-05-20 12:18:51 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:18:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:19:00 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:19:00 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:20:21 INFO  LineMultipleDevice:74 - 2
+2019-05-20 12:20:22 INFO  LineMultipleDevice:78 - 12:20
+2019-05-20 12:20:27 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:20:27 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendImageMessage
+2019-05-20 12:24:48 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:24:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:26:16 INFO  LineMultipleDevice:75 - 1
+2019-05-20 12:26:16 INFO  LineMultipleDevice:79 - 12:26
+2019-05-20 12:26:21 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:26:21 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendImageMessage
+2019-05-20 12:26:51 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:26:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:28:16 INFO  LineMultipleDevice:75 - 1
+2019-05-20 12:28:16 INFO  LineMultipleDevice:79 - 12:28
+2019-05-20 12:28:17 INFO  LineMultipleDevice:84 - Testnur Enerjim sent a photo.
+2019-05-20 12:28:18 INFO  Events:131 - go message page : 2019/05/20 12:28:18.555
+2019-05-20 12:28:22 INFO  LineMultipleDevice:92 - 12:28
+2019-05-20 12:28:27 INFO  StatusRule:21 - =================================================================
+2019-05-20 12:28:27 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-20 12:33:00 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:33:00 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:34:26 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:34:26 INFO  LineMultipleDevice:80 - 12:34
+2019-05-20 12:34:31 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:34:31 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendImageMessage
+2019-05-20 12:35:11 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:35:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:35:59 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:35:59 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:37:20 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:37:20 INFO  LineMultipleDevice:80 - 12:37
+2019-05-20 12:37:20 INFO  LineMultipleDevice:85 - Testnur Enerjim sent a photo.
+2019-05-20 12:37:22 INFO  Events:131 - go message page : 2019/05/20 12:37:22.160
+2019-05-20 12:37:25 INFO  LineMultipleDevice:93 - 12:37
+2019-05-20 12:37:31 INFO  StatusRule:21 - =================================================================
+2019-05-20 12:37:31 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-20 12:38:02 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:38:02 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:39:26 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:39:26 INFO  LineMultipleDevice:80 - 12:39
+2019-05-20 12:39:26 INFO  LineMultipleDevice:82 - 12:39
+2019-05-20 12:39:26 INFO  LineMultipleDevice:86 - Testnur Enerjim sent a photo.
+2019-05-20 12:39:28 INFO  Events:131 - go message page : 2019/05/20 12:39:28.66
+2019-05-20 12:39:31 INFO  LineMultipleDevice:94 - 12:39
+2019-05-20 12:39:37 INFO  StatusRule:21 - =================================================================
+2019-05-20 12:39:37 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-20 12:41:23 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:41:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 12:41:34 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:41:34 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:42:36 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:42:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:44:06 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:44:07 INFO  LineMultipleDevice:80 - 12:43
+2019-05-20 12:44:12 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:44:12 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 12:46:03 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:46:03 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:47:42 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:47:42 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 12:47:58 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:47:58 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:49:36 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:49:37 INFO  LineMultipleDevice:80 - 12:49
+2019-05-20 12:49:37 INFO  LineMultipleDevice:82 - 12:49
+2019-05-20 12:49:42 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:49:42 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 12:51:16 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:51:16 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:52:51 INFO  StatusRule:28 - =================================================================
+2019-05-20 12:52:51 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendSticker
+2019-05-20 12:53:08 INFO  StatusRule:14 - =================================================================
+2019-05-20 12:53:08 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 12:54:40 INFO  LineMultipleDevice:76 - 1
+2019-05-20 12:54:40 INFO  LineMultipleDevice:80 - 12:54
+2019-05-20 12:54:40 INFO  LineMultipleDevice:82 - 12:54
+2019-05-20 12:54:41 INFO  LineMultipleDevice:86 - (Testnur Enerjim sent a sticker.)
+2019-05-20 12:54:42 INFO  Events:131 - go message page : 2019/05/20 12:54:42.573
+2019-05-20 12:54:46 INFO  LineMultipleDevice:94 - 12:54
+2019-05-20 12:54:56 INFO  StatusRule:21 - =================================================================
+2019-05-20 12:54:56 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker
+2019-05-20 13:07:09 INFO  StatusRule:14 - =================================================================
+2019-05-20 13:07:09 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendMessage
+2019-05-20 13:08:37 INFO  Events:131 - go message page : 2019/05/20 13:08:37.683
+2019-05-20 13:08:41 INFO  LineMultipleDevice:83 - 13:08
+2019-05-20 13:08:46 INFO  StatusRule:21 - =================================================================
+2019-05-20 13:08:46 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendMessage
+2019-05-20 13:10:33 INFO  StatusRule:14 - =================================================================
+2019-05-20 13:10:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendImageMessage
+2019-05-20 13:11:59 INFO  Events:131 - go message page : 2019/05/20 13:11:59.430
+2019-05-20 13:12:03 INFO  LineMultipleDevice:83 - 13:11
+2019-05-20 13:12:08 INFO  StatusRule:21 - =================================================================
+2019-05-20 13:12:08 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendImageMessage
+2019-05-20 13:12:18 INFO  StatusRule:14 - =================================================================
+2019-05-20 13:12:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendSticker
+2019-05-20 13:13:50 INFO  Events:131 - go message page : 2019/05/20 13:13:50.828
+2019-05-20 13:13:54 INFO  LineMultipleDevice:83 - 13:13
+2019-05-20 13:14:04 INFO  StatusRule:21 - =================================================================
+2019-05-20 13:14:04 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendSticker

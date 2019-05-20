@@ -15,35 +15,29 @@ public class ChatsPage extends PageObject {
         super(driver);
     }
 
-    @AndroidFindBy(className = "android.widget.ImageView")//2
-    public List<MobileElement> searchButton;
-
     @AndroidFindBy(id = "jp.naver.line.android:id/middle_header_button")//2
     public MobileElement searchBtn;
 
     @AndroidFindBy(id = "jp.naver.line.android:id/searchbar_input_text")
     public MobileElement searchText;
 
-    @AndroidFindBy(className = "android.widget.ImageView")//2
-    public List<MobileElement> friendsLink;
-
     @AndroidFindBy(id = "jp.naver.line.android:id/widget_friend_row_thumbnail")
     public MobileElement firstFriendsRow;
 
-    @AndroidFindBy(className = "android.widget.ImageView")//2
+    @AndroidFindBy(className = "android.widget.ImageView")
     public List<MobileElement> chatIkon;
 
-    @AndroidFindBy(id = "jp.naver.line.android:id/bnb_button_badge_num")//2
-    public MobileElement chatWithNotification;//when receive a messege
+    @AndroidFindBy(id = "jp.naver.line.android:id/bnb_button_badge_num")
+    public MobileElement chatWithNotification;
 
-    @AndroidFindBy(id = "jp.naver.line.android:id/date")//2
+    @AndroidFindBy(id = "jp.naver.line.android:id/date")
     public MobileElement notificationDate;
 
-    @AndroidFindBy( id = "jp.naver.line.android:id/last_message")//2
+    @AndroidFindBy( id = "jp.naver.line.android:id/last_message")
     public MobileElement notificationMessage;
 
     @AndroidFindAll({
-            @AndroidBy( xpath = "//androidx.appcompat.app.a.b[@content-desc='Friends']"),//2
+            @AndroidBy( xpath = "//androidx.appcompat.app.a.b[@content-desc='Friends']"),
             @AndroidBy( accessibility= "Friends")
              })
     public MobileElement friends;

@@ -3,71 +3,54 @@ package com.appium.mobile.test.line;
 import com.annotation.Author;
 import com.annotation.Contact;
 import com.appium.context.app.LineAndroidTest;
-import com.appium.pages.line.ChatsPage;
-import com.appium.pages.line.FooterPage;
-import com.appium.pages.line.HomePage;
 import com.appium.pages.line.MessagePage;
-import io.appium.java_client.AppiumDriver;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
 public class LineMultipleDevice extends LineAndroidTest {
     private Logger logger = Logger.getLogger(LineMultipleDevice.class);
-    private FooterPage footer;
-    private ChatsPage chatsPage;
+    public String user_receiver = "Alike Workman";
+    public String user_sender = "Testnur Enerjim";
+    public String message;
+
     private MessagePage messagePage;
-    private HomePage homePage;
 
     @Before
     public void init() throws Exception {
-        super.init(true);//true
-        footer = new FooterPage(firstMobile);
-        chatsPage = new ChatsPage(firstMobile);
+        super.init(true);
         messagePage = new MessagePage(firstMobile);
-        homePage = new HomePage(firstMobile);
     }
 
     @Test
     @Contact(Author.ATIKE)
     public void sendMessage() throws Exception {
-        goMessagePage(firstMobile, "Testnur Enerjim");//Alike Workman
-        sendTextMessage(firstMobile, "bu bir testtir");
-        controlReceivedMessage(secondMobile);
+        message = "This is a test message: " + RandomStringUtils.randomAlphanumeric(20);
+        goMessagePage(firstMobile, user_receiver);
+        sendTextMessage(firstMobile, message);
+        isMessageReceived(secondMobile);
+        controlReceivedMessage(secondMobile, message);
     }
 
     @Test
     @Contact(Author.ATIKE)
     public void sendImageMessage() throws Exception {
-        goMessagePage(firstMobile, "Testnur Enerjim");//Alike Workman
+        goMessagePage(firstMobile, user_receiver);
         takeAndSendImage(firstMobile);
         isMobileElementDisplayedOnPage(messagePage.receivedcameraimage);
-        controlReceivedMessage(secondMobile);
+        isMessageReceived(secondMobile);
+        controlReceivedMessage(secondMobile, user_sender + " sent a photo.");
     }
-
 
     @Test
     @Contact(Author.ATIKE)
     public void sendSticker() throws Exception {
-        logger.info("test started");
-        goMessagePage(firstMobile, "Testnur Enerjim");//Alike Workman
+        goMessagePage(firstMobile, user_receiver);
         sendStickers(firstMobile);
-        controlReceivedStickers(secondMobile);
+        isMessageReceived(secondMobile);
+        controlReceivedMessage(secondMobile, "(" + user_sender + " sent a sticker.)");
         sleep(5);
     }
 
-
 }
-//        Point point = storyPage.avatarImage.getLocation();
-//        int x = point.x;
-//        int y = point.y;
-//        System.out.println("korrdinatlar x: " + x + " y: " + y);
-//        TouchAction touchAction = new TouchAction(firstMobile);
-//        touchAction.press(PointOption.point(x, y)).release().perform();
-
-
-//enes
-
-// isDisplayed(firstMobile, textElement);
-//MobileElement textElement = (MobileElement) firstMobile.findElement(By.xpath("//android.widget.TextView[@text='" + text + "']"));
-//isDisplayed(firstMobile, textElement);

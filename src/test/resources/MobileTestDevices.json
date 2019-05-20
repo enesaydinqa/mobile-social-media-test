@@ -1,5 +1,5 @@
 {
-  "SECOND_DEVICE": {
+  "ONE_DEVICE": {
     "platformName": "Android",
     "platformVersion": "5.1.1",
     "deviceName": "Galaxy S5",
@@ -9,13 +9,13 @@
     "devicePort": "4723",
     "unicodeKeyboard": false,
     "autoGrantPermissions": true,
-    "fastReset": false,
+    "fastReset": true,
     "noSign": true,
     "clearDeviceLogsOnStart": true,
     "automationName": "UiAutomator1",
     "deviceIMEI": "NULL"
   },
-  "ONE_DEVICE": {
+  "SECOND_DEVICE": {
     "platformName": "Android",
     "platformVersion": "7.0",
     "deviceName": "Galaxy S6 edge",
@@ -25,7 +25,7 @@
     "devicePort": "8889",
     "unicodeKeyboard": false,
     "autoGrantPermissions": true,
-    "fastReset": false,
+    "fastReset": true,
     "noSign": true,
     "clearDeviceLogsOnStart": true,
     "automationName": "UiAutomator2",
