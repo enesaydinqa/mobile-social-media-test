@@ -16,7 +16,6 @@ public class SnapchatLoginAction extends PageObject {
     @AndroidFindBy(id = "com.snapchat.android:id/username_or_email_field")
     public MobileElement usernameField;
 
-
     @AndroidFindBy(id = "com.snapchat.android:id/password_field")
     public MobileElement passwordField;
     @AndroidFindBy(id="com.snapchat.android:id/nav_button")

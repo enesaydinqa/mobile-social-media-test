@@ -3,7 +3,6 @@ package com.appium.mobile.test.snapchat;
 import com.annotation.Author;
 import com.annotation.Contact;
 import com.appium.context.app.SnapchatAndroidTest;
-import io.appium.java_client.AppiumDriver;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;

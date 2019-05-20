@@ -5,7 +5,6 @@ import com.appium.context.AbstractAndroidTest;
 import com.appium.mobile.test.snapchat.SnapchatStoryTest;
 import com.appium.pages.snapchat.*;
 import io.appium.java_client.AppiumDriver;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.logging.LogEntry;
 
