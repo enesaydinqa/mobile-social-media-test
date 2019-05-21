@@ -46,4 +46,9 @@ appium --address 127.0.0.1 --port 5560 --session-override --command-timeout 6000
 
 #LINE
 -Log in ve log off işlemlerini yapmaz
+-iki hesaptada yalnızca bir arkadas/user ekli olmalıdır
 -Önceden kullanıcılar her iki hesapta da eklenmelidir
+
+#WHATSAPP
+-Log in ve logout işlemleri yapmaz
+-iki hesaptada yalnızca bir arkadas/user ekli olmalıdır
