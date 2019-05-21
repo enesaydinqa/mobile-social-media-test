@@ -3062,3 +3062,129 @@
 2019-05-20 16:42:08 INFO  Events:131 - Snapchat Story Share Button Click : 2019/05/20 16:42:08.867
 2019-05-20 16:42:22 INFO  StatusRule:21 - =================================================================
 2019-05-20 16:42:22 INFO  StatusRule:22 - =====> TEST PASSED ... --> testCaptureVideoStoryAndShare
+2019-05-21 09:11:48 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:11:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 09:13:46 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:13:46 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 09:15:05 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 09:15:07 INFO  StatusRule:21 - =================================================================
+2019-05-21 09:15:07 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
+2019-05-21 09:16:44 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:16:44 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 09:17:15 INFO  WhatsappMultipleDeviceTest:26 - This is a test message: ylOrGGvaTo : 09:14
+2019-05-21 09:17:17 INFO  StatusRule:21 - =================================================================
+2019-05-21 09:17:17 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
+2019-05-21 09:49:53 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:49:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 09:50:20 INFO  WhatsappMultipleDeviceTest:51 - there is not any notification
+2019-05-21 09:50:22 INFO  StatusRule:21 - =================================================================
+2019-05-21 09:50:22 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 09:50:54 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:50:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 09:51:23 INFO  StatusRule:21 - =================================================================
+2019-05-21 09:51:23 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 09:56:46 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:56:46 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 09:57:35 INFO  StatusRule:21 - =================================================================
+2019-05-21 09:57:35 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 09:59:54 INFO  StatusRule:14 - =================================================================
+2019-05-21 09:59:54 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:00:19 INFO  WhatsappMultipleDeviceTest:53 - there is not any notification
+2019-05-21 10:00:53 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:00:53 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 10:01:18 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:01:18 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:01:43 INFO  WhatsappMultipleDeviceTest:53 - there is not any notification
+2019-05-21 10:02:15 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:02:15 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 10:03:15 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:03:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:03:42 INFO  WhatsappMultipleDeviceTest:54 - there is not any notification
+2019-05-21 10:04:16 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:04:16 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 10:13:31 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:13:31 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:13:56 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:13:56 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 10:14:30 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:14:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:15:24 INFO  StatusRule:21 - =================================================================
+2019-05-21 10:15:24 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 10:17:41 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:17:41 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:18:08 INFO  WhatsappMultipleDeviceTest:54 - there is not any notification
+2019-05-21 10:18:41 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:18:41 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 10:19:06 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:19:06 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:19:33 INFO  WhatsappMultipleDeviceTest:54 - there is not any notification
+2019-05-21 10:19:47 INFO  StatusRule:21 - =================================================================
+2019-05-21 10:19:47 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 10:41:47 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:41:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:42:20 INFO  StatusRule:21 - =================================================================
+2019-05-21 10:42:20 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 10:42:30 INFO  StatusRule:14 - =================================================================
+2019-05-21 10:42:30 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 10:42:59 INFO  StatusRule:28 - =================================================================
+2019-05-21 10:42:59 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlImage
+2019-05-21 11:02:33 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:02:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 11:03:19 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:03:19 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlImage
+2019-05-21 11:04:12 INFO  WhatsappMultipleDeviceTest:55 - there is not any notification
+2019-05-21 11:04:34 INFO  StatusRule:21 - =================================================================
+2019-05-21 11:04:34 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlImage
+2019-05-21 11:04:52 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:04:52 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:05:39 INFO  WhatsappMultipleDeviceTest:55 - there is not any notification
+2019-05-21 11:06:20 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:07:46 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:07:46 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:09:22 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:09:37 INFO  WhatsappMultipleDeviceTest:26 - Dfhh : 10:58
+2019-05-21 11:09:42 INFO  StatusRule:21 - =================================================================
+2019-05-21 11:09:42 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage
+2019-05-21 11:12:48 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:12:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:13:39 INFO  WhatsappMultipleDeviceTest:57 - there is not any notification
+2019-05-21 11:14:21 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:14:42 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:14:42 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:16:55 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:16:55 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:17:43 INFO  WhatsappMultipleDeviceTest:57 - there is not any notification
+2019-05-21 11:18:24 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:18:44 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:18:44 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:20:40 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:20:40 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:21:29 INFO  WhatsappMultipleDeviceTest:57 - there is not any notification
+2019-05-21 11:22:10 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:22:30 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:22:30 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:22:51 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:22:51 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:23:37 INFO  WhatsappMultipleDeviceTest:57 - there is not any notification
+2019-05-21 11:24:18 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:24:38 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:24:38 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:28:11 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:28:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:29:44 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:29:44 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:30:48 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:30:48 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:32:01 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:32:01 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:32:21 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:32:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:33:29 INFO  StatusRule:28 - =================================================================
+2019-05-21 11:33:29 INFO  StatusRule:29 - =====> TEST FAIL ... --> sendAndControlMessage
+2019-05-21 11:36:33 INFO  StatusRule:14 - =================================================================
+2019-05-21 11:36:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> sendAndControlMessage
+2019-05-21 11:37:21 INFO  WhatsappMultipleDeviceTest:58 - there is not any notification
+2019-05-21 11:38:03 INFO  Events:173 - Element Not Displayed --> Located by By.chained({By.AccessibilityId: Delivered})
+2019-05-21 11:38:18 INFO  WhatsappMultipleDeviceTest:29 - This is a test message: JJBOgXI8cf : 11:37
+2019-05-21 11:38:24 INFO  StatusRule:21 - =================================================================
+2019-05-21 11:38:24 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessage

@@ -37,4 +37,13 @@ appium --address 127.0.0.1 --port 5560 --session-override --command-timeout 6000
 
 # KOD YAZILDIKTAN SONRA
 - git commit -am "YOUR_COMMIT_MESSAGE"
-- git push origin 
+- git push origin
+
+
+#SNAPCHAT
+-Her girişte login olunur
+-Her çıkışta resetlenir
+
+#LINE
+-Log in ve log off işlemlerini yapmaz
+-Önceden kullanıcılar her iki hesapta da eklenmelidir

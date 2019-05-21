@@ -13,25 +13,42 @@ public class HomePage extends PageObject {
         super(driver);
     }
 
-    @AndroidFindBy(id = "com.whatsapp:id/menuitem_search")//2
-    public MobileElement searchBtn;//click edilecek
+    @AndroidFindBy(id = "com.whatsapp:id/menuitem_search")
+    public MobileElement searchBtn;
 
-    @AndroidFindBy(id = "com.whatsapp:id/search_src_text")//2
-    public MobileElement searchInput;//sendkeys yapılacak
+    @AndroidFindBy(id = "com.whatsapp:id/search_src_text")
+    public MobileElement searchInput;
 
-    @AndroidFindBy(id = "com.whatsapp:id/contact_row_container")//2
+    @AndroidFindBy(id = "com.whatsapp:id/contact_row_container")
     public MobileElement firstUser;
 
-    @AndroidFindBy(id = "com.whatsapp:id/entry")//2
-    public MobileElement typeMsg;//sendkeys ile mesaj yazılacak
+    @AndroidFindBy(id = "com.whatsapp:id/entry")
+    public MobileElement typeMsg;
 
-    @AndroidFindBy(id = "com.whatsapp:id/send")//2
-    public MobileElement sendBtn;//
+    @AndroidFindBy(id = "com.whatsapp:id/send")
+    public MobileElement sendBtn;
 
-    @AndroidFindBy(accessibility = "Delivered")//2
-    public MobileElement isdelivered;//
+    @AndroidFindBy(accessibility = "Delivered")
+    public MobileElement isdelivered;
 
-    @AndroidFindBy(className = "android.widget.TextView")//2
-    public List<MobileElement> receivedMessage;//last=date ve last-1=last message getAttribute ile içeriği okunacak
+    @AndroidFindBy(className = "android.widget.TextView")
+    public List<MobileElement> receivedMessage;
 
+    @AndroidFindBy(id = "com.whatsapp:id/camera_btn")
+    public MobileElement cmrButton;
+
+    @AndroidFindBy(id = "com.whatsapp:id/shutter")
+    public MobileElement takePhoto;
+
+    @AndroidFindBy(id = "com.whatsapp:id/send")
+    public MobileElement sendPhoto;
+
+    @AndroidFindBy(id = "com.whatsapp:id/conversations_row_message_count")
+    public MobileElement notification;
+
+    @AndroidFindBy(id = "com.whatsapp:id/back")
+    public MobileElement back;
+
+    @AndroidFindBy(id = "com.whatsapp:id/media_indicator")
+    public MobileElement photoIcon;
 }
