@@ -1,5 +1,6 @@
 package com.appium.context;
 
+import com.appium.AbstractTest;
 import com.appium.client.date.DateFormatType;
 import com.appium.mobile.CommonMobile;
 import io.appium.java_client.AppiumDriver;
@@ -10,13 +11,11 @@ import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.offset.PointOption;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -29,7 +28,6 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,7 +36,7 @@ import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 import static io.appium.java_client.touch.offset.PointOption.point;
 
-public class Events implements CommonMobile
+public class Events extends AbstractTest implements CommonMobile
 {
     private Logger logger = Logger.getLogger(Events.class);
 
@@ -490,7 +488,7 @@ public class Events implements CommonMobile
         }
         catch (Exception e)
         {
-            logger.info("Scrool To Android Element Failed");
+            logger.info("Scroll To Android Element Failed");
         }
     }
 

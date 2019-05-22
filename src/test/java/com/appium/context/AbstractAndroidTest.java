@@ -1,7 +1,6 @@
 package com.appium.context;
 
 import com.appium.client.objects.DeviceInfo;
-import com.appium.client.parameter.DeviceName;
 import com.appium.utils.Configuration;
 import com.appium.utils.StatusRule;
 import io.appium.java_client.AppiumDriver;
@@ -31,15 +30,15 @@ public abstract class AbstractAndroidTest extends DriverManager
         configuration = new Configuration();
         deviceInfo = new DeviceInfo();
 
-        firstMobile = createAndroidDriver(configuration, DeviceName.ONE_DEVICE.getDeviceName());
+        firstMobile = createAndroidDriver(configuration, 0);
 
-        deviceInfo.setMobileOneDeviceIMEI(configuration.getMobileOneIMEI());
+        deviceInfo.setMobileOneDeviceIMEI(getMobileIMEINumber(0));
 
         if (multipleDevice)
         {
-            secondMobile = createAndroidDriver(configuration, DeviceName.SECOND_DEVICE.getDeviceName());
+            secondMobile = createAndroidDriver(configuration, 1);
 
-            deviceInfo.setMobileSecondDeviceIMEI(configuration.getMobileSecondIMEI());
+            deviceInfo.setMobileOneDeviceIMEI(getMobileIMEINumber(1));
         }
     }
 
@@ -56,7 +55,6 @@ public abstract class AbstractAndroidTest extends DriverManager
             catch (Exception ex)
             {
             }
-
         }
 
         if (secondMobile != null)
@@ -70,9 +68,17 @@ public abstract class AbstractAndroidTest extends DriverManager
             {
             }
         }
-
     }
 
+    protected String getMobileUID(int index)
+    {
+        return deviceManager.getDeviceCapabilities(index).getUid();
+    }
+
+    protected String getMobileIMEINumber(int index)
+    {
+        return deviceManager.getDeviceCapabilities(index).getIMEINumber();
+    }
 
 }
 

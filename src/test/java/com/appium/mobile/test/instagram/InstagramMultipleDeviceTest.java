@@ -59,8 +59,8 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     @Contact(Author.ENES)
     public void testSendTextMessage() throws Exception
     {
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(configuration.getMobileOneUID()));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(configuration.getMobileSecondUID()));
+        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
+        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
@@ -90,8 +90,8 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(configuration.getMobileOneUID()));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(configuration.getMobileSecondUID()));
+        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
+        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
@@ -122,8 +122,8 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
 
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(configuration.getMobileOneUID()));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(configuration.getMobileSecondUID()));
+        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
+        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());

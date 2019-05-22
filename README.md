@@ -1,26 +1,26 @@
 # com.appium.mobile-social-media-test
 
 # Operator
-- Mobily
+- MOBILY
 - STC
-- Zain
+- ZAIN_KSA
 
 # App Name
 - INSTAGRAM
+- TWITTER
+- SNAPCHAT
 
 # Profiles
 - STCInstagram
 - MobilyInstagram
 - ZainInstagram
 
-<--------------------------------------->
-
 # VM Options
--Dtest.app.prop=APP_NAME
+-Dfirst.device.uid=DEVICE_UID
+-Dsecond.device.uid=DEVICE_UID (optional)
 -Doperator=OPERATOR_NAME
 -Dtest.result.path=REPORT_PATH
--Dmultiple.device.test=true/false (opsional) 
-
+-Dmultiple.device.test=true/false
 
 # Appium Server
 appium --address 127.0.0.1 --port 4723 --session-override --command-timeout 6000000

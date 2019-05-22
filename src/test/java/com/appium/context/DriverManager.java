@@ -1,6 +1,5 @@
 package com.appium.context;
 
-import com.appium.client.objects.DeviceCapabilities;
 import com.appium.client.parameter.AppInfo;
 import com.appium.client.parameter.AutoGrantPermissions;
 import com.appium.client.parameter.NoReset;
@@ -18,13 +17,10 @@ import java.net.URL;
 
 public abstract class DriverManager extends Events
 {
+    private final String appiumServer = "127.0.0.1";
 
-    public AppiumDriver createAndroidDriver(Configuration configuration, String deviceName) throws IOException, InterruptedException
+    public AppiumDriver createAndroidDriver(Configuration configuration, int index) throws IOException, InterruptedException
     {
-        Capability json = new Capability();
-
-        DeviceCapabilities deviceCapabilities = json.getDeviceCapability(configuration, deviceName);
-
         AppInfo appInfo = configuration.getAppInfo();
         NoReset noReset = configuration.getNoReset();
         AutoGrantPermissions autoGrantPermissions = configuration.getAutoGrantPermissions();
@@ -33,30 +29,22 @@ public abstract class DriverManager extends Events
 
         try
         {
-            capabilities.setCapability("platformName", deviceCapabilities.getPlatformName());
-            capabilities.setCapability("platformVersion", deviceCapabilities.getPlatformVersion());
-            capabilities.setCapability("deviceName", deviceCapabilities.getDeviceName());
+            capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("platformVersion", deviceManager.getDeviceCapabilities(index).getPlatformVersion());
+            capabilities.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
+            capabilities.setCapability("deviceName", "Social Media Test Device");
             capabilities.setCapability("appPackage", appInfo.appPackage);
             capabilities.setCapability("appActivity", appInfo.appActivity);
-            capabilities.setCapability("unicodeKeyboard", deviceCapabilities.getUnicodeKeyboard());
+            capabilities.setCapability("unicodeKeyboard", true);
             capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
-            capabilities.setCapability("fastReset", deviceCapabilities.getFastReset());
-            capabilities.setCapability("noSign", deviceCapabilities.getNoSign());
+            capabilities.setCapability("fastReset", true);
+            capabilities.setCapability("noSign", true);
             capabilities.setCapability("noReset", noReset.noReset);
-            capabilities.setCapability("clearDeviceLogsOnStart", deviceCapabilities.getClearDeviceLogsOnStart());
-            capabilities.setCapability("automationName", deviceCapabilities.getAutomationName());
+            capabilities.setCapability("clearDeviceLogsOnStart", true);
+            capabilities.setCapability("automationName", deviceManager.getDeviceCapabilities(index).getAutomationName());
             capabilities.setCapability("autoAcceptAlerts", true);
             capabilities.setCapability("disableWindowAnimation", true);
             capabilities.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
-
-            if (!deviceCapabilities.getUid().equals("NULL"))
-            {
-                capabilities.setCapability("udid", deviceCapabilities.getUid());
-            }
-            else
-            {
-                throw new Exception("Mobile UID Not Found");
-            }
         }
         catch (Exception ex)
         {
@@ -65,26 +53,27 @@ public abstract class DriverManager extends Events
 
         URL url;
 
-        String createDriverUrl = "http://%s:%s/wd/hub";
+        String createDriverUrl = "http://" + appiumServer + ":" + configuration.getAppiumPort()[index] + "/wd/hub";
 
-        url = new URL(String.format(createDriverUrl, deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort()));
+        url = new URL(createDriverUrl);
 
+        if (!checkIfServerIsRunning(configuration.getAppiumPort()[index]))
+        {
+            startAppiumServer(appiumServer, configuration.getAppiumPort()[index]);
+        }
 
-
-        if (!checkIfServerIsRunning(deviceCapabilities.getDevicePort()))
-            startAppiumServer(deviceCapabilities.getDeviceServer(), deviceCapabilities.getDevicePort());
-
-
-        appiumRemove(deviceCapabilities.getUid());
+        appiumAppRemove(index);
 
         return new AndroidDriver(url, capabilities);
     }
 
     /**
-     * @param uid : device unique id.
+     * @param index : mobile index
      */
-    private void appiumRemove(String uid) throws IOException, InterruptedException
+    private void appiumAppRemove(int index) throws IOException, InterruptedException
     {
+        String uid = deviceManager.getDeviceCapabilities(index).getUid();
+
         Runtime.getRuntime().exec(String.format("adb -s %s uninstall io.appium.settings", uid));
 
         sleep(3);

@@ -6,5 +6,6 @@
 .classpath
 .project
 .settings/
+logs/
 target/
 out/
