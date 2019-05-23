@@ -63,12 +63,10 @@ public abstract class DriverManager extends Events
 
         url = new URL(createDriverUrl);
 
-        /*
         if (!checkIfServerIsRunning(configuration.getAppiumPort()[index]))
         {
             startAppiumServer(appiumServer, configuration.getAppiumPort()[index]);
         }
-        */
 
         appiumAppRemove(index);
 

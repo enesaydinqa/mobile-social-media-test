@@ -2,8 +2,8 @@ package com.appium;
 
 import com.appium.mobile.test.instagram.InstagramMultipleDeviceTest;
 import com.appium.mobile.test.instagram.InstagramSingleDeviceTest;
-import com.appium.mobile.test.snapchat.SnapChatMultipleDeviceTest;
-import com.appium.mobile.test.snapchat.SnapChatSingleDeviceTest;
+import com.appium.mobile.test.snapchat.SnapchatMultipleDeviceTest;
+import com.appium.mobile.test.snapchat.SnapchatSingleDeviceTest;
 import com.appium.mobile.test.twitter.TwitterMultipleDeviceTest;
 import com.appium.mobile.test.twitter.TwitterSingleDeviceTest;
 import org.junit.runner.JUnitCore;
@@ -44,11 +44,11 @@ public class Main
 
                 if (multipleDeviceTest)
                 {
-                    JUnitCore.runClasses(SnapChatMultipleDeviceTest.class);
+                    JUnitCore.runClasses(SnapchatMultipleDeviceTest.class);
                 }
                 else
                 {
-                    JUnitCore.runClasses(SnapChatSingleDeviceTest.class);
+                    JUnitCore.runClasses(SnapchatSingleDeviceTest.class);
                 }
 
             default:

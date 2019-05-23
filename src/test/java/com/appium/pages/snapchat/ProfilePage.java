@@ -18,7 +18,4 @@ public class ProfilePage extends PageObject {
     @AndroidFindBy(id = "com.snapchat.android:id/item")
     public MobileElement firstFriends;
 
-
-
-
 }

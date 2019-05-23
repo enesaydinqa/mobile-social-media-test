@@ -2,9 +2,9 @@ package com.appium.context.app;
 
 import com.appium.client.date.DateFormatType;
 import com.appium.context.AbstractAndroidTest;
-import com.appium.mobile.test.snapchat.SnapChatSingleDeviceTest;
+import com.appium.mobile.test.snapchat.SnapchatSingleDeviceTest;
 import com.appium.pages.snapchat.ProfilePage;
-import com.appium.pages.snapchat.SendMessage;
+import com.appium.pages.snapchat.SendMessagePage;
 import com.appium.pages.snapchat.SnapchatLoginPage;
 import com.appium.pages.snapchat.StoryPage;
 import io.appium.java_client.AppiumDriver;
@@ -16,14 +16,14 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class SnapChatAndroidTest extends AbstractAndroidTest
+public class SnapchatAndroidTest extends AbstractAndroidTest
 {
-    private Logger logger = Logger.getLogger(SnapChatSingleDeviceTest.class);
+    private Logger logger = Logger.getLogger(SnapchatSingleDeviceTest.class);
 
     private SnapchatLoginPage loginPage;
     protected ProfilePage profilePage;
     protected StoryPage storyPage;
-    protected SendMessage sendMessage;
+    protected SendMessagePage sendMessagePage;
 
     protected void isAlertExist(AppiumDriver driver) throws Exception
     {
@@ -66,23 +66,23 @@ public class SnapChatAndroidTest extends AbstractAndroidTest
 
     protected void sendMessage(AppiumDriver driver, String message, boolean log, String description) throws InterruptedException
     {
-        sendMessage = new SendMessage(driver);
+        sendMessagePage = new SendMessagePage(driver);
 
-        waitAndSendKeys(driver, sendMessage.messageText, message);
+        waitAndSendKeys(driver, sendMessagePage.messageText, message);
         pressEnter(driver, log, description);
     }
 
     protected void controlReceivedMessage(AppiumDriver driver, String message)
     {
-        sendMessage = new SendMessage(driver);
+        sendMessagePage = new SendMessagePage(driver);
 
-        int index = getSizeOfList(sendMessage.multipleText);
+        int index = getSizeOfList(sendMessagePage.multipleText);
 
         String receivedMsg = "";
 
         for (int i = 0; i <= index; i++)
         {
-            receivedMsg = getAttribute(getElementInList(sendMessage.multipleText, i), "text");
+            receivedMsg = getAttribute(getElementInList(sendMessagePage.multipleText, i), "text");
             if (receivedMsg.equals(message))
             {
                 assertEqualsText(message, receivedMsg);
@@ -94,12 +94,12 @@ public class SnapChatAndroidTest extends AbstractAndroidTest
 
     protected void searchAndFindFriends(AppiumDriver driver, String name) throws Exception
     {
-        sendMessage = new SendMessage(driver);
+        sendMessagePage = new SendMessagePage(driver);
 
         sleep(2);
-        waitAndClick(driver, sendMessage.searchField);
-        waitAndSendKeys(driver, sendMessage.searchField, name);
-        waitAndClick(driver, sendMessage.sendMessageUser);
+        waitAndClick(driver, sendMessagePage.searchField);
+        waitAndSendKeys(driver, sendMessagePage.searchField, name);
+        waitAndClick(driver, sendMessagePage.sendMessageUser);
     }
 
     protected void shareMyStory(AppiumDriver driver) throws Exception
@@ -110,7 +110,7 @@ public class SnapChatAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, storyPage.searchFriends);
         waitAndSendKeys(driver, storyPage.searchFriends, "My Story");
         waitAndClick(driver, storyPage.myStory);
-        waitAndClick(driver, storyPage.send, true, "SnapChat Story Share Button Click");
+        waitAndClick(driver, storyPage.send, true, "Snapchat Story Share Button Click");
         sleep(configuration.getSnapChatStoryTimeout());
         getSnapSendDuration();
     }
@@ -122,10 +122,10 @@ public class SnapChatAndroidTest extends AbstractAndroidTest
         AtomicReference<String> duration = new AtomicReference<>();
 
         IntStream.range(0, adbLogs.size())
-                .filter(i -> adbLogs.get(i).getMessage().contains("PhoneStatusBar: removeNotification key=0|com.snapchat.android"))
+                .filter(i -> adbLogs.get(i).getMessage().contains("removeNotification key=0|com.snapchat.android"))
                 .forEach(i -> {
                     duration.set(adbLogs.get(i).getMessage().substring(5, 18));
-                    logger.info("Shared SnapChat Story Time : " + getCurrentDate(DateFormatType.YEAR_MONTH_DAY.dateFormat) + duration);
+                    logger.info("Shared Snapchat Story Time : " + getCurrentDate(DateFormatType.YEAR_MONTH_DAY.dateFormat) + duration);
                 });
 
         return String.valueOf(duration);

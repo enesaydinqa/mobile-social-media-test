@@ -4666,3 +4666,105 @@ Caused by: java.lang.NullPointerException
 2019-05-23 16:18:23 INFO  StatusRule:21 - =================================================================
 2019-05-23 16:18:23 INFO  StatusRule:22 - =====> TEST PASSED ... --> sendAndControlMessageWithMultipleDevice
 2019-05-23 16:18:23 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@47db50c5: startup date [Thu May 23 16:15:08 EET 2019]; root of context hierarchy
+2019-05-23 16:27:52 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:27:52 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:27:52 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:27:52 EET 2019]; root of context hierarchy
+2019-05-23 16:27:53 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:27:53 INFO  StatusRule:15 - =====> TEST STARTED ... --> testCaptureImageStoryAndShare
+2019-05-23 16:27:53 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:27:53 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:28:13 INFO  AbstractAndroidTest:37 - first mobile session id : 04749aa6-9997-4ab4-9204-b3555afab2a9
+
+2019-05-23 16:30:25 INFO  Events:161 - SnapChat Story Share Button Click : 2019/05/23 16:30:25.479
+2019-05-23 16:30:38 INFO  StatusRule:21 - =================================================================
+2019-05-23 16:30:38 INFO  StatusRule:22 - =====> TEST PASSED ... --> testCaptureImageStoryAndShare
+2019-05-23 16:30:38 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:27:52 EET 2019]; root of context hierarchy
+2019-05-23 16:32:11 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:32:12 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e6f74c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@dd05255, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a78afa0]
+2019-05-23 16:32:12 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:32:12 EET 2019]; root of context hierarchy
+2019-05-23 16:32:13 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:32:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:32:13 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:32:13 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:32:25 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:32:12 EET 2019]; root of context hierarchy
+2019-05-23 16:32:35 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:32:35 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e6f74c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@dd05255, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a78afa0]
+2019-05-23 16:32:36 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:32:36 EET 2019]; root of context hierarchy
+2019-05-23 16:32:36 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:32:36 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:32:36 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:32:36 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:33:00 INFO  AbstractAndroidTest:37 - first mobile session id : e7279058-972d-49e4-8548-71f846d85003
+
+2019-05-23 16:33:43 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:32:36 EET 2019]; root of context hierarchy
+2019-05-23 16:35:06 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:35:06 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:35:06 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:35:06 EET 2019]; root of context hierarchy
+2019-05-23 16:35:07 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:35:07 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:35:07 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:35:07 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:35:30 INFO  AbstractAndroidTest:37 - first mobile session id : 73dda256-4b9b-492e-81e7-e2a914e077e6
+
+2019-05-23 16:36:34 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:35:06 EET 2019]; root of context hierarchy
+2019-05-23 16:36:46 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:36:46 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:36:46 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:36:46 EET 2019]; root of context hierarchy
+2019-05-23 16:36:47 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:36:47 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:36:47 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:36:47 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:37:11 INFO  AbstractAndroidTest:37 - first mobile session id : 79a199ed-61a2-4ec8-b96a-9cc22f18ab1d
+
+2019-05-23 16:39:25 INFO  Events:161 - Snapchat Story Share Button Click : 2019/05/23 16:39:25.986
+2019-05-23 16:39:39 INFO  StatusRule:21 - =================================================================
+2019-05-23 16:39:39 INFO  StatusRule:22 - =====> TEST PASSED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:39:39 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:36:46 EET 2019]; root of context hierarchy
+2019-05-23 16:41:32 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:41:32 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e6f74c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@dd05255, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a78afa0]
+2019-05-23 16:41:32 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:41:32 EET 2019]; root of context hierarchy
+2019-05-23 16:41:33 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:41:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:41:33 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:41:33 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:41:53 INFO  AbstractAndroidTest:37 - first mobile session id : 290c8674-caaa-4a26-9839-aa72760e997f
+
+2019-05-23 16:44:02 INFO  Events:161 - Snapchat Story Share Button Click : 2019/05/23 16:44:02.862
+2019-05-23 16:45:22 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@63070bab: startup date [Thu May 23 16:41:32 EET 2019]; root of context hierarchy
+2019-05-23 16:49:10 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:49:10 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:49:10 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:49:10 EET 2019]; root of context hierarchy
+2019-05-23 16:49:11 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:49:11 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:49:11 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:49:11 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:49:36 INFO  AbstractAndroidTest:37 - first mobile session id : 0eaef27b-01b8-4cef-9620-4af6ba74148e
+
+2019-05-23 16:51:47 INFO  Events:161 - Snapchat Story Share Button Click : 2019/05/23 16:51:47.934
+2019-05-23 16:52:01 INFO  StatusRule:21 - =================================================================
+2019-05-23 16:52:01 INFO  StatusRule:22 - =====> TEST PASSED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:52:01 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:49:10 EET 2019]; root of context hierarchy
+2019-05-23 16:55:12 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:55:12 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:55:12 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:55:12 EET 2019]; root of context hierarchy
+2019-05-23 16:55:13 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:55:13 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:55:13 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:55:13 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:55:33 INFO  AbstractAndroidTest:37 - first mobile session id : 2b56fd8a-28dc-49bf-893f-fe0892af6f6a
+
+2019-05-23 16:55:38 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:55:12 EET 2019]; root of context hierarchy
+2019-05-23 16:58:48 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-05-23 16:58:48 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45820e51, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@42d8062c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6043cd28]
+2019-05-23 16:58:48 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:58:48 EET 2019]; root of context hierarchy
+2019-05-23 16:58:49 INFO  StatusRule:14 - =================================================================
+2019-05-23 16:58:49 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 16:58:49 INFO  DriverManager:60 - ==============================================================
+2019-05-23 16:58:49 INFO  DriverManager:61 - ====> Start Test ==> Appium Server => 127.0.0.1 : Port => 5559
+2019-05-23 16:59:19 INFO  AbstractAndroidTest:37 - first mobile session id : 3c688102-d893-4919-be9e-edf00810c441
+
+2019-05-23 17:00:36 INFO  Events:161 - Snapchat Story Share Button Click : 2019/05/23 17:00:36.832
+2019-05-23 17:00:47 INFO  SnapchatSingleDeviceTest:128 - Shared Snapchat Story Time : 2019/05/23 17:00:38.929
+2019-05-23 17:00:50 INFO  StatusRule:21 - =================================================================
+2019-05-23 17:00:50 INFO  StatusRule:22 - =====> TEST PASSED ... --> {testCaptureImageStoryAndShare}
+2019-05-23 17:00:50 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@954b04f: startup date [Thu May 23 16:58:48 EET 2019]; root of context hierarchy

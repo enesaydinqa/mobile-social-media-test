@@ -9,19 +9,20 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
-public class SendMessage extends PageObject {
-    public SendMessage(AppiumDriver driver)
+public class SendMessagePage extends PageObject
+{
+    public SendMessagePage(AppiumDriver driver)
     {
         super(driver);
     }
 
-    @AndroidFindBy(id="com.snapchat.android:id/neon_header_title")
+    @AndroidFindBy(id = "com.snapchat.android:id/neon_header_title")
     public MobileElement searchField;
 
-    @AndroidFindBy(id="com.snapchat.android:id/item")
+    @AndroidFindBy(id = "com.snapchat.android:id/item")
     public MobileElement sendMessageUser;
 
-    @AndroidFindBy(id= "com.snapchat.android:id/chat_input_text_field")
+    @AndroidFindBy(id = "com.snapchat.android:id/chat_input_text_field")
     public MobileElement messageText;
 
     @AndroidFindAll({

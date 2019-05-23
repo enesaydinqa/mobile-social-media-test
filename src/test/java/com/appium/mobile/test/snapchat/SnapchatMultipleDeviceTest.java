@@ -2,7 +2,7 @@ package com.appium.mobile.test.snapchat;
 
 import com.annotations.Author;
 import com.annotations.Contact;
-import com.appium.context.app.SnapChatAndroidTest;
+import com.appium.context.app.SnapchatAndroidTest;
 import io.appium.java_client.MobileElement;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
@@ -10,9 +10,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class SnapChatMultipleDeviceTest extends SnapChatAndroidTest
+public class SnapchatMultipleDeviceTest extends SnapchatAndroidTest
 {
-    private Logger logger = Logger.getLogger(SnapChatSingleDeviceTest.class);
+    private Logger logger = Logger.getLogger(SnapchatSingleDeviceTest.class);
 
     @Before
     public void init() throws Exception

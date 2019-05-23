@@ -3,8 +3,8 @@ package com.appium.mobile.test.snapchat;
 import com.annotations.Author;
 import com.annotations.Contact;
 import com.annotations.Description;
-import com.appium.context.app.SnapChatAndroidTest;
-import com.appium.pages.snapchat.SendMessage;
+import com.appium.context.app.SnapchatAndroidTest;
+import com.appium.pages.snapchat.SendMessagePage;
 import com.appium.pages.snapchat.StoryPage;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
@@ -12,9 +12,9 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class SnapChatSingleDeviceTest extends SnapChatAndroidTest
+public class SnapchatSingleDeviceTest extends SnapchatAndroidTest
 {
-    private Logger logger = Logger.getLogger(SnapChatSingleDeviceTest.class);
+    private Logger logger = Logger.getLogger(SnapchatSingleDeviceTest.class);
 
     private StoryPage storyPage;
 
@@ -24,14 +24,14 @@ public class SnapChatSingleDeviceTest extends SnapChatAndroidTest
         super.init();
 
         storyPage = new StoryPage(firstMobile);
-        sendMessage = new SendMessage(firstMobile);
+        sendMessagePage = new SendMessagePage(firstMobile);
 
         login(firstMobile, configuration.getFirstSnapChatTestUserName(), configuration.getSnapChatTestUserPassword());
     }
 
     @Test
     @Contact(Author.ATIKE)
-    @Description("Bu test SnapChat de image story atıyor.")
+    @Description("Bu test Snapchat de image story atıyor.")
     public void testCaptureImageStoryAndShare() throws Exception
     {
         waitAndClick(firstMobile, storyPage.cameraCaptureButton);
@@ -41,7 +41,7 @@ public class SnapChatSingleDeviceTest extends SnapChatAndroidTest
 
     @Test
     @Contact(Author.ATIKE)
-    @Description("Bu test SnapChat de video story atıyor.")
+    @Description("Bu test Snapchat de video story atıyor.")
     public void testCaptureVideoStoryAndShare() throws Exception
     {
         longPress(firstMobile, storyPage.cameraCaptureButton, 10);
