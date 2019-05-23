@@ -20,7 +20,7 @@ public class DeviceManager
 
     public DeviceManager()
     {
-        boolean multipleDeviceTest = Boolean.getBoolean(System.getProperties().getProperty("multiple.device.test"));
+        boolean multipleDeviceTest = Boolean.parseBoolean(System.getProperties().getProperty("multiple.device.test"));
         Operator operator = readOperatorParam("operator");
 
         DeviceCapabilities firstDeviceCap = readFirstDeviceCapabilities("first.device.uid", operator);
@@ -28,7 +28,7 @@ public class DeviceManager
 
         if (multipleDeviceTest)
         {
-            DeviceCapabilities secondDeviceCap = readFirstDeviceCapabilities("second.device.uid", operator);
+            DeviceCapabilities secondDeviceCap =  readFirstDeviceCapabilities("second.device.uid", operator);
             deviceInformation.add(secondDeviceCap);
         }
     }
@@ -43,7 +43,7 @@ public class DeviceManager
         }
         catch (Exception ex)
         {
-            throw new NotFoundException("Device Not Found !!!");
+           throw new NotFoundException("Device Not Found !!!");
         }
     }
 

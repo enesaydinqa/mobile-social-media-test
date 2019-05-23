@@ -46,22 +46,27 @@ public class Events extends AbstractTest implements CommonMobile
     {
         UP, DOWN, LEFT, RIGHT
     }
-    public void assertEqualsText(String text1,String text2){
+
+    public void assertEqualsText(String text1, String text2)
+    {
         Assert.assertEquals(text1, text2);
     }
 
-    public void pressEnter(AppiumDriver driver){
-        ((AndroidDriver)driver).pressKeyCode(AndroidKeyCode.ENTER);
+    public void pressEnter(AppiumDriver driver)
+    {
+        ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.ENTER);
     }
-    public void acceptAlerts(AppiumDriver driver){
-        WebDriverWait wait = new WebDriverWait(driver,30);
+
+    public void acceptAlerts(AppiumDriver driver)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
 
-
-    public void keyboardEnter(AppiumDriver driver,Boolean log){
+    public void keyboardEnter(AppiumDriver driver, Boolean log)
+    {
         ((AndroidDriver) driver).isKeyboardShown();
         ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
         driver.hideKeyboard();
@@ -80,16 +85,20 @@ public class Events extends AbstractTest implements CommonMobile
         return 0;
     }
 
-    public MobileElement getElementInList(List<MobileElement> elements,int index){
-        if (!elements.isEmpty()) {
+    public MobileElement getElementInList(List<MobileElement> elements, int index)
+    {
+        if (!elements.isEmpty())
+        {
             return elements.get(index);
         }
         return null;
     }
 
-    public void sendKeysElementInList(List<MobileElement> elements,int index,String text){
-        List<MobileElement> profile =elements ;
-        if (!profile.isEmpty()) {
+    public void sendKeysElementInList(List<MobileElement> elements, int index, String text)
+    {
+        List<MobileElement> profile = elements;
+        if (!profile.isEmpty())
+        {
             profile.get(index).sendKeys(text);
         }
     }

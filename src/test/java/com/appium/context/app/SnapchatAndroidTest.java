@@ -14,7 +14,8 @@ import java.util.logging.Level;
 import java.util.stream.IntStream;
 
 
-public class SnapchatAndroidTest extends AbstractAndroidTest {
+public class SnapchatAndroidTest extends AbstractAndroidTest
+{
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
     private SnapchatLoginAction loginPage;
 
@@ -22,8 +23,15 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
     protected StoryPage storyPage;
     protected SendMessage sendMessage;
 
+    protected void isAlertExist(AppiumDriver driver) throws Exception
+    {
+        storyPage = new StoryPage(driver);
+        if (isMobileElementDisplayedOnPage(storyPage.alert))
+            waitAndClick(driver, storyPage.alert);
+    }
 
-    protected void loginSnapchat(AppiumDriver driver, String username, String password) throws Exception {
+    protected void loginSnapchat(AppiumDriver driver, String username, String password) throws Exception
+    {
         loginPage = new SnapchatLoginAction(driver);
         waitAndClick(driver, loginPage.loginButton);
         waitElementVisible(driver, loginPage.usernameField);
@@ -34,7 +42,8 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
         sleep(10);
     }
 
-    protected void goMessagePage(AppiumDriver driver, String friendsName) throws Exception {
+    protected void goMessagePage(AppiumDriver driver, String friendsName) throws Exception
+    {
         storyPage = new StoryPage(driver);
         profilePage = new ProfilePage(driver);
         waitAndClick(driver, storyPage.friends);
@@ -43,19 +52,23 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
         waitAndClick(driver, profilePage.firstFriends);
     }
 
-    protected void sendMessage(AppiumDriver driver, String message) {
+    protected void sendMessage(AppiumDriver driver, String message)
+    {
         sendMessage = new SendMessage(driver);
         waitAndSendKeys(driver, sendMessage.messageText, message);
         pressEnter(driver);
     }
 
-    protected void controlReceivedMessage(AppiumDriver driver, String message) {
+    protected void controlReceivedMessage(AppiumDriver driver, String message)
+    {
         sendMessage = new SendMessage(driver);
         int index = getSizeOfList(sendMessage.multipleText);
         String receivedMsg = "";
-        for (int i = 0; i <= index; i++) {
+        for (int i = 0; i <= index; i++)
+        {
             receivedMsg = getAttribute(getElementInList(sendMessage.multipleText, i), "text");
-            if (receivedMsg.equals(message)) {
+            if (receivedMsg.equals(message))
+            {
                 assertEqualsText(message, receivedMsg);
                 System.out.println(receivedMsg);
                 break;
@@ -63,7 +76,8 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
         }
     }
 
-    protected void searchAndFindFriends(AppiumDriver driver, String name) throws Exception {
+    protected void searchAndFindFriends(AppiumDriver driver, String name) throws Exception
+    {
         sleep(2);
         sendMessage = new SendMessage(driver);
         waitAndClick(driver, sendMessage.searchField);
@@ -71,7 +85,8 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
         waitAndClick(driver, sendMessage.sendMessageUser);
     }
 
-    protected void sendMyStory(AppiumDriver driver) throws Exception {
+    protected void sendMyStory(AppiumDriver driver) throws Exception
+    {
         storyPage = new StoryPage(driver);
         waitAndClick(driver, storyPage.sendButton);
         waitAndClick(driver, storyPage.searchFriends);
@@ -82,7 +97,8 @@ public class SnapchatAndroidTest extends AbstractAndroidTest {
         logger.info(getSnapSendDuration());
     }
 
-    protected String getSnapSendDuration() {
+    protected String getSnapSendDuration()
+    {
         List<LogEntry> adbLogs = firstMobile.manage().logs().get("logcat").filter(Level.ALL);
 
         AtomicReference<String> duration = new AtomicReference<>();

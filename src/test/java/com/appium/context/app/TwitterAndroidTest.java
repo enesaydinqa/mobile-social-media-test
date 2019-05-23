@@ -60,12 +60,8 @@ public class TwitterAndroidTest extends AbstractAndroidTest
 
         sleep(5);
         waitAndClick(driver, homePage.tweetButton);
-
-        if (!isDisplayed(driver, homePage.tweetText)) waitAndClick(driver, homePage.tweetButton);
-
-        waitAndSendKeys(driver, homePage.tweetText, RandomStringUtils.randomAlphanumeric(200));
+        waitAndSendKeys(driver, homePage.tweetText, RandomStringUtils.randomAlphanumeric(100));
         waitAndClick(driver, homePage.buttonTweetButton, true, "Tweet Send Button Is Clicked Time");
-
         getSendTweetDuration();
     }
 

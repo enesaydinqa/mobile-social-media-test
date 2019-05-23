@@ -11,7 +11,8 @@ import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SnapchatStoryTest extends SnapchatAndroidTest {
+public class SnapchatStoryTest extends SnapchatAndroidTest
+{
     private Logger logger = Logger.getLogger(SnapchatStoryTest.class);
     private String user_sender = "testenerjim@gmail.com";
     private String password_sender = "enerjimE1";
@@ -25,7 +26,8 @@ public class SnapchatStoryTest extends SnapchatAndroidTest {
 
 
     @Before
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
         super.init();
         loginSnapchat(firstMobile, user_sender, password_sender);
 
@@ -37,32 +39,37 @@ public class SnapchatStoryTest extends SnapchatAndroidTest {
 
     @Test
     @Contact(Author.ATIKE)
-    public void testCaptureImageStoryAndShare() throws Exception {
+    public void testCaptureImageStoryAndShare() throws Exception
+    {
         waitAndClick(firstMobile, storyPage.cameraCaptureButton);
+        isAlertExist(firstMobile);
         sendMyStory(firstMobile);
     }
 
+
     @Test
     @Contact(Author.ATIKE)
-    public void testCaptureVideoStoryAndShare() throws Exception {
+    public void testCaptureVideoStoryAndShare() throws Exception
+    {
         longPress(firstMobile, storyPage.cameraCaptureButton, 10);
+        isAlertExist(firstMobile);
         sendMyStory(firstMobile);
     }
 
     @Test
     @Contact(Author.ATIKE)
-    public void sendMessageWithSingleDevice() throws Exception {
+    public void sendMessageWithSingleDevice() throws Exception
+    {
         message = "This is a single device test message:" + RandomStringUtils.randomAlphanumeric(10);
         searchAndFindFriends(firstMobile, name_sender);
         sendMessage(firstMobile, message);
         controlReceivedMessage(firstMobile, message);
-
     }
 
     @Test
     @Contact(Author.ATIKE)
-    public void addImageToStory() throws Exception {
-
+    public void addImageToStory() throws Exception
+    {
         waitAndClick(firstMobile, storyPage.cameraCaptureButton, true, "picture is taken");
         clickElementInList(storyPage.addStory, 3);
         waitAndClick(firstMobile, storyPage.addToAlert, true, "picture is added to your story");

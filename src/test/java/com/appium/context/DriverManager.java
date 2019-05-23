@@ -33,8 +33,8 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("platformVersion", deviceManager.getDeviceCapabilities(index).getPlatformVersion());
             capabilities.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
             capabilities.setCapability("deviceName", "Social Media Test Device");
-            capabilities.setCapability("appPackage", appInfo.appPackage);
-            capabilities.setCapability("appActivity", appInfo.appActivity);
+            capabilities.setCapability("appPackage", appInfo.appPackage);//appInfo.appPackage
+            capabilities.setCapability("appActivity",appInfo.appActivity );//appInfo.appActivity
             capabilities.setCapability("unicodeKeyboard", true);
             capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
             capabilities.setCapability("fastReset", true);

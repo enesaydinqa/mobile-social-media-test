@@ -21,6 +21,7 @@
 -Doperator=OPERATOR_NAME
 -Dtest.result.path=REPORT_PATH
 -Dmultiple.device.test=true/false
+-Dtest.app.prop=TWITTER
 
 # Appium Server
 appium --address 127.0.0.1 --port 4723 --session-override --command-timeout 6000000

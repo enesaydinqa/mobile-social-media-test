@@ -32,10 +32,10 @@ public class TwitterSingleDeviceTest extends TwitterAndroidTest
     public void init() throws Exception
     {
         super.init();
-
         twitterReport = new TwitterReport();
 
         loginIn(firstMobile, configuration.getFirstTwitterTestUser(), configuration.getTwitterTestUserPassword());
+        firstMobile.resetApp();
     }
 
     @After

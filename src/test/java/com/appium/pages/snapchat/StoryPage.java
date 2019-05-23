@@ -33,14 +33,6 @@ public class StoryPage extends PageObject {
     @AndroidFindBy(id = "com.snapchat.android:id/send_to_search_text")
     public MobileElement searchFriends;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/name")
-    public MobileElement firstFriendsRow;
-
-
-    @AndroidFindAll({
-            @AndroidBy(className = "android.widget.TextView")})
-    public List<MobileElement> sendStory;
-
     @AndroidFindBy(id = "com.snapchat.android:id/hova_nav_feed_icon")
     public MobileElement friends;
 
@@ -48,4 +40,7 @@ public class StoryPage extends PageObject {
     @AndroidBy(id = "com.snapchat.android:id/name")
     })
     public MobileElement mystory;
+
+    @AndroidFindBy(id = "com.snapchat.android:id/button_text")
+    public MobileElement alert;
 }
