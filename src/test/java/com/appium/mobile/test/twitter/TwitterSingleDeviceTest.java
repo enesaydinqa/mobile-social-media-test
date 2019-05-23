@@ -1,7 +1,7 @@
 package com.appium.mobile.test.twitter;
 
-import com.annotation.Author;
-import com.annotation.Contact;
+import com.annotations.Author;
+import com.annotations.Contact;
 import com.appium.client.objects.TwitterReport;
 import com.appium.context.app.TwitterAndroidTest;
 import com.appium.utils.ReportGenerate;

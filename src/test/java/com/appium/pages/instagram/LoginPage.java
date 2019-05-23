@@ -24,4 +24,7 @@ public class LoginPage extends PageObject
     @AndroidFindBy(id = "com.instagram.android:id/button_text")
     public MobileElement loginButton;
 
+    @AndroidFindBy(id = "com.instagram.android:id/button_positive")
+    public MobileElement buttonPositive;
+
 }

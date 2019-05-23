@@ -9,8 +9,10 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 import java.util.List;
 
-public class StoryPage extends PageObject {
-    public StoryPage(AppiumDriver driver) {
+public class StoryPage extends PageObject
+{
+    public StoryPage(AppiumDriver driver)
+    {
         super(driver);
     }
 
@@ -37,10 +39,10 @@ public class StoryPage extends PageObject {
     public MobileElement friends;
 
     @AndroidFindAll({
-    @AndroidBy(id = "com.snapchat.android:id/name")
+            @AndroidBy(id = "com.snapchat.android:id/name")
     })
-    public MobileElement mystory;
+    public MobileElement myStory;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/button_text")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Allow']")
     public MobileElement alert;
 }

@@ -10,7 +10,12 @@ public class InstagramAndroidTest extends AbstractAndroidTest
 
     protected void login(AppiumDriver driver, String username, String password) throws Exception
     {
-        if (loginPage == null) loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(driver);
+
+        if (isTextDisplayedOnPage(driver, "CONTINUE"))
+        {
+            waitAndClick(driver, loginPage.buttonPositive);
+        }
 
         waitAndClick(driver, loginPage.logIn);
         waitAndSendKeys(driver, loginPage.usernameInput, username);

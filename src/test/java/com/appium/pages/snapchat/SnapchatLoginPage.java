@@ -5,12 +5,15 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class SnapchatLoginAction extends PageObject {
-    public SnapchatLoginAction (AppiumDriver driver) {
+public class SnapchatLoginPage extends PageObject
+{
+    public SnapchatLoginPage(AppiumDriver driver)
+    {
 
         super(driver);
     }
-    @AndroidFindBy(id="com.snapchat.android:id/login_and_signup_page_fragment_login_button")
+
+    @AndroidFindBy(id = "com.snapchat.android:id/login_and_signup_page_fragment_login_button")
     public MobileElement loginButton;
 
     @AndroidFindBy(id = "com.snapchat.android:id/username_or_email_field")
@@ -18,7 +21,7 @@ public class SnapchatLoginAction extends PageObject {
 
     @AndroidFindBy(id = "com.snapchat.android:id/password_field")
     public MobileElement passwordField;
-    @AndroidFindBy(id="com.snapchat.android:id/nav_button")
+    @AndroidFindBy(id = "com.snapchat.android:id/nav_button")
     public MobileElement loginAction;
 
 }

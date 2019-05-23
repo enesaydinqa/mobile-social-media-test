@@ -1,7 +1,8 @@
 package com.appium.mobile.test.instagram;
 
-import com.annotation.Author;
-import com.annotation.Contact;
+import com.annotations.Author;
+import com.annotations.Contact;
+import com.annotations.Description;
 import com.appium.client.Constants;
 import com.appium.client.objects.InstagramReport;
 import com.appium.context.app.InstagramAndroidTest;
@@ -57,6 +58,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
     @Test
     @Contact(Author.ENES)
+    @Description("Bu test instagramda text message gönderiyor.")
     public void testSendTextMessage() throws Exception
     {
         deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
@@ -84,6 +86,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
     @Test
     @Contact(Author.ENES)
+    @Description("Bu test instagramda image message gönderiyor.")
     public void testSendPhotoMessage() throws Exception
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
@@ -116,6 +119,7 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
 
     @Test
     @Contact(Author.ENES)
+    @Description("Bu test instagramda video message gönderiyor.")
     public void testSendVideoMessage() throws Exception
     {
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));

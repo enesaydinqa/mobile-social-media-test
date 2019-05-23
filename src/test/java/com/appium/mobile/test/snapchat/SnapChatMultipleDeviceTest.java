@@ -1,0 +1,35 @@
+package com.appium.mobile.test.snapchat;
+
+import com.annotations.Author;
+import com.annotations.Contact;
+import com.appium.context.app.SnapChatAndroidTest;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.Logger;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SnapChatMultipleDeviceTest extends SnapChatAndroidTest
+{
+    private Logger logger = Logger.getLogger(SnapChatSingleDeviceTest.class);
+
+    @Before
+    public void init() throws Exception
+    {
+        super.init(true);
+    }
+
+    @Test
+    @Contact(Author.ATIKE)
+    public void sendAndControlMessageWithMultipleDevice() throws Exception
+    {
+        String text = "This is a test message: " + RandomStringUtils.randomAlphanumeric(50);
+
+        login(firstMobile, configuration.getFirstSnapChatTestUserName(), configuration.getSnapChatTestUserPassword());
+        login(secondMobile, configuration.getSecondSnapChatTestUserName(), "mbcm1234");
+
+        goMessagePage(firstMobile, configuration.getSecondSnapChatTestUserName());
+        goMessagePage(secondMobile, configuration.getFirstSnapChatTestUserName());
+        sendMessage(firstMobile, text);
+        controlReceivedMessage(secondMobile, text);
+    }
+}

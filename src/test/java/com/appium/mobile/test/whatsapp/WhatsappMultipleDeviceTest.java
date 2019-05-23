@@ -1,7 +1,7 @@
 package com.appium.mobile.test.whatsapp;
 
-import com.annotation.Author;
-import com.annotation.Contact;
+import com.annotations.Author;
+import com.annotations.Contact;
 import com.appium.context.app.WhatsappAndroidTest;
 import com.appium.pages.whatsapp.HomePage;
 import org.apache.commons.lang3.RandomStringUtils;

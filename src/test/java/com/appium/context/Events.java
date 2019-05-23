@@ -52,8 +52,9 @@ public class Events extends AbstractTest implements CommonMobile
         Assert.assertEquals(text1, text2);
     }
 
-    public void pressEnter(AppiumDriver driver)
+    public void pressEnter(AppiumDriver driver) throws InterruptedException
     {
+        sleep(3);
         ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.ENTER);
     }
 
@@ -72,15 +73,19 @@ public class Events extends AbstractTest implements CommonMobile
         driver.hideKeyboard();
     }
 
-    public void clickElementInList(List<MobileElement> elements,int index){
-        if (!elements.isEmpty()) {
+    public void clickElementInList(List<MobileElement> elements, int index)
+    {
+        if (!elements.isEmpty())
+        {
             elements.get(index).click();
         }
     }
 
-    public int getSizeOfList(List<MobileElement> elements){
-        if (!elements.isEmpty()) {
-           return elements.size();
+    public int getSizeOfList(List<MobileElement> elements)
+    {
+        if (!elements.isEmpty())
+        {
+            return elements.size();
         }
         return 0;
     }
@@ -128,6 +133,7 @@ public class Events extends AbstractTest implements CommonMobile
         String clickDate = null;
 
         waitElementToBeClickable(driver, element);
+        sleep(3);
         element.click();
         sleep(1);
 
@@ -320,12 +326,12 @@ public class Events extends AbstractTest implements CommonMobile
             ((AndroidDriver) driver).pushFile(mobilePath, new File(uploadFile));
 
             logger.info("=============================================================================================");
-            logger.info(String.format("==> Successfull Push File Mobile : %s", mobilePath));
+            logger.info(String.format("==> Successfully Push File Mobile : %s", mobilePath));
             logger.info("=============================================================================================");
         }
         catch (Exception ex)
         {
-            logger.info("Not Successfull Push File Mobile");
+            logger.info("Not Successfully Push File Mobile");
         }
     }
 
@@ -335,6 +341,7 @@ public class Events extends AbstractTest implements CommonMobile
         boolean isTextOnPage = false;
         try
         {
+            sleep(5);
             isTextOnPage = driver.findElement(By.xpath("//*[@text='" + assertText + "']")).isDisplayed();
         }
         catch (Exception e)

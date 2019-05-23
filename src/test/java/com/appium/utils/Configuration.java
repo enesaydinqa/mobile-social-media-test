@@ -8,13 +8,15 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
 public class Configuration
 {
     private Logger logger = Logger.getLogger(Configuration.class);
 
-    private Properties configProps = new Properties();
+    private Properties prop = new Properties();
 
     private AppInfo appInfo;
     private NoReset noReset;
@@ -27,6 +29,10 @@ public class Configuration
     private String instagramTestUserPassword;
     private String firstTwitterTestUser;
     private String twitterTestUserPassword;
+    private String firstSnapChatTestUserName;
+    private String secondSnapChatTestUserName;
+    private String snapChatTestUserPassword;
+    private Integer snapChatStoryTimeout;
 
     public Configuration() throws Exception
     {
@@ -45,6 +51,11 @@ public class Configuration
 
         this.firstTwitterTestUser = getTwitterTestUser()[0];
         this.twitterTestUserPassword = readTwitterTestUserPassword();
+
+        this.firstSnapChatTestUserName = getSnapChatTestUser()[0];
+        this.secondSnapChatTestUserName = getSnapChatTestUser()[1];
+        this.snapChatTestUserPassword = readSnapChatTestUserPassword();
+        this.snapChatStoryTimeout = readSnapChatStoryTimeout();
     }
 
     private void loadConfigProperties() throws IOException
@@ -52,7 +63,7 @@ public class Configuration
         String configFile = "configuration.properties";
         InputStream in = ClassLoader.getSystemResourceAsStream(configFile);
 
-        configProps.load(in);
+        prop.load(new InputStreamReader(in, Charset.forName("UTF-8")));
     }
 
     private AppInfo getAppInfoProp()
@@ -165,11 +176,11 @@ public class Configuration
         switch (operator)
         {
             case STC:
-                return new String[]{configProps.getProperty("stc.instagram.test.user1"), configProps.getProperty("stc.instagram.test.user2")};
+                return new String[]{prop.getProperty("stc.instagram.test.user1"), prop.getProperty("stc.instagram.test.user2")};
             case MOBILY:
-                return new String[]{configProps.getProperty("mobily.instagram.test.user1"), configProps.getProperty("mobily.instagram.test.user2")};
+                return new String[]{prop.getProperty("mobily.instagram.test.user1"), prop.getProperty("mobily.instagram.test.user2")};
             case ZAIN_KSA:
-                return new String[]{configProps.getProperty("zain.instagram.test.user1"), configProps.getProperty("zain.instagram.test.user2")};
+                return new String[]{prop.getProperty("zain.instagram.test.user1"), prop.getProperty("zain.instagram.test.user2")};
             default:
                 throw new Exception(String.format("instagram test user not set because illegal operator name [%s]", operator));
         }
@@ -180,13 +191,28 @@ public class Configuration
         switch (operator)
         {
             case STC:
-                return new String[]{configProps.getProperty("stc.twitter.test.user1")};
+                return new String[]{prop.getProperty("stc.twitter.test.user1")};
             case MOBILY:
-                return new String[]{configProps.getProperty("mobily.twitter.test.user1")};
+                return new String[]{prop.getProperty("mobily.twitter.test.user1")};
             case ZAIN_KSA:
-                return new String[]{configProps.getProperty("zain.twitter.test.user1")};
+                return new String[]{prop.getProperty("zain.twitter.test.user1")};
             default:
                 throw new Exception(String.format("twitter test user not set because illegal operator name [%s]", operator));
+        }
+    }
+
+    private String[] getSnapChatTestUser() throws Exception
+    {
+        switch (operator)
+        {
+            case STC:
+                return new String[]{prop.getProperty("stc.snapchat.test.user1"), prop.getProperty("stc.snapchat.test.user2")};
+            case MOBILY:
+                return new String[]{prop.getProperty("mobily.snapchat.test.user1"), prop.getProperty("mobily.snapchat.test.user2")};
+            case ZAIN_KSA:
+                return new String[]{prop.getProperty("zain.snapchat.test.user1"), prop.getProperty("zain.snapchat.test.user2")};
+            default:
+                throw new Exception(String.format("snapchat test user not set because illegal operator name [%s]", operator));
         }
     }
 
@@ -207,12 +233,31 @@ public class Configuration
 
     private String readInstagramTestUserPassword()
     {
-        return configProps.getProperty("instagram.test.user.password");
+        return prop.getProperty("instagram.test.user.password");
     }
 
     private String readTwitterTestUserPassword()
     {
-        return configProps.getProperty("twitter.test.user.password");
+        return prop.getProperty("twitter.test.user.password");
+    }
+
+    private Integer readSnapChatStoryTimeout()
+    {
+        int defaultTime = 30;
+
+        String time = System.getProperty("snaphat.story.timeout");
+
+        if (time != null)
+        {
+            defaultTime = Integer.valueOf(time);
+        }
+
+        return defaultTime;
+    }
+
+    private String readSnapChatTestUserPassword()
+    {
+        return prop.getProperty("snapchat.test.user.password");
     }
 
     public String getTestResultPath()
@@ -308,5 +353,45 @@ public class Configuration
     public void setAppiumPort(String[] appiumPort)
     {
         this.appiumPort = appiumPort;
+    }
+
+    public String getFirstSnapChatTestUserName()
+    {
+        return firstSnapChatTestUserName;
+    }
+
+    public void setFirstSnapChatTestUserName(String firstSnapChatTestUserName)
+    {
+        this.firstSnapChatTestUserName = firstSnapChatTestUserName;
+    }
+
+    public String getSecondSnapChatTestUserName()
+    {
+        return secondSnapChatTestUserName;
+    }
+
+    public void setSecondSnapChatTestUserName(String secondSnapChatTestUserName)
+    {
+        this.secondSnapChatTestUserName = secondSnapChatTestUserName;
+    }
+
+    public String getSnapChatTestUserPassword()
+    {
+        return snapChatTestUserPassword;
+    }
+
+    public void setSnapChatTestUserPassword(String snapchatTestUserPassword)
+    {
+        this.snapChatTestUserPassword = snapchatTestUserPassword;
+    }
+
+    public Integer getSnapChatStoryTimeout()
+    {
+        return snapChatStoryTimeout;
+    }
+
+    public void setSnapChatStoryTimeout(Integer snapChatStoryTimeout)
+    {
+        this.snapChatStoryTimeout = snapChatStoryTimeout;
     }
 }

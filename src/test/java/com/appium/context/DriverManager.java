@@ -33,8 +33,8 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("platformVersion", deviceManager.getDeviceCapabilities(index).getPlatformVersion());
             capabilities.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
             capabilities.setCapability("deviceName", "Social Media Test Device");
-            capabilities.setCapability("appPackage", appInfo.appPackage);//appInfo.appPackage
-            capabilities.setCapability("appActivity",appInfo.appActivity );//appInfo.appActivity
+            capabilities.setCapability("appPackage", appInfo.appPackage);
+            capabilities.setCapability("appActivity",appInfo.appActivity );
             capabilities.setCapability("unicodeKeyboard", true);
             capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
             capabilities.setCapability("fastReset", true);
@@ -45,6 +45,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("autoAcceptAlerts", true);
             capabilities.setCapability("disableWindowAnimation", true);
             capabilities.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
+            capabilities.setCapability("newCommandTimeout", "6000");
         }
         catch (Exception ex)
         {
@@ -57,10 +58,12 @@ public abstract class DriverManager extends Events
 
         url = new URL(createDriverUrl);
 
+        /*
         if (!checkIfServerIsRunning(configuration.getAppiumPort()[index]))
         {
             startAppiumServer(appiumServer, configuration.getAppiumPort()[index]);
         }
+        */
 
         appiumAppRemove(index);
 
