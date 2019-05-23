@@ -5,8 +5,8 @@ import com.annotation.Contact;
 import com.appium.context.app.LineAndroidTest;
 import com.appium.pages.line.MessagePage;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.Before;
 import org.apache.log4j.Logger;
+import org.junit.Before;
 import org.junit.Test;
 
 public class LineMultipleDevice extends LineAndroidTest {

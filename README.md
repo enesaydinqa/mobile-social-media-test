@@ -19,6 +19,7 @@
 -Dfirst.device.uid=DEVICE_UID
 -Dsecond.device.uid=DEVICE_UID (optional)
 -Doperator=OPERATOR_NAME
+-Dtest.app.prop=WHATSAPP
 -Dtest.result.path=REPORT_PATH
 -Dmultiple.device.test=true/false
 

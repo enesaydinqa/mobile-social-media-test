@@ -20,7 +20,7 @@ public class DeviceManager
 
     public DeviceManager()
     {
-        boolean multipleDeviceTest = Boolean.getBoolean(System.getProperties().getProperty("multiple.device.test"));
+        boolean multipleDeviceTest = Boolean.parseBoolean(System.getProperties().getProperty("multiple.device.test"));
         Operator operator = readOperatorParam("operator");
 
         DeviceCapabilities firstDeviceCap = readFirstDeviceCapabilities("first.device.uid", operator);
