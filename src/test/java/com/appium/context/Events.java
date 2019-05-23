@@ -28,6 +28,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -54,8 +55,24 @@ public class Events extends AbstractTest implements CommonMobile
 
     public void pressEnter(AppiumDriver driver) throws InterruptedException
     {
+        pressEnter(driver, false, null);
+    }
+
+    public String pressEnter(AppiumDriver driver, boolean log, String description) throws InterruptedException
+    {
+        String sendDate = null;
+
         sleep(3);
         ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.ENTER);
+
+        if (log)
+        {
+            sendDate = getCurrentDate(DateFormatType.FULL_DATE.dateFormat);
+
+            logger.info(description + " : " + sendDate);
+        }
+
+        return sendDate;
     }
 
     public void acceptAlerts(AppiumDriver driver)
@@ -265,6 +282,7 @@ public class Events extends AbstractTest implements CommonMobile
 
     public String waitElementVisible(AppiumDriver driver, MobileElement element, Boolean log, String description)
     {
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(element));
 

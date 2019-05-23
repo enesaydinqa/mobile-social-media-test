@@ -13,7 +13,7 @@ public class Main
     public static void main(String[] args) throws Exception
     {
         String testType = System.getProperties().getProperty("test.app.prop");
-        boolean multipleDeviceTest = Boolean.getBoolean(System.getProperties().getProperty("multiple.device.test"));
+        boolean multipleDeviceTest = Boolean.parseBoolean(System.getProperties().getProperty("multiple.device.test"));
 
         switch (testType)
         {

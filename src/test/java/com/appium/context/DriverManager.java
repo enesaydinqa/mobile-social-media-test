@@ -9,6 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
@@ -17,6 +18,8 @@ import java.net.URL;
 
 public abstract class DriverManager extends Events
 {
+    private Logger logger = Logger.getLogger(DriverManager.class);
+
     private final String appiumServer = "127.0.0.1";
 
     public AppiumDriver createAndroidDriver(Configuration configuration, int index) throws IOException, InterruptedException
@@ -34,7 +37,7 @@ public abstract class DriverManager extends Events
             capabilities.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
             capabilities.setCapability("deviceName", "Social Media Test Device");
             capabilities.setCapability("appPackage", appInfo.appPackage);
-            capabilities.setCapability("appActivity",appInfo.appActivity );
+            capabilities.setCapability("appActivity", appInfo.appActivity);
             capabilities.setCapability("unicodeKeyboard", true);
             capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
             capabilities.setCapability("fastReset", true);
@@ -54,6 +57,8 @@ public abstract class DriverManager extends Events
 
         URL url;
 
+        logger.info("==============================================================");
+        logger.info("====> Start Test ==> Appium Server => " + appiumServer + " : Port => " + configuration.getAppiumPort()[index]);
         String createDriverUrl = "http://" + appiumServer + ":" + configuration.getAppiumPort()[index] + "/wd/hub";
 
         url = new URL(createDriverUrl);

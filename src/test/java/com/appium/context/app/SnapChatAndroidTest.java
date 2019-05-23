@@ -61,10 +61,15 @@ public class SnapChatAndroidTest extends AbstractAndroidTest
 
     protected void sendMessage(AppiumDriver driver, String message) throws InterruptedException
     {
+        sendMessage(driver, message, false, null);
+    }
+
+    protected void sendMessage(AppiumDriver driver, String message, boolean log, String description) throws InterruptedException
+    {
         sendMessage = new SendMessage(driver);
 
         waitAndSendKeys(driver, sendMessage.messageText, message);
-        pressEnter(driver);
+        pressEnter(driver, log, description);
     }
 
     protected void controlReceivedMessage(AppiumDriver driver, String message)

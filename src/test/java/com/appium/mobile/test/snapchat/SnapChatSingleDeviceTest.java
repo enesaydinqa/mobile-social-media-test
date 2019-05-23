@@ -51,7 +51,7 @@ public class SnapChatSingleDeviceTest extends SnapChatAndroidTest
 
     @Test
     @Contact(Author.ATIKE)
-    @Ignore
+    @Ignore("Bu senaryoya gerek yok")
     public void sendMessageWithSingleDevice() throws Exception
     {
         String message = "This is a single device test message : " + RandomStringUtils.randomAlphanumeric(10);
@@ -63,7 +63,7 @@ public class SnapChatSingleDeviceTest extends SnapChatAndroidTest
 
     @Test
     @Contact(Author.ATIKE)
-    @Ignore
+    @Ignore("Bu senaryoya gerek yok")
     public void addImageToStory() throws Exception
     {
         waitAndClick(firstMobile, storyPage.cameraCaptureButton);
