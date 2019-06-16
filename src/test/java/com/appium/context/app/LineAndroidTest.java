@@ -1,20 +1,20 @@
 package com.appium.context.app;
 
 import com.appium.context.AbstractAndroidTest;
-import com.appium.mobile.test.line.LineMultipleDevice;
 import com.appium.pages.line.ChatsPage;
 import com.appium.pages.line.MessagePage;
 import io.appium.java_client.AppiumDriver;
 import org.apache.log4j.Logger;
 
-
-public class LineAndroidTest extends AbstractAndroidTest {
-    private Logger logger = Logger.getLogger(LineMultipleDevice.class);
+public abstract class LineAndroidTest extends AbstractAndroidTest
+{
+    private Logger logger = Logger.getLogger(LineAndroidTest.class);
     private ChatsPage chatsPage;
     private MessagePage messagePage;
 
 
-    protected void sendStickers(AppiumDriver driver) throws Exception {
+    protected void sendStickers(AppiumDriver driver) throws Exception
+    {
         messagePage = new MessagePage(driver);
         waitAndClick(driver, messagePage.emoji);
         waitAndClick(driver, messagePage.stickersChanceButton);
@@ -24,14 +24,16 @@ public class LineAndroidTest extends AbstractAndroidTest {
         sleep(2);
     }
 
-    protected void takeAndSendImage(AppiumDriver driver) throws Exception {
+    protected void takeAndSendImage(AppiumDriver driver) throws Exception
+    {
         waitAndClick(driver, messagePage.camera);
         waitAndClick(driver, messagePage.presscamera);
         waitAndClick(driver, messagePage.sendcameraimage);
     }
 
 
-    protected void sendTextMessage(AppiumDriver driver, String message) throws Exception {
+    protected void sendTextMessage(AppiumDriver driver, String message) throws Exception
+    {
         messagePage = new MessagePage(driver);
         waitAndSendKeys(driver, messagePage.textArea, message);
         waitAndClick(driver, messagePage.sendButton);
@@ -39,7 +41,8 @@ public class LineAndroidTest extends AbstractAndroidTest {
 
     }
 
-    protected void goMessagePage(AppiumDriver driver, String friends) throws Exception {
+    protected void goMessagePage(AppiumDriver driver, String friends) throws Exception
+    {
         chatsPage = new ChatsPage(driver);
         messagePage = new MessagePage(driver);
         waitAndClick(driver, messagePage.chatsBtn);
@@ -51,14 +54,16 @@ public class LineAndroidTest extends AbstractAndroidTest {
         clickElementInList(chatsPage.chatIkon, 2);
     }
 
-    protected void isMessageReceived(AppiumDriver driver) {
+    protected void isMessageReceived(AppiumDriver driver)
+    {
         chatsPage = new ChatsPage(driver);
         waitElementVisible(driver, chatsPage.chatWithNotification);
         isMobileElementDisplayedOnPage(chatsPage.chatWithNotification);
     }
 
 
-    protected void controlReceivedMessage(AppiumDriver driver, String textMsg) throws Exception {
+    protected void controlReceivedMessage(AppiumDriver driver, String textMsg) throws Exception
+    {
         chatsPage = new ChatsPage(driver);
         messagePage = new MessagePage(driver);
         String _sizeofnotification;

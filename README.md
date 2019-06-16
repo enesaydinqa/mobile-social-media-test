@@ -10,11 +10,6 @@
 - TWITTER
 - SNAPCHAT
 
-# Profiles
-- STCInstagram
-- MobilyInstagram
-- ZainInstagram
-
 # VM Options
 -Dfirst.device.uid=DEVICE_UID
 -Dsecond.device.uid=DEVICE_UID (optional)
@@ -24,13 +19,13 @@
 -Dmultiple.device.test=true/false
 -Dtest.app.prop=TWITTER
 
-# Appium Server
-appium --address 127.0.0.1 --port 4723 --session-override --command-timeout 6000000
-appium --address 127.0.0.1 --port 5556 --session-override --command-timeout 6000000
-appium --address 127.0.0.1 --port 5557 --session-override --command-timeout 6000000
-appium --address 127.0.0.1 --port 5558 --session-override --command-timeout 6000000
-appium --address 127.0.0.1 --port 5559 --session-override --command-timeout 6000000
-appium --address 127.0.0.1 --port 5560 --session-override --command-timeout 6000000
+-- For Snapchat
+-Dsnaphat.story.timeout=60 (optional)
+
+-- For LINE
+-Dline.sender.display.name=DATA
+-Dline.receiver.display.name=DATA
+
 
 #GIT
 - git checkout master (son kodun bulunduğu branch e geçer)
@@ -40,7 +35,6 @@ appium --address 127.0.0.1 --port 5560 --session-override --command-timeout 6000
 # KOD YAZILDIKTAN SONRA
 - git commit -am "YOUR_COMMIT_MESSAGE"
 - git push origin
-
 
 #SNAPCHAT
 -Her girişte login olunur

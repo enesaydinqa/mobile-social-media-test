@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class TwitterAndroidTest extends AbstractAndroidTest
+public abstract class TwitterAndroidTest extends AbstractAndroidTest
 {
     public Logger logger = Logger.getLogger(TwitterSingleDeviceTest.class);
 
@@ -24,7 +24,7 @@ public class TwitterAndroidTest extends AbstractAndroidTest
     private LoginPage loginPage;
     private HomePage homePage;
 
-    protected void loginIn(AppiumDriver driver, String username, String password) throws Exception
+    protected void login(AppiumDriver driver, String username, String password) throws Exception
     {
         if (loginPage == null) loginPage = new LoginPage(driver);
 
@@ -42,7 +42,7 @@ public class TwitterAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, loginPage.loginButton, true, "Login Button Click");
     }
 
-    protected void logOutFromTwitter(AppiumDriver driver) throws Exception
+    protected void logOutTwitter(AppiumDriver driver) throws Exception
     {
         if (homePage == null) homePage = new HomePage(driver);
 

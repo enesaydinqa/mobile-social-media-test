@@ -11,13 +11,9 @@ import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.DirectMessagePage;
 import com.appium.pages.instagram.HomePage;
-import com.appium.utils.ReportGenerate;
-import com.appium.utils.ReportInformation;
-import com.relevantcodes.extentreports.ExtentTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -30,17 +26,6 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     private HomePage homePageSecond;
     private DirectMessagePage directMessagePageOne;
     private DirectMessagePage directMessagePageSecond;
-    private InstagramReport instagramReport;
-
-    @Rule
-    public ReportGenerate reportGenerate = new ReportGenerate()
-    {
-        @Override
-        public void reportInformation(ExtentTest test)
-        {
-            ReportInformation.instagramReportFill(deviceInfo, instagramReport, test);
-        }
-    };
 
     @Before
     public void init() throws Exception
@@ -61,9 +46,6 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
     @Description("Bu test instagramda text message gönderiyor.")
     public void testSendTextMessage() throws Exception
     {
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
-
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
 
@@ -92,9 +74,6 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_PHOTO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
-
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());
@@ -125,9 +104,6 @@ public class InstagramMultipleDeviceTest extends InstagramAndroidTest
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
-
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
-        deviceInfo.setMobileDeviceSecondGeoLocation(getGeoLocation(getMobileUID(1)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         login(secondMobile, configuration.getSecondInstagramTestUser(), configuration.getInstagramTestUserPassword());

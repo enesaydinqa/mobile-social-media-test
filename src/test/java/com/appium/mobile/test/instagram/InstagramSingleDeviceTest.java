@@ -11,13 +11,9 @@ import com.appium.flag.STCInstagram;
 import com.appium.flag.ZainInstagram;
 import com.appium.pages.instagram.FooterPage;
 import com.appium.pages.instagram.PostSendPage;
-import com.appium.utils.ReportGenerate;
-import com.appium.utils.ReportInformation;
-import com.relevantcodes.extentreports.ExtentTest;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -28,17 +24,6 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
     private FooterPage footerPage;
     private PostSendPage postSendPage;
-    private InstagramReport instagramReport;
-
-    @Rule
-    public ReportGenerate reportGenerate = new ReportGenerate()
-    {
-        @Override
-        public void reportInformation(ExtentTest test)
-        {
-            ReportInformation.instagramReportFill(deviceInfo, instagramReport, test);
-        }
-    };
 
     @Before
     public void init() throws Exception
@@ -60,17 +45,15 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_PHOTO);
 
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
-
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);
         waitAndClick(firstMobile, postSendPage.nextTitle);
         waitAndClick(firstMobile, postSendPage.nextTitle);
 
-        String instagramPostShareButtonClickTime = waitAndClick(firstMobile, postSendPage.nextTitle, true, "Instagram Post Share Button Click Time");
+        String instagramPostShareButtonClickTime = waitAndClick(firstMobile, postSendPage.nextTitle, true, "instagram post share button click time");
         instagramReport.setInstagramPostShareButtonClickTime(instagramPostShareButtonClickTime);
 
-        String instagramSharedImagePostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "Instagram Shared Image Post Time");
+        String instagramSharedImagePostTime = waitNotVisible(firstMobile, postSendPage.pendingContainer, true, "instagram shared image post time");
         instagramReport.setInstagramSharedImagePostTime(instagramSharedImagePostTime);
     }
 
@@ -82,8 +65,6 @@ public class InstagramSingleDeviceTest extends InstagramAndroidTest
         String mobileFilePath = String.format(Constants.InstagramPost.INSTAGRAM_VIDEO_FOR_MOBILE_PATH, RandomStringUtils.randomAlphabetic(15));
 
         pushFileMobile(firstMobile, mobileFilePath, Constants.InstagramPost.INSTAGRAM_VIDEO);
-
-        deviceInfo.setMobileDeviceOneGeoLocation(getGeoLocation(getMobileUID(0)));
 
         login(firstMobile, configuration.getFirstInstagramTestUser(), configuration.getInstagramTestUserPassword());
         waitAndClick(firstMobile, footerPage.cameraButton);

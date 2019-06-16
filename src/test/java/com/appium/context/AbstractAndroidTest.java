@@ -4,6 +4,8 @@ import com.appium.client.objects.DeviceInfo;
 import com.appium.utils.Configuration;
 import com.appium.utils.StatusRule;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
@@ -15,9 +17,11 @@ public abstract class AbstractAndroidTest extends DriverManager
 
     protected AppiumDriver firstMobile;
     protected AppiumDriver secondMobile;
+    private AndroidDriver firstMobileDriver;
+    private AndroidDriver secondMobileDriver;
     protected DeviceInfo deviceInfo;
 
-    protected Configuration configuration;
+    protected static Configuration configuration;
 
     @Rule
     public StatusRule statusRule = new StatusRule();
@@ -30,17 +34,18 @@ public abstract class AbstractAndroidTest extends DriverManager
 
     protected void init(boolean multipleDevice) throws Exception
     {
-        configuration = new Configuration();
         deviceInfo = new DeviceInfo();
 
-        firstMobile = createAndroidDriver(configuration, 0);
+        configuration = new Configuration();
+
+        firstMobile = createAndroidDriver(firstMobileDriver, configuration, 0);
         logger.info("first mobile session id : " + firstMobile.getSessionId().toString() + "\n");
 
         deviceInfo.setMobileOneDeviceIMEI(getMobileIMEINumber(0));
 
         if (multipleDevice)
         {
-            secondMobile = createAndroidDriver(configuration, 1);
+            secondMobile = createAndroidDriver(secondMobileDriver, configuration, 1);
             logger.info("second mobile session id : " + secondMobile.getSessionId().toString() + "\n");
 
             deviceInfo.setMobileOneDeviceIMEI(getMobileIMEINumber(1));

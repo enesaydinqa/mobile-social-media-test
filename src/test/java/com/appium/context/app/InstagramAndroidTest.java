@@ -1,16 +1,40 @@
 package com.appium.context.app;
 
+import com.appium.client.objects.InstagramReport;
 import com.appium.context.AbstractAndroidTest;
 import com.appium.pages.instagram.LoginPage;
+import com.appium.utils.ReportInformation;
 import io.appium.java_client.AppiumDriver;
+import org.junit.Rule;
+import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 
-public class InstagramAndroidTest extends AbstractAndroidTest
+public abstract class InstagramAndroidTest extends AbstractAndroidTest
 {
+    protected InstagramReport instagramReport;
     private LoginPage loginPage;
 
-    protected void login(AppiumDriver driver, String username, String password) throws Exception
+    @Rule
+    public TestWatcher testResults = new TestWatcher()
+    {
+        @Override
+        protected void succeeded(Description description)
+        {
+            ReportInformation.instagram(description, deviceInfo, instagramReport, true);
+        }
+
+        @Override
+        protected void failed(Throwable e, Description description)
+        {
+            ReportInformation.instagram(description, deviceInfo, instagramReport, false);
+        }
+    };
+
+    protected InstagramAndroidTest login(AppiumDriver driver, String username, String password) throws Exception
     {
         loginPage = new LoginPage(driver);
+
+        sleep(3);
 
         if (isTextDisplayedOnPage(driver, "CONTINUE"))
         {
@@ -21,6 +45,8 @@ public class InstagramAndroidTest extends AbstractAndroidTest
         waitAndSendKeys(driver, loginPage.usernameInput, username);
         waitAndSendKeys(driver, loginPage.passwordInput, password);
         waitAndClick(driver, loginPage.loginButton);
-        sleep(5);
+        sleep(10);
+
+        return this;
     }
 }

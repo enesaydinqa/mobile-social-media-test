@@ -33,6 +33,8 @@ public class Configuration
     private String secondSnapChatTestUserName;
     private String snapChatTestUserPassword;
     private Integer snapChatStoryTimeout;
+    private String lineSenderDisplayName;
+    private String lineReceiverDisplayName;
 
     public Configuration() throws Exception
     {
@@ -56,6 +58,12 @@ public class Configuration
         this.secondSnapChatTestUserName = getSnapChatTestUser()[1];
         this.snapChatTestUserPassword = readSnapChatTestUserPassword();
         this.snapChatStoryTimeout = readSnapChatStoryTimeout();
+
+        if (System.getProperty("test.app.prop").equals("LINE"))
+        {
+            this.lineSenderDisplayName = readLineSenderDisplayName();
+            this.lineReceiverDisplayName = readLineReceiverDisplayName();
+        }
     }
 
     private void loadConfigProperties() throws IOException
@@ -393,5 +401,39 @@ public class Configuration
     public void setSnapChatStoryTimeout(Integer snapChatStoryTimeout)
     {
         this.snapChatStoryTimeout = snapChatStoryTimeout;
+    }
+
+    public String readLineSenderDisplayName()
+    {
+        String senderName = System.getProperty("line.sender.display.name");
+
+        return senderName;
+    }
+
+    public String getLineSenderDisplayName()
+    {
+        return lineSenderDisplayName;
+    }
+
+    public void setLineSenderDisplayName(String lineSenderDisplayName)
+    {
+        this.lineSenderDisplayName = lineSenderDisplayName;
+    }
+
+    public String readLineReceiverDisplayName()
+    {
+        String receiverName = System.getProperty("line.receiver.display.name");
+
+        return receiverName;
+    }
+
+    public String getLineReceiverDisplayName()
+    {
+        return lineReceiverDisplayName;
+    }
+
+    public void setLineReceiverDisplayName(String lineReceiverDisplayName)
+    {
+        this.lineReceiverDisplayName = lineReceiverDisplayName;
     }
 }

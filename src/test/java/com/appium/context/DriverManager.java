@@ -12,6 +12,7 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.URL;
@@ -22,55 +23,79 @@ public abstract class DriverManager extends Events
 
     private final String appiumServer = "127.0.0.1";
 
-    public AppiumDriver createAndroidDriver(Configuration configuration, int index) throws IOException, InterruptedException
+    public AppiumDriver createAndroidDriver(AndroidDriver driver, Configuration configuration, int index) throws IOException, InterruptedException
     {
         AppInfo appInfo = configuration.getAppInfo();
         NoReset noReset = configuration.getNoReset();
         AutoGrantPermissions autoGrantPermissions = configuration.getAutoGrantPermissions();
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        boolean isAutoGrantPermission = autoGrantPermissions.autoGrantPermissions;
+        boolean isNoReset = noReset.noReset;
 
-        try
-        {
-            capabilities.setCapability("platformName", "Android");
-            capabilities.setCapability("platformVersion", deviceManager.getDeviceCapabilities(index).getPlatformVersion());
-            capabilities.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
-            capabilities.setCapability("deviceName", "Social Media Test Device");
-            capabilities.setCapability("appPackage", appInfo.appPackage);
-            capabilities.setCapability("appActivity", appInfo.appActivity);
-            capabilities.setCapability("unicodeKeyboard", true);
-            capabilities.setCapability("autoGrantPermissions", autoGrantPermissions.autoGrantPermissions);
-            capabilities.setCapability("fastReset", true);
-            capabilities.setCapability("noSign", true);
-            capabilities.setCapability("noReset", noReset.noReset);
-            capabilities.setCapability("clearDeviceLogsOnStart", true);
-            capabilities.setCapability("automationName", deviceManager.getDeviceCapabilities(index).getAutomationName());
-            capabilities.setCapability("autoAcceptAlerts", true);
-            capabilities.setCapability("disableWindowAnimation", true);
-            capabilities.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
-            capabilities.setCapability("newCommandTimeout", "6000");
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-        }
+        DesiredCapabilities capability = new DesiredCapabilities();
 
-        URL url;
-
-        logger.info("==============================================================");
-        logger.info("====> Start Test ==> Appium Server => " + appiumServer + " : Port => " + configuration.getAppiumPort()[index]);
-        String createDriverUrl = "http://" + appiumServer + ":" + configuration.getAppiumPort()[index] + "/wd/hub";
-
-        url = new URL(createDriverUrl);
+        appiumAppRemove(index);
 
         if (!checkIfServerIsRunning(configuration.getAppiumPort()[index]))
         {
             startAppiumServer(appiumServer, configuration.getAppiumPort()[index]);
         }
 
-        appiumAppRemove(index);
+        int counter = 0;
 
-        return new AndroidDriver(url, capabilities);
+        while (driver == null & counter < 5)
+        {
+            try
+            {
+                capability.setCapability("platformName", "Android");
+                capability.setCapability("platformVersion", deviceManager.getDeviceCapabilities(index).getPlatformVersion());
+                capability.setCapability("udid", deviceManager.getDeviceCapabilities(index).getUid());
+                capability.setCapability("deviceName", "Social Media Test Device");
+                capability.setCapability("appPackage", appInfo.appPackage);
+                capability.setCapability("appActivity", appInfo.appActivity);
+                capability.setCapability("unicodeKeyboard", true);
+                capability.setCapability("autoGrantPermissions", isAutoGrantPermission);
+                capability.setCapability("fastReset", true);
+                capability.setCapability("noSign", true);
+                capability.setCapability("noReset", isNoReset);
+                capability.setCapability("clearDeviceLogsOnStart", true);
+                //capability.setCapability("automationName", "Espresso");
+                //capability.setCapability("forceEspressoRebuild", true);
+                capability.setCapability("automationName", deviceManager.getDeviceCapabilities(index).getAutomationName());
+                capability.setCapability("autoAcceptAlerts", true);
+                capability.setCapability("disableWindowAnimation", true);
+                capability.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
+
+                //capability.setCapability("skipDeviceInitialization", true);
+                //capability.setCapability("skipServerInstallation", true);
+
+                logger.info("==============================================================");
+                logger.info("====> Start Test Appium Server => " + appiumServer + " : Port => " + configuration.getAppiumPort()[index]);
+
+                String createDriverUrl = "http://" + appiumServer + ":" + configuration.getAppiumPort()[index] + "/wd/hub";
+
+                URL url = new URL(createDriverUrl);
+
+                try
+                {
+                    driver = new AndroidDriver(url, capability);
+                }
+                catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
+
+                counter++;
+            }
+            catch (Exception ex)
+            {
+                // no action
+            }
+        }
+
+        if (null == driver) throw new NullPointerException("Android Driver is null...");
+
+        return driver;
     }
 
     /**
@@ -91,7 +116,7 @@ public abstract class DriverManager extends Events
      */
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
     {
-        AppiumServiceBuilder builder = new AppiumServiceBuilder();
+        AppiumServiceBuilder builder = new AppiumServiceBuilder().withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"));
 
         builder.withIPAddress(deviceServer);
         builder.usingPort(Integer.valueOf(devicePort));
@@ -101,7 +126,7 @@ public abstract class DriverManager extends Events
         AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
         service.start();
 
-        sleep(5);
+        sleep(10);
     }
 
     private boolean checkIfServerIsRunning(String port)

@@ -2,6 +2,7 @@ package com.appium.mobile.test.snapchat;
 
 import com.annotations.Author;
 import com.annotations.Contact;
+import com.appium.client.objects.SnapchatReport;
 import com.appium.context.app.SnapchatAndroidTest;
 import io.appium.java_client.MobileElement;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -18,6 +19,8 @@ public class SnapchatMultipleDeviceTest extends SnapchatAndroidTest
     public void init() throws Exception
     {
         super.init(true);
+
+        snapchatReport = new SnapchatReport();
     }
 
     @Test
@@ -27,7 +30,7 @@ public class SnapchatMultipleDeviceTest extends SnapchatAndroidTest
         String text = "This is a test message: " + RandomStringUtils.randomAlphanumeric(50);
 
         login(firstMobile, configuration.getFirstSnapChatTestUserName(), configuration.getSnapChatTestUserPassword());
-        login(secondMobile, configuration.getSecondSnapChatTestUserName(), "mbcm1234");
+        login(secondMobile, configuration.getSecondSnapChatTestUserName(), configuration.getSnapChatTestUserPassword());
 
         goMessagePage(firstMobile, configuration.getSecondSnapChatTestUserName());
         goMessagePage(secondMobile, configuration.getFirstSnapChatTestUserName());
@@ -35,6 +38,7 @@ public class SnapchatMultipleDeviceTest extends SnapchatAndroidTest
 
         By expectedMessage = By.xpath("//android.widget.TextView[@text='" + text + "']");
 
-        waitElementVisible(secondMobile, (MobileElement) secondMobile.findElement(expectedMessage), true, "Received Message");
+        String receivedMessage = waitElementVisible(secondMobile, (MobileElement) secondMobile.findElement(expectedMessage), true, "Received Message");
+        snapchatReport.setReceivedMessage(receivedMessage);
     }
 }

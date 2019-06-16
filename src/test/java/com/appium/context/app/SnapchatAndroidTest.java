@@ -1,14 +1,19 @@
 package com.appium.context.app;
 
 import com.appium.client.date.DateFormatType;
+import com.appium.client.objects.SnapchatReport;
 import com.appium.context.AbstractAndroidTest;
 import com.appium.mobile.test.snapchat.SnapchatSingleDeviceTest;
 import com.appium.pages.snapchat.ProfilePage;
 import com.appium.pages.snapchat.SendMessagePage;
 import com.appium.pages.snapchat.SnapchatLoginPage;
 import com.appium.pages.snapchat.StoryPage;
+import com.appium.utils.ReportInformation;
 import io.appium.java_client.AppiumDriver;
 import org.apache.log4j.Logger;
+import org.junit.Rule;
+import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 import org.openqa.selenium.logging.LogEntry;
 
 import java.util.List;
@@ -16,14 +21,32 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.stream.IntStream;
 
-public class SnapchatAndroidTest extends AbstractAndroidTest
+public abstract class SnapchatAndroidTest extends AbstractAndroidTest
 {
     private Logger logger = Logger.getLogger(SnapchatSingleDeviceTest.class);
+
+    protected SnapchatReport snapchatReport;
 
     private SnapchatLoginPage loginPage;
     protected ProfilePage profilePage;
     protected StoryPage storyPage;
     protected SendMessagePage sendMessagePage;
+
+    @Rule
+    public TestWatcher testResults = new TestWatcher()
+    {
+        @Override
+        protected void succeeded(Description description)
+        {
+            ReportInformation.snapchat(description, deviceInfo, snapchatReport, true);
+        }
+
+        @Override
+        protected void failed(Throwable e, Description description)
+        {
+            ReportInformation.snapchat(description, deviceInfo, snapchatReport, false);
+        }
+    };
 
     protected void isAlertExist(AppiumDriver driver) throws Exception
     {
@@ -102,7 +125,7 @@ public class SnapchatAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, sendMessagePage.sendMessageUser);
     }
 
-    protected void shareMyStory(AppiumDriver driver) throws Exception
+    protected void shareMyStory(AppiumDriver driver, String storyType) throws Exception
     {
         storyPage = new StoryPage(driver);
 
@@ -110,12 +133,15 @@ public class SnapchatAndroidTest extends AbstractAndroidTest
         waitAndClick(driver, storyPage.searchFriends);
         waitAndSendKeys(driver, storyPage.searchFriends, "My Story");
         waitAndClick(driver, storyPage.myStory);
-        waitAndClick(driver, storyPage.send, true, "Snapchat Story Share Button Click");
+        String snapchatStoryShareButtonClick = waitAndClick(driver, storyPage.send, true, "Snapchat Story Share Button Click");
+        snapchatReport.setSnapchatStoryShareButtonClick(snapchatStoryShareButtonClick);
+
         sleep(configuration.getSnapChatStoryTimeout());
-        getSnapSendDuration();
+        String sharedStoryTime = getSnapSendDuration(storyType);
+        snapchatReport.setSharedStoryTime(sharedStoryTime);
     }
 
-    protected String getSnapSendDuration()
+    protected String getSnapSendDuration(String storyType)
     {
         List<LogEntry> adbLogs = firstMobile.manage().logs().get("logcat").filter(Level.ALL);
 
@@ -125,7 +151,7 @@ public class SnapchatAndroidTest extends AbstractAndroidTest
                 .filter(i -> adbLogs.get(i).getMessage().contains("removeNotification key=0|com.snapchat.android"))
                 .forEach(i -> {
                     duration.set(adbLogs.get(i).getMessage().substring(5, 18));
-                    logger.info("Shared Snapchat Story Time : " + getCurrentDate(DateFormatType.YEAR_MONTH_DAY.dateFormat) + duration);
+                    logger.info("Shared " + storyType + " Story Time : " + getCurrentDate(DateFormatType.YEAR_MONTH_DAY.dateFormat) + duration);
                 });
 
         return String.valueOf(duration);

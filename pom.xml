@@ -192,5 +192,12 @@
             </exclusions>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.jglue.fluent-json/fluent-json -->
+        <dependency>
+            <groupId>org.jglue.fluent-json</groupId>
+            <artifactId>fluent-json</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+
     </dependencies>
 </project>

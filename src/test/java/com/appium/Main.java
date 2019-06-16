@@ -4,7 +4,6 @@ import com.appium.mobile.test.instagram.InstagramMultipleDeviceTest;
 import com.appium.mobile.test.instagram.InstagramSingleDeviceTest;
 import com.appium.mobile.test.snapchat.SnapchatMultipleDeviceTest;
 import com.appium.mobile.test.snapchat.SnapchatSingleDeviceTest;
-import com.appium.mobile.test.twitter.TwitterMultipleDeviceTest;
 import com.appium.mobile.test.twitter.TwitterSingleDeviceTest;
 import org.junit.runner.JUnitCore;
 
@@ -21,7 +20,7 @@ public class Main
 
                 if (multipleDeviceTest)
                 {
-                    JUnitCore.runClasses(InstagramSingleDeviceTest.class, InstagramMultipleDeviceTest.class);
+                    JUnitCore.runClasses(InstagramMultipleDeviceTest.class);
                 }
                 else
                 {
@@ -31,14 +30,7 @@ public class Main
 
             case "TWITTER":
 
-                if (multipleDeviceTest)
-                {
-                    JUnitCore.runClasses(TwitterSingleDeviceTest.class, TwitterMultipleDeviceTest.class);
-                }
-                else
-                {
-                    JUnitCore.runClasses(TwitterSingleDeviceTest.class);
-                }
+                JUnitCore.runClasses(TwitterSingleDeviceTest.class);
 
             case "SNAPCHAT":
 
