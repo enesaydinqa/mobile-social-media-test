@@ -5,7 +5,6 @@ import com.appium.utils.Configuration;
 import com.appium.utils.StatusRule;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;

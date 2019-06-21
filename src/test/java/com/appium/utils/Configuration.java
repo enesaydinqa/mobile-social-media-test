@@ -6,6 +6,7 @@ import com.appium.client.parameter.NoReset;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -35,9 +36,11 @@ public class Configuration
     private Integer snapChatStoryTimeout;
     private String lineSenderDisplayName;
     private String lineReceiverDisplayName;
+    private String configurationPropPath;
 
     public Configuration() throws Exception
     {
+        this.configurationPropPath = readUserListPathProp();
         loadConfigProperties();
 
         this.appInfo = getAppInfoProp();
@@ -68,8 +71,7 @@ public class Configuration
 
     private void loadConfigProperties() throws IOException
     {
-        String configFile = "configuration.properties";
-        InputStream in = ClassLoader.getSystemResourceAsStream(configFile);
+        InputStream in = new FileInputStream(configurationPropPath);
 
         prop.load(new InputStreamReader(in, Charset.forName("UTF-8")));
     }
@@ -268,6 +270,11 @@ public class Configuration
         return prop.getProperty("snapchat.test.user.password");
     }
 
+    private String readUserListPathProp()
+    {
+        return System.getProperty("configuration.prop.path");
+    }
+
     public String getTestResultPath()
     {
         return testResultPath;
@@ -435,5 +442,15 @@ public class Configuration
     public void setLineReceiverDisplayName(String lineReceiverDisplayName)
     {
         this.lineReceiverDisplayName = lineReceiverDisplayName;
+    }
+
+    public String getConfigurationPropPath()
+    {
+        return configurationPropPath;
+    }
+
+    public void setConfigurationPropPath(String configurationPropPath)
+    {
+        this.configurationPropPath = configurationPropPath;
     }
 }
