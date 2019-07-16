@@ -10,6 +10,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -111,7 +112,12 @@ public abstract class DriverManager extends Events
      */
     private void startAppiumServer(String deviceServer, String devicePort) throws InterruptedException
     {
-        AppiumServiceBuilder builder = new AppiumServiceBuilder().withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"));
+        AppiumServiceBuilder builder = new AppiumServiceBuilder();
+
+        if (Platform.getCurrent().is(Platform.MAC))
+        {
+            builder.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"));
+        }
 
         builder.withIPAddress(deviceServer);
         builder.usingPort(Integer.valueOf(devicePort));
