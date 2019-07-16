@@ -59,15 +59,10 @@ public abstract class DriverManager extends Events
                 capability.setCapability("noSign", true);
                 capability.setCapability("noReset", isNoReset);
                 capability.setCapability("clearDeviceLogsOnStart", true);
-                //capability.setCapability("automationName", "Espresso");
-                //capability.setCapability("forceEspressoRebuild", true);
                 capability.setCapability("automationName", deviceManager.getDeviceCapabilities(index).getAutomationName());
                 capability.setCapability("autoAcceptAlerts", true);
                 capability.setCapability("disableWindowAnimation", true);
                 capability.setCapability("waitForAppScript", "$.delay(10000); $.acceptAlert();");
-
-                //capability.setCapability("skipDeviceInitialization", true);
-                //capability.setCapability("skipServerInstallation", true);
 
                 logger.info("==============================================================");
                 logger.info("====> Start Test Appium Server => " + appiumServer + " : Port => " + configuration.getAppiumPort()[index]);

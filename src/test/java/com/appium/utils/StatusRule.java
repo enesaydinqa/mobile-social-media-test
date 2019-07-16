@@ -11,7 +11,6 @@ public class StatusRule extends TestWatcher
     @Override
     protected void starting(Description description)
     {
-        logger.info("=================================================================");
         logger.info(String.format("=====> TEST STARTED ... --> {%s}", description.getMethodName()));
     }
 
@@ -19,13 +18,11 @@ public class StatusRule extends TestWatcher
     protected void succeeded(Description description)
     {
         logger.info("=================================================================");
-        logger.info(String.format("=====> TEST PASSED ... --> {%s}", description.getMethodName()));
     }
 
     @Override
     protected void failed(Throwable e, org.junit.runner.Description description)
     {
-        logger.info("=================================================================");
         logger.info(String.format("=====> TEST FAIL ... --> {%s}", description.getMethodName()));
     }
 }

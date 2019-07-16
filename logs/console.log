@@ -7181,3 +7181,134 @@ Caused by: java.lang.NullPointerException
 2019-06-21 11:26:52 INFO  StatusRule:21 - =================================================================
 2019-06-21 11:26:52 INFO  StatusRule:22 - =====> TEST PASSED ... --> {testSendImagePost}
 2019-06-21 11:26:52 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Fri Jun 21 11:24:58 EET 2019]; root of context hierarchy
+2019-07-16 18:04:19 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:04:19 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:04:19 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:04:19 EET 2019]; root of context hierarchy
+2019-07-16 18:04:20 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:04:20 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendImagePost}
+2019-07-16 18:04:20 INFO  StatusRule:28 - =================================================================
+2019-07-16 18:04:20 INFO  StatusRule:29 - =====> TEST FAIL ... --> {testSendImagePost}
+2019-07-16 18:04:20 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:04:19 EET 2019]; root of context hierarchy
+2019-07-16 18:05:14 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:05:14 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:05:14 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:05:14 EET 2019]; root of context hierarchy
+2019-07-16 18:05:15 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:05:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendImagePost}
+2019-07-16 18:05:30 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:05:30 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:06:06 INFO  AbstractAndroidTest:41 - first mobile session id : 6cff969f-e8ca-4358-a7db-db903e266725
+
+2019-07-16 18:06:07 INFO  Events:346 - =============================================================================================
+2019-07-16 18:06:07 INFO  Events:347 - ==> Successfully Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-cqYJehgNXDVzdoA.jpg
+2019-07-16 18:06:07 INFO  Events:348 - =============================================================================================
+2019-07-16 18:06:11 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:05:14 EET 2019]; root of context hierarchy
+2019-07-16 18:06:20 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:06:20 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:06:20 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:06:20 EET 2019]; root of context hierarchy
+2019-07-16 18:06:21 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:06:21 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendPhotoMessage}
+2019-07-16 18:06:35 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:06:35 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:07:03 INFO  AbstractAndroidTest:41 - first mobile session id : 22778205-39c7-4985-ab5f-0db122ad22b5
+
+2019-07-16 18:07:04 INFO  StatusRule:28 - =================================================================
+2019-07-16 18:07:04 INFO  StatusRule:29 - =====> TEST FAIL ... --> {testSendPhotoMessage}
+2019-07-16 18:07:04 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:06:20 EET 2019]; root of context hierarchy
+2019-07-16 18:08:03 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:08:03 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:08:03 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:08:03 EET 2019]; root of context hierarchy
+2019-07-16 18:08:04 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:08:04 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendVideoMessage}
+2019-07-16 18:08:17 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:08:17 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:08:44 INFO  AbstractAndroidTest:41 - first mobile session id : a066079c-1d3f-4923-ac22-af85ae770d9c
+
+2019-07-16 18:08:45 INFO  StatusRule:28 - =================================================================
+2019-07-16 18:08:45 INFO  StatusRule:29 - =====> TEST FAIL ... --> {testSendVideoMessage}
+2019-07-16 18:08:45 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:08:03 EET 2019]; root of context hierarchy
+2019-07-16 18:09:33 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:09:33 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:09:33 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:09:33 EET 2019]; root of context hierarchy
+2019-07-16 18:09:33 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:09:33 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendVideoMessage}
+2019-07-16 18:09:47 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:09:47 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:10:14 INFO  AbstractAndroidTest:41 - first mobile session id : ea2d3dde-cde2-4274-9819-7286d95b33c8
+
+2019-07-16 18:10:15 INFO  StatusRule:28 - =================================================================
+2019-07-16 18:10:15 INFO  StatusRule:29 - =====> TEST FAIL ... --> {testSendVideoMessage}
+2019-07-16 18:10:15 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:09:33 EET 2019]; root of context hierarchy
+2019-07-16 18:10:56 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:10:56 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29b5cd00, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@60285225, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7113b13f]
+2019-07-16 18:10:56 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@4d1b0d2a: startup date [Tue Jul 16 18:10:56 EET 2019]; root of context hierarchy
+2019-07-16 18:10:57 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:10:57 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendVideoMessage}
+2019-07-16 18:10:58 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@4d1b0d2a: startup date [Tue Jul 16 18:10:56 EET 2019]; root of context hierarchy
+2019-07-16 18:11:14 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:11:14 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:11:14 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:11:14 EET 2019]; root of context hierarchy
+2019-07-16 18:11:15 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:11:15 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendPhotoMessage}
+2019-07-16 18:11:28 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:11:28 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:11:54 INFO  AbstractAndroidTest:41 - first mobile session id : 4050166d-bb33-49dc-9109-51cff5c11eec
+
+2019-07-16 18:12:08 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:12:08 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:12:28 INFO  AbstractAndroidTest:48 - second mobile session id : b4e3345d-ceb6-4099-b804-72db2ec40aa8
+
+2019-07-16 18:12:29 INFO  Events:346 - =============================================================================================
+2019-07-16 18:12:29 INFO  Events:347 - ==> Successfully Push File Mobile : /mnt/sdcard/Pictures/instagram-photo-UhhGadMkrLeMxqC.jpg
+2019-07-16 18:12:29 INFO  Events:348 - =============================================================================================
+2019-07-16 18:12:37 INFO  Events:367 - CONTINUE is not displayed on page
+2019-07-16 18:14:21 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:11:14 EET 2019]; root of context hierarchy
+2019-07-16 18:14:23 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:14:23 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:14:23 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:14:23 EET 2019]; root of context hierarchy
+2019-07-16 18:14:23 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:14:23 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendPhotoMessage}
+2019-07-16 18:14:37 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:14:37 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:15:04 INFO  AbstractAndroidTest:41 - first mobile session id : 6acd5076-60fd-4d82-84d0-430d23ac0ff7
+
+2019-07-16 18:15:18 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:15:18 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:15:29 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:15:29 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:15:38 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:15:38 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:15:43 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:14:23 EET 2019]; root of context hierarchy
+2019-07-16 18:15:55 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:15:55 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46daef40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12f41634, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13c27452]
+2019-07-16 18:15:55 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:15:55 EET 2019]; root of context hierarchy
+2019-07-16 18:15:56 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:15:56 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendTextMessage}
+2019-07-16 18:16:09 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:16:09 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:16:37 INFO  AbstractAndroidTest:41 - first mobile session id : 82880162-097d-4307-9c52-24e049dde2ab
+
+2019-07-16 18:16:51 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:16:51 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:17:09 INFO  AbstractAndroidTest:48 - second mobile session id : a9e11375-41c0-44f9-ba8c-bfa7101fca16
+
+2019-07-16 18:17:18 INFO  Events:367 - CONTINUE is not displayed on page
+2019-07-16 18:18:00 INFO  StatusRule:28 - =================================================================
+2019-07-16 18:18:00 INFO  StatusRule:29 - =====> TEST FAIL ... --> {testSendTextMessage}
+2019-07-16 18:18:00 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@df27fae: startup date [Tue Jul 16 18:15:55 EET 2019]; root of context hierarchy
+2019-07-16 18:19:30 INFO  DefaultTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 18:19:30 INFO  DefaultTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41d477ed, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3590fc5b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@397fbdb]
+2019-07-16 18:19:30 INFO  GenericApplicationContext:590 - Refreshing org.springframework.context.support.GenericApplicationContext@66d18979: startup date [Tue Jul 16 18:19:30 EET 2019]; root of context hierarchy
+2019-07-16 18:19:39 INFO  StatusRule:14 - =================================================================
+2019-07-16 18:19:39 INFO  StatusRule:15 - =====> TEST STARTED ... --> {testSendTextMessage}
+2019-07-16 18:19:52 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:19:52 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5559
+2019-07-16 18:20:22 INFO  AbstractAndroidTest:41 - first mobile session id : 2f68cc5d-0aad-47c3-b510-7fccf6e4e74e
+
+2019-07-16 18:20:35 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:20:35 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:20:37 INFO  DriverManager:67 - ==============================================================
+2019-07-16 18:20:37 INFO  DriverManager:68 - ====> Start Test Appium Server => 127.0.0.1 : Port => 5560
+2019-07-16 18:20:55 INFO  AbstractAndroidTest:48 - second mobile session id : 89b2f258-2bcf-4704-be8d-3ab951599a2b
+
+2019-07-16 18:21:04 INFO  Events:367 - CONTINUE is not displayed on page
+2019-07-16 18:21:47 INFO  GenericApplicationContext:993 - Closing org.springframework.context.support.GenericApplicationContext@66d18979: startup date [Tue Jul 16 18:19:30 EET 2019]; root of context hierarchy
